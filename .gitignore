@@ -13,7 +13,11 @@ venv/
 
 # Large local runtime / market caches (do not push)
 data/kline_vault/
+data/breakout_follow_v1/kline_vault_v2_clean/
 output/breakout_follow_v1/runs/
+output/breakout_follow_v1/account_state.json
+output/breakout_follow_v1/universe_snapshot.json
+output/breakout_follow_v1/review.md
 output/breakout_follow_v1/exports/
 output/breakout_follow_v1/decision_trace.jsonl
 output/breakout_follow_v1/equity_snapshots.jsonl

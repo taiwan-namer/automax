@@ -1,0 +1,14 @@
+# D 尚未在本機啟動。換機啟動後再用：
+
+# 日誌（請替換實際 out 路徑）
+# tail -f .../launch_logs/d_quiet_short_*.out.log
+
+# 驗收
+cd /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_d_quiet_short_20261120T133749
+PYTHONPATH=code python3 tests/test_d_quiet_short_acceptance.py
+
+# 確認無 D 執行器
+pgrep -lf 'd_quiet_short_v1.paper_main' || echo 'no D executor'
+
+# 確認 A/B/C 未被影響
+ps -p 59740,59741,78364 -o pid,etime,command

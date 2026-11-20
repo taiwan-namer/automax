@@ -1,0 +1,29 @@
+{
+  "status": "READY_FOR_OTHER_MACHINE_PAPER_FILLS",
+  "updated_at": "2026-11-20T13:50:00+08:00",
+  "timezone": "Asia/Taipei",
+  "strategy_version": "d_quiet_short_v1_20261120",
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_d_quiet_short_20261120T133749",
+  "capital": {
+    "margin_u": 300,
+    "leverage": 10,
+    "notional_u": 3000,
+    "tp_gross_u": 150,
+    "sl_gross_u": 30,
+    "sl_is_trigger_not_max_loss": true
+  },
+  "depth": {
+    "near_touch_pct": 0.001,
+    "min_bid_usdt": 50000,
+    "min_ask_usdt": 50000,
+    "walk_notional_u": 3000,
+    "exit_never_blocked_by_depth": true
+  },
+  "liquidity_labels": {
+    "max_spread": "0.0008 = 0.08% of mid",
+    "min_quote_volume": "20M = 24h USDT quoteVolume"
+  },
+  "paper_fills_allowed": true,
+  "pid_this_machine": null,
+  "note": "Do not start on this machine; A/B/C undisturbed. Use START_ON_OTHER_MACHINE.md"
+}

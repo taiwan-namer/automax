@@ -1,0 +1,13 @@
+{
+  "stamp": "20261120T133749",
+  "created_at": "2026-11-20T13:37:49+08:00",
+  "strategy_version": "d_quiet_short_v1_20261120",
+  "profile_id": "paper_d_quiet_short_v1",
+  "status": "BUILT_NOT_STARTED",
+  "mode_default": "SCAN_ONLY",
+  "paper_fills": "BLOCKED_PENDING_CONFIRMATIONS",
+  "A_pid_at_build": 78364,
+  "B_pid_at_build": 59740,
+  "C_pid_at_build": 59741,
+  "note": "Independent D runtime; does not modify A/B/C. User requested no launch on this machine."
+}
