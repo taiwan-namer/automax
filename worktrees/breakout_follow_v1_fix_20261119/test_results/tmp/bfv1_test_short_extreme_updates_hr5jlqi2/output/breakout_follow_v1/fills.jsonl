@@ -1,0 +1,1 @@
+{"recorded_at": "2026-11-19T11:19:32+08:00", "simulation_assumption": {"fee_rate_one_side": 0.0005, "slippage_adverse": 0.0002, "note": "SIMULATION_ASSUMPTION — not exchange actual fee/fill"}, "event": "OPEN", "trade_id": "t:SUSDT:60def9152a", "symbol": "SUSDT", "side": "SHORT", "qty": 100.0, "price": 100.0, "fee_u": 5.0, "source_tags": ["T"]}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  範例 only — 不要 launchctl load / bootstrap，除非另行批准。
+  專供 paper_reverse_fixed_exit_v1；輸出至 daily_reports_paper_reverse_fixed_exit_v1/。
+  每日 20:25 Asia/Taipei 產「最近已結算日」；結算界 20:15。
+  與舊 com.automax.paper-daily-review（bulk）分開，禁止混算。
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.automax.paper-reverse-daily-review</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>-m</string>
+    <string>paper_daily_review</string>
+    <string>--setup-root</string>
+    <string>/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup</string>
+    <string>--profile</string>
+    <string>paper_reverse_fixed_exit_v1</string>
+    <string>--mode</string>
+    <string>yesterday</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/tools/paper_daily_review</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>20</integer>
+    <key>Minute</key>
+    <integer>25</integer>
+  </dict>
+  <key>StandardOutPath</key>
+  <string>/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/daily_reports_paper_reverse_fixed_exit_v1/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/daily_reports_paper_reverse_fixed_exit_v1/logs/launchd.err.log</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PYTHONPATH</key>
+    <string>/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/tools/paper_daily_review</string>
+    <key>TZ</key>
+    <string>Asia/Taipei</string>
+  </dict>
+</dict>
+</plist>

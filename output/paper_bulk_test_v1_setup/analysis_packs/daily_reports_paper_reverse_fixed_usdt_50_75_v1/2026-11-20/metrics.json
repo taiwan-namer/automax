@@ -1,0 +1,306 @@
+{
+  "day": "2026-11-20",
+  "completeness": {
+    "status": "部分日／試產",
+    "reason": "截止 asof=2026-11-20T08:16:25.067331+08:00 早於日界 2026-11-20T20:15:00+08:00；交易仍可能進行中",
+    "window": [
+      "2026-11-19T20:15:00+08:00",
+      "2026-11-20T20:15:00+08:00"
+    ],
+    "asof": "2026-11-20T08:16:25.067331+08:00",
+    "first_fill_in_sources": "2026-11-20T03:57:50+08:00",
+    "last_fill_in_sources": "2026-11-20T08:15:07+08:00",
+    "truncated_tails": []
+  },
+  "A": {
+    "midnight_snapshot_ok": false,
+    "settlement_snapshot_ok": false,
+    "start_equity_u": 50000.0,
+    "end_equity_u": 49864.560392040745,
+    "day_equity_delta_u": -135.43960795925523,
+    "start_cash_u": 50000.0,
+    "end_cash_u": 48848.862139146266,
+    "day_cash_delta_u": -1151.1378608537343,
+    "cash_delta_is_not_pnl": true,
+    "funding_data_gap": true,
+    "day_loss_lock": false,
+    "day_loss_lock_source": "account_state.day_new_entries_locked",
+    "start_snap_ts": "2026-11-20T03:57:43+08:00",
+    "start_lag_sec": 27763.0,
+    "end_snap_ts": "2026-11-20T08:16:02+08:00",
+    "end_lag_sec": -43138.0
+  },
+  "B": {
+    "by_run": {
+      "20261120T040855_67e68885": {
+        "opens": 1,
+        "closes": 0,
+        "partials": 0,
+        "seg_net_u": -4.99999374
+      },
+      "20261120T042025_ab76e26a": {
+        "opens": 35,
+        "closes": 35,
+        "partials": 0,
+        "seg_net_u": -146.13786711373618
+      }
+    },
+    "n_segment_events": 71,
+    "note": "B = event/segment PnL in window; NOT complete-trade winrate"
+  },
+  "C": {
+    "n_complete_closed": 35,
+    "wins": 23,
+    "losses": 12,
+    "flats": 0,
+    "win_rate": 0.6571428571428571,
+    "avg_net_u": -4.17536785739246,
+    "sum_net_u": -146.1378750087361,
+    "profit_factor": 0.8832060579606738,
+    "expectancy_u": -4.17536785739246,
+    "fees_u": 350.0605841643383,
+    "note": "C = complete trade_id with CLOSE in day window; OPEN fee may belong to prior calendar day"
+  },
+  "D": {
+    "n_open": 1,
+    "open_fee_component_in_day_u": -4.999985845,
+    "note": "OPEN fees for open positions stay in account A; not mixed into C winrate"
+  },
+  "manage_health": {
+    "quote_batch_intervals": {
+      "metric": "pre_manage_quote_batch_interval_sec",
+      "manage_only": {
+        "n_batches": 2427,
+        "n_gaps": 2426,
+        "mean": 5.867212584089022,
+        "p50": 5.0021450000000005,
+        "p95": 10.08623425,
+        "max": 686.673943,
+        "max_span": [
+          "2026-11-20T08:03:26.491079+08:00",
+          "2026-11-20T08:14:53.165022+08:00"
+        ]
+      },
+      "all_purposes_including_signal": {
+        "n_batches": 2895,
+        "n_gaps": 2894,
+        "mean": 5.3630245739460864,
+        "p50": 5.001333499999999,
+        "p95": 5.16041595,
+        "max": 686.673943,
+        "max_span": [
+          "2026-11-20T08:03:26.491079+08:00",
+          "2026-11-20T08:14:53.165022+08:00"
+        ]
+      },
+      "n_batches": 2427,
+      "n_gaps": 2426,
+      "mean": 5.867212584089022,
+      "p50": 5.0021450000000005,
+      "p95": 10.08623425,
+      "max": 686.673943,
+      "max_span": [
+        "2026-11-20T08:03:26.491079+08:00",
+        "2026-11-20T08:14:53.165022+08:00"
+      ],
+      "note": "MANAGE/MANAGE_POLL pre-manage quote batches only by default. NOT manage-complete; NOT configured poll; NOT 「失管」. All-purpose max may be cross-run SIGNAL_EVAL (see GAP evidence)."
+    },
+    "manage_complete_intervals": {
+      "metric": "manage_complete_interval_sec",
+      "n": 2989,
+      "mean": 5.192372030779525,
+      "p50": 5.0,
+      "p95": 5.0,
+      "max": 687.0,
+      "status": "ok"
+    },
+    "data_quality": {
+      "counts": {
+        "KLINE_WARMUP_SHORT": 130,
+        "HTTP_CLIENT_ERROR": 28,
+        "MANAGE_BOOK_GIVE_UP": 10,
+        "WARMUP_VAULT_READ_FAIL": 2,
+        "WARMUP_VAULT_MISSING": 2,
+        "HTTP_TIMEOUT": 2,
+        "LOOP_ERROR": 2
+      },
+      "timeouts": 2,
+      "http_429": 0,
+      "http_418": 0,
+      "manage_blocked": 0,
+      "note": "From data_quality.jsonl `code`/`kind`; excess stop overshoot is separate fill analysis"
+    },
+    "sources_non_atomic": true,
+    "note": "Multi-file reads are non-atomic across runs; truncated tails deferred per file"
+  },
+  "kline_qa": {
+    "missing_symbols": [],
+    "n_symbols": 31
+  },
+  "candidates": [
+    {
+      "id": "CAND_BATCH_SAME_DIR",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_clusters": 6,
+        "clusters": [
+          {
+            "t0": "2026-11-20T04:29:58+08:00",
+            "side": "LONG",
+            "n": 2,
+            "symbols": [
+              "LTCUSDT",
+              "LINKUSDT"
+            ],
+            "notional_u": 19999.94717,
+            "initial_risk_sum_u": 150.39679000000027,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T04:31:07+08:00",
+            "side": "LONG",
+            "n": 3,
+            "symbols": [
+              "ARBUSDT",
+              "BMTUSDT",
+              "1000PEPEUSDT"
+            ],
+            "notional_u": 29999.9864135,
+            "initial_risk_sum_u": 225.45784449999954,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T05:16:03+08:00",
+            "side": "LONG",
+            "n": 3,
+            "symbols": [
+              "FETUSDT",
+              "ONDOUSDT",
+              "IDOLUSDT"
+            ],
+            "notional_u": 29999.858202999996,
+            "initial_risk_sum_u": 222.0409669999982,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T05:30:08+08:00",
+            "side": "LONG",
+            "n": 2,
+            "symbols": [
+              "NEARUSDT",
+              "1000LUNCUSDT"
+            ],
+            "notional_u": 19999.47148,
+            "initial_risk_sum_u": 150.18930000000074,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T05:55:33+08:00",
+            "side": "LONG",
+            "n": 2,
+            "symbols": [
+              "STRKUSDT",
+              "1000PEPEUSDT"
+            ],
+            "notional_u": 19999.9965421,
+            "initial_risk_sum_u": 149.12995550000085,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T06:25:13+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "SOLUSDT",
+              "1000LUNCUSDT"
+            ],
+            "notional_u": 19999.70813,
+            "initial_risk_sum_u": 151.37423999999945,
+            "window_sec": 30.0
+          }
+        ],
+        "window_sec": 30.0
+      }
+    },
+    {
+      "id": "CAND_BREAKOUT_QUALITY",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_complete": 35,
+        "exit_reason_counts": {
+          "FIXED_TP": 23,
+          "INITIAL_STOP": 12
+        },
+        "sum_net_u": -146.1378750087361,
+        "post_entry_labels_attached": false,
+        "note": "進場後1/3/5m報酬僅作結果標籤，不可當進場特徵；10m/15m濾鏡僅用當時已完整收盤K"
+      }
+    },
+    {
+      "id": "CAND_COST_THRESHOLD",
+      "worth_next_stage": false,
+      "insufficient": false,
+      "evidence": {
+        "n_with_risk": 35,
+        "n_total": 35,
+        "median_fee_to_risk": 0.13307237142857026,
+        "mean_fee_to_risk": 0.13298364817095976,
+        "pct_fee_to_risk_gt_0_25": 0.0,
+        "pct_fee_to_risk_gt_0_40": 0.0
+      }
+    }
+  ],
+  "zh_char_count_summary": 2435,
+  "tool_version": "0.1.0",
+  "schema": "daily_report_v1",
+  "profile_id": "paper_reverse_fixed_usdt_50_75_v1",
+  "experiment_meta": {
+    "profile_id": "paper_reverse_fixed_usdt_50_75_v1",
+    "experiment_label": "B 固定毛 50/75",
+    "exit_mode": "FIXED_GROSS_TP50_SL75",
+    "mirror_source_profile": null,
+    "mirror_entry_status": "尚無鏡像進場",
+    "experiment_start": "2026-11-19T23:24:47+08:00",
+    "report_window_start": "2026-11-19T20:15:00+08:00",
+    "report_window_end": "2026-11-20T20:15:00+08:00",
+    "coverage_start": "2026-11-19T23:24:47+08:00",
+    "coverage_end": "2026-11-20T08:16:25.067331+08:00",
+    "coverage_note": "非完整24小時；自穩定啟動起算至 asof／日界",
+    "settlement_boundary": "20:15 Asia/Taipei（報告日界；與引擎日曆午夜日損切日分離）",
+    "report_schedule": "20:25 Asia/Taipei",
+    "initial_capital_u": 50000.0,
+    "daily_loss_lock_usdt": 8000.0,
+    "calendar_day_loss_windows": [
+      {
+        "calendar_day": "2026-11-19",
+        "note": "啟動後至當日午夜；日損上限 8000 適用該日曆日"
+      },
+      {
+        "calendar_day": "2026-11-20",
+        "note": "午夜至報告結算 20:15；另計新的 8000 日損上限（≠整場累計保證）"
+      }
+    ],
+    "new_entries_until_iso": "2026-11-20T20:15:00+08:00",
+    "observation_cutoff_status": "已寫入設定／程式閘門；尚未到點（截止 2026-11-20T20:15:00+08:00）",
+    "long_to_short_fill_status": "有成交證據 n=11",
+    "short_to_long_fill_status": "有成交證據 n=25",
+    "realized_net_u": -151.13786085373619,
+    "unrealized_u": 15.698252894482376,
+    "equity_u": 49864.560392040745,
+    "cash_u": 48848.862139146266,
+    "margin_used_u": 1000.0,
+    "open_notional_u": 9999.97169,
+    "fees_u": 355.06057000933833,
+    "gross_u": 203.92270915560215,
+    "win_rate": 0.6571428571428571,
+    "profit_factor": 0.8832060579606738,
+    "config_hash": "b1952c3642c8ec47",
+    "manage_note": "保證金占用≠虧損；本金注入≠盈利；新舊 profile 報告不得混算",
+    "fixed_gross_tp_usdt": 50.0,
+    "fixed_gross_sl_usdt": 75.0,
+    "fixed_gross_enabled": true,
+    "mirror_only_entries": false
+  }
+}

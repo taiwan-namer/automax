@@ -1,0 +1,17 @@
+{
+  "stamp": "20261120T131358",
+  "created_at": "2026-11-20T13:13:58.974934+08:00",
+  "old_A_profile": "paper_reverse_fixed_exit_v1",
+  "old_A_status": "stopped_with_1_position_EVAAUSDT_left_untouched",
+  "B_pid": 59740,
+  "C_pid": 59741,
+  "new_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_a_surge_fade_20261120T131358",
+  "backup": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/backups_a_surge_fade_20261120T131358",
+  "arms": [
+    "paper_a_surge_fade_tp100_v1",
+    "paper_a_surge_fade_tp200_v1",
+    "paper_a_surge_fade_tp350_v1"
+  ],
+  "strategy_version": "a_surge_fade_short_v1_20261120",
+  "note": "autonomous short-only; not mirror; B/C untouched"
+}

@@ -1,0 +1,85 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "profile_id": "breakout_follow_v1",
+  "initial_capital_u": 10000,
+  "cash_u": 8985.0,
+  "realized_net_u": -15.0,
+  "realized_fees_u": 15.0,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {
+    "EUSDT": {
+      "trade_id": "t:EUSDT:d8d39df508",
+      "symbol": "EUSDT",
+      "side": "LONG",
+      "qty_initial": 100.0,
+      "qty_remaining": 100.0,
+      "entry_price": 100.0,
+      "entry_time": "2026-11-19T12:14:37+08:00",
+      "entry_ts": 1795061677.4403892,
+      "margin_u": 1000.0,
+      "notional_initial": 10000.0,
+      "leverage": 10.0,
+      "atr_at_entry": 0.4,
+      "atr_time": "2026-11-19T12:14:37+08:00",
+      "initial_stop": 99.4,
+      "effective_stop": 99.4,
+      "breakeven_stop": null,
+      "trailing_stop": null,
+      "partial_tp_done": false,
+      "partial_tp_qty": 0.0,
+      "partial_tp_price": null,
+      "extreme_price": 100.0,
+      "fees_paid_u": 5.0,
+      "funding_paid_u": 0.0,
+      "funding_gap": true,
+      "realized_net_u": 0.0,
+      "source_tags": [
+        "T"
+      ],
+      "signal_open_time": 31,
+      "linked_prev_trade_id": null,
+      "range_high": 99.9,
+      "range_low": 99.0,
+      "vol_x": 5.0,
+      "stop_set_events": [
+        {
+          "ts": 1795061677.4403892,
+          "kind": "INITIAL_STOP",
+          "price": 99.4
+        }
+      ],
+      "mfe_u": 0.0,
+      "mae_u": 0.0,
+      "mfe_mark": null,
+      "mae_mark": null,
+      "mfe_ts": null,
+      "mae_ts": null,
+      "excursion_source": "polled_quote_estimate"
+    }
+  },
+  "cooldowns_until": {
+    "EUSDT": 1795061857.4399161
+  },
+  "reverse_events": {},
+  "processed_signals": [
+    "EUSDT:30:LONG",
+    "EUSDT:30:LONG",
+    "FUSDT:30:LONG",
+    "EUSDT:31:LONG"
+  ],
+  "day_key": "2026-11-19",
+  "day_start_equity_u": 10000.0,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "filters": {},
+  "run_id": "t",
+  "created_at": "",
+  "updated_at": "2026-11-19T12:14:37+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null
+}

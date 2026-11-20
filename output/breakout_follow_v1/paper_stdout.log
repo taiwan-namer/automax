@@ -1,0 +1,30 @@
+[2026-11-19T02:36:09+08:00] breakout_follow_v1 paper entry
+output dir: /Users/alan/MyProjects/automax/output/breakout_follow_v1
+SIMULATION_ASSUMPTION fees/slippage — not live trading
+[breakout_follow_v1] paper start run_id=2026-11-19T0232_a8c35e7a version=breakout_follow_v1 account=output/breakout_follow_v1/account_state.json eligible=70 capital=10000.0
+[breakout_follow_v1] first scan {'expected': 70, 'success': 70, 'failed': 0, 'deferred': 0, 'candidates': 0, 'opened': 0, 'rejected': {'VOL_X': 69}, 'duration_sec': 1.641, 'coverage': {'expected': 70, 'success': 70, 'failed': 0, 'note': 'failed symbols are NOT claimed scanned'}}
+
+--- relaunch detached ---
+[2026-11-19T02:37:56+08:00] breakout_follow_v1 paper entry
+output dir: /Users/alan/MyProjects/automax/output/breakout_follow_v1
+SIMULATION_ASSUMPTION fees/slippage — not live trading
+發現既有交易相關進程，拒絕自動啟動：
+alan             85875   1.0  0.0 435308832   3056   ??  Ss    2:37AM   0:00.01 /bin/zsh -c builtin export PATH="/usr/bin:/bin:/usr/sbin:/sbin${PATH:+:$PATH}"; snap=$(command cat <&3); builtin unsetopt aliases 2>/dev/null; builtin unalias -m '*' 2>/dev/null || true; builtin eval "$snap" && { builtin unsetopt nounset 2>/dev/null || true; builtin eval "${__CURSOR_SANDBOX_ENV_RESTORE:-}" 2>/dev/null; builtin export PWD="$(builtin pwd)"; builtin setopt aliases 2>/dev/null; builtin eval "$1" < /dev/null; }; COMMAND_EXIT_CODE=$?; dump_zsh_state >&4; builtin exit $COMMAND_EXIT_CODE -- python3 << 'PY'\012import subprocess, sys, time\012from pathlib import Path\012log = Path('output/breakout_follow_v1/paper_stdout.log')\012# append separator\012with log.open('a') as f:\012    f.write('\n--- relaunch detached ---\n')\012out = log.open('a')\012p = subprocess.Popen(\012    [sys.executable, '-u', '-m', 'breakout_follow_v1.paper_main', '--paper', '--hours', '6'],\012    cwd='/Users/alan/MyProjects/automax',\012    stdout=out,\012    stderr=subprocess.STDOUT,\012    start_new_session=True,\012)\012Path('output/breakout_follow_v1/paper.pid').write_text(str(p.pid), encoding='utf-8')\012print('started', p.pid)\012time.sleep(10)\012# check alive\012alive = p.poll() is None\012print('alive', alive, 'poll', p.poll())\012print(log.read_text()[-800:])\012PY\012ps -p $(cat output/breakout_follow_v1/paper.pid) -o pid,etime,command\012
+PREFLIGHT FAILED — not starting
+
+--- detached launch ---
+[2026-11-19T02:39:20+08:00] breakout_follow_v1 paper entry
+output dir: /Users/alan/MyProjects/automax/output/breakout_follow_v1
+SIMULATION_ASSUMPTION fees/slippage — not live trading
+[breakout_follow_v1] paper start run_id=2026-11-19T0232_a8c35e7a version=breakout_follow_v1 account=output/breakout_follow_v1/account_state.json eligible=70 capital=10000.0
+[breakout_follow_v1] first scan {'expected': 70, 'success': 70, 'failed': 0, 'deferred': 0, 'candidates': 0, 'opened': 0, 'rejected': {'VOL_X': 67}, 'duration_sec': 1.738, 'coverage': {'expected': 70, 'success': 70, 'failed': 0, 'note': 'failed symbols are NOT claimed scanned'}}
+
+--- overnight observability run ---
+[2026-11-19T02:43:57+08:00] breakout_follow_v1 paper entry
+output dir: /Users/alan/MyProjects/automax/output/breakout_follow_v1
+SIMULATION_ASSUMPTION fees/slippage — not live trading
+[breakout_follow_v1] paper start run_id=20261119T024357_183e09f4 version=breakout_follow_v1 account=output/breakout_follow_v1/account_state.json run_dir=output/breakout_follow_v1/runs/20261119T024357_183e09f4 eligible=70 capital=10000.0
+[breakout_follow_v1] first scan {'expected': 70, 'success': 70, 'failed': 0, 'deferred': 0, 'candidates': 0, 'opened': 0, 'rejected': {'VOL_X': 69}, 'duration_sec': 1.7, 'coverage': {'expected': 70, 'success': 70, 'failed': 0, 'note': 'failed symbols are NOT claimed scanned'}}
+[breakout_follow_v1] manage poll error: 
+
+[signal 15] account saved; exiting without force-flat

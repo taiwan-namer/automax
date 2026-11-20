@@ -1,0 +1,25 @@
+{
+  "stamp": "20261120T103434",
+  "created_at": "2026-11-20T10:34:34.274177+08:00",
+  "source_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_fixed_usdt_50_75_20261119T231853",
+  "new_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bc_exit_20261120T103434",
+  "backup_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/backups_bc_exit_20261120T103434",
+  "profiles": {
+    "B": "paper_reverse_fixed_usdt_50_75_v1",
+    "C": "paper_reverse_fixed_usdt_50_75_inv_v1"
+  },
+  "version_ids": {
+    "B": "b_partial70_30_tp50_tp100_20261120",
+    "C": "c_pyramid300_r2_p0tp1pct_20261120",
+    "legacy": "legacy_fixed_gross_tp50_sl75"
+  },
+  "file_sha_before": {
+    "profiles.py": "9dc0d994f2b6269ff6ef5dbc99486cf93a06fd6e3c6eacf4f71e9348c8a0da88",
+    "portfolio.py": "97c3ced35dec6060c830e9cfe4554caf0ada6e952b56dc81f408c1c8a621d936",
+    "config.py": "54ce9b9759f7d8845f19d75933ec527475cee8558d2e49982c521316a2bd1aa2",
+    "account.py": "65661951e87fa0df62ca1d59b5f039e969cee1d4c4f53668b9488ec9904c8506",
+    "B_account_state.json": "a681d4471c4d2395a31cd7494e93a0f66eaa3a96960b976fc2c6a306b4de05b0",
+    "C_account_state.json": "a616200ed3eeaf0850ec2f35e415adb9f052421752c70f6669a0086e86679e28"
+  },
+  "note": "paper only; no live; old positions/pending stamped legacy"
+}

@@ -1,0 +1,200 @@
+{
+  "A": {
+    "cons": {
+      "n_exit": 25,
+      "n_open": 5,
+      "n_amb_flag": 1,
+      "n_win": 15,
+      "n_loss": 10,
+      "n_flat": 0,
+      "wr": 0.6,
+      "sum_gross": 249.9999999999968,
+      "sum_fees": 249.8199781636178,
+      "sum_net": 0.18002183637901226,
+      "open_fees": 24.972004356885,
+      "floating_gross": -5.738744378001467,
+      "avg_win": 40.01197369359218,
+      "avg_loss": -59.99995835675037,
+      "avg_hold_min": 18.444666666666667,
+      "max_hold_min": 76.85,
+      "slip2_sum": null
+    },
+    "opt": {
+      "n_exit": 25,
+      "n_open": 5,
+      "n_amb_flag": 1,
+      "n_win": 15,
+      "n_loss": 10,
+      "n_flat": 0,
+      "wr": 0.6,
+      "sum_gross": 249.9999999999968,
+      "sum_fees": 249.8199781636178,
+      "sum_net": 0.18002183637901226,
+      "open_fees": 24.972004356885,
+      "floating_gross": -5.738744378001467,
+      "avg_win": 40.01197369359218,
+      "avg_loss": -59.99995835675037,
+      "avg_hold_min": 18.444666666666667,
+      "max_hold_min": 76.85,
+      "slip2_sum": null
+    },
+    "slip_cons_2bps": [
+      -49.75594833885243,
+      25
+    ],
+    "slip_cons_5bps": [
+      -124.65990360169396,
+      25
+    ],
+    "slip_opt_2bps": [
+      -49.75594833885243,
+      25
+    ],
+    "slip_opt_5bps": [
+      -124.65990360169396,
+      25
+    ],
+    "n_ambiguous_trades": 1,
+    "n_gap": 0,
+    "overlap_cons": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    },
+    "overlap_opt": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    }
+  },
+  "B": {
+    "cons": {
+      "n_exit": 21,
+      "n_open": 9,
+      "n_amb_flag": 1,
+      "n_win": 8,
+      "n_loss": 13,
+      "n_flat": 0,
+      "wr": 0.38095238095238093,
+      "sum_gross": -40.08183130958975,
+      "sum_fees": 209.91816869042714,
+      "sum_net": -250.0000000000169,
+      "open_fees": 44.970404148213,
+      "floating_gross": 240.8150055579969,
+      "avg_win": 49.999999999998785,
+      "avg_loss": -50.000000000000554,
+      "avg_hold_min": 11.61031746031746,
+      "max_hold_min": 58.88333333333333,
+      "slip2_sum": null
+    },
+    "opt": {
+      "n_exit": 21,
+      "n_open": 9,
+      "n_amb_flag": 1,
+      "n_win": 8,
+      "n_loss": 13,
+      "n_flat": 0,
+      "wr": 0.38095238095238093,
+      "sum_gross": -40.08183130958975,
+      "sum_fees": 209.91816869042714,
+      "sum_net": -250.0000000000169,
+      "open_fees": 44.970404148213,
+      "floating_gross": 240.8150055579969,
+      "avg_win": 49.999999999998785,
+      "avg_loss": -50.000000000000554,
+      "avg_hold_min": 11.61031746031746,
+      "max_hold_min": 58.88333333333333,
+      "slip2_sum": null
+    },
+    "slip_cons_2bps": [
+      -291.9686357421895,
+      21
+    ],
+    "slip_cons_5bps": [
+      -354.9215893554496,
+      21
+    ],
+    "slip_opt_2bps": [
+      -291.9686357421895,
+      21
+    ],
+    "slip_opt_5bps": [
+      -354.9215893554496,
+      21
+    ],
+    "n_ambiguous_trades": 1,
+    "n_gap": 0,
+    "overlap_cons": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    },
+    "overlap_opt": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    }
+  },
+  "C": {
+    "cons": {
+      "n_exit": 22,
+      "n_open": 8,
+      "n_amb_flag": 3,
+      "n_win": 7,
+      "n_loss": 15,
+      "n_flat": 0,
+      "wr": 0.3181818181818182,
+      "sum_gross": -30.04682886080254,
+      "sum_fees": 219.9531711392158,
+      "sum_net": -250.00000000001833,
+      "open_fees": 39.970404178179,
+      "floating_gross": 263.69694562599693,
+      "avg_win": 49.999999999998785,
+      "avg_loss": -40.000000000000654,
+      "avg_hold_min": 8.434848484848485,
+      "max_hold_min": 28.85,
+      "slip2_sum": null
+    },
+    "opt": {
+      "n_exit": 22,
+      "n_open": 8,
+      "n_amb_flag": 3,
+      "n_win": 7,
+      "n_loss": 15,
+      "n_flat": 0,
+      "wr": 0.3181818181818182,
+      "sum_gross": -30.04682886080254,
+      "sum_fees": 219.9531711392158,
+      "sum_net": -250.00000000001833,
+      "open_fees": 39.970404178179,
+      "floating_gross": 263.69694562599693,
+      "avg_win": 49.999999999998785,
+      "avg_loss": -40.000000000000654,
+      "avg_hold_min": 8.434848484848485,
+      "max_hold_min": 28.85,
+      "slip2_sum": null
+    },
+    "slip_cons_2bps": [
+      -293.98163573020037,
+      22
+    ],
+    "slip_cons_5bps": [
+      -359.9540893254648,
+      22
+    ],
+    "slip_opt_2bps": [
+      -293.98163573020037,
+      22
+    ],
+    "slip_opt_5bps": [
+      -359.9540893254648,
+      22
+    ],
+    "n_ambiguous_trades": 3,
+    "n_gap": 0,
+    "overlap_cons": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    },
+    "overlap_opt": {
+      "max_concurrent": 11,
+      "n_intervals": 30
+    }
+  }
+}

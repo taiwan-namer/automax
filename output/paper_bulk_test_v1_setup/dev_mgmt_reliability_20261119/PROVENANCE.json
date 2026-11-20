@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-11-19T15:41:00.249551+08:00",
+  "copied_from": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code/breakout_follow_v1",
+  "sealed_runtime": "runtime_bulk_v1_20261119T122904",
+  "note": "Independent DEV copy for offline mgmt reliability. NOT deployed. Live sealed untouched.",
+  "source_hashes": {
+    "engine.py": "e2b82e107b3c28e009c5655a90ae09bc7a452f336c72589a61f64f3b690a597d",
+    "portfolio.py": "af494ebd930e54c8b9d5d2e30897f35a7561e1ed7093ec9ae15a15f83fac7984",
+    "market_data.py": "6c0ad69cd66eb0809347ba2994508b4e105c2817dfce2b6c190e93a01646e6f3",
+    "config.py": "9704ae6b76b6080e1e8c7aecb3520831b0babf4c50383e6f61854fe549a54c64",
+    "account.py": "f4963888b99e399b63540daf5d109b53134ac50a4b3f3d6d2ecdf6e6ebf30ad6"
+  },
+  "copy_hashes": {
+    "engine.py": "e2b82e107b3c28e009c5655a90ae09bc7a452f336c72589a61f64f3b690a597d",
+    "portfolio.py": "af494ebd930e54c8b9d5d2e30897f35a7561e1ed7093ec9ae15a15f83fac7984",
+    "market_data.py": "6c0ad69cd66eb0809347ba2994508b4e105c2817dfce2b6c190e93a01646e6f3",
+    "config.py": "9704ae6b76b6080e1e8c7aecb3520831b0babf4c50383e6f61854fe549a54c64",
+    "account.py": "f4963888b99e399b63540daf5d109b53134ac50a4b3f3d6d2ecdf6e6ebf30ad6"
+  },
+  "live_run_id_at_copy_hint": "20261119T132017_bd1972b2"
+}

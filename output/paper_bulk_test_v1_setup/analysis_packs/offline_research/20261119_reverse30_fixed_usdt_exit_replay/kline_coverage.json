@@ -1,0 +1,590 @@
+{
+  "vault": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/data/paper_reverse_fixed_exit_v1/kline_vault_v2_clean",
+  "interval": "1m",
+  "timezone_interpretation": "open_time/close_time are Binance ms UTC; displayed Asia/Taipei",
+  "fixed_cutoff": "2026-11-19T22:47:00+08:00",
+  "fixed_cutoff_ms": 1795099620000,
+  "common_min_last_bar": "2026-11-19T22:47:00+08:00",
+  "per_symbol_first_last": {
+    "1000LUNCUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "APTUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "ARIAUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "AVAXUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "BCHUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "BMTUSDT": {
+      "first": "2026-11-19T20:32:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "BTCUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "CHIPUSDT": {
+      "first": "2026-11-19T20:32:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "DOTUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "ETHFIUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "ETHUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "HBARUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "HUMAUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "IDOLUSDT": {
+      "first": "2026-11-19T18:16:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "INJUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "JCTUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "KAVAUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "ONDOUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "PENGUUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "PHAROSUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "SENTUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "SKYUSDT": {
+      "first": "2026-11-19T20:21:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "SUIUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    },
+    "TAOUSDT": {
+      "first": "2026-11-19T10:09:00+08:00",
+      "last": "2026-11-19T22:47:00+08:00"
+    }
+  },
+  "gaps_sample": [],
+  "n_gap_events": 0,
+  "trade_coverage": [
+    {
+      "trade_id": "20261119T204955_8327b8b5:ETHFIUSDT:ef54a9f090",
+      "symbol": "ETHFIUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795092788000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 115
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:TAOUSDT:da8d6d08ee",
+      "symbol": "TAOUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795093212000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 108
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:HUMAUSDT:cd2154dd27",
+      "symbol": "HUMAUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795093328000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 106
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:KAVAUSDT:6488536862",
+      "symbol": "KAVAUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795093687000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 100
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:DOTUSDT:306deb6d4f",
+      "symbol": "DOTUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795093749000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 98
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:PENGUUSDT:650949c390",
+      "symbol": "PENGUUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795094107000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 93
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:BTCUSDT:e050dd04d9",
+      "symbol": "BTCUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795094169000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 92
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:1000LUNCUSDT:bdc572b6ec",
+      "symbol": "1000LUNCUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795094229000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 90
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:IDOLUSDT:046427dce3",
+      "symbol": "IDOLUSDT",
+      "n_bars": 273,
+      "intervals": {
+        "1m": 273
+      },
+      "first_open_time": 1795083360000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T18:16:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795094349000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 89
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:KAVAUSDT:590a9fab3d",
+      "symbol": "KAVAUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795094349000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 89
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:HBARUSDT:70319d847b",
+      "symbol": "HBARUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795095069000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 77
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:SUIUSDT:863674b39a",
+      "symbol": "SUIUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795095791000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 65
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:PHAROSUSDT:d051941374",
+      "symbol": "PHAROSUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096029000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 61
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:TAOUSDT:7954645d39",
+      "symbol": "TAOUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096089000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 60
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:ARIAUSDT:9d7c3f6cc5",
+      "symbol": "ARIAUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096089000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 60
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:SENTUSDT:8ccc7e0dfb",
+      "symbol": "SENTUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096210000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 58
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:DOTUSDT:123f208a91",
+      "symbol": "DOTUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096330000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 55
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:ONDOUSDT:21b20c4af3",
+      "symbol": "ONDOUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096570000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 52
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:BCHUSDT:a8f9b904e5",
+      "symbol": "BCHUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096629000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 51
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:BMTUSDT:7d2029d3b2",
+      "symbol": "BMTUSDT",
+      "n_bars": 137,
+      "intervals": {
+        "1m": 137
+      },
+      "first_open_time": 1795091520000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T20:32:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096689000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 50
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:ETHFIUSDT:0f6e6f869e",
+      "symbol": "ETHFIUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096870000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 47
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:INJUSDT:4669f18294",
+      "symbol": "INJUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096929000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 46
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:AVAXUSDT:42c847400f",
+      "symbol": "AVAXUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795096993000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 44
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:ETHFIUSDT:181fd90b22",
+      "symbol": "ETHFIUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795097409000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 38
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:ETHUSDT:bfd407338e",
+      "symbol": "ETHUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795097529000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 36
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:JCTUSDT:e78e8bf5d7",
+      "symbol": "JCTUSDT",
+      "n_bars": 760,
+      "intervals": {
+        "1m": 760
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795097768000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 32
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:SKYUSDT:6f83ab2538",
+      "symbol": "SKYUSDT",
+      "n_bars": 148,
+      "intervals": {
+        "1m": 148
+      },
+      "first_open_time": 1795090860000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T20:21:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795097948000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 29
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:CHIPUSDT:f21e346c17",
+      "symbol": "CHIPUSDT",
+      "n_bars": 137,
+      "intervals": {
+        "1m": 137
+      },
+      "first_open_time": 1795091520000,
+      "last_open_time": 1795099680000,
+      "first_dt": "2026-11-19T20:32:00+08:00",
+      "last_dt": "2026-11-19T22:48:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795098434000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 21
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:APTUSDT:4037d5d521",
+      "symbol": "APTUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795098615000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 17
+    },
+    {
+      "trade_id": "20261119T204955_8327b8b5:DOTUSDT:c43b53fd1a",
+      "symbol": "DOTUSDT",
+      "n_bars": 759,
+      "intervals": {
+        "1m": 759
+      },
+      "first_open_time": 1795054140000,
+      "last_open_time": 1795099620000,
+      "first_dt": "2026-11-19T10:09:00+08:00",
+      "last_dt": "2026-11-19T22:47:00+08:00",
+      "n_gaps": 0,
+      "entry_ms": 1795098853000,
+      "entry_in_range": true,
+      "bars_strictly_after_entry": 13
+    }
+  ]
+}

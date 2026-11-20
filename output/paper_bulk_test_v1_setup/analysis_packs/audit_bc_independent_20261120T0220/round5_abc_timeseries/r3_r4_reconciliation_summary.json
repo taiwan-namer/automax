@@ -1,0 +1,25 @@
+{
+  "common_n": 54,
+  "r3_move_bar_open_mid_to_entry_mid": {
+    "n": 54,
+    "mean": -38.97027742592603,
+    "p50": -27.933839999999407,
+    "min": -152.8598400000004,
+    "max": 16.72698999999849
+  },
+  "r3_bar_open_mid_to_fill": {
+    "n": 54,
+    "mean": -37.45882228437798,
+    "p50": -25.02201919400085,
+    "min": -148.47180721799978,
+    "max": 21.17777715999986
+  },
+  "r4_sclose_to_fill_adverse": {
+    "n": 54,
+    "mean": 9.578424845251805,
+    "p50": 6.1919168960012625,
+    "min": -14.727397823999754,
+    "max": 52.44630799200088
+  },
+  "correction": "Round-3 mean \u2248 -39U is NOT evidence of favorable delay after signal. It measures mid near bar OPEN \u2192 entry, which includes the breakout bar\u2019s own price run. With SIGNAL_DIRECTION_FLIP, that run is typically favorable to the flipped side, producing negative \u201cadverse\u201d. Round-4 mean \u2248 +8.9U uses S.close \u2192 fill and isolates post-signal delay; that is the correct delay metric. Prior Round-3 interpretation that \u201cchase is not the main issue because move is -39 favorable\u201d must be corrected: that number mixed bar-internal breakout displacement with delay."
+}

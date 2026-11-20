@@ -1,0 +1,46 @@
+{
+  "run_id": "20261119T132017_bd1972b2",
+  "created_at": "2026-11-19T13:20:17+08:00",
+  "timezone": "Asia/Taipei",
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-u",
+    "-m",
+    "breakout_follow_v1.paper_main",
+    "--paper",
+    "--profile",
+    "paper_bulk_test_v1",
+    "--runtime-root",
+    "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+    "--hours",
+    "0.0"
+  ],
+  "hours": 0.0,
+  "once": false,
+  "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+  "pid": 39844,
+  "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+  "profile_id": "paper_bulk_test_v1",
+  "active_profile": "paper_bulk_test_v1",
+  "accounting_migration_version": "cash_gross_v1",
+  "package_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code/breakout_follow_v1",
+  "account_path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/account_state.json",
+  "kline_vault_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+  "initial_capital_usdt": 50000.0,
+  "max_concurrent_positions": 20,
+  "daily_loss_lock_usdt": 2000.0,
+  "runtime_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "root_out": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1",
+  "reverse_policy": "approved_full_breakout_reverse_reopen_20261119",
+  "http_reliability": {
+    "request_timeout_sec": 15.0,
+    "max_attempts": 5,
+    "op_budget_sec": 45.0,
+    "note": "process-local cooldown only; no cross-process global rate limit"
+  },
+  "simulation_assumptions": {
+    "fee_rate_one_side": 0.0005,
+    "slippage_adverse": 0.0002,
+    "note": "SIMULATION_ASSUMPTION — not exchange actual fee/fill"
+  }
+}

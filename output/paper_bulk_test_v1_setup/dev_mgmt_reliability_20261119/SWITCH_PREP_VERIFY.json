@@ -1,0 +1,48 @@
+{
+  "live_account_sha256_before": "46eb2583b214803cc8b9a8b16e503f02e1b70218740389cccf0bf5eed6a2702b",
+  "live_account_sha256_after_read": "46eb2583b214803cc8b9a8b16e503f02e1b70218740389cccf0bf5eed6a2702b",
+  "live_untouched": true,
+  "n_positions": 2,
+  "positions": [
+    {
+      "symbol": "ENAUSDT",
+      "side": "SHORT",
+      "trade_id": "20261119T132017_bd1972b2:ENAUSDT:cd1f2725f2",
+      "qty": 89704.0,
+      "margin_u": 1000.0,
+      "initial_stop": 0.1118088515012346,
+      "effective_stop": 0.1118088515012346,
+      "breakeven_stop": null,
+      "trailing_stop": null,
+      "partial_tp_done": false,
+      "fees_paid_u": 4.999997800399999,
+      "entry_time": "2026-11-19T15:12:10+08:00"
+    },
+    {
+      "symbol": "LITUSDT",
+      "side": "SHORT",
+      "trade_id": "20261119T132017_bd1972b2:LITUSDT:67e371c0b1",
+      "qty": 3422.4,
+      "margin_u": 1000.0,
+      "initial_stop": 2.9341673306174507,
+      "effective_stop": 2.9341673306174507,
+      "breakeven_stop": null,
+      "trailing_stop": null,
+      "partial_tp_done": false,
+      "fees_paid_u": 4.9999818036,
+      "entry_time": "2026-11-19T15:42:11+08:00"
+    }
+  ],
+  "day_new_entries_locked": false,
+  "day_start_equity_u": 50000.0,
+  "realized_net_u": -1767.7009767622458,
+  "cash_u": 46232.29902323776,
+  "reload_idempotent_positions": true,
+  "schema_compatible": true,
+  "blockers": [],
+  "restart_duplicate_fill_risk": "若新版錯誤重放 OPEN 會重複；需確認 begin_run 不重寫 fills、processed_signals 保留；本離線讀取未寫入",
+  "stop_behavior": "hours到期或進程終止：engine 明示持倉維持不強制平倉；無獨立 manage-only CLI",
+  "rollback_rule": "回滾不得還原舊帳戶快照（避免抹掉新版期間成交或重複管理）",
+  "manage_only_inplace": false,
+  "manage_only_note": "舊程序無獨立安全停新倉開關；不可聲稱原地切 manage-only"
+}

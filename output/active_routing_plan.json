@@ -1,0 +1,1169 @@
+{
+  "generated_at": "2026-11-19T09:18:09+08:00",
+  "refresh_interval_minutes": 10,
+  "tradeable": [
+    "IRYSUSDT",
+    "VELVETUSDT",
+    "SOONUSDT",
+    "SENTUSDT",
+    "SOPHUSDT",
+    "CROSSUSDT",
+    "MEGAUSDT",
+    "1000LUNCUSDT",
+    "LABUSDT",
+    "CAPUSDT",
+    "CFGUSDT",
+    "BARDUSDT",
+    "INJUSDT",
+    "LITUSDT",
+    "FILUSDT",
+    "RENDERUSDT",
+    "SUSDT"
+  ],
+  "watch_only": [
+    "PIPPINUSDT",
+    "PIEVERSEUSDT",
+    "MMTUSDT",
+    "EVAAUSDT",
+    "PHAROSUSDT",
+    "HUMAUSDT",
+    "ZKCUSDT",
+    "MAGMAUSDT",
+    "TRUSTUSDT",
+    "RAVEUSDT",
+    "IDOLUSDT",
+    "BTWUSDT",
+    "BREVUSDT",
+    "RAREUSDT",
+    "TLMUSDT",
+    "SKYAIUSDT",
+    "牛来USDT",
+    "ASTERUSDT",
+    "BEAMXUSDT",
+    "MONUSDT",
+    "MUBARAKUSDT",
+    "PUMPUSDT",
+    "RUNEUSDT",
+    "GRAMUSDT",
+    "ZECUSDT",
+    "PHAUSDT",
+    "RLCUSDT",
+    "ERAUSDT"
+  ],
+  "skipped": [
+    {
+      "symbol": "ICNTUSDT",
+      "reason": "recent_volume_ratio=0.332<0.35（量縮退潮）"
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "reason": "recent_volume_ratio=0.277<0.35（量縮退潮）"
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "reason": "recent_volume_ratio=0.301<0.35（量縮退潮）"
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "reason": "recent_volume_ratio=0.213<0.35（量縮退潮）"
+    },
+    {
+      "symbol": "龙虾USDT",
+      "reason": "recent_volume_ratio=0.272<0.35（量縮退潮）"
+    }
+  ],
+  "plans": [
+    {
+      "symbol": "PIPPINUSDT",
+      "board": "gainer",
+      "rank": 1,
+      "price_change_pct_24h": 59.964,
+      "quote_volume_24h_wan": 31591.99,
+      "recent_volume_ratio": 0.563,
+      "price_position_pct": 58.93,
+      "atr_1m_pct": 0.8531,
+      "atr_15m_pct": 1.0274,
+      "pulse_index": 0.39,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "board": "gainer",
+      "rank": 2,
+      "price_change_pct_24h": 59.936,
+      "quote_volume_24h_wan": 26084.47,
+      "recent_volume_ratio": 1.0013,
+      "price_position_pct": 82.56,
+      "atr_1m_pct": 0.5264,
+      "atr_15m_pct": 1.5716,
+      "pulse_index": 0.3162,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "MMTUSDT",
+      "board": "gainer",
+      "rank": 3,
+      "price_change_pct_24h": 58.273,
+      "quote_volume_24h_wan": 88324.84,
+      "recent_volume_ratio": 0.8793,
+      "price_position_pct": 56.69,
+      "atr_1m_pct": 0.9263,
+      "atr_15m_pct": 1.3677,
+      "pulse_index": 0.321,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "board": "gainer",
+      "rank": 4,
+      "price_change_pct_24h": 50.511,
+      "quote_volume_24h_wan": 6811.59,
+      "recent_volume_ratio": 2.654,
+      "price_position_pct": 99.87,
+      "atr_1m_pct": 0.5471,
+      "atr_15m_pct": 1.0417,
+      "pulse_index": 0.2698,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=2.654≥1.5 且 price_position=99.9%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=2.654≥1.5 且 price_position=99.9%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "board": "gainer",
+      "rank": 5,
+      "price_change_pct_24h": 32.699,
+      "quote_volume_24h_wan": 28425.29,
+      "recent_volume_ratio": 0.6927,
+      "price_position_pct": 93.3,
+      "atr_1m_pct": 0.6777,
+      "atr_15m_pct": 3.0906,
+      "pulse_index": 0.3175,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "VELVETUSDT",
+      "board": "gainer",
+      "rank": 6,
+      "price_change_pct_24h": 30.394,
+      "quote_volume_24h_wan": 2650.05,
+      "recent_volume_ratio": 4.9301,
+      "price_position_pct": 74.19,
+      "atr_1m_pct": 0.3947,
+      "atr_15m_pct": 1.2455,
+      "pulse_index": 0.2079,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=4.930≥1.5 且 price_position=74.2%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=4.930≥1.5 且 price_position=74.2%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "PHAROSUSDT",
+      "board": "gainer",
+      "rank": 7,
+      "price_change_pct_24h": 29.314,
+      "quote_volume_24h_wan": 4311.52,
+      "recent_volume_ratio": 1.1508,
+      "price_position_pct": 92.93,
+      "atr_1m_pct": 0.4993,
+      "atr_15m_pct": 0.9036,
+      "pulse_index": 0.3103,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "board": "gainer",
+      "rank": 8,
+      "price_change_pct_24h": 22.374,
+      "quote_volume_24h_wan": 9647.16,
+      "recent_volume_ratio": 0.3315,
+      "price_position_pct": 84.52,
+      "atr_1m_pct": 0.5858,
+      "atr_15m_pct": 1.3903,
+      "pulse_index": 0.2587,
+      "status": "SKIP",
+      "skip_reason": "recent_volume_ratio=0.332<0.35（量縮退潮）",
+      "primary_school": "SKIP",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "BULLAUSDT",
+      "board": "gainer",
+      "rank": 9,
+      "price_change_pct_24h": 19.435,
+      "quote_volume_24h_wan": 5545.59,
+      "recent_volume_ratio": 0.2768,
+      "price_position_pct": 52.34,
+      "atr_1m_pct": 0.8855,
+      "atr_15m_pct": 3.5243,
+      "pulse_index": 0.3724,
+      "status": "SKIP",
+      "skip_reason": "recent_volume_ratio=0.277<0.35（量縮退潮）",
+      "primary_school": "SKIP",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "board": "gainer",
+      "rank": 10,
+      "price_change_pct_24h": 18.038,
+      "quote_volume_24h_wan": 7566.61,
+      "recent_volume_ratio": 0.9873,
+      "price_position_pct": 85.33,
+      "atr_1m_pct": 0.4205,
+      "atr_15m_pct": 1.6187,
+      "pulse_index": 0.3268,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "SOONUSDT",
+      "board": "gainer",
+      "rank": 11,
+      "price_change_pct_24h": 15.235,
+      "quote_volume_24h_wan": 1735.23,
+      "recent_volume_ratio": 1.0722,
+      "price_position_pct": 80.29,
+      "atr_1m_pct": 0.2578,
+      "atr_15m_pct": 0.7994,
+      "pulse_index": 0.1894,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=83.3%≥65.0% 且 (pulse=0.189≥0.3 或 rev_rate_5m=58.3%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "SENTUSDT",
+      "board": "gainer",
+      "rank": 12,
+      "price_change_pct_24h": 14.903,
+      "quote_volume_24h_wan": 1178.66,
+      "recent_volume_ratio": 1.8443,
+      "price_position_pct": 93.36,
+      "atr_1m_pct": 0.2682,
+      "atr_15m_pct": 0.8783,
+      "pulse_index": 0.178,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=1.844≥1.5 且 price_position=93.4%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=1.844≥1.5 且 price_position=93.4%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "board": "gainer",
+      "rank": 13,
+      "price_change_pct_24h": 14.487,
+      "quote_volume_24h_wan": 11684.16,
+      "recent_volume_ratio": 0.3012,
+      "price_position_pct": 52.27,
+      "atr_1m_pct": 0.8138,
+      "atr_15m_pct": 2.3489,
+      "pulse_index": 0.2589,
+      "status": "SKIP",
+      "skip_reason": "recent_volume_ratio=0.301<0.35（量縮退潮）",
+      "primary_school": "SKIP",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "ZKCUSDT",
+      "board": "gainer",
+      "rank": 14,
+      "price_change_pct_24h": 13.606,
+      "quote_volume_24h_wan": 9537.38,
+      "recent_volume_ratio": 1.811,
+      "price_position_pct": 37.45,
+      "atr_1m_pct": 0.5898,
+      "atr_15m_pct": 0.9013,
+      "pulse_index": 0.2686,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "SOPHUSDT",
+      "board": "gainer",
+      "rank": 15,
+      "price_change_pct_24h": 13.073,
+      "quote_volume_24h_wan": 3737.36,
+      "recent_volume_ratio": 0.4838,
+      "price_position_pct": 58.55,
+      "atr_1m_pct": 0.5245,
+      "atr_15m_pct": 3.2824,
+      "pulse_index": 0.2526,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=74.1%≥65.0% 且 (pulse=0.253≥0.3 或 rev_rate_5m=55.6%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.8,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "CROSSUSDT",
+      "board": "gainer",
+      "rank": 16,
+      "price_change_pct_24h": 12.393,
+      "quote_volume_24h_wan": 2711.23,
+      "recent_volume_ratio": 1.9703,
+      "price_position_pct": 73.89,
+      "atr_1m_pct": 0.4443,
+      "atr_15m_pct": 1.3556,
+      "pulse_index": 0.3375,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=1.970≥1.5 且 price_position=73.9%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=1.970≥1.5 且 price_position=73.9%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "MEGAUSDT",
+      "board": "gainer",
+      "rank": 17,
+      "price_change_pct_24h": 12.089,
+      "quote_volume_24h_wan": 1310.03,
+      "recent_volume_ratio": 1.6451,
+      "price_position_pct": 97.54,
+      "atr_1m_pct": 0.215,
+      "atr_15m_pct": 0.963,
+      "pulse_index": 0.1739,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=1.645≥1.5 且 price_position=97.5%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=1.645≥1.5 且 price_position=97.5%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "STABLEUSDT",
+      "board": "gainer",
+      "rank": 18,
+      "price_change_pct_24h": 9.444,
+      "quote_volume_24h_wan": 1063.79,
+      "recent_volume_ratio": 0.213,
+      "price_position_pct": 73.42,
+      "atr_1m_pct": 0.2746,
+      "atr_15m_pct": 0.6268,
+      "pulse_index": 0.232,
+      "status": "SKIP",
+      "skip_reason": "recent_volume_ratio=0.213<0.35（量縮退潮）",
+      "primary_school": "SKIP",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "1000LUNCUSDT",
+      "board": "gainer",
+      "rank": 19,
+      "price_change_pct_24h": 9.254,
+      "quote_volume_24h_wan": 1583.68,
+      "recent_volume_ratio": 2.5717,
+      "price_position_pct": 94.44,
+      "atr_1m_pct": 0.2035,
+      "atr_15m_pct": 0.7873,
+      "pulse_index": 0.1837,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=2.572≥1.5 且 price_position=94.4%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=2.572≥1.5 且 price_position=94.4%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "board": "gainer",
+      "rank": 20,
+      "price_change_pct_24h": 9.05,
+      "quote_volume_24h_wan": 1110.13,
+      "recent_volume_ratio": 0.583,
+      "price_position_pct": 59.03,
+      "atr_1m_pct": 0.2975,
+      "atr_15m_pct": 1.6378,
+      "pulse_index": 0.1904,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "TRUSTUSDT",
+      "board": "gainer",
+      "rank": 21,
+      "price_change_pct_24h": 8.748,
+      "quote_volume_24h_wan": 512.51,
+      "recent_volume_ratio": 1.4191,
+      "price_position_pct": 79.29,
+      "atr_1m_pct": 0.2396,
+      "atr_15m_pct": 0.8511,
+      "pulse_index": 0.1915,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "RAVEUSDT",
+      "board": "gainer",
+      "rank": 22,
+      "price_change_pct_24h": 8.185,
+      "quote_volume_24h_wan": 876.47,
+      "recent_volume_ratio": 0.5365,
+      "price_position_pct": 78.63,
+      "atr_1m_pct": 0.2039,
+      "atr_15m_pct": 0.8414,
+      "pulse_index": 0.285,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "LABUSDT",
+      "board": "gainer",
+      "rank": 23,
+      "price_change_pct_24h": 7.797,
+      "quote_volume_24h_wan": 765.19,
+      "recent_volume_ratio": 0.6782,
+      "price_position_pct": 86.67,
+      "atr_1m_pct": 0.2383,
+      "atr_15m_pct": 1.1348,
+      "pulse_index": 0.1873,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=79.0%≥65.0% 且 (pulse=0.187≥0.3 或 rev_rate_5m=57.9%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "board": "gainer",
+      "rank": 24,
+      "price_change_pct_24h": 7.285,
+      "quote_volume_24h_wan": 1210.69,
+      "recent_volume_ratio": 0.9003,
+      "price_position_pct": 74.29,
+      "atr_1m_pct": 0.3137,
+      "atr_15m_pct": 3.2094,
+      "pulse_index": 0.2194,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "BTWUSDT",
+      "board": "gainer",
+      "rank": 25,
+      "price_change_pct_24h": 7.102,
+      "quote_volume_24h_wan": 6638.81,
+      "recent_volume_ratio": 0.4505,
+      "price_position_pct": 74.04,
+      "atr_1m_pct": 0.7131,
+      "atr_15m_pct": 2.9946,
+      "pulse_index": 0.1968,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "BREVUSDT",
+      "board": "loser",
+      "rank": 1,
+      "price_change_pct_24h": -25.824,
+      "quote_volume_24h_wan": 46237.9,
+      "recent_volume_ratio": 0.8591,
+      "price_position_pct": 5.28,
+      "atr_1m_pct": 0.7598,
+      "atr_15m_pct": 1.2705,
+      "pulse_index": 0.321,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "RAREUSDT",
+      "board": "loser",
+      "rank": 2,
+      "price_change_pct_24h": -9.589,
+      "quote_volume_24h_wan": 1607.66,
+      "recent_volume_ratio": 0.5094,
+      "price_position_pct": 5.33,
+      "atr_1m_pct": 0.26,
+      "atr_15m_pct": 1.9113,
+      "pulse_index": 0.1971,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "TLMUSDT",
+      "board": "loser",
+      "rank": 3,
+      "price_change_pct_24h": -9.492,
+      "quote_volume_24h_wan": 642.55,
+      "recent_volume_ratio": 0.5232,
+      "price_position_pct": 24.53,
+      "atr_1m_pct": 0.2162,
+      "atr_15m_pct": 0.8938,
+      "pulse_index": 0.1821,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "board": "loser",
+      "rank": 4,
+      "price_change_pct_24h": -8.15,
+      "quote_volume_24h_wan": 542.47,
+      "recent_volume_ratio": 0.6543,
+      "price_position_pct": 14.44,
+      "atr_1m_pct": 0.2481,
+      "atr_15m_pct": 1.19,
+      "pulse_index": 0.2382,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "牛来USDT",
+      "board": "loser",
+      "rank": 5,
+      "price_change_pct_24h": -8.128,
+      "quote_volume_24h_wan": 862.8,
+      "recent_volume_ratio": 1.4109,
+      "price_position_pct": 19.88,
+      "atr_1m_pct": 0.2355,
+      "atr_15m_pct": 1.3887,
+      "pulse_index": 0.1643,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "ASTERUSDT",
+      "board": "loser",
+      "rank": 6,
+      "price_change_pct_24h": -7.605,
+      "quote_volume_24h_wan": 6570.0,
+      "recent_volume_ratio": 0.8099,
+      "price_position_pct": 12.92,
+      "atr_1m_pct": 0.1573,
+      "atr_15m_pct": 0.9777,
+      "pulse_index": 0.1981,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "CAPUSDT",
+      "board": "loser",
+      "rank": 7,
+      "price_change_pct_24h": -7.509,
+      "quote_volume_24h_wan": 741.44,
+      "recent_volume_ratio": 1.6976,
+      "price_position_pct": 1.43,
+      "atr_1m_pct": 0.1802,
+      "atr_15m_pct": 1.0841,
+      "pulse_index": 0.1359,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=1.698≥1.5 且 price_position=1.4%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=1.698≥1.5 且 price_position=1.4%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "BEAMXUSDT",
+      "board": "loser",
+      "rank": 8,
+      "price_change_pct_24h": -6.855,
+      "quote_volume_24h_wan": 747.43,
+      "recent_volume_ratio": 0.9671,
+      "price_position_pct": 31.4,
+      "atr_1m_pct": 0.1808,
+      "atr_15m_pct": 0.8495,
+      "pulse_index": 0.2048,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "CFGUSDT",
+      "board": "loser",
+      "rank": 9,
+      "price_change_pct_24h": -6.819,
+      "quote_volume_24h_wan": 801.87,
+      "recent_volume_ratio": 3.415,
+      "price_position_pct": 46.78,
+      "atr_1m_pct": 0.244,
+      "atr_15m_pct": 0.8329,
+      "pulse_index": 0.27,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=77.8%≥65.0% 且 (pulse=0.270≥0.3 或 rev_rate_5m=57.4%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "MONUSDT",
+      "board": "loser",
+      "rank": 10,
+      "price_change_pct_24h": -6.794,
+      "quote_volume_24h_wan": 658.31,
+      "recent_volume_ratio": 1.3074,
+      "price_position_pct": 13.93,
+      "atr_1m_pct": 0.1599,
+      "atr_15m_pct": 0.933,
+      "pulse_index": 0.1995,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "MUBARAKUSDT",
+      "board": "loser",
+      "rank": 11,
+      "price_change_pct_24h": -6.662,
+      "quote_volume_24h_wan": 818.47,
+      "recent_volume_ratio": 0.9087,
+      "price_position_pct": 18.06,
+      "atr_1m_pct": 0.1716,
+      "atr_15m_pct": 0.8376,
+      "pulse_index": 0.2578,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "BARDUSDT",
+      "board": "loser",
+      "rank": 12,
+      "price_change_pct_24h": -6.441,
+      "quote_volume_24h_wan": 980.43,
+      "recent_volume_ratio": 1.6837,
+      "price_position_pct": 9.09,
+      "atr_1m_pct": 0.2234,
+      "atr_15m_pct": 2.0439,
+      "pulse_index": 0.1677,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_MOMO_1M",
+      "schools": [
+        {
+          "school": "SPIKE_MOMO_1M",
+          "reason": "強制順勢：volume_ratio=1.684≥1.5 且 price_position=9.1%（≥70.0% 或 ≤30.0%）",
+          "params": {
+            "tp_pct": 1.8,
+            "sl_pct": 0.85,
+            "max_hold_mins": 20
+          }
+        },
+        {
+          "school": "TREND_FOLLOW_15M",
+          "reason": "強制順勢：volume_ratio=1.684≥1.5 且 price_position=9.1%（≥70.0% 或 ≤30.0%）｜副門派 TREND",
+          "params": {
+            "tp_pct": 2.8,
+            "sl_pct": 1.4,
+            "max_hold_mins": 60
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "board": "loser",
+      "rank": 13,
+      "price_change_pct_24h": -5.936,
+      "quote_volume_24h_wan": 10440.77,
+      "recent_volume_ratio": 1.0752,
+      "price_position_pct": 22.5,
+      "atr_1m_pct": 0.1998,
+      "atr_15m_pct": 0.9832,
+      "pulse_index": 0.1938,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "INJUSDT",
+      "board": "loser",
+      "rank": 14,
+      "price_change_pct_24h": -5.884,
+      "quote_volume_24h_wan": 7388.31,
+      "recent_volume_ratio": 0.7014,
+      "price_position_pct": 16.38,
+      "atr_1m_pct": 0.1825,
+      "atr_15m_pct": 1.0351,
+      "pulse_index": 0.1812,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=71.4%≥65.0% 且 (pulse=0.181≥0.3 或 rev_rate_5m=57.1%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "龙虾USDT",
+      "board": "loser",
+      "rank": 15,
+      "price_change_pct_24h": -5.833,
+      "quote_volume_24h_wan": 2804.16,
+      "recent_volume_ratio": 0.272,
+      "price_position_pct": 37.7,
+      "atr_1m_pct": 0.4086,
+      "atr_15m_pct": 1.5374,
+      "pulse_index": 0.2442,
+      "status": "SKIP",
+      "skip_reason": "recent_volume_ratio=0.272<0.35（量縮退潮）",
+      "primary_school": "SKIP",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "LITUSDT",
+      "board": "loser",
+      "rank": 16,
+      "price_change_pct_24h": -5.747,
+      "quote_volume_24h_wan": 4774.69,
+      "recent_volume_ratio": 1.048,
+      "price_position_pct": 20.58,
+      "atr_1m_pct": 0.1734,
+      "atr_15m_pct": 1.1421,
+      "pulse_index": 0.2011,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=83.3%≥65.0% 且 (pulse=0.201≥0.3 或 rev_rate_5m=70.0%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "RUNEUSDT",
+      "board": "loser",
+      "rank": 17,
+      "price_change_pct_24h": -5.673,
+      "quote_volume_24h_wan": 1055.42,
+      "recent_volume_ratio": 0.7541,
+      "price_position_pct": 29.96,
+      "atr_1m_pct": 0.1374,
+      "atr_15m_pct": 0.678,
+      "pulse_index": 0.1692,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "GRAMUSDT",
+      "board": "loser",
+      "rank": 18,
+      "price_change_pct_24h": -5.097,
+      "quote_volume_24h_wan": 1772.53,
+      "recent_volume_ratio": 0.5846,
+      "price_position_pct": 22.73,
+      "atr_1m_pct": 0.1637,
+      "atr_15m_pct": 0.8074,
+      "pulse_index": 0.1978,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "ZECUSDT",
+      "board": "loser",
+      "rank": 19,
+      "price_change_pct_24h": -5.076,
+      "quote_volume_24h_wan": 116581.85,
+      "recent_volume_ratio": 0.7307,
+      "price_position_pct": 26.39,
+      "atr_1m_pct": 0.2022,
+      "atr_15m_pct": 1.0853,
+      "pulse_index": 0.1623,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "FILUSDT",
+      "board": "loser",
+      "rank": 20,
+      "price_change_pct_24h": -4.967,
+      "quote_volume_24h_wan": 6305.59,
+      "recent_volume_ratio": 0.752,
+      "price_position_pct": 23.83,
+      "atr_1m_pct": 0.155,
+      "atr_15m_pct": 0.7618,
+      "pulse_index": 0.1942,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=68.4%≥65.0% 且 (pulse=0.194≥0.3 或 rev_rate_5m=57.9%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "PHAUSDT",
+      "board": "loser",
+      "rank": 21,
+      "price_change_pct_24h": -4.838,
+      "quote_volume_24h_wan": 594.39,
+      "recent_volume_ratio": 0.7129,
+      "price_position_pct": 35.08,
+      "atr_1m_pct": 0.1438,
+      "atr_15m_pct": 0.9098,
+      "pulse_index": 0.1873,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "RLCUSDT",
+      "board": "loser",
+      "rank": 22,
+      "price_change_pct_24h": -4.801,
+      "quote_volume_24h_wan": 858.77,
+      "recent_volume_ratio": 0.4674,
+      "price_position_pct": 10.48,
+      "atr_1m_pct": 0.1735,
+      "atr_15m_pct": 0.6943,
+      "pulse_index": 0.1751,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    },
+    {
+      "symbol": "RENDERUSDT",
+      "board": "loser",
+      "rank": 23,
+      "price_change_pct_24h": -4.658,
+      "quote_volume_24h_wan": 1161.58,
+      "recent_volume_ratio": 0.9498,
+      "price_position_pct": 30.1,
+      "atr_1m_pct": 0.1599,
+      "atr_15m_pct": 0.8067,
+      "pulse_index": 0.1727,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=86.4%≥65.0% 且 (pulse=0.173≥0.3 或 rev_rate_5m=54.5%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "SUSDT",
+      "board": "loser",
+      "rank": 24,
+      "price_change_pct_24h": -4.578,
+      "quote_volume_24h_wan": 518.77,
+      "recent_volume_ratio": 0.8361,
+      "price_position_pct": 30.47,
+      "atr_1m_pct": 0.1433,
+      "atr_15m_pct": 0.8321,
+      "pulse_index": 0.197,
+      "status": "ROUTED",
+      "skip_reason": "",
+      "primary_school": "SPIKE_FADE_1M",
+      "schools": [
+        {
+          "school": "SPIKE_FADE_1M",
+          "reason": "rev_rate_15m=80.0%≥65.0% 且 (pulse=0.197≥0.3 或 rev_rate_5m=64.0%≥54.0%)",
+          "params": {
+            "tp_pct": 0.85,
+            "sl_pct": 0.65,
+            "max_hold_mins": 12
+          }
+        }
+      ],
+      "tradeable": true
+    },
+    {
+      "symbol": "ERAUSDT",
+      "board": "loser",
+      "rank": 25,
+      "price_change_pct_24h": -4.452,
+      "quote_volume_24h_wan": 791.8,
+      "recent_volume_ratio": 1.0988,
+      "price_position_pct": 18.73,
+      "atr_1m_pct": 0.1934,
+      "atr_15m_pct": 1.3414,
+      "pulse_index": 0.1847,
+      "status": "WATCH_ONLY",
+      "skip_reason": "",
+      "primary_school": "WATCH_ONLY",
+      "schools": [],
+      "tradeable": false
+    }
+  ]
+}

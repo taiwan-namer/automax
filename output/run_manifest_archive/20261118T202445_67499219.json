@@ -1,0 +1,90 @@
+{
+  "run_id": "20261118T202445_67499219",
+  "strategy_version": "audit_obs_v1",
+  "config_hash": "9f20b63fa8200136",
+  "git_commit": "UNKNOWN",
+  "effective_from": "2026-11-18T20:24:45+08:00",
+  "timezone": "Asia/Taipei",
+  "capital": {
+    "initial_capital_usdt": 500.0,
+    "leverage": 10.0,
+    "margin_per_trade": 10.0,
+    "notional": 100.0,
+    "max_positions": 10
+  },
+  "cost_model": {
+    "round_trip_fee_rate": 0.001,
+    "entry_fee_separate": false,
+    "exit_fee_separate": false,
+    "fee_charged_at": "CLOSE_ONLY_ROUND_TRIP",
+    "slippage_model": "NONE"
+  },
+  "routing": {
+    "refresh_minutes": 10,
+    "top_gainers": 25,
+    "top_losers": 25,
+    "swing_enabled": false,
+    "school_priority": [
+      "MEAN_REV_15M",
+      "SPIKE_FADE_1M",
+      "SPIKE_MOMO_1M",
+      "TREND_FOLLOW_15M",
+      "SWING_REV_15M"
+    ],
+    "primary_only_scan": true
+  },
+  "schools": {
+    "MEAN_REV_15M": {
+      "enabled": true,
+      "tp": 2.8,
+      "sl": 1.4,
+      "max_hold": 60
+    },
+    "SPIKE_FADE_1M": {
+      "enabled": true,
+      "tp_range": [
+        0.85,
+        1.1
+      ],
+      "sl_range": [
+        0.65,
+        0.8
+      ],
+      "max_hold": 12,
+      "vol_x": [
+        5.0,
+        18.0
+      ],
+      "wick_min": 0.4
+    },
+    "SPIKE_MOMO_1M": {
+      "enabled": true,
+      "tp": 1.8,
+      "sl": 0.85,
+      "max_hold": 20,
+      "vol_x": [
+        5.0,
+        18.0
+      ],
+      "body_min": 0.65
+    },
+    "TREND_FOLLOW_15M": {
+      "enabled": true,
+      "tp": 2.8,
+      "sl": 1.4,
+      "max_hold": 60
+    },
+    "SWING_REV_15M": {
+      "enabled": false,
+      "tp": 2.4,
+      "sl": 1.3,
+      "max_hold": 45
+    }
+  },
+  "signal_check_second": 2,
+  "poll_interval": "1m",
+  "notes": [
+    "historical trades before this run_id are LEGACY_UNKNOWN",
+    "capital may have been raised 100→500 without ledger adjustment record"
+  ]
+}

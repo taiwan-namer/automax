@@ -1,0 +1,509 @@
+{
+  "started": "20261119T113218",
+  "ended": "2026-11-19T11:37:22+08:00",
+  "out_dir": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218",
+  "symbols": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT"
+  ],
+  "closes_observed": 5,
+  "events": [
+    {
+      "ts": "2026-11-19T11:33:02+08:00",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059182170,
+      "boundary_ms": 1795059180000,
+      "expected_just_closed_ot": 1795059120000,
+      "vault_last_ot": 1795059120000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059120000,
+      "last_closed_iso": "2026-11-19T11:32:00+08:00",
+      "ref_last_closed_ot": 1795059120000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 40,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:33:02+08:00",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059182479,
+      "boundary_ms": 1795059180000,
+      "expected_just_closed_ot": 1795059120000,
+      "vault_last_ot": 1795059120000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059120000,
+      "last_closed_iso": "2026-11-19T11:32:00+08:00",
+      "ref_last_closed_ot": 1795059120000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 40,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:33:02+08:00",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059182632,
+      "boundary_ms": 1795059180000,
+      "expected_just_closed_ot": 1795059120000,
+      "vault_last_ot": 1795059120000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059120000,
+      "last_closed_iso": "2026-11-19T11:32:00+08:00",
+      "ref_last_closed_ot": 1795059120000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 40,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:33:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059202803,
+      "last_ot": 1795059180000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059120000,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [
+        1795059180000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:33:23+08:00",
+      "phase": "mid_minute",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059202938,
+      "last_ot": 1795059180000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059120000,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [
+        1795059180000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:33:23+08:00",
+      "phase": "mid_minute",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059203046,
+      "last_ot": 1795059180000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059120000,
+      "signal_open_time": 1795059120000,
+      "excluded_unclosed": [
+        1795059180000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:34:02+08:00",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059242041,
+      "boundary_ms": 1795059240000,
+      "expected_just_closed_ot": 1795059180000,
+      "vault_last_ot": 1795059180000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059180000,
+      "last_closed_iso": "2026-11-19T11:33:00+08:00",
+      "ref_last_closed_ot": 1795059180000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 41,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:34:02+08:00",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059242236,
+      "boundary_ms": 1795059240000,
+      "expected_just_closed_ot": 1795059180000,
+      "vault_last_ot": 1795059180000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059180000,
+      "last_closed_iso": "2026-11-19T11:33:00+08:00",
+      "ref_last_closed_ot": 1795059180000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 41,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:34:02+08:00",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059242406,
+      "boundary_ms": 1795059240000,
+      "expected_just_closed_ot": 1795059180000,
+      "vault_last_ot": 1795059180000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059180000,
+      "last_closed_iso": "2026-11-19T11:33:00+08:00",
+      "ref_last_closed_ot": 1795059180000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 41,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:34:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059262602,
+      "last_ot": 1795059240000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059180000,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [
+        1795059240000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:34:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059262739,
+      "last_ot": 1795059240000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059180000,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [
+        1795059240000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:34:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059262850,
+      "last_ot": 1795059240000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059180000,
+      "signal_open_time": 1795059180000,
+      "excluded_unclosed": [
+        1795059240000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:35:02+08:00",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059302044,
+      "boundary_ms": 1795059300000,
+      "expected_just_closed_ot": 1795059240000,
+      "vault_last_ot": 1795059240000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059240000,
+      "last_closed_iso": "2026-11-19T11:34:00+08:00",
+      "ref_last_closed_ot": 1795059240000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 42,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:35:02+08:00",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059302255,
+      "boundary_ms": 1795059300000,
+      "expected_just_closed_ot": 1795059240000,
+      "vault_last_ot": 1795059300000,
+      "vault_last_is_closed": false,
+      "last_closed_ot": 1795059240000,
+      "last_closed_iso": "2026-11-19T11:34:00+08:00",
+      "ref_last_closed_ot": 1795059240000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [
+        1795059300000
+      ],
+      "first_reject": null,
+      "bars_closed": 42,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:35:02+08:00",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059302438,
+      "boundary_ms": 1795059300000,
+      "expected_just_closed_ot": 1795059240000,
+      "vault_last_ot": 1795059240000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059240000,
+      "last_closed_iso": "2026-11-19T11:34:00+08:00",
+      "ref_last_closed_ot": 1795059240000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [],
+      "first_reject": "CHASE",
+      "bars_closed": 42,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:35:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059322631,
+      "last_ot": 1795059300000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059240000,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [
+        1795059300000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:35:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059322759,
+      "last_ot": 1795059300000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059240000,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [
+        1795059300000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:35:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059322868,
+      "last_ot": 1795059300000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059240000,
+      "signal_open_time": 1795059240000,
+      "excluded_unclosed": [
+        1795059300000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:36:02+08:00",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059362053,
+      "boundary_ms": 1795059360000,
+      "expected_just_closed_ot": 1795059300000,
+      "vault_last_ot": 1795059300000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059300000,
+      "last_closed_iso": "2026-11-19T11:35:00+08:00",
+      "ref_last_closed_ot": 1795059300000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 43,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:36:02+08:00",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059362259,
+      "boundary_ms": 1795059360000,
+      "expected_just_closed_ot": 1795059300000,
+      "vault_last_ot": 1795059360000,
+      "vault_last_is_closed": false,
+      "last_closed_ot": 1795059300000,
+      "last_closed_iso": "2026-11-19T11:35:00+08:00",
+      "ref_last_closed_ot": 1795059300000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [
+        1795059360000
+      ],
+      "first_reject": "VOL_X",
+      "bars_closed": 43,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:36:02+08:00",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059362432,
+      "boundary_ms": 1795059360000,
+      "expected_just_closed_ot": 1795059300000,
+      "vault_last_ot": 1795059360000,
+      "vault_last_is_closed": false,
+      "last_closed_ot": 1795059300000,
+      "last_closed_iso": "2026-11-19T11:35:00+08:00",
+      "ref_last_closed_ot": 1795059300000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [
+        1795059360000
+      ],
+      "first_reject": "VOL_X",
+      "bars_closed": 43,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:36:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059382619,
+      "last_ot": 1795059360000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059300000,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [
+        1795059360000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:36:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059382749,
+      "last_ot": 1795059360000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059300000,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [
+        1795059360000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:36:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059382856,
+      "last_ot": 1795059360000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059300000,
+      "signal_open_time": 1795059300000,
+      "excluded_unclosed": [
+        1795059360000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:37:02+08:00",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059422041,
+      "boundary_ms": 1795059420000,
+      "expected_just_closed_ot": 1795059360000,
+      "vault_last_ot": 1795059360000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059360000,
+      "last_closed_iso": "2026-11-19T11:36:00+08:00",
+      "ref_last_closed_ot": 1795059360000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 44,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:37:02+08:00",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059422231,
+      "boundary_ms": 1795059420000,
+      "expected_just_closed_ot": 1795059360000,
+      "vault_last_ot": 1795059360000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059360000,
+      "last_closed_iso": "2026-11-19T11:36:00+08:00",
+      "ref_last_closed_ot": 1795059360000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 44,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:37:02+08:00",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059422402,
+      "boundary_ms": 1795059420000,
+      "expected_just_closed_ot": 1795059360000,
+      "vault_last_ot": 1795059360000,
+      "vault_last_is_closed": true,
+      "last_closed_ot": 1795059360000,
+      "last_closed_iso": "2026-11-19T11:36:00+08:00",
+      "ref_last_closed_ot": 1795059360000,
+      "lag_bars_vs_ref": 0,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [],
+      "first_reject": "VOL_X",
+      "bars_closed": 44,
+      "path_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+      "path_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218"
+    },
+    {
+      "ts": "2026-11-19T11:37:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "BTCUSDT",
+      "fetched_at_ms": 1795059442606,
+      "last_ot": 1795059420000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059360000,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [
+        1795059420000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:37:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "ETHUSDT",
+      "fetched_at_ms": 1795059442764,
+      "last_ot": 1795059420000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059360000,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [
+        1795059420000
+      ]
+    },
+    {
+      "ts": "2026-11-19T11:37:22+08:00",
+      "phase": "mid_minute",
+      "symbol": "SOLUSDT",
+      "fetched_at_ms": 1795059442872,
+      "last_ot": 1795059420000,
+      "last_is_closed": false,
+      "last_closed_ot": 1795059360000,
+      "signal_open_time": 1795059360000,
+      "excluded_unclosed": [
+        1795059420000
+      ]
+    },
+    {
+      "note": "live account bytes changed (likely PID 86206); verify used isolated paths"
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "isolated_vault": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/data/breakout_follow_v1/kline_vault_v2_clean",
+  "isolated_run": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218/output/breakout_follow_v1/runs/public_verify_20261119T113218",
+  "live_fills_unchanged": true,
+  "code_fix_tag": "fix_20261119_p0p1",
+  "kline_vault_dir_name": "kline_vault_v2_clean"
+}

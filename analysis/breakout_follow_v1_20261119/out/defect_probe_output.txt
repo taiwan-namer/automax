@@ -1,0 +1,7 @@
+P1 open entry=100.0 init_stop=99.7 extreme=100.0
+P1 bid=100.3 -> stored extreme=100.0 effective_stop=99.700000 (intended trail≈99.979940)
+P1 bid=100.6 -> stored extreme=100.0 effective_stop=99.700000 (intended trail≈100.279880)
+P1 bid=100.9 -> stored extreme=100.0 effective_stop=99.700000 (intended trail≈100.579820)
+P1 RESULT: DEFECT CONFIRMED (extreme stuck at entry)
+P2 merged row: {'open_time': 60000.0, 'high': 1.0, 'low': 1.0, 'close': 1.0, 'volume': 3.0}
+P2 RESULT: DEFECT CONFIRMED (stale cached row kept)

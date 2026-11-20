@@ -1,0 +1,31 @@
+{
+  "max_gap_sec": 396.38155603408813,
+  "max_gap_recorded": [
+    "2026-11-19T12:38:44+08:00",
+    "2026-11-19T12:45:20+08:00"
+  ],
+  "max_gap_runs": [
+    "20261119T123832_91fcc722",
+    "20261119T124504_79a79b4d"
+  ],
+  "max_gap_purposes": [
+    "SIGNAL_EVAL",
+    "SIGNAL_EVAL"
+  ],
+  "active_at_start_n": null,
+  "classification_max": [
+    "cross_run_or_run_change",
+    "no_open_positions",
+    "pre_manage_quote_batch_gap_NOT_manage_complete"
+  ],
+  "max_with_positions": {
+    "gap_sec": 59.043334007263184,
+    "from": "2026-11-19T14:01:36+08:00",
+    "to": "2026-11-19T14:02:35+08:00",
+    "from_run": "20261119T132017_bd1972b2",
+    "to_run": "20261119T132017_bd1972b2",
+    "n_positions": 2,
+    "note": "pre-manage quote batch interval; NOT manage-complete; do NOT call 失管"
+  },
+  "active_at_max_gap_start": []
+}

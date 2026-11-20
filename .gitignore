@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+cache/
+.venv/
+venv/
+*.bak
+.env
+.env.*
+*.pem
+*.key
+
+# Large local runtime / market caches (do not push)
+data/kline_vault/
+output/breakout_follow_v1/runs/
+output/breakout_follow_v1/exports/
+output/breakout_follow_v1/decision_trace.jsonl
+output/breakout_follow_v1/equity_snapshots.jsonl
+output/paper_bulk_test_v1_setup/fixed_data_root/
+output/paper_bulk_test_v1_setup/launch_logs/
+output/decision_trace_*.jsonl
+output/signal_reject_diag_*.jsonl
+output/signal_reject_offline_rebuild.jsonl
+output/no_signal_offline_summary.json
+
+# Local process locks / pid
+*.pid
+*.lock
+
+# macOS
+.DS_Store

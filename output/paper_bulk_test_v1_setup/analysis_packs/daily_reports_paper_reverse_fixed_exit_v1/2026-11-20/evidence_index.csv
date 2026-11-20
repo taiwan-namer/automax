@@ -1,0 +1,16 @@
+kind,path,run,note
+fills,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/fills.jsonl,,
+equity,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/equity_snapshots.jsonl,,
+account_state,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/account_state.json,,live; not midnight
+data_quality.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204521_70131afe/data_quality.jsonl,20261119T204521_70131afe,
+launch.json,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204521_70131afe/launch.json,20261119T204521_70131afe,
+data_quality.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204757_e4be8ddc/data_quality.jsonl,20261119T204757_e4be8ddc,
+launch.json,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204757_e4be8ddc/launch.json,20261119T204757_e4be8ddc,
+quote_events.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204955_8327b8b5/quote_events.jsonl,20261119T204955_8327b8b5,
+data_quality.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204955_8327b8b5/data_quality.jsonl,20261119T204955_8327b8b5,
+launch.json,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261119T204955_8327b8b5/launch.json,20261119T204955_8327b8b5,
+quote_events.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261120T010453_b17c41c9/quote_events.jsonl,20261120T010453_b17c41c9,
+launch.json,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261120T010453_b17c41c9/launch.json,20261120T010453_b17c41c9,
+quote_events.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261120T010737_9a6b56f8/quote_events.jsonl,20261120T010737_9a6b56f8,
+data_quality.jsonl,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261120T010737_9a6b56f8/data_quality.jsonl,20261120T010737_9a6b56f8,
+launch.json,/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1/runs/20261120T010737_9a6b56f8/launch.json,20261120T010737_9a6b56f8,

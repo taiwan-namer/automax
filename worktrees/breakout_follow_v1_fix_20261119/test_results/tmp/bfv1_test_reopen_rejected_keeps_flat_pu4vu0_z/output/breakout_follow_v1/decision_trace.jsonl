@@ -1,0 +1,2 @@
+{"event": "REVERSE_CLOSE", "symbol": "REVUSDT", "old_side": "LONG", "new_side": "SHORT", "ts": "2026-11-19T12:02:17+08:00", "run_id": "t", "old_trade_id": "t:REVUSDT:0429d498b4", "reason": "REVERSE_SIGNAL"}
+{"event": "REVERSE_OPEN_REJECTED", "symbol": "REVUSDT", "block_reason": "DAILY_LOSS_LOCK", "ts": "2026-11-19T12:02:17+08:00", "run_id": "t"}

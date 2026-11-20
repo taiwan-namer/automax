@@ -1,0 +1,21 @@
+# A 暴漲轉弱 paper 監看（Asia/Taipei）— PID 見 pointer
+tail -f /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/a_surge_fade_20261120T132902.out.log
+
+# 錯誤
+tail -f /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/a_surge_fade_20261120T132902.err.log
+
+# 進程（A / 快照 / B / C）
+ps -p 78364,78365,59740,59741 -o pid,etime,command
+
+# pointer
+cat /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/A_SURGE_FADE_LAUNCH_POINTER.json
+
+# 三臂帳戶
+for p in tp100 tp200 tp350; do echo "== $p =="; python3 -c "import json;print(json.load(open('/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_a_surge_fade_${p}_v1/account_state.json')))"; echo; done
+
+# 共用訊號／掃描
+tail -20 /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_a_surge_fade_triarm_v1/signals.jsonl
+tail -20 /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_a_surge_fade_triarm_v1/scan_events.jsonl
+
+# 6h/8h 快照（到點才有）
+ls -la /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_a_surge_fade_20261120T131358/reports/

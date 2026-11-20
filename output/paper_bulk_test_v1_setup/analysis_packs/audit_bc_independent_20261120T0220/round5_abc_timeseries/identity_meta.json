@@ -1,0 +1,37 @@
+{
+  "cutoff": "2026-11-20T03:01:00+08:00",
+  "identity": {
+    "A": {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_exit_v1",
+      "start": "2026-11-19T20:53:08+08:00",
+      "phases": [
+        {
+          "version": "A1_selfscan_flip_ATR",
+          "from": "~2026-11-19T20:42/20:53",
+          "rules": "自掃+SIGNAL_DIRECTION_FLIP; 退出 ATR TP1/SL1.5"
+        },
+        {
+          "version": "A2_mirror_same_ATR",
+          "from": "2026-11-20T01:04~01:07",
+          "rules": "鏡像B同向; 退出 ATR TP1/SL1.5"
+        }
+      ]
+    },
+    "B": {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_v1",
+      "start": "2026-11-19T23:24:47 / first fill 23:25:02",
+      "rules": "自掃+FLIP; 固定毛 TP+50/SL-75"
+    },
+    "C": {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1",
+      "start": "~2026-11-20T00:48 / first fill 00:54:02; reload 01:07",
+      "rules": "鏡像B反向; 固定毛 TP+50/SL-75"
+    },
+    "BULK_ORIG": {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1",
+      "realized": -3614.688987623117,
+      "last_fill": "2026-11-19T20:07:13",
+      "note": "約 -3615 U；非 A/B/C；八點前 bulk 測試"
+    }
+  }
+}

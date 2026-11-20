@@ -1,0 +1,13 @@
+PASSED  test_config_hash_stable
+PASSED  test_live_order_paths_blocked
+PASSED  test_long_short_breakout_and_vol_boundary
+PASSED  test_lot_round
+PASSED  test_partial_tp_once_and_breakeven_tighten
+PASSED  test_range_excludes_signal_bar_and_unclosed
+PASSED  test_restart_preserves_capital
+PASSED  test_reverse_close_keeps_flat_if_reopen_fails
+PASSED  test_spread_chase_risk_rejects
+cwd=/Users/alan/MyProjects/automax/analysis/breakout_follow_v1_20261119/test_sandbox
+files written in sandbox:
+   output/breakout_follow_v1/fills.jsonl 1663
+   output/breakout_follow_v1/trades.csv 564

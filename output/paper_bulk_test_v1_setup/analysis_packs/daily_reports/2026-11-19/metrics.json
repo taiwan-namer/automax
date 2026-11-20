@@ -1,0 +1,258 @@
+{
+  "day": "2026-11-19",
+  "completeness": {
+    "status": "完整日",
+    "reason": "asof 已過日界且來源讀取無截斷尾",
+    "window": [
+      "2026-11-18T20:15:00+08:00",
+      "2026-11-19T20:15:00+08:00"
+    ],
+    "asof": "2026-11-19T20:18:12.063889+08:00",
+    "first_fill_in_sources": "2026-11-19T12:47:07+08:00",
+    "last_fill_in_sources": "2026-11-19T20:07:13+08:00",
+    "truncated_tails": []
+  },
+  "A": {
+    "midnight_snapshot_ok": false,
+    "settlement_snapshot_ok": false,
+    "start_equity_u": 50000.0,
+    "end_equity_u": 46371.40973794776,
+    "day_equity_delta_u": -3628.5902620522393,
+    "start_cash_u": 50000.0,
+    "end_cash_u": 44385.311012376835,
+    "day_cash_delta_u": -5614.688987623165,
+    "cash_delta_is_not_pnl": true,
+    "funding_data_gap": true,
+    "day_loss_lock": false,
+    "day_loss_lock_source": "account_state.day_new_entries_locked",
+    "start_snap_ts": "2026-11-19T12:38:41+08:00",
+    "start_lag_sec": 59021.0,
+    "end_snap_ts": "2026-11-19T20:15:13+08:00",
+    "end_lag_sec": 13.0
+  },
+  "B": {
+    "by_run": {
+      "20261119T124504_79a79b4d": {
+        "opens": 11,
+        "closes": 9,
+        "partials": 0,
+        "seg_net_u": -504.6233342954725
+      },
+      "20261119T131629_436e6cae": {
+        "opens": 2,
+        "closes": 0,
+        "partials": 0,
+        "seg_net_u": -9.9989559562705
+      },
+      "20261119T132017_bd1972b2": {
+        "opens": 40,
+        "closes": 42,
+        "partials": 5,
+        "seg_net_u": -1345.5549428959043
+      },
+      "20261119T155834_00889cc1": {
+        "opens": 2,
+        "closes": 1,
+        "partials": 0,
+        "seg_net_u": -39.34217315193725
+      },
+      "20261119T161354_5cb8369a": {
+        "opens": 53,
+        "closes": 54,
+        "partials": 5,
+        "seg_net_u": -1715.169581323532
+      }
+    },
+    "n_segment_events": 224,
+    "note": "B = event/segment PnL in window; NOT complete-trade winrate"
+  },
+  "C": {
+    "n_complete_closed": 106,
+    "wins": 10,
+    "losses": 96,
+    "flats": 0,
+    "win_rate": 0.09433962264150944,
+    "avg_net_u": -34.006500076192346,
+    "sum_net_u": -3604.6890080763887,
+    "profit_factor": 0.2083613294387977,
+    "expectancy_u": -34.006500076192346,
+    "fees_u": 1060.1619544556645,
+    "note": "C = complete trade_id with CLOSE in day window; OPEN fee may belong to prior calendar day"
+  },
+  "D": {
+    "n_open": 2,
+    "open_fee_component_in_day_u": -9.99997954672992,
+    "note": "OPEN fees for open positions stay in account A; not mixed into C winrate"
+  },
+  "manage_health": {
+    "quote_batch_intervals": {
+      "metric": "pre_manage_quote_batch_interval_sec",
+      "manage_only": {
+        "n_batches": 4865,
+        "n_gaps": 4864,
+        "mean": 5.506232756784552,
+        "p50": 5.027343999999999,
+        "p95": 10.213761499999999,
+        "max": 373.7358,
+        "max_span": [
+          "2026-11-19T16:08:04.214720+08:00",
+          "2026-11-19T16:14:17.950520+08:00"
+        ]
+      },
+      "all_purposes_including_signal": {
+        "n_batches": 5396,
+        "n_gaps": 5395,
+        "mean": 5.059019808341056,
+        "p50": 5.016864,
+        "p95": 5.5334804,
+        "max": 396.381556,
+        "max_span": [
+          "2026-11-19T12:38:41.120954+08:00",
+          "2026-11-19T12:45:17.502510+08:00"
+        ]
+      },
+      "n_batches": 4865,
+      "n_gaps": 4864,
+      "mean": 5.506232756784552,
+      "p50": 5.027343999999999,
+      "p95": 10.213761499999999,
+      "max": 373.7358,
+      "max_span": [
+        "2026-11-19T16:08:04.214720+08:00",
+        "2026-11-19T16:14:17.950520+08:00"
+      ],
+      "note": "MANAGE/MANAGE_POLL pre-manage quote batches only by default. NOT manage-complete; NOT configured poll; NOT 「失管」. All-purpose max may be cross-run SIGNAL_EVAL (see GAP evidence)."
+    },
+    "manage_complete_intervals": {
+      "metric": "manage_complete_interval_sec",
+      "n": 3037,
+      "mean": 5.056964109318407,
+      "p50": 5.0,
+      "p95": 5.0,
+      "max": 374.0,
+      "status": "ok"
+    },
+    "data_quality": {
+      "counts": {
+        "KLINE_WARMUP_SHORT": 273,
+        "WARMUP_VAULT_MISSING": 153,
+        "HTTP_CLIENT_ERROR": 42,
+        "HTTP_TIMEOUT": 13,
+        "MANAGE_BOOK_GIVE_UP": 13,
+        "HTTP_OK_AFTER_RETRY": 5,
+        "HIGH_PRIORITY_EXIT_MGMT_RISK": 4,
+        "KLINE_FETCH_FAIL": 1,
+        "MANAGE_KLINE_FAIL_BOUNDED": 1,
+        "MANAGE_POLL_ERROR": 1,
+        "LOOP_ERROR": 1
+      },
+      "timeouts": 13,
+      "http_429": 0,
+      "http_418": 0,
+      "manage_blocked": 0,
+      "note": "From data_quality.jsonl `code`/`kind`; excess stop overshoot is separate fill analysis"
+    },
+    "sources_non_atomic": true,
+    "note": "Multi-file reads are non-atomic across runs; truncated tails deferred per file"
+  },
+  "kline_qa": {
+    "missing_symbols": [],
+    "n_symbols": 49
+  },
+  "candidates": [
+    {
+      "id": "CAND_COST_THRESHOLD",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_with_risk": 106,
+        "n_total": 106,
+        "median_fee_to_risk": 0.39236989686904755,
+        "mean_fee_to_risk": 0.4575449200840619,
+        "pct_fee_to_risk_gt_0_25": 0.6981132075471698,
+        "pct_fee_to_risk_gt_0_40": 0.4716981132075472
+      }
+    },
+    {
+      "id": "CAND_BATCH_SAME_DIR",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_clusters": 4,
+        "clusters": [
+          {
+            "t0": "2026-11-19T12:47:07+08:00",
+            "side": "LONG",
+            "n": 2,
+            "symbols": [
+              "ONDOUSDT",
+              "TAOUSDT"
+            ],
+            "notional_u": 19999.817853738,
+            "initial_risk_sum_u": 37.29828157598962,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-19T12:57:08+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "AKEUSDT",
+              "ICNTUSDT"
+            ],
+            "notional_u": 19999.962197401997,
+            "initial_risk_sum_u": 126.77280812017733,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-19T14:03:11+08:00",
+            "side": "LONG",
+            "n": 6,
+            "symbols": [
+              "FETUSDT",
+              "TAOUSDT",
+              "KAVAUSDT",
+              "JCTUSDT",
+              "1000PEPEUSDT",
+              "XPLUSDT"
+            ],
+            "notional_u": 59999.89438706153,
+            "initial_risk_sum_u": 150.93825195001116,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-19T15:12:10+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "LITUSDT",
+              "ENAUSDT"
+            ],
+            "notional_u": 19999.858638118,
+            "initial_risk_sum_u": 67.78433980817128,
+            "window_sec": 30.0
+          }
+        ],
+        "window_sec": 30.0
+      }
+    },
+    {
+      "id": "CAND_BREAKOUT_QUALITY",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_complete": 106,
+        "exit_reason_counts": {
+          "INITIAL_STOP": 96,
+          "TRAILING_STOP": 10
+        },
+        "sum_net_u": -3604.6890080763887,
+        "post_entry_labels_attached": false,
+        "note": "進場後1/3/5m報酬僅作結果標籤，不可當進場特徵；10m/15m濾鏡僅用當時已完整收盤K"
+      }
+    }
+  ],
+  "zh_char_count_summary": 2235,
+  "tool_version": "0.1.0",
+  "schema": "daily_report_v1"
+}

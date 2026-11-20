@@ -1,0 +1,1578 @@
+{
+  "meta": {
+    "cutoff": "2026-11-19T14:23:11+08:00",
+    "timezone": "Asia/Taipei (+08)",
+    "target_run": "20261119T132017_bd1972b2",
+    "pack": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup",
+    "generated_at": "2026-11-19T14:49:56.979936+08:00"
+  },
+  "time_notes": [
+    {
+      "kind": "fill",
+      "recorded_at": "2026-11-19T13:21:28+08:00",
+      "book_ts": 1795065688.7419178,
+      "book_ts_as_dt": "2026-11-19T13:21:28.741918+08:00",
+      "delta_sec": -0.741918,
+      "unit": "book_ts≈epoch seconds"
+    },
+    {
+      "kind": "quote_keys",
+      "keys": [
+        "_line",
+        "_rel",
+        "_rel_pack",
+        "ask",
+        "bid",
+        "fetched_at",
+        "mid",
+        "purpose",
+        "recorded_at",
+        "run_id",
+        "signal_open_time",
+        "spread",
+        "symbol"
+      ]
+    }
+  ],
+  "gaps": [
+    "PIPPIN stop_events 空：INITIAL_STOP 證據在 fills/position_events/quotes，不能解讀為未執行",
+    "TAO/FET pack stop_events 空（同上）",
+    "JUP 開倉 decision 小包為空；開倉在前 run，已用 root fills 以 trade_id 補齊",
+    "funding_data_gap=True：淨損益不含完整資金費",
+    "無逐筆成交：無法定位市場真正首次穿價時刻，僅能用輪詢報價",
+    "六筆 14:03 集中進場僅 TAO/FET/BTC 有 K；其餘四標的行情結構缺口"
+  ],
+  "dedupe": {
+    "key": "trade_id+event+recorded_at+qty+price+exit_reason+fee_u+net_u+book_ts",
+    "conflicts_root": 0,
+    "conflicts_run": 0,
+    "policy": "exact key skip; soft-key numeric conflict counted; partial legs not merged away"
+  },
+  "event_counts": {
+    "A_root": {
+      "OPEN": 30,
+      "CLOSE": 29,
+      "CLOSE_PARTIAL": 2
+    },
+    "B_run": {
+      "CLOSE": 20,
+      "OPEN": 17,
+      "CLOSE_PARTIAL": 2
+    }
+  },
+  "stats": {
+    "A": {
+      "n_trade_ids": 30,
+      "n_opens_events": 30,
+      "n_complete": 29,
+      "n_open_or_partial": 1,
+      "n_other": 0,
+      "wins": 2,
+      "losses": 27,
+      "win_rate": 0.06896551724137931,
+      "total_net": -1164.3353050094058,
+      "avg_win": 135.8482687404267,
+      "avg_loss": -53.18636453667627,
+      "rr": 2.5541935404655907,
+      "pf": 0.1891995215159697,
+      "expectancy": -40.149493276186405,
+      "fees_all_events": 295.16751487514875,
+      "fees_complete_trades": 290.16751523818135
+    },
+    "B": {
+      "n_trade_ids": 21,
+      "n_opens_events": 17,
+      "n_complete": 16,
+      "n_open_or_partial": 1,
+      "n_other": 4,
+      "wins": 1,
+      "losses": 15,
+      "win_rate": 0.0625,
+      "total_net": -630.888659457676,
+      "avg_win": 183.77466775181978,
+      "avg_loss": -54.31088848063305,
+      "rr": 3.3837536614292874,
+      "pf": 0.22558357742861915,
+      "expectancy": -39.43054121610475,
+      "fees_all_events": 185.107849489205,
+      "fees_complete_trades": 160.10956794792807
+    },
+    "C": {
+      "n_trade_ids": 30,
+      "n_opens_events": 30,
+      "n_complete": 29,
+      "n_open_or_partial": 1,
+      "n_other": 0,
+      "wins": 2,
+      "losses": 27,
+      "win_rate": 0.06896551724137931,
+      "total_net": -1164.3353050094058,
+      "avg_win": 135.8482687404267,
+      "avg_loss": -53.18636453667627,
+      "rr": 2.5541935404655907,
+      "pf": 0.1891995215159697,
+      "expectancy": -40.149493276186405,
+      "fees_all_events": 295.16751487514875,
+      "fees_complete_trades": 290.16751523818135
+    },
+    "segment_like": {
+      "n": 31,
+      "wins": 4,
+      "losses": 27,
+      "win_rate": 0.12903225806451613,
+      "total": -1019.3381596069612,
+      "avg_win": 70.4240957124216,
+      "avg_loss": -48.186464535431384,
+      "pf": 0.21651722045579203,
+      "exp": -32.88187611635359
+    },
+    "B_segment_CLOSE_only": {
+      "n": 20,
+      "wins": 2,
+      "losses": 18,
+      "win_rate": 0.1,
+      "total": -648.8979943768013,
+      "avg_win": 101.25634998202833,
+      "avg_loss": -47.300594130047664,
+      "pf": 0.23785548068648257,
+      "exp": -32.44489971884006
+    },
+    "B_segment_CLOSE_plus_PARTIAL": {
+      "n": 22,
+      "wins": 4,
+      "losses": 18,
+      "win_rate": 0.18181818181818182,
+      "total": -569.7143114911715,
+      "avg_win": 70.4240957124216,
+      "avg_loss": -47.300594130047664,
+      "pf": 0.3308584032618584,
+      "exp": -25.896105067780525
+    }
+  },
+  "review": {
+    "open": 17,
+    "partial": 2,
+    "close": 20,
+    "realized": -1169.3353,
+    "fees": 295.1675,
+    "winrate": 0.2,
+    "avg_win": 70.4241,
+    "avg_loss": -47.3006,
+    "rr": 1.4889,
+    "pf": 0.3309,
+    "exp": -53.1516,
+    "segment_net": -569.7143,
+    "note": "review stats mix segment closes; OPEN/CLOSE counts are events not complete trades"
+  },
+  "compare_notes": [
+    "review 宣稱 OPEN=17 CLOSE=20 PARTIAL=2 realized=-1169.3353 winrate=0.2 PF=0.3309 expectancy=-53.1516",
+    "A帳戶累計至cutoff: complete=29 winrate=0.06896551724137931 total_net=-1164.3353 PF=0.1891995215159697 exp=-40.149493276186405",
+    "B target run事件聚合: complete=16 total_net=-630.8887 (含跨run開倉在本run平倉者，完整淨損益含他run OPEN費)",
+    "C trade_id完整: complete=29 winrate=0.06896551724137931 total_net=-1164.3353 PF=0.1891995215159697",
+    "差異來源：review 勝率/期望以分段 CLOSE 筆數計（含多段CLOSE），非完整trade_id；fills分段淨損益合計≠帳戶realized（跨run繼承持倉／OPEN費記帳時點）。"
+  ],
+  "acct_reconcile": {
+    "start_realized": -514.622290251743,
+    "start_fees": 110.0596653859438,
+    "start_cash": 45485.37770974825,
+    "start_positions": [
+      "JUPUSDT",
+      "JCTUSDT",
+      "QNTUSDT",
+      "PENGUUSDT"
+    ],
+    "eq_at_or_before_cutoff": {
+      "recorded_at": "2026-11-19T14:23:04+08:00",
+      "equity": 48889.250373061615,
+      "realized": -1169.3353046463726,
+      "cash": null
+    },
+    "strict_same_timestamp_account_vs_review": false,
+    "note": "無與 review 14:23:11 完全同時點之獨立帳戶快照時，標記無法嚴格驗證"
+  },
+  "open_fees_still_open": 4.9999996369674005,
+  "kline_qa": [
+    {
+      "label": "PIPPIN_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/01_PIPPIN_1354_1401/PIPPINUSDT_1m_1350_1405.csv",
+      "n": 16,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795067400000,
+      "last_ot": 1795068300000
+    },
+    {
+      "label": "TAO_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/TAOUSDT_1m_1330_1420.csv",
+      "n": 51,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795066200000,
+      "last_ot": 1795069200000
+    },
+    {
+      "label": "FET_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/FETUSDT_1m_1330_1420.csv",
+      "n": 51,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795066200000,
+      "last_ot": 1795069200000
+    },
+    {
+      "label": "BTC_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/BTCUSDT_1m_1330_1420.csv",
+      "n": 51,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795066200000,
+      "last_ot": 1795069200000
+    },
+    {
+      "label": "LIT_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/03_LIT_vs_JUP/LITUSDT_1m_1245_1420.csv",
+      "n": 96,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795063500000,
+      "last_ot": 1795069200000
+    },
+    {
+      "label": "JUP_slice",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/03_LIT_vs_JUP/JUPUSDT_1m_1245_1420.csv",
+      "n": 96,
+      "sorted": true,
+      "dup_open_time": 0,
+      "gap_count": 0,
+      "gaps_sample": [],
+      "issues": [],
+      "first_ot": 1795063500000,
+      "last_ot": 1795069200000
+    }
+  ],
+  "pippin": {
+    "side": "SHORT",
+    "open_at": "2026-11-19T13:55:08+08:00",
+    "entry": 0.016986602000000003,
+    "qty": 588699.0,
+    "initial_stop": 0.017124085619176537,
+    "close_at": "2026-11-19T13:59:05+08:00",
+    "exit": 0.017283456,
+    "open_fee": 4.999997805399001,
+    "close_fee": 5.087376631872,
+    "close_net_u_field": -179.84502957786947,
+    "gross_u": -174.75765294599748,
+    "complete_net_incl_open_fee": -184.84502738326847,
+    "hold_sec": 236.81300282478333,
+    "stop_dist_pct": 0.0080936504650273,
+    "theor_price_risk_u": 80.93646912560622,
+    "actual_price_loss_u": 174.75765294599748,
+    "overshoot_pct_vs_stop": 0.009306796541883081,
+    "extra_loss_u": 93.82118382039125,
+    "extra_vs_theor_mult": 1.1591954138101712,
+    "last_ok": {
+      "line": 52,
+      "recorded_at": "2026-11-19T13:59:05+08:00",
+      "bid": 0.01697,
+      "ask": 0.01698,
+      "mark": 0.016983395999999998,
+      "hit": false,
+      "purpose": "MANAGE_POLL",
+      "fetched_at": 1795067945.13475,
+      "spread": 0.0005891016200294312
+    },
+    "first_hit": {
+      "line": 53,
+      "recorded_at": "2026-11-19T13:59:05+08:00",
+      "bid": 0.01727,
+      "ask": 0.01728,
+      "mark": 0.017283456,
+      "hit": true,
+      "purpose": "MANAGE",
+      "fetched_at": 1795067945.527479,
+      "spread": 0.0005788712011577189
+    },
+    "poll_recorded_gap_sec": 0.0,
+    "poll_book_ts_gap_sec": 0.3927290439605713,
+    "ask_jump": 0.00030000000000000165,
+    "ask_jump_pct": 0.017667844522968296,
+    "proc_delay_sec": 0.0,
+    "fill_equals_mark": true,
+    "decomp": {
+      "ask_beyond_stop_u": 91.7866400763919,
+      "sim_slip_u": 2.034543744,
+      "fill_vs_mark_u": 0.0,
+      "sum_check_u": 93.82118382039191,
+      "extra_loss_u": 93.82118382039125,
+      "pct_extra_from_ask_gap": 0.9783146656101225,
+      "pct_extra_from_sim_slip": 0.021685334389884438
+    },
+    "mfe_u": 26.343872281594038,
+    "mae_u": -179.84502957786947,
+    "excursion_source": "polled_quote_estimate",
+    "funding_data_gap": true,
+    "stop_events_n": 0,
+    "key_points": [
+      {
+        "tag": "open",
+        "recorded_at": "2026-11-19T13:55:08+08:00",
+        "price": 0.016986602000000003,
+        "stop": 0.017124085619176537
+      },
+      {
+        "tag": "mfe_sample",
+        "mfe_u": 26.343872281594038,
+        "mfe_ts": "2026-11-19T13:56:31+08:00",
+        "note": "polled_quote_estimate"
+      },
+      {
+        "tag": "last_no_hit",
+        "line": 52,
+        "recorded_at": "2026-11-19T13:59:05+08:00",
+        "bid": 0.01697,
+        "ask": 0.01698,
+        "mark": 0.016983395999999998,
+        "hit": false,
+        "purpose": "MANAGE_POLL",
+        "fetched_at": 1795067945.13475,
+        "spread": 0.0005891016200294312
+      },
+      {
+        "tag": "first_observable_hit",
+        "line": 53,
+        "recorded_at": "2026-11-19T13:59:05+08:00",
+        "bid": 0.01727,
+        "ask": 0.01728,
+        "mark": 0.017283456,
+        "hit": true,
+        "purpose": "MANAGE",
+        "fetched_at": 1795067945.527479,
+        "spread": 0.0005788712011577189
+      },
+      {
+        "tag": "fill",
+        "recorded_at": "2026-11-19T13:59:05+08:00",
+        "price": 0.017283456,
+        "effective_stop": 0.017124085619176537,
+        "exit_reason": "INITIAL_STOP"
+      },
+      {
+        "tag": "spread_at_hit",
+        "bid": 0.01727,
+        "ask": 0.01728,
+        "spread_pct": 0.0005788712011577189,
+        "slip_px": 3.456e-06
+      }
+    ]
+  },
+  "batch": {
+    "tao": {
+      "trade_id": "20261119T132017_bd1972b2:TAOUSDT:92719e314c",
+      "side": "LONG",
+      "open_at": "2026-11-19T14:03:11+08:00",
+      "entry": 196.119216,
+      "qty": 50.989,
+      "atr": 0.2239278834711683,
+      "initial_stop": 195.78332417479325,
+      "stop_dist_pct": 0.0017126920658643873,
+      "theor_risk_u": 17.12678827546667,
+      "close_at": "2026-11-19T14:05:40+08:00",
+      "exit": 195.690854,
+      "exit_reason": "INITIAL_STOP",
+      "hold_sec": 149.59101796150208,
+      "gross_u": -21.841750017999633,
+      "close_net_u": -26.830790495302633,
+      "open_fee": 4.999961352312,
+      "close_fee": 4.989040477303,
+      "complete_net": -31.830751847614632,
+      "extra_vs_stop_u": 4.714961742532964,
+      "overshoot_pct": 0.0004723087381573542,
+      "first_hit": {
+        "line": 46,
+        "recorded_at": "2026-11-19T14:05:40+08:00",
+        "bid": 195.73,
+        "ask": 195.74,
+        "mark": 195.690854,
+        "hit": true,
+        "purpose": "MANAGE_POLL",
+        "fetched_at": 1795068340.810879
+      },
+      "last_ok_at": "2026-11-19T14:04:44+08:00",
+      "source_tags": [
+        "MARKET_SPIKE"
+      ],
+      "signal_open_time": 1795068120000,
+      "signal_key": "TAOUSDT:1795068120000:LONG",
+      "margin_u": 1000.0,
+      "notional_u": 9999.922704624,
+      "last_ok": {
+        "line": 44,
+        "recorded_at": "2026-11-19T14:04:44+08:00",
+        "bid": 195.84,
+        "ask": 195.85,
+        "mark": 195.800832,
+        "hit": false,
+        "purpose": "MANAGE_POLL",
+        "fetched_at": 1795068284.358127
+      },
+      "poll_gap_sec": 56.452751874923706,
+      "decomp": {
+        "bid_beyond_stop_u": 2.7189463485335685,
+        "sim_slip_u": 1.9960153939999998,
+        "fill_vs_mark_u": 0.0,
+        "fill_equals_mark": true
+      }
+    },
+    "fet": {
+      "trade_id": "20261119T132017_bd1972b2:FETUSDT:6787454908",
+      "side": "LONG",
+      "open_at": "2026-11-19T14:03:11+08:00",
+      "entry": 0.12892578,
+      "qty": 77564.0,
+      "atr": 0.00018018199262212213,
+      "initial_stop": 0.12865550701106682,
+      "stop_dist_pct": 0.0020963455790856834,
+      "theor_risk_u": 20.963454113612663,
+      "close_at": "2026-11-19T14:05:52+08:00",
+      "exit": 0.12857427999999999,
+      "exit_reason": "INITIAL_STOP",
+      "hold_sec": 161.57569003105164,
+      "gross_u": -27.263746000000356,
+      "close_net_u": -32.25011372696036,
+      "open_fee": 4.99999959996,
+      "close_fee": 4.986367726959999,
+      "complete_net": -37.250113326920356,
+      "extra_vs_stop_u": 6.300291886387693,
+      "overshoot_pct": 0.0006313527726399159,
+      "first_hit": {
+        "line": 48,
+        "recorded_at": "2026-11-19T14:05:52+08:00",
+        "bid": 0.1286,
+        "ask": 0.1287,
+        "mark": 0.12857427999999999,
+        "hit": true,
+        "purpose": "MANAGE_POLL",
+        "fetched_at": 1795068352.751651
+      },
+      "last_ok_at": "2026-11-19T14:05:46+08:00",
+      "source_tags": [
+        "MARKET_SPIKE"
+      ],
+      "signal_open_time": 1795068120000,
+      "signal_key": "FETUSDT:1795068120000:LONG",
+      "margin_u": 1000.0,
+      "notional_u": 9999.99919992,
+      "last_ok": {
+        "line": 47,
+        "recorded_at": "2026-11-19T14:05:46+08:00",
+        "bid": 0.1287,
+        "ask": 0.1288,
+        "mark": 0.12867426,
+        "hit": false,
+        "purpose": "MANAGE_POLL",
+        "fetched_at": 1795068346.3497658
+      },
+      "poll_gap_sec": 6.401885271072388,
+      "decomp": {
+        "bid_beyond_stop_u": 4.3053458063871615,
+        "sim_slip_u": 1.99494608,
+        "fill_vs_mark_u": 0.0,
+        "fill_equals_mark": true
+      }
+    },
+    "kq": {
+      "TAO": {
+        "label": "TAO",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/TAOUSDT_1m_1330_1420.csv",
+        "n": 51,
+        "sorted": true,
+        "dup_open_time": 0,
+        "gap_count": 0,
+        "gaps_sample": [],
+        "issues": [],
+        "first_ot": 1795066200000,
+        "last_ot": 1795069200000
+      },
+      "FET": {
+        "label": "FET",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/FETUSDT_1m_1330_1420.csv",
+        "n": 51,
+        "sorted": true,
+        "dup_open_time": 0,
+        "gap_count": 0,
+        "gaps_sample": [],
+        "issues": [],
+        "first_ot": 1795066200000,
+        "last_ot": 1795069200000
+      },
+      "BTC": {
+        "label": "BTC",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/pack_20261119_pippin_tao_fet_lit_jup/02_batch_1403_TAO_FET_BTC/BTCUSDT_1m_1330_1420.csv",
+        "n": 51,
+        "sorted": true,
+        "dup_open_time": 0,
+        "gap_count": 0,
+        "gaps_sample": [],
+        "issues": [],
+        "first_ot": 1795066200000,
+        "last_ot": 1795069200000
+      }
+    },
+    "struct": {
+      "TAO": {
+        "pre_5m": {
+          "n": 5,
+          "complete": true,
+          "open": 195.31,
+          "high": 196.15,
+          "low": 195.17,
+          "close": 195.97,
+          "vol_sum": 2789.749,
+          "ret": 0.0033792432543136375
+        },
+        "pre_10m": {
+          "n": 10,
+          "complete": true,
+          "open": 194.9,
+          "high": 196.15,
+          "low": 194.9,
+          "close": 195.97,
+          "vol_sum": 3157.742,
+          "ret": 0.005489994869163638
+        },
+        "pre_15m": {
+          "n": 15,
+          "complete": true,
+          "open": 194.76,
+          "high": 196.15,
+          "low": 194.6,
+          "close": 195.97,
+          "vol_sum": 3470.714,
+          "ret": 0.006212774697063093
+        },
+        "signal_bar": {
+          "dt": "2026-11-19T14:02:00+08:00",
+          "o": 195.86,
+          "h": 196.15,
+          "l": 195.75,
+          "c": 195.97,
+          "vol": 1269.719,
+          "available_at_entry": true
+        },
+        "post_1m": {
+          "n": 1,
+          "open": 195.97,
+          "high": 196.25,
+          "low": 195.97,
+          "close": 196.01,
+          "ret": 0.00020411287441951341,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_3m": {
+          "n": 3,
+          "open": 195.97,
+          "high": 196.25,
+          "low": 195.62,
+          "close": 195.72,
+          "ret": -0.0012757054651222127,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_5m": {
+          "n": 5,
+          "open": 195.97,
+          "high": 196.25,
+          "low": 195.52,
+          "close": 195.61,
+          "ret": -0.0018370158697759108,
+          "note": "after-entry path; not used as signal"
+        }
+      },
+      "FET": {
+        "pre_5m": {
+          "n": 5,
+          "complete": true,
+          "open": 0.1287,
+          "high": 0.1291,
+          "low": 0.1285,
+          "close": 0.1289,
+          "vol_sum": 1119331.0,
+          "ret": 0.0015540015540013827
+        },
+        "pre_10m": {
+          "n": 10,
+          "complete": true,
+          "open": 0.1287,
+          "high": 0.1291,
+          "low": 0.1285,
+          "close": 0.1289,
+          "vol_sum": 1405362.0,
+          "ret": 0.0015540015540013827
+        },
+        "pre_15m": {
+          "n": 15,
+          "complete": true,
+          "open": 0.1286,
+          "high": 0.1291,
+          "low": 0.1284,
+          "close": 0.1289,
+          "vol_sum": 1767868.0,
+          "ret": 0.002332814930015511
+        },
+        "signal_bar": {
+          "dt": "2026-11-19T14:02:00+08:00",
+          "o": 0.1287,
+          "h": 0.1291,
+          "l": 0.1287,
+          "c": 0.1289,
+          "vol": 658094.0,
+          "available_at_entry": true
+        },
+        "post_1m": {
+          "n": 1,
+          "open": 0.1289,
+          "high": 0.1291,
+          "low": 0.1288,
+          "close": 0.1288,
+          "ret": -0.0007757951900697362,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_3m": {
+          "n": 3,
+          "open": 0.1289,
+          "high": 0.1291,
+          "low": 0.1286,
+          "close": 0.1286,
+          "ret": -0.002327385570209424,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_5m": {
+          "n": 5,
+          "open": 0.1289,
+          "high": 0.1291,
+          "low": 0.1285,
+          "close": 0.1285,
+          "ret": -0.00310318076027916,
+          "note": "after-entry path; not used as signal"
+        }
+      },
+      "BTC": {
+        "pre_5m": {
+          "n": 5,
+          "complete": true,
+          "open": 63314.9,
+          "high": 63490.0,
+          "low": 63301.3,
+          "close": 63489.4,
+          "vol_sum": 551.688,
+          "ret": 0.0027560653179583322
+        },
+        "pre_10m": {
+          "n": 10,
+          "complete": true,
+          "open": 63286.5,
+          "high": 63490.0,
+          "low": 63274.0,
+          "close": 63489.4,
+          "vol_sum": 889.029,
+          "ret": 0.003206055003831804
+        },
+        "pre_15m": {
+          "n": 15,
+          "complete": true,
+          "open": 63310.6,
+          "high": 63490.0,
+          "low": 63269.7,
+          "close": 63489.4,
+          "vol_sum": 1237.963,
+          "ret": 0.002824171623709188
+        },
+        "signal_bar": {
+          "dt": "2026-11-19T14:02:00+08:00",
+          "o": 63432.9,
+          "h": 63490.0,
+          "l": 63432.9,
+          "c": 63489.4,
+          "vol": 114.628,
+          "available_at_entry": true
+        },
+        "post_1m": {
+          "n": 1,
+          "open": 63489.5,
+          "high": 63513.3,
+          "low": 63485.0,
+          "close": 63489.2,
+          "ret": -4.725190779623566e-06,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_3m": {
+          "n": 3,
+          "open": 63489.5,
+          "high": 63513.3,
+          "low": 63433.0,
+          "close": 63484.9,
+          "ret": -7.245292528683553e-05,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_5m": {
+          "n": 5,
+          "open": 63489.5,
+          "high": 63513.3,
+          "low": 63433.0,
+          "close": 63443.9,
+          "ret": -0.0007182289984957914,
+          "note": "after-entry path; not used as signal"
+        }
+      }
+    },
+    "derived": {
+      "TAO_10m": [
+        {
+          "dt": "2026-11-19T13:30:00+08:00",
+          "o": 194.44,
+          "h": 194.8,
+          "l": 194.17,
+          "c": 194.26,
+          "vol": 800.14,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:40:00+08:00",
+          "o": 194.26,
+          "h": 195.12,
+          "l": 194.26,
+          "c": 194.78,
+          "vol": 1482.815,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:50:00+08:00",
+          "o": 194.79,
+          "h": 195.39,
+          "l": 194.6,
+          "c": 195.36,
+          "vol": 1473.618,
+          "complete": true,
+          "derived": true
+        }
+      ],
+      "TAO_15m": [
+        {
+          "dt": "2026-11-19T13:30:00+08:00",
+          "o": 194.44,
+          "h": 194.8,
+          "l": 194.17,
+          "c": 194.63,
+          "vol": 1853.1470000000002,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:45:00+08:00",
+          "o": 194.63,
+          "h": 195.39,
+          "l": 194.6,
+          "c": 195.36,
+          "vol": 1903.426,
+          "complete": true,
+          "derived": true
+        }
+      ],
+      "FET_10m": [
+        {
+          "dt": "2026-11-19T13:30:00+08:00",
+          "o": 0.1287,
+          "h": 0.1289,
+          "l": 0.1285,
+          "c": 0.1285,
+          "vol": 631091.0,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:40:00+08:00",
+          "o": 0.1285,
+          "h": 0.1288,
+          "l": 0.1284,
+          "c": 0.1285,
+          "vol": 487433.0,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:50:00+08:00",
+          "o": 0.1286,
+          "h": 0.1288,
+          "l": 0.1284,
+          "c": 0.1287,
+          "vol": 622392.0,
+          "complete": true,
+          "derived": true
+        }
+      ],
+      "BTC_10m": [
+        {
+          "dt": "2026-11-19T13:30:00+08:00",
+          "o": 63388.4,
+          "h": 63463.5,
+          "l": 63315.5,
+          "c": 63315.5,
+          "vol": 755.824,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:40:00+08:00",
+          "o": 63315.5,
+          "h": 63380.0,
+          "l": 63300.0,
+          "c": 63300.0,
+          "vol": 822.087,
+          "complete": true,
+          "derived": true
+        },
+        {
+          "dt": "2026-11-19T13:50:00+08:00",
+          "o": 63300.1,
+          "h": 63343.5,
+          "l": 63269.7,
+          "c": 63336.9,
+          "vol": 725.681,
+          "complete": true,
+          "derived": true
+        }
+      ]
+    },
+    "sig_avail": {
+      "TAO": {
+        "signal_open_time_ms": 1795068120000,
+        "signal_bar_end": "2026-11-19T14:03:00+08:00",
+        "entry": "2026-11-19T14:03:11+08:00",
+        "bar_closed_before_entry": true,
+        "bar_in_slice": true
+      },
+      "FET": {
+        "signal_open_time_ms": 1795068120000,
+        "signal_bar_end": "2026-11-19T14:03:00+08:00",
+        "entry": "2026-11-19T14:03:11+08:00",
+        "bar_closed_before_entry": true,
+        "bar_in_slice": true
+      }
+    },
+    "btc_corr_note": {
+      "btc_pre10_ret": 0.003206055003831804,
+      "tao_pre10_ret": 0.005489994869163638,
+      "fet_pre10_ret": 0.0015540015540013827,
+      "same_sign_tao_btc": true,
+      "caveat": "相關≠因果"
+    },
+    "reclaim": {
+      "TAO": {
+        "signal_close": 195.97,
+        "post5_low": 195.52,
+        "post5_close": 195.61,
+        "reclaimed_below_signal_close": true,
+        "adverse_ret": -0.0018370158697759108
+      },
+      "FET": {
+        "signal_close": 0.1289,
+        "post5_low": 0.1285,
+        "post5_close": 0.1285,
+        "reclaimed_below_signal_close": true,
+        "adverse_ret": -0.00310318076027916
+      }
+    },
+    "cluster": [
+      {
+        "symbol": "1000PEPEUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.997335247139,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:1000PEPEUSDT:0b68f52101",
+        "status": "complete",
+        "complete_net": -32.85852014391294
+      },
+      {
+        "symbol": "FETUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.99919992,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:FETUSDT:6787454908",
+        "status": "complete",
+        "complete_net": -37.250113326920356
+      },
+      {
+        "symbol": "JCTUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.9982637328,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:JCTUSDT:5e8d15abab",
+        "status": "complete",
+        "complete_net": -48.82638510825508
+      },
+      {
+        "symbol": "KAVAUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.9977076216,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:KAVAUSDT:d37701a392",
+        "status": "complete",
+        "complete_net": -51.712024255923836
+      },
+      {
+        "symbol": "TAOUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.922704624,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:TAOUSDT:92719e314c",
+        "status": "complete",
+        "complete_net": -31.830751847614632
+      },
+      {
+        "symbol": "XPLUSDT",
+        "side": "LONG",
+        "open_at": "2026-11-19T14:03:11+08:00",
+        "notional_u": 9999.979175916,
+        "margin_u": 1000.0,
+        "trade_id": "20261119T132017_bd1972b2:XPLUSDT:3937c7c6ea",
+        "status": "complete",
+        "complete_net": -31.042992685775985
+      }
+    ],
+    "cluster_notional": 59999.89438706153,
+    "cluster_margin": 6000.0,
+    "cluster_complete_net": -233.5207873684028,
+    "decisions_n": 16,
+    "stop_events_pack_n": 0
+  },
+  "litjup": {
+    "LIT": {
+      "trade_id": "20261119T132017_bd1972b2:LITUSDT:24c0102897",
+      "symbol": "LITUSDT",
+      "side": "LONG",
+      "source_tags": [
+        "MARKET_SPIKE"
+      ],
+      "run_id_open": "20261119T132017_bd1972b2",
+      "open_at": "2026-11-19T13:54:10+08:00",
+      "entry": 2.82346458,
+      "qty": 3541.7,
+      "initial_stop": 2.8146272730929076,
+      "risk_u": 31.299089872849116,
+      "open_fee": 4.999932251493,
+      "partials": [
+        {
+          "at": "2026-11-19T14:02:35+08:00",
+          "qty": 1062.51,
+          "pct_of_initial": 0.3,
+          "price": 2.8702258400000003,
+          "net_u": 48.15948453397106,
+          "fee_u": 1.5248218286292001,
+          "exit_reason": "PARTIAL_TP"
+        }
+      ],
+      "final": {
+        "at": "2026-11-19T14:06:58+08:00",
+        "qty": 2479.1899999999996,
+        "price": 2.88162356,
+        "net_u": 140.6151154693417,
+        "fee_u": 3.5720461568581996,
+        "exit_reason": "TRAILING_STOP",
+        "mfe_u": 179.51115606356956,
+        "mae_u": -29.17063928627577,
+        "mfe_ts": "2026-11-19T14:05:40+08:00",
+        "mae_ts": "2026-11-19T13:54:51+08:00",
+        "excursion_source": "polled_quote_estimate",
+        "hold_sec": 768.9127359390259,
+        "partial_tp_done": true
+      },
+      "complete_net": 183.77466775181978,
+      "fees_total": 10.0968002369804,
+      "qty_closed_sum": 3541.7,
+      "qty_match": true,
+      "stop_updates": [
+        {
+          "kind": "BREAKEVEN_STOP",
+          "prev": 2.8146272730929076,
+          "new": 2.82628804458,
+          "ts": "2026-11-19T14:02:35+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 2.82628804458,
+          "new": 2.862018175116618,
+          "ts": "2026-11-19T14:03:06+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 2.862018175116618,
+          "new": 2.882755285123163,
+          "ts": "2026-11-19T14:05:55+08:00",
+          "never_widens_flag": true
+        }
+      ],
+      "stop_widened": false,
+      "funding_data_gap": true,
+      "structure": {
+        "pre_5m": {
+          "n": 5,
+          "complete": true,
+          "open": 2.8165,
+          "high": 2.8296,
+          "low": 2.8111,
+          "close": 2.8237,
+          "vol_sum": 91193.2,
+          "ret": 0.002556364281910206
+        },
+        "pre_10m": {
+          "n": 10,
+          "complete": true,
+          "open": 2.8014,
+          "high": 2.8296,
+          "low": 2.7954,
+          "close": 2.8237,
+          "vol_sum": 173329.1,
+          "ret": 0.007960305561504956
+        },
+        "pre_15m": {
+          "n": 15,
+          "complete": true,
+          "open": 2.8116,
+          "high": 2.8296,
+          "low": 2.7954,
+          "close": 2.8237,
+          "vol_sum": 208428.79999999996,
+          "ret": 0.004303599374021989
+        },
+        "signal_bar": {
+          "dt": "2026-11-19T13:53:00+08:00",
+          "o": 2.817,
+          "h": 2.8296,
+          "l": 2.817,
+          "c": 2.8237,
+          "vol": 59865.4,
+          "available_at_entry": true
+        },
+        "post_1m": {
+          "n": 1,
+          "open": 2.824,
+          "high": 2.824,
+          "low": 2.8172,
+          "close": 2.818,
+          "ret": -0.0021246458923511982,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_3m": {
+          "n": 3,
+          "open": 2.824,
+          "high": 2.824,
+          "low": 2.8172,
+          "close": 2.8216,
+          "ret": -0.0008498583569404163,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_5m": {
+          "n": 5,
+          "open": 2.824,
+          "high": 2.836,
+          "low": 2.8172,
+          "close": 2.8344,
+          "ret": 0.003682719546742276,
+          "note": "after-entry path; not used as signal"
+        }
+      },
+      "mfe_note": "polled_quote_estimate; MFE may track remaining qty after partial",
+      "capture_rate": null
+    },
+    "JUP": {
+      "trade_id": "20261119T124504_79a79b4d:JUPUSDT:c7c28ec23f",
+      "symbol": "JUPUSDT",
+      "side": "SHORT",
+      "source_tags": [
+        "MARKET_SPIKE"
+      ],
+      "run_id_open": "20261119T124504_79a79b4d",
+      "open_at": "2026-11-19T12:59:09+08:00",
+      "entry": 0.26704658000000003,
+      "qty": 37446.0,
+      "initial_stop": 0.2677446591113822,
+      "risk_u": 26.14027040481576,
+      "open_fee": 4.999913117340001,
+      "partials": [
+        {
+          "at": "2026-11-19T13:47:35+08:00",
+          "qty": 11233.799,
+          "pct_of_initial": 0.299999973294878,
+          "price": 0.26415282,
+          "net_u": 31.024198351658672,
+          "fee_u": 1.4837198425815903,
+          "exit_reason": "PARTIAL_TP"
+        }
+      ],
+      "final": {
+        "at": "2026-11-19T13:53:04+08:00",
+        "qty": 26212.201,
+        "price": 0.2645529,
+        "net_u": 61.897584494714955,
+        "fee_u": 3.4672568949664497,
+        "exit_reason": "TRAILING_STOP",
+        "mfe_u": 103.41400371114086,
+        "mae_u": -16.49708731157827,
+        "mfe_ts": "2026-11-19T13:47:35+08:00",
+        "mae_ts": "2026-11-19T12:59:55+08:00",
+        "excursion_source": "polled_quote_estimate",
+        "hold_sec": 3235.3698320388794,
+        "partial_tp_done": true
+      },
+      "complete_net": 87.92186972903363,
+      "fees_total": 9.950889854888041,
+      "qty_closed_sum": 37446.0,
+      "qty_match": true,
+      "stop_updates": [
+        {
+          "kind": "BREAKEVEN_STOP",
+          "prev": 0.2677446591113822,
+          "new": 0.26677953342000005,
+          "ts": "2026-11-19T13:47:35+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 0.26677953342000005,
+          "new": 0.26479083792036057,
+          "ts": "2026-11-19T13:48:04+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 0.26479083792036057,
+          "new": 0.2647825288824597,
+          "ts": "2026-11-19T13:49:04+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 0.2647825288824597,
+          "new": 0.26465611335157974,
+          "ts": "2026-11-19T13:50:04+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 0.26465611335157974,
+          "new": 0.2645444770979354,
+          "ts": "2026-11-19T13:51:04+08:00",
+          "never_widens_flag": true
+        },
+        {
+          "kind": "TRAILING_STOP",
+          "prev": 0.2645444770979354,
+          "new": 0.26449633058532157,
+          "ts": "2026-11-19T13:52:07+08:00",
+          "never_widens_flag": true
+        }
+      ],
+      "stop_widened": false,
+      "funding_data_gap": true,
+      "structure": {
+        "pre_5m": {
+          "n": 5,
+          "complete": true,
+          "open": 0.2681,
+          "high": 0.2684,
+          "low": 0.2669,
+          "close": 0.2673,
+          "vol_sum": 329192.0,
+          "ret": -0.002983961208504375
+        },
+        "pre_10m": {
+          "n": 10,
+          "complete": true,
+          "open": 0.2681,
+          "high": 0.2684,
+          "low": 0.2669,
+          "close": 0.2673,
+          "vol_sum": 484813.0,
+          "ret": -0.002983961208504375
+        },
+        "pre_15m": {
+          "n": 14,
+          "complete": false,
+          "open": 0.2681,
+          "high": 0.2684,
+          "low": 0.2669,
+          "close": 0.2673,
+          "vol_sum": 656536.0,
+          "ret": -0.002983961208504375
+        },
+        "signal_bar": {
+          "dt": "2026-11-19T12:58:00+08:00",
+          "o": 0.2679,
+          "h": 0.2679,
+          "l": 0.2669,
+          "c": 0.2673,
+          "vol": 159698.0,
+          "available_at_entry": true
+        },
+        "post_1m": {
+          "n": 1,
+          "open": 0.2672,
+          "high": 0.2673,
+          "low": 0.2671,
+          "close": 0.2672,
+          "ret": 0.0,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_3m": {
+          "n": 3,
+          "open": 0.2672,
+          "high": 0.2673,
+          "low": 0.2658,
+          "close": 0.2661,
+          "ret": -0.0041167664670658305,
+          "note": "after-entry path; not used as signal"
+        },
+        "post_5m": {
+          "n": 5,
+          "open": 0.2672,
+          "high": 0.2673,
+          "low": 0.2658,
+          "close": 0.2662,
+          "ret": -0.0037425149700598837,
+          "note": "after-entry path; not used as signal"
+        }
+      },
+      "mfe_note": "polled_quote_estimate; MFE may track remaining qty after partial",
+      "capture_rate": null
+    },
+    "lit_all_complete": [
+      {
+        "trade_id": "20261119T132017_bd1972b2:LITUSDT:24c0102897",
+        "symbol": "LITUSDT",
+        "side": "LONG",
+        "source_tags": [
+          "MARKET_SPIKE"
+        ],
+        "run_id_open": "20261119T132017_bd1972b2",
+        "open_at": "2026-11-19T13:54:10+08:00",
+        "entry": 2.82346458,
+        "qty": 3541.7,
+        "initial_stop": 2.8146272730929076,
+        "risk_u": 31.299089872849116,
+        "open_fee": 4.999932251493,
+        "partials": [
+          {
+            "at": "2026-11-19T14:02:35+08:00",
+            "qty": 1062.51,
+            "pct_of_initial": 0.3,
+            "price": 2.8702258400000003,
+            "net_u": 48.15948453397106,
+            "fee_u": 1.5248218286292001,
+            "exit_reason": "PARTIAL_TP"
+          }
+        ],
+        "final": {
+          "at": "2026-11-19T14:06:58+08:00",
+          "qty": 2479.1899999999996,
+          "price": 2.88162356,
+          "net_u": 140.6151154693417,
+          "fee_u": 3.5720461568581996,
+          "exit_reason": "TRAILING_STOP",
+          "mfe_u": 179.51115606356956,
+          "mae_u": -29.17063928627577,
+          "mfe_ts": "2026-11-19T14:05:40+08:00",
+          "mae_ts": "2026-11-19T13:54:51+08:00",
+          "excursion_source": "polled_quote_estimate",
+          "hold_sec": 768.9127359390259,
+          "partial_tp_done": true
+        },
+        "complete_net": 183.77466775181978,
+        "fees_total": 10.0968002369804,
+        "qty_closed_sum": 3541.7,
+        "qty_match": true,
+        "stop_updates": [
+          {
+            "kind": "BREAKEVEN_STOP",
+            "prev": 2.8146272730929076,
+            "new": 2.82628804458,
+            "ts": "2026-11-19T14:02:35+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 2.82628804458,
+            "new": 2.862018175116618,
+            "ts": "2026-11-19T14:03:06+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 2.862018175116618,
+            "new": 2.882755285123163,
+            "ts": "2026-11-19T14:05:55+08:00",
+            "never_widens_flag": true
+          }
+        ],
+        "stop_widened": false,
+        "funding_data_gap": true,
+        "structure": {
+          "pre_5m": {
+            "n": 5,
+            "complete": true,
+            "open": 2.8165,
+            "high": 2.8296,
+            "low": 2.8111,
+            "close": 2.8237,
+            "vol_sum": 91193.2,
+            "ret": 0.002556364281910206
+          },
+          "pre_10m": {
+            "n": 10,
+            "complete": true,
+            "open": 2.8014,
+            "high": 2.8296,
+            "low": 2.7954,
+            "close": 2.8237,
+            "vol_sum": 173329.1,
+            "ret": 0.007960305561504956
+          },
+          "pre_15m": {
+            "n": 15,
+            "complete": true,
+            "open": 2.8116,
+            "high": 2.8296,
+            "low": 2.7954,
+            "close": 2.8237,
+            "vol_sum": 208428.79999999996,
+            "ret": 0.004303599374021989
+          },
+          "signal_bar": {
+            "dt": "2026-11-19T13:53:00+08:00",
+            "o": 2.817,
+            "h": 2.8296,
+            "l": 2.817,
+            "c": 2.8237,
+            "vol": 59865.4,
+            "available_at_entry": true
+          },
+          "post_1m": {
+            "n": 1,
+            "open": 2.824,
+            "high": 2.824,
+            "low": 2.8172,
+            "close": 2.818,
+            "ret": -0.0021246458923511982,
+            "note": "after-entry path; not used as signal"
+          },
+          "post_3m": {
+            "n": 3,
+            "open": 2.824,
+            "high": 2.824,
+            "low": 2.8172,
+            "close": 2.8216,
+            "ret": -0.0008498583569404163,
+            "note": "after-entry path; not used as signal"
+          },
+          "post_5m": {
+            "n": 5,
+            "open": 2.824,
+            "high": 2.836,
+            "low": 2.8172,
+            "close": 2.8344,
+            "ret": 0.003682719546742276,
+            "note": "after-entry path; not used as signal"
+          }
+        },
+        "mfe_note": "polled_quote_estimate; MFE may track remaining qty after partial",
+        "capture_rate": null
+      }
+    ],
+    "jup_all_complete": [
+      {
+        "trade_id": "20261119T124504_79a79b4d:JUPUSDT:c7c28ec23f",
+        "symbol": "JUPUSDT",
+        "side": "SHORT",
+        "source_tags": [
+          "MARKET_SPIKE"
+        ],
+        "run_id_open": "20261119T124504_79a79b4d",
+        "open_at": "2026-11-19T12:59:09+08:00",
+        "entry": 0.26704658000000003,
+        "qty": 37446.0,
+        "initial_stop": 0.2677446591113822,
+        "risk_u": 26.14027040481576,
+        "open_fee": 4.999913117340001,
+        "partials": [
+          {
+            "at": "2026-11-19T13:47:35+08:00",
+            "qty": 11233.799,
+            "pct_of_initial": 0.299999973294878,
+            "price": 0.26415282,
+            "net_u": 31.024198351658672,
+            "fee_u": 1.4837198425815903,
+            "exit_reason": "PARTIAL_TP"
+          }
+        ],
+        "final": {
+          "at": "2026-11-19T13:53:04+08:00",
+          "qty": 26212.201,
+          "price": 0.2645529,
+          "net_u": 61.897584494714955,
+          "fee_u": 3.4672568949664497,
+          "exit_reason": "TRAILING_STOP",
+          "mfe_u": 103.41400371114086,
+          "mae_u": -16.49708731157827,
+          "mfe_ts": "2026-11-19T13:47:35+08:00",
+          "mae_ts": "2026-11-19T12:59:55+08:00",
+          "excursion_source": "polled_quote_estimate",
+          "hold_sec": 3235.3698320388794,
+          "partial_tp_done": true
+        },
+        "complete_net": 87.92186972903363,
+        "fees_total": 9.950889854888041,
+        "qty_closed_sum": 37446.0,
+        "qty_match": true,
+        "stop_updates": [
+          {
+            "kind": "BREAKEVEN_STOP",
+            "prev": 0.2677446591113822,
+            "new": 0.26677953342000005,
+            "ts": "2026-11-19T13:47:35+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 0.26677953342000005,
+            "new": 0.26479083792036057,
+            "ts": "2026-11-19T13:48:04+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 0.26479083792036057,
+            "new": 0.2647825288824597,
+            "ts": "2026-11-19T13:49:04+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 0.2647825288824597,
+            "new": 0.26465611335157974,
+            "ts": "2026-11-19T13:50:04+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 0.26465611335157974,
+            "new": 0.2645444770979354,
+            "ts": "2026-11-19T13:51:04+08:00",
+            "never_widens_flag": true
+          },
+          {
+            "kind": "TRAILING_STOP",
+            "prev": 0.2645444770979354,
+            "new": 0.26449633058532157,
+            "ts": "2026-11-19T13:52:07+08:00",
+            "never_widens_flag": true
+          }
+        ],
+        "stop_widened": false,
+        "funding_data_gap": true,
+        "structure": {
+          "pre_5m": {
+            "n": 5,
+            "complete": true,
+            "open": 0.2681,
+            "high": 0.2684,
+            "low": 0.2669,
+            "close": 0.2673,
+            "vol_sum": 329192.0,
+            "ret": -0.002983961208504375
+          },
+          "pre_10m": {
+            "n": 10,
+            "complete": true,
+            "open": 0.2681,
+            "high": 0.2684,
+            "low": 0.2669,
+            "close": 0.2673,
+            "vol_sum": 484813.0,
+            "ret": -0.002983961208504375
+          },
+          "pre_15m": {
+            "n": 14,
+            "complete": false,
+            "open": 0.2681,
+            "high": 0.2684,
+            "low": 0.2669,
+            "close": 0.2673,
+            "vol_sum": 656536.0,
+            "ret": -0.002983961208504375
+          },
+          "signal_bar": {
+            "dt": "2026-11-19T12:58:00+08:00",
+            "o": 0.2679,
+            "h": 0.2679,
+            "l": 0.2669,
+            "c": 0.2673,
+            "vol": 159698.0,
+            "available_at_entry": true
+          },
+          "post_1m": {
+            "n": 1,
+            "open": 0.2672,
+            "high": 0.2673,
+            "low": 0.2671,
+            "close": 0.2672,
+            "ret": 0.0,
+            "note": "after-entry path; not used as signal"
+          },
+          "post_3m": {
+            "n": 3,
+            "open": 0.2672,
+            "high": 0.2673,
+            "low": 0.2658,
+            "close": 0.2661,
+            "ret": -0.0041167664670658305,
+            "note": "after-entry path; not used as signal"
+          },
+          "post_5m": {
+            "n": 5,
+            "open": 0.2672,
+            "high": 0.2673,
+            "low": 0.2658,
+            "close": 0.2662,
+            "ret": -0.0037425149700598837,
+            "note": "after-entry path; not used as signal"
+          }
+        },
+        "mfe_note": "polled_quote_estimate; MFE may track remaining qty after partial",
+        "capture_rate": null
+      }
+    ]
+  },
+  "code_note": "code_snapshot/portfolio.py mark_price_for_side: LONG→bid*(1-slip); SHORT→ask*(1+slip); stop trigger compares mark vs effective_stop; fill_price=mark; never backfill stop price. stop_events mainly log tighten_stop updates (BREAKEVEN/TRAIL), not every INITIAL_STOP hit."
+}

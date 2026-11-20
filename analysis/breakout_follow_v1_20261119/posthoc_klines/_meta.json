@@ -1,0 +1,440 @@
+{
+  "label": "POSTHOC_EXTERNAL_REFERENCE — fetched after the run; NOT the live strategy input",
+  "endpoint": "https://fapi.binance.com/fapi/v1/klines",
+  "fetched_at_utc": "2026-11-19T02:20:24.987905+00:00",
+  "cutoff_ms": 1795051415913,
+  "symbols": {
+    "1000PEPEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "2974e80fb448ef3233e884a212a59b13bdc9d27b2972142266936724f75df3e9"
+    },
+    "AAVEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "72bc5f0664bfabe03f28acc189be936840cb9acae8c899d838db4b4941a20fa7"
+    },
+    "ADAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "986e25d69f0c37db09c175fedfee05ad51cb0b10bb4e7a80be15350eecfb5f1f"
+    },
+    "AKEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "7bf30b216422cadd4194254118ab5909d6a3dd05b721e935aca55a0a291ead0f"
+    },
+    "APTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "29a4fa007cd7e82cc08ac154e7df24fc851ce476b3169b6dca4df99e431becdb"
+    },
+    "ARBUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "3a8bca7547e87cf57f172fab715ff4fba3e3be81d05ae998737c669273a45a5d"
+    },
+    "ARIAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "cdb86b442b4c7232378d828ab445079961bad3cb9fdff2e1bf307aa21bfa0b5e"
+    },
+    "ASTERUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "3febcfa985cb60b10c1c6ec9e84d508bda0dc5a78332ecb1fce3c9c046d40704"
+    },
+    "AVAXUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1734e6e4ea35315c861aae24f3df0bc66c755568c7e99c521af37b47e8ccee53"
+    },
+    "BCHUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "be7c6b3343c5c7758be621b78fc007ba22401480bce798414924b5672a0daefe"
+    },
+    "BLESSUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "47231ff1f033a91962ec65768bc917249881a5bc10a981ac5dc28fbb70cee86b"
+    },
+    "BNBUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "94419c4fdb024f34616a11a54848d7cc4c9b8dcd9abd854efe8c97e8c45f402d"
+    },
+    "BREVUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "42df58fc64d7cc6a6df95e578eb235c6804396d819fca7752b9d5d7d2031057a"
+    },
+    "BTCUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "23a0dc540457d9e179e1eaab968dbf3c2e99df5b3f372132879d1a9619e939d2"
+    },
+    "BTWUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "4de0450ef7b8e2b977797f3cb30b306e5522e721d953add3311171772b0df09d"
+    },
+    "BULLAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "7db2f5a49d78f5c86f50ad23daca410a48f888d23bf9600868da366917797c2a"
+    },
+    "CROSSUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "caf8476452fdfaecd7a6ae8f9e74be772d9cc60cdb033780411b0669e14d4935"
+    },
+    "DOGEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "a181835e117e476f99a92074743a38786304c481ef14bbb7abe6fb20f41d1b95"
+    },
+    "DOTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "2e99b5d2cc8125f5b321466ea1a45992cf1363fa12c66805c2f4418dbbedbbc9"
+    },
+    "ENAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "3d87b1a00f2c54720d1dfe815f584f102a0151d0206cc00d83b2f1346e823b54"
+    },
+    "ETHUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1ac03451fc59ed64d1018ddb8acbc62987cdc22ab812ba0555d2fe20750a29ca"
+    },
+    "EVAAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "d5b01b58849b690f3eafcc794653f347c0f3917d5601c76a3e6cc6a440d864ed"
+    },
+    "FARTCOINUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "04b9d91b8701b29f3cb95e7b5f6098bafa751f27d6693f6bdd73a88ade4b1ef0"
+    },
+    "FETUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1b9658d15df9d51ff3801adad1c13541c5478dee1d6dd194a3d0669a6eb5ef0c"
+    },
+    "FILUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "16dd5bb72c1b9cda9a9888e5fc45e14ebec49a71a72c720f10de0efae3642fb3"
+    },
+    "GRAMUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "ef956c0da849be9f569cdf84985b767bf43885bb78cf4a58052ec25cc5bd4d46"
+    },
+    "HBARUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "c9ec99158ea6fe9c85f971966c61e543dfe0ed6f14537209a4c9755770c86d85"
+    },
+    "HUMAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "2c569138f0bf0994cfde839914419be5609297127087341120565d362ee1b90d"
+    },
+    "HYPEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "0ec365796969353bbb35f9d82bd7285351b973d19ab3075d69ac22d0b15a0142"
+    },
+    "ICNTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "fd1393b3c4555d7478de4270b97333e19c45871f60958dcdbccd92bdeceb7c0a"
+    },
+    "ICPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "006d9e2a7bd218fbb776d341ce5f7acc50aa2da0b48f9a9baa9bee5e563a37d2"
+    },
+    "INITUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1a70ba8ef444c71a786b775d42827ccc8382a238c0a38d95eddee5c4e5fc31fc"
+    },
+    "INJUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "f1105d26af2bf386bbaaff8faf82f56fd0cc6889f0073374a52dd44584a2643a"
+    },
+    "IRYSUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "76418d91b513379912dd11d77ce4a7293b561088eac10d26efc8b4b0175be831"
+    },
+    "JCTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "d3989b5c3c7ee2e9a6c0822ac910b509f7110281e152de8cd58a8e66845fb38a"
+    },
+    "JUPUSDT": {
+      "rows": 301,
+      "requested_start_ms": 1795033320000,
+      "error": null,
+      "sha256": "fba48ee983fceb2dfe4b5585557a18e0aed0e4e3e69d21372243b633adbbb0a5"
+    },
+    "KAVAUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "e5d488c5bf4ba2f906d6c8d43d4fbf8396dae87339a43fffc68a0065b7b6b39a"
+    },
+    "LINKUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1023ddfe267df953b368de1dfce5f7f54b155101e5b9fb6a088511554fb8c997"
+    },
+    "LITUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "da225d052b1aef9d37d5eba96f2705663df44e33f0512b4d781ce3c1f02017b9"
+    },
+    "LTCUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "aa6b6176c7dff79be6dedfdb987219c3fa29b5e7ddb9ff806dcade06cda418f8"
+    },
+    "MMTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "82b565a6b4a3c06f732a8e81cb6af5e8518256b9dd28e34756d77a70f4b18399"
+    },
+    "NEARUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "2530d6e5abc5158b94fdd8b3726a8fc570475ff89208cf4b83ce581887a046ea"
+    },
+    "NIGHTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "938aa93b025fb51d6dfba06f86f9105fdf12356e2ed8d723f331cb00bf4536ef"
+    },
+    "ONDOUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "f13e0f37296bf6ec7b3c462e61cebc1e9db89ffdb2b1113bf969981310f40dcf"
+    },
+    "OPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "aa6d0221bf8a9fbad4887bc4863532f3e3a8d6364ce1bd836dcdeb8f48297e15"
+    },
+    "PENGUUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "78b71b3e5e76a26f1fd50af26efc4918a36726273d1bdfe7009033644be64e01"
+    },
+    "PHAROSUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "1ee56e1b0853456f9e482b9bf202dd668bafc2696d92fb8a3f04171a355540fb"
+    },
+    "PIEVERSEUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "c9d2ebd0bd14b433d85da8fb2a44ef71bc6d478280855e708eff0c6d1292ec28"
+    },
+    "PIPPINUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "5ab536da33eebfa8f296b8b7fab986dd3528f109bf697f0d32b733975d298913"
+    },
+    "PUMPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "5f8a68a9e07ace5f9539d005ca2e7ada96ae61c0712c4c272ebd9ba3c88f48c2"
+    },
+    "QNTUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "67ed3f9a968bc310f66d51fdd58ca68874d7938b5ec468ebafbec0bbc70ecd85"
+    },
+    "SOLUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "9d10b6e7bf689f213f0664862911bbddd0584942337d0dd5fd28351119a09628"
+    },
+    "SOPHUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "e6bbb3fd5154bf2d950b51e22cc012b4ec048205b16e5e3a878a8f01ddacb319"
+    },
+    "SUIUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "a1a09c5d89aa0d7f5a28dbe7a34f1562d61a927cb95a59fa947b2def7b8723f3"
+    },
+    "TAOUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "df062080c870998a1cc36cafe73286735a42f89579494f57fbce66f151e6162e"
+    },
+    "TLMUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "777efca12f900bad7686ea4683333cf0f3995be0757e1211d31c48db24bbd717"
+    },
+    "TRUMPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "911d0556dff8590204260eb47a63905712a991da4f91e443213b21e01ec9b845"
+    },
+    "TRXUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "d4acb6c7162709ab8543e76fdf1c4821b71a75ee4f355a151fff3d7a15f0d5f7"
+    },
+    "UNIUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "a7b5aba4f0f637104c12c7923d459728fda4bb9fc97ed812c24fee4e547edb69"
+    },
+    "VELVETUSDT": {
+      "rows": 100,
+      "requested_start_ms": 1795045380000,
+      "error": null,
+      "sha256": "88edb627ecccfb6ce932361286f1099ed29d1c0b74e76a30c48b830a0318d188"
+    },
+    "VVVUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "8d16631b52f15f59049ccc01fbf02ac171faa6e0697d6249b8995c9856df5509"
+    },
+    "WLDUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "b9c44eac01482de8176b8a267909665839c8bf9857abdbc5f8cda2500709681e"
+    },
+    "XLMUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "e697ade253f180edb8c9b4d8189f711c7c3594ff0f31152999b4d9dae6ba0327"
+    },
+    "XMRUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "4a2c16bef74fe1b48aa735896ba464c671231ded4a0519b8fad1dc95074ceccb"
+    },
+    "XPLUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "0231cd8f0fa3258edb99a5613e3659e1158da0579afb9a942a3ee85c2ce40198"
+    },
+    "XRPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "80f6375d1f6e29e4d84f906d1dd2f1e461e317c2f75965444fa23c41fb51aced"
+    },
+    "ZECUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "3d20649af04b8d601e108094f91458b5df08629df233ca2119efbdfd4e04e23e"
+    },
+    "ZILUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "4b3592bf3633a0812966ede707da40cf015718367faf483ca7d83822307fbf6c"
+    },
+    "ZKCUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "a0fdb97a7b5e55553e56331e6c8feb41844a103dd96ff7520b39a330fe8020e5"
+    },
+    "ZKPUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "94df770cc609455543dfa17fa498f28d0809b487fbe7dc55d7aab411cbf947ec"
+    },
+    "ZROUSDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "33316e9b1a638a9b16ad49e7d5c8fb6d59fadc09533026855918d7e258a5a35e"
+    },
+    "龙虾USDT": {
+      "rows": 547,
+      "requested_start_ms": 1795018560000,
+      "error": null,
+      "sha256": "c8ebd7893e5384ed4a5ecfca96e853377b09970e9c7e52c3c4fec28477a40063"
+    }
+  }
+}

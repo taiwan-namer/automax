@@ -1,0 +1,144 @@
+{
+  "cutoff_original_asof": "2026-11-19T15:34:22.861537+08:00",
+  "n_original": 47,
+  "sum_net_original": -1631.957971,
+  "n_newer_after_asof": 3,
+  "newer_closed_after_asof": [
+    {
+      "trade_id": "20261119T132017_bd1972b2:XRPUSDT:5ad02f319d",
+      "closed_at": "2026-11-19T15:39:41+08:00",
+      "net": -24.1993
+    },
+    {
+      "trade_id": "20261119T132017_bd1972b2:STRKUSDT:16c592a2b9",
+      "closed_at": "2026-11-19T15:38:27+08:00",
+      "net": -49.6157
+    },
+    {
+      "trade_id": "20261119T132017_bd1972b2:CROSSUSDT:73beb7397e",
+      "closed_at": "2026-11-19T15:37:28+08:00",
+      "net": -51.928
+    }
+  ],
+  "status": "值得診斷／部署證據不足",
+  "a_median": 0.3388590332266136,
+  "b_median": 0.33816712829594325,
+  "a_exploratory": {
+    "0.25": {
+      "keep": {
+        "n": 15,
+        "sum_net": -994.1267,
+        "wins": 2,
+        "wr": 0.1333,
+        "fees": 150.0956,
+        "risk_sum": 939.149
+      },
+      "drop": {
+        "n": 32,
+        "sum_net": -637.8313,
+        "wins": 3,
+        "wr": 0.0938,
+        "fees": 320.1044,
+        "risk_sum": 744.9539
+      }
+    },
+    "0.40": {
+      "keep": {
+        "n": 29,
+        "sum_net": -1112.4649,
+        "wins": 5,
+        "wr": 0.1724,
+        "fees": 290.2886,
+        "risk_sum": 1387.2244
+      },
+      "drop": {
+        "n": 18,
+        "sum_net": -519.4931,
+        "wins": 0,
+        "wr": 0.0,
+        "fees": 179.9114,
+        "risk_sum": 296.8785
+      }
+    }
+  },
+  "b_exploratory": {
+    "0.25": {
+      "keep": {
+        "n": 15,
+        "sum_net": -994.1267,
+        "wins": 2,
+        "wr": 0.1333,
+        "fees": 150.0956,
+        "risk_sum": 939.149
+      },
+      "drop": {
+        "n": 32,
+        "sum_net": -637.8313,
+        "wins": 3,
+        "wr": 0.0938,
+        "fees": 320.1044,
+        "risk_sum": 744.9539
+      }
+    },
+    "0.40": {
+      "keep": {
+        "n": 29,
+        "sum_net": -1112.4649,
+        "wins": 5,
+        "wr": 0.1724,
+        "fees": 290.2886,
+        "risk_sum": 1387.2244
+      },
+      "drop": {
+        "n": 18,
+        "sum_net": -519.4931,
+        "wins": 0,
+        "wr": 0.0,
+        "fees": 179.9114,
+        "risk_sum": 296.8785
+      }
+    }
+  },
+  "clusters_30s": [
+    {
+      "t0": "2026-11-19T12:47:07+08:00",
+      "side": "LONG",
+      "n": 2,
+      "symbols": [
+        "ONDOUSDT",
+        "TAOUSDT"
+      ],
+      "sum_net": -60.3379
+    },
+    {
+      "t0": "2026-11-19T12:57:08+08:00",
+      "side": "SHORT",
+      "n": 2,
+      "symbols": [
+        "AKEUSDT",
+        "ICNTUSDT"
+      ],
+      "sum_net": -149.4225
+    },
+    {
+      "t0": "2026-11-19T14:03:11+08:00",
+      "side": "LONG",
+      "n": 6,
+      "symbols": [
+        "FETUSDT",
+        "TAOUSDT",
+        "KAVAUSDT",
+        "JCTUSDT",
+        "1000PEPEUSDT",
+        "XPLUSDT"
+      ],
+      "sum_net": -233.5208
+    }
+  ],
+  "confounders": [
+    "管理空窗混淆出場",
+    "拒絕樣本不足",
+    "實際出場費不可作進場特徵",
+    "紙上費率≠真實帳戶"
+  ]
+}

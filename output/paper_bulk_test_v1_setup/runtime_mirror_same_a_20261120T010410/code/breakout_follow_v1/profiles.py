@@ -1,0 +1,193 @@
+"""Paper profiles — capital/path overlays only; signal rules stay on base strategy."""
+
+from __future__ import annotations
+
+from typing import Any
+
+BASE_STRATEGY_ID = "breakout_follow_v1"
+BASE_STRATEGY_VERSION = "breakout_follow_v1"
+DEFAULT_PROFILE = "breakout_follow_v1"
+
+# 舊／預設 profile 明確基準（對齊已部署正式：10000／3／日損300）
+LEGACY_PROFILE_BASELINE: dict[str, Any] = {
+    "PROFILE_ID": "breakout_follow_v1",
+    "INITIAL_CAPITAL_USDT": 10_000.0,
+    "MAX_CONCURRENT_POSITIONS": 3,
+    "DAILY_LOSS_LOCK_USDT": 300.0,
+    "MARGIN_PER_TRADE_USDT": 1_000.0,
+    "LEVERAGE": 10.0,
+    "NOTIONAL_USDT": 10_000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "MAX_PER_SYMBOL": 1,
+    "COOLDOWN_MINUTES": 3,
+    "REVERSE_WINDOW_MINUTES": 30,
+    "MAX_REVERSES_PER_WINDOW": 2,
+    "PARTIAL_TP_FRACTION": 0.30,
+    "PARTIAL_TP_NET_USDT": 100.0,
+    "TRAIL_ATR_MULT": 1.5,
+    "TOP_N": 10,
+    "ATR_STOP_MULT": 1.5,
+    "VOL_X_MIN": 3.0,
+    "CODE_FIX_TAG": "fix_20261119_p0p1_trail_after_partial",  # 舊 profile 維持部署 tag；HTTP429 僅隨程式碼，不改舊帳戶參數
+}
+
+PAPER_BULK_TEST_V1: dict[str, Any] = {
+    "PROFILE_ID": "paper_bulk_test_v1",
+    "PROFILE_PURPOSE": "bulk paper data collection — not profit targeting",
+    "INITIAL_CAPITAL_USDT": 50_000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 5_000.0,
+    # 沿用舊基底風控口徑（非日損／本金／倉數）
+    "MARGIN_PER_TRADE_USDT": 1_000.0,
+    "LEVERAGE": 10.0,
+    "NOTIONAL_USDT": 10_000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "MAX_PER_SYMBOL": 1,
+    "COOLDOWN_MINUTES": 3,
+    "REVERSE_WINDOW_MINUTES": 30,
+    "MAX_REVERSES_PER_WINDOW": 2,
+    "PARTIAL_TP_FRACTION": 0.30,
+    "PARTIAL_TP_NET_USDT": 100.0,
+    "TRAIL_ATR_MULT": 1.5,
+    "TOP_N": 10,
+    "ATR_STOP_MULT": 1.5,
+    "VOL_X_MIN": 3.0,
+    "CODE_FIX_TAG": "fix_20261119_mgmt_dl5000_batchside1",
+    "REVERSE_POLICY": "approved_full_breakout_reverse_reopen_20261119",
+}
+
+
+PAPER_REVERSE_FIXED_EXIT_V1: dict[str, Any] = {
+    "PROFILE_ID": "paper_reverse_fixed_exit_v1",
+    "PROFILE_PURPOSE": (
+        "mirror same-side of paper_reverse_fixed_usdt_50_75_v1 entries — "
+        "ATR TP1×/SL1.5× exits; shared scan via B; not self-scan"
+    ),
+    "INITIAL_CAPITAL_USDT": 50_000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 8_000.0,
+    # 名義／保證金固定，不隨本金放大
+    "MARGIN_PER_TRADE_USDT": 1_000.0,
+    "LEVERAGE": 10.0,
+    "NOTIONAL_USDT": 10_000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "MAX_PER_SYMBOL": 1,
+    "COOLDOWN_MINUTES": 3,
+    "REVERSE_WINDOW_MINUTES": 30,
+    "MAX_REVERSES_PER_WINDOW": 0,  # 關閉反手重開（數值閘門；另有 ENABLE_REVERSE_REOPEN=False）
+    "PARTIAL_TP_FRACTION": 0.30,  # 數值保留；行為由 ENABLE_PARTIAL_TP=False 關閉
+    "PARTIAL_TP_NET_USDT": 100.0,
+    "TRAIL_ATR_MULT": 1.5,
+    "TOP_N": 10,
+    "ATR_STOP_MULT": 1.5,
+    "VOL_X_MIN": 3.0,
+    "CODE_FIX_TAG": "fix_20261120_mirror_same_b_atr_tp1_sl15",
+    "REVERSE_POLICY": "disabled_fixed_exit_no_reverse_reopen",
+    # 不自掃；進場跟 B 同向；退出仍 ATR
+    "SIGNAL_DIRECTION_FLIP": False,
+    "FIXED_TAKE_PROFIT_ENABLED": True,
+    "ATR_TP_MULT": 1.0,
+    "ENABLE_PARTIAL_TP": False,
+    "ENABLE_BREAKEVEN": False,
+    "ENABLE_TRAILING_STOP": False,
+    "ENABLE_REVERSE_REOPEN": False,
+    "NEW_ENTRIES_UNTIL_ISO": "2026-11-20T20:15:00+08:00",
+    "FIXED_GROSS_EXIT_ENABLED": False,
+    "MIRROR_ONLY_ENTRIES": True,
+    "MIRROR_SOURCE_PROFILE": "paper_reverse_fixed_usdt_50_75_v1",
+    "MIRROR_INVERSE": False,
+}
+
+# 同期觀察：進場／資金／flip 對齊 reverse；僅退出改為固定毛 +50／-75 USDT（非 ATR）
+PAPER_REVERSE_FIXED_USDT_50_75_V1: dict[str, Any] = {
+    "PROFILE_ID": "paper_reverse_fixed_usdt_50_75_v1",
+    "PROFILE_PURPOSE": (
+        "concurrent paper observation vs reverse ATR exits — "
+        "fixed gross TP+50/SL-75 USDT; not profit targeting; not same-signal A/B"
+    ),
+    "INITIAL_CAPITAL_USDT": 50_000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 8_000.0,
+    "MARGIN_PER_TRADE_USDT": 1_000.0,
+    "LEVERAGE": 10.0,
+    "NOTIONAL_USDT": 10_000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "MAX_PER_SYMBOL": 1,
+    "COOLDOWN_MINUTES": 3,
+    "REVERSE_WINDOW_MINUTES": 30,
+    "MAX_REVERSES_PER_WINDOW": 0,
+    "PARTIAL_TP_FRACTION": 0.30,
+    "PARTIAL_TP_NET_USDT": 100.0,
+    "TRAIL_ATR_MULT": 1.5,
+    "TOP_N": 10,
+    "ATR_STOP_MULT": 1.5,  # 保留數值；fixed-gross 啟用時不使用 ATR 決定退出距離
+    "VOL_X_MIN": 3.0,
+    "CODE_FIX_TAG": "fix_20261119_reverse_fixed_gross_tp50_sl75",
+    "REVERSE_POLICY": "disabled_fixed_exit_no_reverse_reopen",
+    "SIGNAL_DIRECTION_FLIP": True,
+    "FIXED_TAKE_PROFIT_ENABLED": True,
+    "ATR_TP_MULT": 1.0,  # ATR 路徑備用；fixed-gross 啟用時不使用
+    "ENABLE_PARTIAL_TP": False,
+    "ENABLE_BREAKEVEN": False,
+    "ENABLE_TRAILING_STOP": False,
+    "ENABLE_REVERSE_REOPEN": False,
+    "NEW_ENTRIES_UNTIL_ISO": "2026-11-20T20:15:00+08:00",
+    # opt-in 固定毛額退出（預設他 profile 不開）
+    "FIXED_GROSS_EXIT_ENABLED": True,
+    "FIXED_GROSS_TP_USDT": 50.0,
+    "FIXED_GROSS_SL_USDT": 75.0,
+}
+
+# C：鏡像 B 進場、方向相反；退出同毛 +50/−75；不自掃訊號開倉
+PAPER_REVERSE_FIXED_USDT_50_75_INV_V1: dict[str, Any] = {
+    "PROFILE_ID": "paper_reverse_fixed_usdt_50_75_inv_v1",
+    "PROFILE_PURPOSE": (
+        "mirror inverse of paper_reverse_fixed_usdt_50_75_v1 entries — "
+        "same source opens, opposite side; fixed gross TP+50/SL-75; test only"
+    ),
+    "INITIAL_CAPITAL_USDT": 50_000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 8_000.0,
+    "MARGIN_PER_TRADE_USDT": 1_000.0,
+    "LEVERAGE": 10.0,
+    "NOTIONAL_USDT": 10_000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "MAX_PER_SYMBOL": 1,
+    "COOLDOWN_MINUTES": 3,
+    "REVERSE_WINDOW_MINUTES": 30,
+    "MAX_REVERSES_PER_WINDOW": 0,
+    "PARTIAL_TP_FRACTION": 0.30,
+    "PARTIAL_TP_NET_USDT": 100.0,
+    "TRAIL_ATR_MULT": 1.5,
+    "TOP_N": 10,
+    "ATR_STOP_MULT": 1.5,
+    "VOL_X_MIN": 3.0,
+    "CODE_FIX_TAG": "fix_20261120_mirror_inv_b_tp50_sl75",
+    "REVERSE_POLICY": "disabled_fixed_exit_no_reverse_reopen",
+    "SIGNAL_DIRECTION_FLIP": False,  # 不自掃；方向由鏡像反轉決定
+    "FIXED_TAKE_PROFIT_ENABLED": True,
+    "ATR_TP_MULT": 1.0,
+    "ENABLE_PARTIAL_TP": False,
+    "ENABLE_BREAKEVEN": False,
+    "ENABLE_TRAILING_STOP": False,
+    "ENABLE_REVERSE_REOPEN": False,
+    "NEW_ENTRIES_UNTIL_ISO": "2026-11-20T20:15:00+08:00",
+    "FIXED_GROSS_EXIT_ENABLED": True,
+    "FIXED_GROSS_TP_USDT": 50.0,
+    "FIXED_GROSS_SL_USDT": 75.0,
+    "MIRROR_ONLY_ENTRIES": True,
+    "MIRROR_SOURCE_PROFILE": "paper_reverse_fixed_usdt_50_75_v1",
+    "MIRROR_INVERSE": True,
+}
+
+PROFILES: dict[str, dict[str, Any]] = {
+    DEFAULT_PROFILE: LEGACY_PROFILE_BASELINE,
+    "paper_bulk_test_v1": PAPER_BULK_TEST_V1,
+    "paper_reverse_fixed_exit_v1": PAPER_REVERSE_FIXED_EXIT_V1,
+    "paper_reverse_fixed_usdt_50_75_v1": PAPER_REVERSE_FIXED_USDT_50_75_V1,
+    "paper_reverse_fixed_usdt_50_75_inv_v1": PAPER_REVERSE_FIXED_USDT_50_75_INV_V1,
+}
+
+
+def list_profiles() -> list[str]:
+    return sorted(PROFILES.keys())

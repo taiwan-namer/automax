@@ -1,0 +1,52 @@
+{
+  "B": {
+    "label": "B",
+    "n_closed": 35,
+    "le5": {
+      "bucket": "le5",
+      "n": 8,
+      "sum_net": -17.625581506634482,
+      "avg_net": -2.2031976883293103
+    },
+    "gt5": {
+      "bucket": "gt5",
+      "n": 27,
+      "sum_net": -128.51229350210164,
+      "avg_net": -4.7597145741519125
+    },
+    "unknown": {
+      "bucket": "unknown",
+      "n": 0,
+      "sum_net": 0.0,
+      "avg_net": null
+    },
+    "avg_delta_gt5_minus_le5": -2.556516885822602,
+    "claim": "gt5_worse_per_trade",
+    "note": "總虧損差同時受筆數影響；不得用 sum 宣稱品質。以 avg_net 為每筆期望。"
+  },
+  "C": {
+    "label": "C",
+    "n_closed": 36,
+    "le5": {
+      "bucket": "le5",
+      "n": 14,
+      "sum_net": -186.09169136123933,
+      "avg_net": -13.292263668659952
+    },
+    "gt5": {
+      "bucket": "gt5",
+      "n": 22,
+      "sum_net": -265.17857726114494,
+      "avg_net": -12.053571693688406
+    },
+    "unknown": {
+      "bucket": "unknown",
+      "n": 0,
+      "sum_net": 0.0,
+      "avg_net": null
+    },
+    "avg_delta_gt5_minus_le5": 1.2386919749715464,
+    "claim": "gt5_better_or_equal_per_trade",
+    "note": "總虧損差同時受筆數影響；不得用 sum 宣稱品質。以 avg_net 為每筆期望。"
+  }
+}

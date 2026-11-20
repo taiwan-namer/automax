@@ -1,0 +1,42 @@
+[
+  {
+    "account": "B",
+    "asof": "2026-11-20T02:29:07.759424+08:00",
+    "initial_capital_u": 50000.0,
+    "cash_u": 44409.75946862475,
+    "realized_net_u_account": -1590.2405313752442,
+    "realized_fees_u_account": 560.0341506988615,
+    "margin_locked_u": 4000.0,
+    "check_cash_eq_initial_plus_realized_minus_margin": true,
+    "sum_CLOSE_net_u_gross_minus_close_fee_only": -1300.248493767944,
+    "sum_OPEN_fees_all": 289.9920376072999,
+    "sum_CLOSE_fees": 270.0421130915616,
+    "sum_OPEN_fees_on_closed_trades": 269.99228501870385,
+    "sum_OPEN_fees_still_open_positions": 19.99975258859604,
+    "identity_realized_eq_closeNets_minus_allOpenFees": true,
+    "sum_closed_roundtrip_net_incl_both_fees": -1570.2407787866466,
+    "recon_realized_vs_rt_minus_openFeesStillOpen": -1.5916157281026244e-12,
+    "n_closed": 54,
+    "n_open_positions": 4
+  },
+  {
+    "account": "C",
+    "asof": "2026-11-20T02:29:07.759424+08:00",
+    "initial_capital_u": 50000.0,
+    "cash_u": 45343.02676561702,
+    "realized_net_u_account": -1656.973234383005,
+    "realized_fees_u_account": 315.07588885173953,
+    "margin_locked_u": 3000.0,
+    "check_cash_eq_initial_plus_realized_minus_margin": true,
+    "sum_CLOSE_net_u_gross_minus_close_fee_only": -1491.9821738326114,
+    "sum_OPEN_fees_all": 164.99106055039402,
+    "sum_CLOSE_fees": 150.08482830134548,
+    "sum_OPEN_fees_on_closed_trades": 149.9911057135566,
+    "sum_OPEN_fees_still_open_positions": 14.999954836837418,
+    "identity_realized_eq_closeNets_minus_allOpenFees": true,
+    "sum_closed_roundtrip_net_incl_both_fees": -1641.973279546168,
+    "recon_realized_vs_rt_minus_openFeesStillOpen": 2.2737367544323206e-13,
+    "n_closed": 30,
+    "n_open_positions": 3
+  }
+]

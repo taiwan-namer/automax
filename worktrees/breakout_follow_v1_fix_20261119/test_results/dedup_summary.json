@@ -1,0 +1,22 @@
+[
+  {
+    "test": "test_engine_oneshot_block_still_allows_new_signal_bar",
+    "status": "PASSED",
+    "error": ""
+  },
+  {
+    "test": "test_opposite_side_different_key_allowed",
+    "status": "PASSED",
+    "error": ""
+  },
+  {
+    "test": "test_rejected_try_open_does_not_consume_key_in_portfolio_layer",
+    "status": "PASSED",
+    "error": ""
+  },
+  {
+    "test": "test_success_dedup_persists_across_restart",
+    "status": "PASSED",
+    "error": ""
+  }
+]

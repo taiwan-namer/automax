@@ -1,0 +1,92 @@
+{
+  "decompose": {
+    "n": 35,
+    "gross_win_rate": 0.6571428571428571,
+    "net_win_rate": 0.6571428571428571,
+    "avg_net_win": 48.048150388155946,
+    "avg_net_loss": -104.27044449469359,
+    "payoff_abs_avgWin_over_avgLoss": 0.4608031606751341,
+    "net_expectancy": -4.175367857392466,
+    "sum_net": -146.1378750087361,
+    "sum_fees": 350.0605841643383,
+    "sum_raw_gross": 203.92270915560198,
+    "top3_loss_sum": -386.07474089753737,
+    "top3_loss_share_of_all_losses": 0.30855239210601126,
+    "top3_ids": [
+      "20261120T042025_ab76e26a:MEGAUSDT:6f1562190f",
+      "20261120T042025_ab76e26a:VELVETUSDT:6a0779e488",
+      "20261120T042025_ab76e26a:KAVAUSDT:a239db7c75"
+    ],
+    "tp_overshoot_mean": 8.058935192391363,
+    "sl_overshoot_mean": -19.286066689116605,
+    "attribution_note": "無歷史 bid/ask 輪詢軌跡 → 不硬拆『路徑損失 vs 執行延遲』；僅報價格相對障礙超額（fills exit vs raw barrier）。"
+  },
+  "ttl5": {
+    "n_queued": 62,
+    "n_filled_all": 36,
+    "n_filled_closed_complete": 35,
+    "n_filled_open_at_cutoff": 1,
+    "口径说明": "已平成交=35；含未平成交=36 (=closed 35 + open 1)。未平不當作0，也不併入已平平均分母。",
+    "baseline_closed_sum": -146.13787500873616,
+    "baseline_closed_avg": -4.1753678573924615,
+    "baseline_closed_n": 35,
+    "ttl5_keep_closed_sum": -17.625581506634482,
+    "ttl5_keep_closed_avg": -2.2031976883293103,
+    "ttl5_keep_closed_n": 8,
+    "ttl5_cancel_closed_n": 27,
+    "ttl5_cancel_closed_sum": -128.51229350210164,
+    "ttl5_cancel_closed_avg": -4.7597145741519125,
+    "missed_wins_sum": 825.3426254726292,
+    "avoided_loss_sum": 953.8549189747307,
+    "per_queued_signal_n_excl_open": 61,
+    "per_queued_sum_baseline_excl_open": -146.13787500873616,
+    "per_queued_avg_baseline_excl_open": -2.3957028689956745,
+    "per_queued_sum_ttl5_excl_open": -17.625581506634482,
+    "per_queued_avg_ttl5_excl_open": -0.28894395912515547,
+    "open_fill_trade_ids": [
+      "20261120T042025_ab76e26a:ETHFIUSDT:43f4f53aad"
+    ]
+  },
+  "c3": {
+    "formula": "DROP = (pre_fill_accel_against is True) AND (trend_15m_vs_side == 'AGAINST'); else KEEP. missing→KEEP.",
+    "n": 35,
+    "n_keep": 8,
+    "n_drop": 27,
+    "trend15_against_n": 35,
+    "accel_true_n": 27,
+    "both_n": 27,
+    "trend15_all_against": true,
+    "why_8_kept": "trend15_against 可為全 True，但 DROP 還要求 accel_against==True；accel_true=27，故 KEEP=8（含 accel 為 False 的筆）。",
+    "sum_net_all": -146.1378750087361,
+    "sum_net_keep": 28.074527447492443,
+    "sum_net_drop": -174.2124024562286,
+    "avg_net_all": -4.17536785739246,
+    "avg_net_keep": 3.5093159309365554,
+    "missed_wins": 820.587030846093,
+    "avoided_losses": 994.7994333023214,
+    "oos": [
+      {
+        "trade_id": "20261120T042025_ab76e26a:ETCUSDT:0f4c404d85",
+        "C3_DROP": true,
+        "net": null,
+        "exit": null,
+        "accel": true,
+        "trend15": "AGAINST",
+        "status_note": "未平則 net=None；不足樣外"
+      }
+    ]
+  },
+  "partial70_30": {
+    "n_complete_vs_baseline": 35,
+    "sum_baseline": -146.1378750087361,
+    "sum_partial": 123.1408647810572,
+    "delta": 269.2787397897933,
+    "avg_baseline": -4.17536785739246,
+    "avg_partial": 3.51831042231592,
+    "n_open_partial": 1,
+    "sum_mark_all_incl_open": 152.30755672667567
+  },
+  "prior_note": "本樣本固定拉TP/縮SL不優於50/75（沿用已驗證）；本輪不重掃。",
+  "oos_note": "C3/TTL 樣外僅 1 筆級；不足宣稱驗證。",
+  "account_replay": "未完成"
+}

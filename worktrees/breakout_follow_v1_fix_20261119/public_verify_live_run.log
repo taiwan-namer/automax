@@ -1,0 +1,42 @@
+[2026-11-19T11:32:18+08:00] public verify start out=/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218 symbols=['BTCUSDT', 'ETHUSDT', 'SOLUSDT'] need_closes=5
+[2026-11-19T11:32:18+08:00] waiting 43.1s for next close+2s (closes_seen=0)
+  BTCUSDT closed=2026-11-19T11:32:00+08:00 lag=0 sig_S=1795059120000 excl=[]
+  ETHUSDT closed=2026-11-19T11:32:00+08:00 lag=0 sig_S=1795059120000 excl=[]
+  SOLUSDT closed=2026-11-19T11:32:00+08:00 lag=0 sig_S=1795059120000 excl=[]
+  MID BTCUSDT last_ot=2026-11-19T11:33:00+08:00 is_closed=False last_closed=2026-11-19T11:32:00+08:00
+  MID ETHUSDT last_ot=2026-11-19T11:33:00+08:00 is_closed=False last_closed=2026-11-19T11:32:00+08:00
+  MID SOLUSDT last_ot=2026-11-19T11:33:00+08:00 is_closed=False last_closed=2026-11-19T11:32:00+08:00
+[2026-11-19T11:33:23+08:00] waiting 38.9s for next close+2s (closes_seen=1)
+  BTCUSDT closed=2026-11-19T11:33:00+08:00 lag=0 sig_S=1795059180000 excl=[]
+  ETHUSDT closed=2026-11-19T11:33:00+08:00 lag=0 sig_S=1795059180000 excl=[]
+  SOLUSDT closed=2026-11-19T11:33:00+08:00 lag=0 sig_S=1795059180000 excl=[]
+  MID BTCUSDT last_ot=2026-11-19T11:34:00+08:00 is_closed=False last_closed=2026-11-19T11:33:00+08:00
+  MID ETHUSDT last_ot=2026-11-19T11:34:00+08:00 is_closed=False last_closed=2026-11-19T11:33:00+08:00
+  MID SOLUSDT last_ot=2026-11-19T11:34:00+08:00 is_closed=False last_closed=2026-11-19T11:33:00+08:00
+[2026-11-19T11:34:22+08:00] waiting 39.1s for next close+2s (closes_seen=2)
+  BTCUSDT closed=2026-11-19T11:34:00+08:00 lag=0 sig_S=1795059240000 excl=[]
+  ETHUSDT closed=2026-11-19T11:34:00+08:00 lag=0 sig_S=1795059240000 excl=[1795059300000]
+  SOLUSDT closed=2026-11-19T11:34:00+08:00 lag=0 sig_S=1795059240000 excl=[]
+  MID BTCUSDT last_ot=2026-11-19T11:35:00+08:00 is_closed=False last_closed=2026-11-19T11:34:00+08:00
+  MID ETHUSDT last_ot=2026-11-19T11:35:00+08:00 is_closed=False last_closed=2026-11-19T11:34:00+08:00
+  MID SOLUSDT last_ot=2026-11-19T11:35:00+08:00 is_closed=False last_closed=2026-11-19T11:34:00+08:00
+[2026-11-19T11:35:22+08:00] waiting 39.1s for next close+2s (closes_seen=3)
+  BTCUSDT closed=2026-11-19T11:35:00+08:00 lag=0 sig_S=1795059300000 excl=[]
+  ETHUSDT closed=2026-11-19T11:35:00+08:00 lag=0 sig_S=1795059300000 excl=[1795059360000]
+  SOLUSDT closed=2026-11-19T11:35:00+08:00 lag=0 sig_S=1795059300000 excl=[1795059360000]
+  MID BTCUSDT last_ot=2026-11-19T11:36:00+08:00 is_closed=False last_closed=2026-11-19T11:35:00+08:00
+  MID ETHUSDT last_ot=2026-11-19T11:36:00+08:00 is_closed=False last_closed=2026-11-19T11:35:00+08:00
+  MID SOLUSDT last_ot=2026-11-19T11:36:00+08:00 is_closed=False last_closed=2026-11-19T11:35:00+08:00
+[2026-11-19T11:36:22+08:00] waiting 39.1s for next close+2s (closes_seen=4)
+  BTCUSDT closed=2026-11-19T11:36:00+08:00 lag=0 sig_S=1795059360000 excl=[]
+  ETHUSDT closed=2026-11-19T11:36:00+08:00 lag=0 sig_S=1795059360000 excl=[]
+  SOLUSDT closed=2026-11-19T11:36:00+08:00 lag=0 sig_S=1795059360000 excl=[]
+  MID BTCUSDT last_ot=2026-11-19T11:37:00+08:00 is_closed=False last_closed=2026-11-19T11:36:00+08:00
+  MID ETHUSDT last_ot=2026-11-19T11:37:00+08:00 is_closed=False last_closed=2026-11-19T11:36:00+08:00
+  MID SOLUSDT last_ot=2026-11-19T11:37:00+08:00 is_closed=False last_closed=2026-11-19T11:36:00+08:00
+{
+  "passed": true,
+  "failures": [],
+  "closes": 5,
+  "out": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/public_verify_out/20261119T113218"
+}

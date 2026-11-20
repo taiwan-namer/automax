@@ -1,0 +1,387 @@
+[
+  {
+    "symbol": "PIPPINUSDT",
+    "trade_id": "20261119T132017_bd1972b2:PIPPINUSDT:004beb352f",
+    "side": "SHORT",
+    "open_at": "2026-11-19T13:55:08+08:00",
+    "close_at": "2026-11-19T13:59:05+08:00",
+    "exit_reason": "INITIAL_STOP",
+    "complete_net": -184.84502738326847,
+    "entry": 0.016986602000000003,
+    "exit": 0.017283456,
+    "stop": 0.017124085619176537,
+    "qty": 588699.0,
+    "stop_dist_pct": 0.0080936504650273,
+    "risk_u": 80.93646912560622,
+    "roundtrip_fee": 10.087374437271002,
+    "fee_to_risk": 0.12463324069173677,
+    "signal_bar": {
+      "amp_pct": 0.00879249706916749,
+      "body_ratio": 0.5333333333333441,
+      "upper_wick_ratio": 0.06666666666666513,
+      "lower_wick_ratio": 0.39999999999999075,
+      "o": 0.01706,
+      "h": 0.01707,
+      "l": 0.01692,
+      "c": 0.01698
+    },
+    "signal_ot": 1795067640000,
+    "sig_available": true,
+    "htf_10m": {
+      "dt": "2026-11-19T13:40:00+08:00",
+      "ret": -0.00406740267286465,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T13:50:00+08:00"
+    },
+    "htf_15m": {
+      "dt": "2026-11-19T13:30:00+08:00",
+      "ret": 0.0,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T13:45:00+08:00"
+    },
+    "post1": {
+      "n": 1,
+      "close": 0.01694,
+      "side_adj_ret": 0.0027434562839585702,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post3": {
+      "n": 3,
+      "close": 0.01695,
+      "side_adj_ret": 0.002154757025566598,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post5": {
+      "n": 5,
+      "close": 0.0171,
+      "side_adj_ret": -0.0066757318503133925,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "reclaim5": {
+      "ok": true,
+      "mins": 5,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "reclaim10": {
+      "ok": true,
+      "mins": 10,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "funding_data_gap": true
+  },
+  {
+    "symbol": "TAOUSDT",
+    "trade_id": "20261119T132017_bd1972b2:TAOUSDT:92719e314c",
+    "side": "LONG",
+    "open_at": "2026-11-19T14:03:11+08:00",
+    "close_at": "2026-11-19T14:05:40+08:00",
+    "exit_reason": "INITIAL_STOP",
+    "complete_net": -31.830751847614632,
+    "entry": 196.119216,
+    "exit": 195.690854,
+    "stop": 195.78332417479325,
+    "qty": 50.989,
+    "stop_dist_pct": 0.0017126920658643873,
+    "risk_u": 17.12678827546667,
+    "roundtrip_fee": 9.989001829614999,
+    "fee_to_risk": 0.5832384723248889,
+    "signal_bar": {
+      "amp_pct": 0.002042275094455252,
+      "body_ratio": 0.27499999999995917,
+      "upper_wick_ratio": 0.45000000000001067,
+      "lower_wick_ratio": 0.2750000000000302,
+      "o": 195.86,
+      "h": 196.15,
+      "l": 195.75,
+      "c": 195.97
+    },
+    "signal_ot": 1795068120000,
+    "sig_available": true,
+    "htf_10m": {
+      "dt": "2026-11-19T13:50:00+08:00",
+      "ret": 0.0029262282458032834,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T14:00:00+08:00"
+    },
+    "htf_15m": {
+      "dt": "2026-11-19T13:45:00+08:00",
+      "ret": 0.0037507064686842636,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T14:00:00+08:00"
+    },
+    "post1": {
+      "n": 1,
+      "close": 196.01,
+      "side_adj_ret": -0.000556885766869492,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post3": {
+      "n": 3,
+      "close": 195.72,
+      "side_adj_ret": -0.002035578196478185,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post5": {
+      "n": 5,
+      "close": 195.61,
+      "side_adj_ret": -0.0025964615318469393,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "reclaim5": {
+      "ok": false,
+      "mins": 5,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "reclaim10": {
+      "ok": false,
+      "mins": 10,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "funding_data_gap": true
+  },
+  {
+    "symbol": "FETUSDT",
+    "trade_id": "20261119T132017_bd1972b2:FETUSDT:6787454908",
+    "side": "LONG",
+    "open_at": "2026-11-19T14:03:11+08:00",
+    "close_at": "2026-11-19T14:05:52+08:00",
+    "exit_reason": "INITIAL_STOP",
+    "complete_net": -37.250113326920356,
+    "entry": 0.12892578,
+    "exit": 0.12857427999999999,
+    "stop": 0.12865550701106682,
+    "qty": 77564.0,
+    "stop_dist_pct": 0.0020963455790856834,
+    "risk_u": 20.963454113612663,
+    "roundtrip_fee": 9.98636732692,
+    "fee_to_risk": 0.47637031916583494,
+    "signal_bar": {
+      "amp_pct": 0.0031080031080029814,
+      "body_ratio": 0.4999999999999653,
+      "upper_wick_ratio": 0.5000000000000347,
+      "lower_wick_ratio": 0.0,
+      "o": 0.1287,
+      "h": 0.1291,
+      "l": 0.1287,
+      "c": 0.1289
+    },
+    "signal_ot": 1795068120000,
+    "sig_available": true,
+    "htf_10m": {
+      "dt": "2026-11-19T13:50:00+08:00",
+      "ret": 0.0007776049766719809,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T14:00:00+08:00"
+    },
+    "htf_15m": {
+      "dt": "2026-11-19T13:45:00+08:00",
+      "ret": 0.0,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T14:00:00+08:00"
+    },
+    "post1": {
+      "n": 1,
+      "close": 0.1288,
+      "side_adj_ret": -0.0009756000700557485,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post3": {
+      "n": 3,
+      "close": 0.1286,
+      "side_adj_ret": -0.002526880194170613,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post5": {
+      "n": 5,
+      "close": 0.1285,
+      "side_adj_ret": -0.003302520256227938,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "reclaim5": {
+      "ok": false,
+      "mins": 5,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "reclaim10": {
+      "ok": true,
+      "mins": 10,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "funding_data_gap": true
+  },
+  {
+    "symbol": "LITUSDT",
+    "trade_id": "20261119T132017_bd1972b2:LITUSDT:24c0102897",
+    "side": "LONG",
+    "open_at": "2026-11-19T13:54:10+08:00",
+    "close_at": "2026-11-19T14:06:58+08:00",
+    "exit_reason": "TRAILING_STOP",
+    "complete_net": 183.77466775181978,
+    "entry": 2.82346458,
+    "exit": 2.88162356,
+    "stop": 2.8146272730929076,
+    "qty": 3541.7,
+    "stop_dist_pct": 0.00312995139719174,
+    "risk_u": 31.299089872849116,
+    "roundtrip_fee": 10.0968002369804,
+    "fee_to_risk": 0.32259085736991433,
+    "signal_bar": {
+      "amp_pct": 0.004472843450479214,
+      "body_ratio": 0.5317460317460284,
+      "upper_wick_ratio": 0.4682539682539716,
+      "lower_wick_ratio": 0.0,
+      "o": 2.817,
+      "h": 2.8296,
+      "l": 2.817,
+      "c": 2.8237
+    },
+    "signal_ot": 1795067580000,
+    "sig_available": true,
+    "htf_10m": {
+      "dt": "2026-11-19T13:40:00+08:00",
+      "ret": 0.0018867252856787165,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T13:50:00+08:00"
+    },
+    "htf_15m": {
+      "dt": "2026-11-19T13:30:00+08:00",
+      "ret": -0.0026737014723182207,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T13:45:00+08:00"
+    },
+    "post1": {
+      "n": 1,
+      "close": 2.818,
+      "side_adj_ret": -0.0019354165229159494,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post3": {
+      "n": 3,
+      "close": 2.8216,
+      "side_adj_ret": -0.0006603872466499627,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post5": {
+      "n": 5,
+      "close": 2.8344,
+      "side_adj_ret": 0.0038730501800734573,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "reclaim5": {
+      "ok": true,
+      "mins": 5,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "reclaim10": {
+      "ok": true,
+      "mins": 10,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "funding_data_gap": true
+  },
+  {
+    "symbol": "JUPUSDT",
+    "trade_id": "20261119T124504_79a79b4d:JUPUSDT:c7c28ec23f",
+    "side": "SHORT",
+    "open_at": "2026-11-19T12:59:09+08:00",
+    "close_at": "2026-11-19T13:53:04+08:00",
+    "exit_reason": "TRAILING_STOP",
+    "complete_net": 87.92186972903363,
+    "entry": 0.26704658000000003,
+    "exit": 0.2645529,
+    "stop": 0.2677446591113822,
+    "qty": 37446.0,
+    "stop_dist_pct": 0.0026140724639953966,
+    "risk_u": 26.14027040481576,
+    "roundtrip_fee": 9.950889854888041,
+    "fee_to_risk": 0.3806727972123354,
+    "signal_bar": {
+      "amp_pct": 0.003732736095558047,
+      "body_ratio": 0.6000000000000444,
+      "upper_wick_ratio": 0.0,
+      "lower_wick_ratio": 0.3999999999999556,
+      "o": 0.2679,
+      "h": 0.2679,
+      "l": 0.2669,
+      "c": 0.2673
+    },
+    "signal_ot": 1795064280000,
+    "sig_available": true,
+    "htf_10m": {
+      "dt": "2026-11-19T12:40:00+08:00",
+      "ret": -0.002607076350093236,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T12:50:00+08:00"
+    },
+    "htf_15m": {
+      "dt": "2026-11-19T12:30:00+08:00",
+      "ret": 0.002992891881780857,
+      "complete": true,
+      "derived": true,
+      "end": "2026-11-19T12:45:00+08:00"
+    },
+    "post1": {
+      "n": 1,
+      "close": 0.2672,
+      "side_adj_ret": -0.0005745065149306899,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post3": {
+      "n": 3,
+      "close": 0.2661,
+      "side_adj_ret": 0.003544625061290918,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "post5": {
+      "n": 5,
+      "close": 0.2662,
+      "side_adj_ret": 0.0031701585543617186,
+      "basis": "1m_close_vs_entry_fill",
+      "note": "minute_approx"
+    },
+    "reclaim5": {
+      "ok": true,
+      "mins": 5,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "reclaim10": {
+      "ok": true,
+      "mins": 10,
+      "basis": "1m_OHLC_after_exit",
+      "note": "post_exit_diagnostic_only"
+    },
+    "funding_data_gap": true
+  }
+]

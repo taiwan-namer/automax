@@ -1,0 +1,2 @@
+open_time,open,high,low,close,volume,close_time,quote_volume,interval,fetched_at_ms,is_closed
+1700000300000,4.5,5.0,4.0,4.5,12.0,1700000359999,54.0,1m,1700000360010,True

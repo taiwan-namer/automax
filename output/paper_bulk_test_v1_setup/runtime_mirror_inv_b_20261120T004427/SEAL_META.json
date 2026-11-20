@@ -1,0 +1,10 @@
+{
+  "stamp": "20261120T004427",
+  "parent_seal": "fix_source_sealed_20261120T004427",
+  "purpose": "paper_reverse_fixed_usdt_50_75_inv_v1 mirror inverse of B; A/B untouched",
+  "created_at": "2026-11-20T00:47:12.364056+08:00",
+  "aggregate_sha256": "48c23da5328645c9a963121f5acc9978bbdf91d8a4c1a2a47a49843d946c453c",
+  "n_py": 18,
+  "profile_id": "paper_reverse_fixed_usdt_50_75_inv_v1",
+  "mirror_source_profile": "paper_reverse_fixed_usdt_50_75_v1"
+}

@@ -1,0 +1,2 @@
+timestamp,event,trade_id,symbol,side,qty,price,fee_u,realized_net_u,exit_reason,linked_prev_trade_id,run_id
+2026-11-19T11:46:29+08:00,OPEN,t:LUSDT:64ebae2ceb,LUSDT,LONG,100.0,100.0,5.0,-5.0,,,t

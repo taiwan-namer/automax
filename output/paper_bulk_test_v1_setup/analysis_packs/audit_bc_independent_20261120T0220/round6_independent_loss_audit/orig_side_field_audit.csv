@@ -1,0 +1,197 @@
+account,trade_id,entry_mode,side,orig_side_breakout_r5,open_fill_orig_side,direction_relation_r5,field_status,note
+A,20261119T204955_8327b8b5:ETHFIUSDT:ef54a9f090,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:TAOUSDT:da8d6d08ee,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:HUMAUSDT:cd2154dd27,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:KAVAUSDT:6488536862,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:DOTUSDT:306deb6d4f,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:PENGUUSDT:650949c390,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BTCUSDT:e050dd04d9,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:1000LUNCUSDT:bdc572b6ec,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:IDOLUSDT:046427dce3,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:KAVAUSDT:590a9fab3d,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:HBARUSDT:70319d847b,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:SUIUSDT:863674b39a,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:PHAROSUSDT:d051941374,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:TAOUSDT:7954645d39,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ARIAUSDT:9d7c3f6cc5,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:SENTUSDT:8ccc7e0dfb,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:DOTUSDT:123f208a91,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ONDOUSDT:21b20c4af3,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BCHUSDT:a8f9b904e5,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BMTUSDT:7d2029d3b2,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ETHFIUSDT:0f6e6f869e,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:INJUSDT:4669f18294,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:AVAXUSDT:42c847400f,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ETHFIUSDT:181fd90b22,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ETHUSDT:bfd407338e,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:JCTUSDT:e78e8bf5d7,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:SKYUSDT:6f83ab2538,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:CHIPUSDT:f21e346c17,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:APTUSDT:4037d5d521,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:DOTUSDT:c43b53fd1a,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BLESSUSDT:4c3ce38dad,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BREVUSDT:24a8e84bdf,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:AAVEUSDT:eeac06d4f6,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BCHUSDT:1c073a309b,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:1000PEPEUSDT:cf4832e0b7,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:AKEUSDT:581544ea2b,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ETHUSDT:c2e11514a5,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BLESSUSDT:f01fa2fee5,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:DOGEUSDT:871a678bd8,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:AAVEUSDT:ab80e14f01,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:1000PEPEUSDT:ca77c929ad,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:HBARUSDT:3f8bd728e4,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:FILUSDT:cbe0d462ad,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:APTUSDT:73fadc8c9b,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BLESSUSDT:3ff6986647,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:CROSSUSDT:0599a4d93b,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BTCUSDT:c35bf9ccfd,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:CROSSUSDT:7b626532aa,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ETHFIUSDT:6308260914,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ARBUSDT:70e2bc584e,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:1000LUNCUSDT:eaa8b43783,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:DOGEUSDT:c79c89c5a7,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BNBUSDT:aade55d73a,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:BCHUSDT:49f9f027aa,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261119T204955_8327b8b5:ENAUSDT:4f613d3bff,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+A,20261120T010453_b17c41c9:QNTUSDT:f78af599d6,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:LINKUSDT:d056fc43a2,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:1000PEPEUSDT:e2ef9ae758,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:INITUSDT:a6805ff221,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:UNIUSDT:581b31b15a,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BCHUSDT:e17d0d3a9b,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:EVAAUSDT:ab08259a50,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:ETHUSDT:d9154240a5,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:SENTUSDT:671eb0d723,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:XMRUSDT:a2ea5be970,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:NAORISUSDT:b089ca89a1,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:1000LUNCUSDT:40c175735a,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BTWUSDT:c3dbe03b31,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:YBUSDT:344c127cd8,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:LITUSDT:8611af2e9c,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:KAVAUSDT:eb16f6d90e,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:ZKCUSDT:c4ffc8f0fd,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BREVUSDT:ea68e26d33,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:HYPEUSDT:8032376b2b,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:SENTUSDT:8ccb4e27c3,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:STRKUSDT:0261412d49,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:EVAAUSDT:77b89ecc9a,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:HUMAUSDT:e49fcbcc58,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BLESSUSDT:3dc2b70e6c,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:APTUSDT:9efc25a7c4,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:INITUSDT:3b59815be2,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:ARBUSDT:76282ca452,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:TAOUSDT:4d9b1082fe,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BMTUSDT:94f893aa1b,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:BNBUSDT:b854104c30,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:KAVAUSDT:673e85cf46,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:CAPUSDT:ae823e0fd8,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:DOGEUSDT:6d9fb3e937,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:NAORISUSDT:5b189e9bc5,MIRROR_SAME,SHORT,SHORT,SHORT,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=SHORT（應相同）。相對市場突破需另查來源是否 flip。
+A,20261120T010737_9a6b56f8:CROSSUSDT:d755943503,MIRROR_SAME,LONG,LONG,LONG,WITH_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror same: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=LONG（應相同）。相對市場突破需另查來源是否 flip。
+B,20261119T232447_2056c35e:VVVUSDT:dcd0fc0dcb,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:IRYSUSDT:8d5d6fcae8,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:OPUSDT:3267eb40b1,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:TAOUSDT:45a9061fd4,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:JCTUSDT:7756cb2682,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ZECUSDT:ebb3428276,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:CROSSUSDT:0e86570cea,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SOLUSDT:f1f5e53a6c,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ETHFIUSDT:08cfa67a7e,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:IRYSUSDT:c2d6e35f6c,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SKYUSDT:5388b399a5,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:VVVUSDT:655648fd17,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:MEGAUSDT:0528042d17,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SKYUSDT:69d47cee88,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ARIAUSDT:a0e3900534,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:LITUSDT:8fed471589,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SKYUSDT:e2dad7ebe6,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ARBUSDT:1f8195dafc,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:STRKUSDT:430bc99848,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:INJUSDT:e334b9993c,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:PIPPINUSDT:d490b76287,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:PHAROSUSDT:47ca7b09f9,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:EVAAUSDT:0904d0613f,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:1000LUNCUSDT:829be54251,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SOLUSDT:c96572da9f,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:FILUSDT:6ff5812eea,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:MEGAUSDT:8388e9b01a,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:LTCUSDT:0c422e4b6d,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BCHUSDT:c56a1ed1cb,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:FETUSDT:05bfb669e9,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:QNTUSDT:f82690fc0f,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:LINKUSDT:f3ceefc951,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:1000PEPEUSDT:cf0df99ce1,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:INITUSDT:10440e1434,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:UNIUSDT:e1b2d27080,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BCHUSDT:0e0c398356,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:EVAAUSDT:6690df103f,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ETHUSDT:1965f03d81,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SENTUSDT:545217a32c,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:XMRUSDT:c9c4ae1c6a,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:NAORISUSDT:111f9cea59,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:1000LUNCUSDT:235f45f305,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BTWUSDT:b6d4c51832,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:YBUSDT:e2e8c18154,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:LITUSDT:aa33d6512a,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:KAVAUSDT:30ee8f111d,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ZKCUSDT:c7aeb0adfc,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BREVUSDT:b9c63a34b4,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:HYPEUSDT:836b967658,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:SENTUSDT:bb1947e30e,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:STRKUSDT:943629058d,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:EVAAUSDT:8ceece1bcf,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:HUMAUSDT:c69e8146c4,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BLESSUSDT:9c0b3e1009,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:APTUSDT:1e66781062,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:INITUSDT:72ed9c02c8,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:ARBUSDT:f695bc4c63,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:TAOUSDT:f72ed1fd22,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BMTUSDT:9565060036,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:BNBUSDT:83facfadf3,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:KAVAUSDT:83442fe8ba,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:CAPUSDT:296e7a6116,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:DOGEUSDT:b27ff700f1,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:NAORISUSDT:662e013669,SELF_SCAN_FLIP,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+B,20261119T232447_2056c35e:CROSSUSDT:549278ac69,SELF_SCAN_FLIP,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_為市場突破方向_翻轉後進場,self-scan: OPEN.orig_side 來自 signals 翻轉前方向
+C,20261120T004904_5a92b898:SOLUSDT:62fe167d5d,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:FILUSDT:22d9d53d75,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:MEGAUSDT:d0022ed71a,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:LTCUSDT:766b4778bf,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:BCHUSDT:3c6327a10a,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:FETUSDT:e329413e87,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T004904_5a92b898:QNTUSDT:0034ced0e6,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:LINKUSDT:827c4f66f4,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:1000PEPEUSDT:ad7e026d99,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:INITUSDT:9145f0cbc6,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:UNIUSDT:7822bc9065,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BCHUSDT:6b6857c4b2,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:EVAAUSDT:9843864106,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:ETHUSDT:ab4ab05b50,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:SENTUSDT:3046bc1bb4,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:XMRUSDT:a79d0d7bed,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:NAORISUSDT:e9c2f61f1d,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:1000LUNCUSDT:a43a84c44a,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BTWUSDT:1534d71af5,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:YBUSDT:d2794447a9,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:LITUSDT:ae3d0382a8,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:KAVAUSDT:60e58391f9,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:ZKCUSDT:8bbe265770,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BREVUSDT:077c0a0c6b,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:HYPEUSDT:c9a92b2025,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:SENTUSDT:a4339597cd,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:STRKUSDT:373e01bd81,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:EVAAUSDT:feaf996d77,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:HUMAUSDT:2cba87e3b8,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BLESSUSDT:f96424ab55,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:APTUSDT:8e490f8cda,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:INITUSDT:ccb4168e54,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:ARBUSDT:c9b671c9c0,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:TAOUSDT:a153531c24,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BMTUSDT:d455a09355,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:BNBUSDT:8dfd1e5899,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:KAVAUSDT:982f761bd1,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:CAPUSDT:25df1484bc,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:DOGEUSDT:8f91e2f32f,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:NAORISUSDT:5a9d53a0f1,MIRROR_INVERSE,LONG,SHORT,SHORT,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=SHORT = 來源帳戶 side；本帳戶 side=LONG（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。
+C,20261120T010734_2045e335:CROSSUSDT:13d8e7d2a9,MIRROR_INVERSE,SHORT,LONG,LONG,AGAINST_BREAKOUT,已證實_記的是來源成交方向_非市場突破,mirror inverse: OPEN.orig_side=LONG = 來源帳戶 side；本帳戶 side=SHORT（必相反）。R5 direction_relation=AGAINST_BREAKOUT 若用 side≠orig 會幾乎恒為 AGAINST，不能當順逆勢。

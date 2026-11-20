@@ -1,0 +1,86 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "initial_capital_u": 10000,
+  "cash_u": 8931.047387800998,
+  "realized_net_u": -68.95261219900114,
+  "realized_fees_u": 14.973010198999999,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {
+    "REVUSDT": {
+      "trade_id": "t:REVUSDT:7538c99964",
+      "symbol": "REVUSDT",
+      "side": "SHORT",
+      "qty_initial": 100.0,
+      "qty_remaining": 100.0,
+      "entry_price": 100.0,
+      "entry_time": "2026-11-19T11:19:33+08:00",
+      "entry_ts": 1795058373.0463989,
+      "margin_u": 1000.0,
+      "notional_initial": 10000.0,
+      "leverage": 10.0,
+      "atr_at_entry": 0.4,
+      "atr_time": "2026-11-19T11:19:33+08:00",
+      "initial_stop": 100.6,
+      "effective_stop": 100.6,
+      "breakeven_stop": null,
+      "trailing_stop": null,
+      "partial_tp_done": false,
+      "partial_tp_qty": 0.0,
+      "partial_tp_price": null,
+      "extreme_price": 100.0,
+      "fees_paid_u": 5.0,
+      "funding_paid_u": 0.0,
+      "funding_gap": true,
+      "realized_net_u": 0.0,
+      "source_tags": [
+        "T"
+      ],
+      "signal_open_time": 2,
+      "linked_prev_trade_id": "t:REVUSDT:a5b4a12f04",
+      "range_high": 101.0,
+      "range_low": 100.1,
+      "vol_x": 5.0,
+      "stop_set_events": [
+        {
+          "ts": 1795058373.0463989,
+          "kind": "INITIAL_STOP",
+          "price": 100.6
+        }
+      ]
+    }
+  },
+  "cooldowns_until": {
+    "REVUSDT": 1795058553.045753
+  },
+  "reverse_events": {
+    "REVUSDT": [
+      1795058373.0473669
+    ]
+  },
+  "processed_signals": [
+    "REVUSDT:1:LONG",
+    "REVUSDT:2:SHORT",
+    "REVUSDT:2:SHORT"
+  ],
+  "day_key": "2026-11-19",
+  "day_start_equity_u": 9936.047387800998,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "filters": {
+    "REVUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5
+    }
+  },
+  "run_id": "t",
+  "created_at": "",
+  "updated_at": "2026-11-19T11:19:33+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null
+}

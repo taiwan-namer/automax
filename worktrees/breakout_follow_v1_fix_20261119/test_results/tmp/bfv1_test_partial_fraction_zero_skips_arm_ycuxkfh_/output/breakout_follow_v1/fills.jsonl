@@ -1,0 +1,1 @@
+{"recorded_at": "2026-11-19T12:02:17+08:00", "simulation_assumption": {"fee_rate_one_side": 0.0005, "slippage_adverse": 0.0002, "note": "SIMULATION_ASSUMPTION — not exchange actual fee/fill"}, "event": "OPEN", "trade_id": "t:ZUSDT:91c3ea2a60", "symbol": "ZUSDT", "side": "LONG", "qty": 100.0, "price": 100.0, "fee_u": 5.0, "source_tags": ["T"]}

@@ -1,0 +1,11 @@
+{
+  "launched_at": "2026-11-20T13:29:02.256004+08:00",
+  "pid": 78364,
+  "snapshot_pid": 78365,
+  "strategy_version": "a_surge_fade_short_v1_20261120",
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_a_surge_fade_20261120T131358",
+  "log": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/a_surge_fade_20261120T132902.out.log",
+  "err": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/a_surge_fade_20261120T132902.err.log",
+  "snapshot_note": "detached one-shot sleeper +6h/+8h only; NOT cron; no auto-winner",
+  "restart_reason": "scan_slice_manage_first_fix_after_first_launch_blocked"
+}

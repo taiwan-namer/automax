@@ -1,0 +1,33 @@
+{
+  "out": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/offline_research/20261119_2015_corr",
+  "n_complete": 106,
+  "n_open": 2,
+  "dups_removed": 224,
+  "qty_bad": 0,
+  "orig_sum_net": -3604.6890080763887,
+  "arith_flip_sum_net": 1484.36509916506,
+  "manage_stats": {
+    "B_mgmt_reliability": {
+      "n_complete_events": 112,
+      "n_gaps": 111,
+      "mean_gap": 4.90990990990991,
+      "max_gap": 6.0,
+      "n_expected0": 0,
+      "coverage": "has_MANAGE_BATCH_COMPLETE"
+    },
+    "C_dl5000_batchside1": {
+      "n_complete_events": 2926,
+      "n_gaps": 2925,
+      "mean_gap": 4.936410256410256,
+      "max_gap": 16.0,
+      "n_expected0": 0,
+      "coverage": "has_MANAGE_BATCH_COMPLETE"
+    },
+    "A_pre_mgmt_dl2000": {
+      "n_complete_events": 0,
+      "coverage": "NO_complete_events_in_window",
+      "status": "NA"
+    }
+  },
+  "paper_running": false
+}

@@ -1,0 +1,4 @@
+timestamp,event,trade_id,symbol,side,qty,price,fee_u,realized_net_u,exit_reason,linked_prev_trade_id,run_id
+2026-11-19T12:02:17+08:00,OPEN,t:EUSDT:024cea84e0,EUSDT,LONG,100.0,100.0,5.0,-5.0,,,t
+2026-11-19T12:02:17+08:00,CLOSE,t:EUSDT:024cea84e0,EUSDT,LONG,100.0,100.0,5.0,-5.0,T,,t
+2026-11-19T12:02:17+08:00,OPEN,t:EUSDT:22564a0bca,EUSDT,LONG,100.0,100.0,5.0,-5.0,,,t

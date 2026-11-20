@@ -1,0 +1,17 @@
+{
+  "stamp": "20261119T160723",
+  "seal": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T160723",
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T160723",
+  "fixed_data_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "aggregate": "bdd319ea40c84a15011adcb519728e9bcdbe1c3c55599b537a7ca03225101ebc",
+  "tag": "fix_20261119_mgmt_dl5000_batchside1",
+  "previous_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T155304",
+  "status": "switched_active",
+  "switched_at": "2026-11-19T16:15:15.255286+08:00",
+  "active_run": "20261119T161354_5cb8369a",
+  "active_pid": 52297,
+  "daily_loss_lock_usdt": 5000.0,
+  "failed_ephemeral_start_pid": 51927,
+  "management_gap_sec_stop_to_stable_start": 346.0,
+  "note": "first nohup start died mid-warmup; restarted via persistent shell; old sealed had no complete events limitation noted previously"
+}

@@ -1,0 +1,276 @@
+{
+  "profile": "paper_bulk_test_v1",
+  "built_at": "2026-11-19T16:42:48.320125+08:00",
+  "timezone": "Asia/Taipei",
+  "runs": [
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T122928_f8c44f99",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T122928_f8c44f99",
+      "started_hint": "20261119T122928",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": null,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": null,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": null
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T123002_d562656f",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T123002_d562656f",
+      "started_hint": "20261119T123002",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": null,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": null,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": null
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T123022_9ef782f1",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T123022_9ef782f1",
+      "started_hint": "20261119T123022",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": null,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": null,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": null
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T123832_91fcc722",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T123832_91fcc722",
+      "started_hint": "20261119T123832",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": 72,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": 72,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": 1
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T124504_79a79b4d",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T124504_79a79b4d",
+      "started_hint": "20261119T124504",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": 20,
+        "decision_trace.jsonl": 2282,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": 3058,
+        "position_events.jsonl": 20,
+        "equity_snapshots.jsonl": 43
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T131629_436e6cae",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T131629_436e6cae",
+      "started_hint": "20261119T131629",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": 2,
+        "decision_trace.jsonl": 355,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": 487,
+        "position_events.jsonl": 2,
+        "equity_snapshots.jsonl": 7
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T132017_bd1972b2",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T132017_bd1972b2",
+      "started_hint": "20261119T132017",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "A_pre_mgmt_dl2000",
+      "counts": {
+        "fills.jsonl": 87,
+        "decision_trace.jsonl": 10810,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": 15260,
+        "position_events.jsonl": 87,
+        "equity_snapshots.jsonl": 192
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T155409_01910b81",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T155409_01910b81",
+      "started_hint": "20261119T155409",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T155304/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "B_mgmt_reliability",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": null,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": null,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": null
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T155834_00889cc1",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T155834_00889cc1",
+      "started_hint": "20261119T155834",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T155304/code",
+      "code_fix_tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+      "daily_loss_lock_usdt": 2000.0,
+      "engine_sha256": null,
+      "version_bucket": "B_mgmt_reliability",
+      "counts": {
+        "fills.jsonl": 3,
+        "decision_trace.jsonl": 648,
+        "manage_events.jsonl": 450,
+        "quote_events.jsonl": 959,
+        "position_events.jsonl": 3,
+        "equity_snapshots.jsonl": 12
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T160835_df399889",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T160835_df399889",
+      "started_hint": "20261119T160835",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T160723/code",
+      "code_fix_tag": "fix_20261119_mgmt_dl5000_batchside1",
+      "daily_loss_lock_usdt": 5000.0,
+      "engine_sha256": null,
+      "version_bucket": "C_dl5000_batchside1",
+      "counts": {
+        "fills.jsonl": null,
+        "decision_trace.jsonl": null,
+        "manage_events.jsonl": null,
+        "quote_events.jsonl": null,
+        "position_events.jsonl": null,
+        "equity_snapshots.jsonl": null
+      }
+    },
+    {
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T161354_5cb8369a",
+      "profile": "paper_bulk_test_v1",
+      "run_id": "20261119T161354_5cb8369a",
+      "started_hint": "20261119T161354",
+      "timezone": "Asia/Taipei",
+      "cwd": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T160723/code",
+      "code_fix_tag": "fix_20261119_mgmt_dl5000_batchside1",
+      "daily_loss_lock_usdt": 5000.0,
+      "engine_sha256": null,
+      "version_bucket": "C_dl5000_batchside1",
+      "counts": {
+        "fills.jsonl": 13,
+        "decision_trace.jsonl": 2114,
+        "manage_events.jsonl": 1120,
+        "quote_events.jsonl": 2799,
+        "position_events.jsonl": 13,
+        "equity_snapshots.jsonl": 34
+      }
+    }
+  ],
+  "root_fills": {
+    "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/fills.jsonl",
+    "exists": true,
+    "bytes_read": 116285,
+    "lines_ok": 125,
+    "truncated_tail": false,
+    "parse_errors": 0,
+    "mtime": 1795077731.9133518,
+    "cutoff_note": "read file size at open; incomplete trailing line skipped if present"
+  },
+  "root_equity": {
+    "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/equity_snapshots.jsonl",
+    "exists": true,
+    "bytes_read": 109486,
+    "lines_ok": 289,
+    "truncated_tail": false,
+    "parse_errors": 0,
+    "mtime": 1795077731.915697,
+    "cutoff_note": "read file size at open; incomplete trailing line skipped if present"
+  },
+  "root_decision": {
+    "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/decision_trace.jsonl",
+    "exists": true,
+    "bytes_read": 26654159,
+    "lines_ok": 16281,
+    "truncated_tail": false,
+    "parse_errors": 0,
+    "mtime": 1795077731.9146461,
+    "cutoff_note": "read file size at open; incomplete trailing line skipped if present"
+  },
+  "vault_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+  "vault_files_n": 75,
+  "excluded_other_paper": [
+    "/Users/alan/MyProjects/automax/output/breakout_follow_v1",
+    "any default breakout_follow_v1 account outside paper_bulk_test_v1"
+  ],
+  "seals": [
+    {
+      "stamp": "20261119T155304",
+      "tag": "fix_20261119_mgmt_reliability_v1",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T155304"
+    },
+    {
+      "stamp": "20261119T160723",
+      "tag": "fix_20261119_mgmt_dl5000_batchside1",
+      "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T160723"
+    }
+  ],
+  "live_pid": "52297"
+}

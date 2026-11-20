@@ -1,0 +1,87 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "initial_capital_u": 10000,
+  "cash_u": 9037.260230739099,
+  "realized_net_u": 37.26023073909991,
+  "realized_fees_u": 6.5218910609,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {
+    "AAAUSDT": {
+      "trade_id": "t:AAAUSDT:2b207bd75a",
+      "symbol": "AAAUSDT",
+      "side": "LONG",
+      "qty_initial": 100.0,
+      "qty_remaining": 70.0,
+      "entry_price": 100.0,
+      "entry_time": "2026-11-19T11:46:29+08:00",
+      "entry_ts": 1795059989.5479062,
+      "margin_u": 1000.0,
+      "notional_initial": 10000.0,
+      "leverage": 10.0,
+      "atr_at_entry": 0.4,
+      "atr_time": "2026-11-19T11:46:29+08:00",
+      "initial_stop": 99.4,
+      "effective_stop": 101.35920408000001,
+      "breakeven_stop": 100.1,
+      "trailing_stop": 101.35920408000001,
+      "partial_tp_done": true,
+      "partial_tp_qty": 30.0,
+      "partial_tp_price": 101.45940406,
+      "extreme_price": 101.95920408,
+      "fees_paid_u": 6.5218910609,
+      "funding_paid_u": 0.0,
+      "funding_gap": true,
+      "realized_net_u": 42.26023073909991,
+      "source_tags": [
+        "T"
+      ],
+      "signal_open_time": 1,
+      "linked_prev_trade_id": null,
+      "range_high": 99.9,
+      "range_low": 99.0,
+      "vol_x": 5.0,
+      "stop_set_events": [
+        {
+          "ts": 1795059989.5479062,
+          "kind": "INITIAL_STOP",
+          "price": 99.4
+        },
+        {
+          "ts": 1795059989.548925,
+          "kind": "BREAKEVEN_STOP",
+          "price": 100.1
+        },
+        {
+          "ts": 1795059989.548925,
+          "kind": "TRAILING_STOP",
+          "price": 100.85940406
+        },
+        {
+          "ts": 1795059989.552416,
+          "kind": "TRAILING_STOP",
+          "price": 101.35920408000001
+        }
+      ]
+    }
+  },
+  "cooldowns_until": {},
+  "reverse_events": {},
+  "processed_signals": [
+    "AAAUSDT:1:LONG"
+  ],
+  "day_key": "",
+  "day_start_equity_u": 10000.0,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "filters": {},
+  "run_id": "t",
+  "created_at": "",
+  "updated_at": "2026-11-19T11:46:29+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null
+}

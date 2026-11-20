@@ -1,0 +1,13 @@
+{
+  "stamp": "20261119T155304",
+  "seal": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T155304",
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T155304",
+  "fixed_data_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "aggregate": "20a5ed6e89f5c8cce19f9faeb6e99962854ccc069fa0834d28d5ea3b81175514",
+  "tag": "fix_20261119_mgmt_reliability_v1",
+  "previous_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904",
+  "status": "switched_active",
+  "switched_at": "2026-11-19T15:58:34+08:00",
+  "active_run": "20261119T155834_00889cc1",
+  "active_pid": 50813
+}

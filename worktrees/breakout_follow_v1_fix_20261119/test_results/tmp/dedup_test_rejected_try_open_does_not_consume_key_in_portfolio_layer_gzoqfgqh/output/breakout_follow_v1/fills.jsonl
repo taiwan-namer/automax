@@ -1,0 +1,1 @@
+{"recorded_at": "2026-11-19T11:32:18+08:00", "simulation_assumption": {"fee_rate_one_side": 0.0005, "slippage_adverse": 0.0002, "note": "SIMULATION_ASSUMPTION — not exchange actual fee/fill"}, "event": "OPEN", "trade_id": "t:RUSDT:b7622f8502", "symbol": "RUSDT", "side": "LONG", "qty": 100.0, "price": 100.0, "fee_u": 5.0, "source_tags": ["T"]}

@@ -1,0 +1,78 @@
+{
+  "ts": "2026-11-19T11:19:32+08:00",
+  "source": "/Users/alan/MyProjects/automax/output/breakout_follow_v1/exports/20261119T024357_183e09f4_overnight_pack_20261119T092335/trading/account_state.json",
+  "source_hash": "7743f1814e38f536ac470590c1c333e56ab1ff96f72e89701d07b7913c2d1d7a",
+  "copy_path": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/migration_dry_run_out/account_state_copy.json",
+  "after_path": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/migration_dry_run_out/account_state_after_migration.json",
+  "before": {
+    "cash_u": 9920.029319419711,
+    "realized_net_u": -331.2178216420446,
+    "realized_fees_u": 79.97068058028778,
+    "used_margin": 0,
+    "positions": 0,
+    "equity_flat": 9668.782178357955,
+    "funding_data_gap": true
+  },
+  "dry_run": {
+    "version": "cash_gross_v1",
+    "source_hash": "7743f1814e38f536ac470590c1c333e56ab1ff96f72e89701d07b7913c2d1d7a",
+    "reason": "overnight_pack_cutoff_dry_run",
+    "dry_run": true,
+    "already_applied": false,
+    "applied": false,
+    "cash_before": 9920.029319419711,
+    "cash_after": 9668.782178357955,
+    "realized_net_u": -331.2178216420446,
+    "used_margin": 0.0,
+    "equity_if_flat": 9668.782178357955,
+    "positions": 0,
+    "funding_data_gap": true,
+    "ts": "2026-11-19T11:19:32+08:00"
+  },
+  "apply": {
+    "version": "cash_gross_v1",
+    "source_hash": "7743f1814e38f536ac470590c1c333e56ab1ff96f72e89701d07b7913c2d1d7a",
+    "reason": "overnight_pack_cutoff_apply_copy",
+    "dry_run": false,
+    "already_applied": false,
+    "applied": true,
+    "cash_before": 9920.029319419711,
+    "cash_after": 9668.782178357955,
+    "realized_net_u": -331.2178216420446,
+    "used_margin": 0.0,
+    "equity_if_flat": 9668.782178357955,
+    "positions": 0,
+    "funding_data_gap": true,
+    "ts": "2026-11-19T11:19:32+08:00"
+  },
+  "idempotent_second": {
+    "version": "cash_gross_v1",
+    "source_hash": "7743f1814e38f536ac470590c1c333e56ab1ff96f72e89701d07b7913c2d1d7a",
+    "reason": "idempotence_check",
+    "dry_run": false,
+    "already_applied": true,
+    "applied": false,
+    "cash_before": 9668.782178357955,
+    "cash_after": 9668.782178357955,
+    "realized_net_u": -331.2178216420446,
+    "used_margin": 0.0,
+    "equity_if_flat": 9668.782178357955,
+    "positions": 0,
+    "funding_data_gap": true,
+    "ts": "2026-11-19T11:19:32+08:00",
+    "skip_reason": "already_applied"
+  },
+  "expected_cash_approx": 9668.782178357955,
+  "live_account_untouched_note": "This script never opens or writes live output/breakout_follow_v1/account_state.json",
+  "excluded_test_pollution": [
+    {
+      "trade_id_prefix": "t:AAAUSDT",
+      "evidence": "root fills 02:31:40 PARTIAL_TP unit-test row"
+    },
+    {
+      "trade_id_prefix": "t:BBBUSDT",
+      "evidence": "root fills 02:31:40 REVERSE_SIGNAL unit-test row"
+    }
+  ],
+  "note": "Migration uses realized_net already on account (includes cross-run fills). Test pollution rows were never in realized."
+}

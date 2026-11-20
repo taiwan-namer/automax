@@ -1,0 +1,20 @@
+{
+  "stamp": "20261120T104749",
+  "code_runtime_stamp": "20261120T103434",
+  "launched_at": "2026-11-20T10:47:59.454378+08:00",
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bc_exit_20261120T103434",
+  "B": {
+    "profile": "paper_reverse_fixed_usdt_50_75_v1",
+    "pid": 59740,
+    "version": "b_partial70_30_tp50_tp100_20261120",
+    "log": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/bc_exit_B_20261120T104749.out.log"
+  },
+  "C": {
+    "profile": "paper_reverse_fixed_usdt_50_75_inv_v1",
+    "pid": 59741,
+    "version": "c_pyramid300_r2_p0tp1pct_20261120",
+    "log": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/bc_exit_C_20261120T104749.out.log"
+  },
+  "detach": "start_new_session",
+  "paper_only": true
+}

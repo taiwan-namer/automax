@@ -1,0 +1,19 @@
+{
+  "engine_location": "portfolio.py manage_position → estimate_net_unrealized",
+  "engine_formula": "mfe/mae track net_now = gross(mark) - estimated_close_fee ONLY; open fee NOT subtracted; initialized at 0.0 so never-positive stays 0",
+  "mark": "mark_price_for_side: LONG=bid*(1-slip), SHORT=ask*(1+slip); slip=0.0002 applied once",
+  "round6_rebuild": {
+    "gross_path": "(exit_mark - entry)*qty for LONG (sign flip for SHORT)",
+    "rt_net_path": "gross - actual_open_fee - estimated_close_fee(at mark)",
+    "excludes_pre_entry_quotes": true,
+    "includes_entry_synthetic": false,
+    "exit_ts_inclusive_if_quote_present": true,
+    "mid_only": "reference columns only, not in primary MFE/MAE",
+    "caveat": "poll observations not true extrema; same-second order marked 順序不明"
+  },
+  "sources": {
+    "A": "runtime_mirror_same_a_20261120T010410/code/.../portfolio.py (same formula in sealed runtimes)",
+    "B": "runtime_fixed_usdt_50_75_20261119T231853/code/.../portfolio.py:446-451,548-559",
+    "C": "runtime_mirror_inv_b_20261120T004427/code/.../portfolio.py"
+  }
+}

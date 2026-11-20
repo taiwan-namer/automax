@@ -1,0 +1,3 @@
+tail -f /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/bc_exit_B_20261120T104749.out.log
+
+tail -f /Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/launch_logs/bc_exit_C_20261120T104749.out.log

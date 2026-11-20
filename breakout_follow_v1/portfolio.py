@@ -1,0 +1,520 @@
+"""Paper portfolio: open/partial/trail/reverse — simulation fills only."""
+
+from __future__ import annotations
+
+import csv
+import time
+from pathlib import Path
+from typing import Any, Optional
+
+from . import config
+from .account import (
+    AccountState,
+    Position,
+    clear_position,
+    get_position,
+    new_trade_id,
+    save_account,
+    set_position,
+)
+from .market_data import round_step
+from .util import append_jsonl, now_iso, now_ts
+
+
+def _fee(notional: float) -> float:
+    return abs(notional) * config.FEE_RATE_ONE_SIDE
+
+
+def _append_fill(row: dict[str, Any]) -> None:
+    row = {
+        "recorded_at": now_iso(),
+        "simulation_assumption": config.SIMULATION_ASSUMPTIONS,
+        **row,
+    }
+    append_jsonl(config.FILLS_PATH, row)
+    try:
+        from .run_store import get_store
+
+        store = get_store()
+        if store is not None:
+            store.log_fill(row)
+            store.log_position_event({"event": row.get("event"), **{k: row.get(k) for k in ("trade_id", "symbol", "side", "qty", "price", "fee_u", "exit_reason", "linked_prev_trade_id")}})
+    except Exception:
+        pass
+
+
+def _append_trade_row(row: dict[str, Any]) -> None:
+    paths = [config.TRADES_PATH]
+    try:
+        from .run_store import get_store
+
+        store = get_store()
+        if store is not None:
+            paths.append(store.path("trades.csv"))
+    except Exception:
+        pass
+    cols = [
+        "timestamp", "event", "trade_id", "symbol", "side", "qty", "price",
+        "fee_u", "realized_net_u", "exit_reason", "linked_prev_trade_id", "run_id",
+    ]
+    for path in paths:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        write_header = not path.exists()
+        with path.open("a", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
+            if write_header:
+                w.writeheader()
+            w.writerow(row)
+
+
+def estimate_initial_risk_u(
+    *,
+    side: str,
+    entry: float,
+    stop: float,
+    qty: float,
+) -> float:
+    """含進場費 + 預估出場費/滑價的總損失估算。"""
+    if entry <= 0 or qty <= 0:
+        return 1e18
+    move = abs(entry - stop)
+    gross_loss = move * qty
+    entry_notional = entry * qty
+    # 預估止損出場價再加不利滑價
+    if side == "LONG":
+        exit_px = stop * (1 - config.SLIPPAGE_ADVERSE)
+    else:
+        exit_px = stop * (1 + config.SLIPPAGE_ADVERSE)
+    exit_notional = exit_px * qty
+    fees = _fee(entry_notional) + _fee(exit_notional)
+    return float(gross_loss + fees)
+
+
+def try_open(
+    st: AccountState,
+    *,
+    symbol: str,
+    side: str,
+    signal: dict[str, Any],
+    source_tags: list[str],
+    filters: dict[str, Any],
+    linked_prev: Optional[str] = None,
+    bypass_cooldown: bool = False,
+) -> dict[str, Any]:
+    """嘗試開倉。拒絕時不改資金。"""
+    out: dict[str, Any] = {"ok": False, "block_reason": None, "trade_id": None}
+
+    if st.inconsistency:
+        out["block_reason"] = "STATE_INCONSISTENT"
+        return out
+    if st.day_new_entries_locked:
+        out["block_reason"] = "DAILY_LOSS_LOCK"
+        return out
+    if symbol in st.positions:
+        out["block_reason"] = "SAME_SYMBOL_POSITION"
+        return out
+    if len(st.positions) >= config.MAX_CONCURRENT_POSITIONS:
+        out["block_reason"] = "MAX_POSITIONS"
+        return out
+    if st.free_cash() + 1e-9 < config.MARGIN_PER_TRADE_USDT:
+        out["block_reason"] = "INSUFFICIENT_MARGIN"
+        return out
+
+    sig_key = f"{symbol}:{int(signal['signal_open_time'])}:{side}"
+    if sig_key in st.processed_signals:
+        out["block_reason"] = "DUPLICATE_SIGNAL"
+        return out
+
+    now = now_ts()
+    if not bypass_cooldown:
+        until = float(st.cooldowns_until.get(symbol) or 0)
+        if until > now:
+            out["block_reason"] = "COOLDOWN"
+            return out
+
+    entry = float(signal["est_fill_price"])
+    atr = float(signal["atr"])
+    if side == "LONG":
+        stop = entry - config.ATR_STOP_MULT * atr
+    else:
+        stop = entry + config.ATR_STOP_MULT * atr
+
+    step = float(filters.get("stepSize") or 0.001)
+    min_qty = float(filters.get("minQty") or 0.0)
+    min_notional = float(filters.get("minNotional") or 5.0)
+    qty = round_step(config.NOTIONAL_USDT / entry, step)
+    if qty < min_qty or qty * entry < min_notional:
+        out["block_reason"] = "LOT_FILTER"
+        return out
+
+    risk = estimate_initial_risk_u(side=side, entry=entry, stop=stop, qty=qty)
+    out["risk_estimate_u"] = risk
+    if risk > config.MAX_LOSS_PER_TRADE_USDT:
+        out["block_reason"] = "RISK_BUDGET_EXCEEDED"
+        return out
+
+    fee = _fee(entry * qty)
+    trade_id = new_trade_id(st.run_id, symbol)
+    pos = Position(
+        trade_id=trade_id,
+        symbol=symbol,
+        side=side,
+        qty_initial=qty,
+        qty_remaining=qty,
+        entry_price=entry,
+        entry_time=now_iso(),
+        entry_ts=now,
+        margin_u=config.MARGIN_PER_TRADE_USDT,
+        notional_initial=entry * qty,
+        leverage=config.LEVERAGE,
+        atr_at_entry=atr,
+        atr_time=str(signal.get("atr_time") or ""),
+        initial_stop=stop,
+        effective_stop=stop,
+        extreme_price=entry,
+        fees_paid_u=fee,
+        funding_paid_u=0.0,
+        funding_gap=True,
+        source_tags=list(source_tags),
+        signal_open_time=int(signal["signal_open_time"]),
+        linked_prev_trade_id=linked_prev,
+        range_high=float(signal["range_high"]),
+        range_low=float(signal["range_low"]),
+        vol_x=float(signal["vol_x"]),
+        stop_set_events=[{"ts": now, "kind": "INITIAL_STOP", "price": stop}],
+    )
+    # 扣保證金 + 記費用至已實現（費用即時從現金扣）
+    st.cash_u -= config.MARGIN_PER_TRADE_USDT
+    st.cash_u -= fee
+    st.realized_fees_u += fee
+    st.realized_net_u -= fee  # 費用計入淨損益
+    if sig_key not in st.processed_signals:
+        st.processed_signals.append(sig_key)
+    set_position(st, pos)
+    save_account(st)
+
+    _append_fill(
+        {
+            "event": "OPEN",
+            "trade_id": trade_id,
+            "symbol": symbol,
+            "side": side,
+            "qty": qty,
+            "price": entry,
+            "fee_u": fee,
+            "source_tags": source_tags,
+        }
+    )
+    _append_trade_row(
+        {
+            "timestamp": pos.entry_time,
+            "event": "OPEN",
+            "trade_id": trade_id,
+            "symbol": symbol,
+            "side": side,
+            "qty": qty,
+            "price": entry,
+            "fee_u": fee,
+            "realized_net_u": -fee,
+            "exit_reason": "",
+            "linked_prev_trade_id": linked_prev or "",
+            "run_id": st.run_id,
+        }
+    )
+    out.update({"ok": True, "trade_id": trade_id, "position": pos.to_dict()})
+    return out
+
+
+def _pnl(side: str, entry: float, exit_px: float, qty: float) -> float:
+    if side == "LONG":
+        return (exit_px - entry) * qty
+    return (entry - exit_px) * qty
+
+
+def close_qty(
+    st: AccountState,
+    symbol: str,
+    *,
+    qty: float,
+    exit_price: float,
+    reason: str,
+    book_ts: float,
+) -> dict[str, Any]:
+    pos = get_position(st, symbol)
+    if pos is None:
+        return {"ok": False, "block_reason": "NO_POSITION"}
+    qty = min(qty, pos.qty_remaining)
+    if qty <= 0:
+        return {"ok": False, "block_reason": "ZERO_QTY"}
+
+    fee = _fee(exit_price * qty)
+    gross = _pnl(pos.side, pos.entry_price, exit_price, qty)
+    net = gross - fee
+    pos.qty_remaining -= qty
+    pos.fees_paid_u += fee
+    pos.realized_net_u += net
+    st.realized_fees_u += fee
+    st.realized_net_u += net
+    # 現金結算：gross 入帳一次、出場費扣一次；保證金僅在完全平倉時全額歸還（部分平倉不按比例釋放＝既有政策，待確認）
+    st.cash_u += gross
+    st.cash_u -= fee
+
+    is_flat = pos.qty_remaining <= 1e-12
+    _append_fill(
+        {
+            "event": "CLOSE" if is_flat else "CLOSE_PARTIAL",
+            "trade_id": pos.trade_id,
+            "symbol": symbol,
+            "side": pos.side,
+            "qty": qty,
+            "price": exit_price,
+            "fee_u": fee,
+            "gross_u": gross,
+            "net_u": net,
+            "exit_reason": reason,
+            "book_ts": book_ts,
+            "cash_delta_u": gross - fee + (pos.margin_u if is_flat else 0.0),
+        }
+    )
+    _append_trade_row(
+        {
+            "timestamp": now_iso(),
+            "event": "CLOSE" if is_flat else "CLOSE_PARTIAL",
+            "trade_id": pos.trade_id,
+            "symbol": symbol,
+            "side": pos.side,
+            "qty": qty,
+            "price": exit_price,
+            "fee_u": fee,
+            "realized_net_u": net,
+            "exit_reason": reason,
+            "linked_prev_trade_id": pos.linked_prev_trade_id or "",
+            "run_id": st.run_id,
+        }
+    )
+
+    if is_flat:
+        st.cash_u += pos.margin_u
+        clear_position(st, symbol)
+        st.cooldowns_until[symbol] = now_ts() + config.COOLDOWN_MINUTES * 60
+    else:
+        set_position(st, pos)
+
+    save_account(st)
+    return {"ok": True, "net": net, "qty": qty, "remaining": max(0.0, pos.qty_remaining if not is_flat else 0.0), "gross": gross, "fee": fee}
+
+
+def mark_price_for_side(side: str, book: dict[str, Any]) -> float:
+    """平多用 bid；平空用 ask；再加不利滑價。"""
+    if side == "LONG":
+        return float(book["bid"]) * (1 - config.SLIPPAGE_ADVERSE)
+    return float(book["ask"]) * (1 + config.SLIPPAGE_ADVERSE)
+
+
+def estimate_net_unrealized(pos: Position, mark: float) -> float:
+    """含已付費用與預估平倉費後的淨浮盈。"""
+    gross = _pnl(pos.side, pos.entry_price, mark, pos.qty_remaining)
+    exit_fee = _fee(mark * pos.qty_remaining)
+    # 進場費已在 realized；浮盈評估時只扣預估出場費
+    return gross - exit_fee
+
+
+def breakeven_price(pos: Position) -> float:
+    """
+    剩餘部位含成本保本價：使剩餘 qty 平倉後淨損益≈0（分攤已付進場費至剩餘）。
+    不用已實現 30% 利潤把可虧價位稱保本。
+    """
+    # 剩餘應分攤的進場費 ≈ 總進場費 * remaining/initial
+    entry_fee_total = _fee(pos.entry_price * pos.qty_initial)
+    alloc_entry_fee = entry_fee_total * (pos.qty_remaining / pos.qty_initial)
+    # 預估出場費隨價變，用 entry 近似
+    est_exit_fee = _fee(pos.entry_price * pos.qty_remaining)
+    cost = alloc_entry_fee + est_exit_fee
+    if pos.side == "LONG":
+        return pos.entry_price + cost / pos.qty_remaining
+    return pos.entry_price - cost / pos.qty_remaining
+
+
+def tighten_stop(
+    pos: Position,
+    candidate: float,
+    kind: str,
+    event_ts: float,
+    *,
+    atr_latest: Optional[float] = None,
+    mark: Optional[float] = None,
+) -> None:
+    prev = pos.effective_stop
+    changed = False
+    if pos.side == "LONG":
+        if candidate > pos.effective_stop:
+            pos.effective_stop = candidate
+            pos.stop_set_events.append({"ts": event_ts, "kind": kind, "price": candidate})
+            changed = True
+    else:
+        if candidate < pos.effective_stop:
+            pos.effective_stop = candidate
+            pos.stop_set_events.append({"ts": event_ts, "kind": kind, "price": candidate})
+            changed = True
+    if changed:
+        try:
+            from .run_store import get_store
+
+            store = get_store()
+            if store is not None:
+                store.log_stop_event(
+                    {
+                        "trade_id": pos.trade_id,
+                        "symbol": pos.symbol,
+                        "side": pos.side,
+                        "kind": kind,
+                        "prev_stop": prev,
+                        "new_stop": pos.effective_stop,
+                        "extreme": pos.extreme_price,
+                        "atr_latest": atr_latest,
+                        "mark": mark,
+                        "event_ts": event_ts,
+                        "never_widens": True,
+                    }
+                )
+        except Exception:
+            pass
+
+
+def manage_position(
+    st: AccountState,
+    symbol: str,
+    *,
+    book: dict[str, Any],
+    atr_latest: Optional[float],
+) -> list[dict[str, Any]]:
+    """持倉管理：部分止盈、含成本保本、移動停利、初始止損。
+
+    策略政策（與極值保存 bug 修復分開）：
+    - 部分止盈成功成交前：不啟用移動停利、不設含成本保本；初始止損照常。
+    - 部分止盈成功後：才啟用保本與移動停利。
+    - 極值持續更新並保存；觸發平倉一律用當下可成交報價，禁止以歷史 high/low 或停損價倒填成交。
+    """
+    events: list[dict[str, Any]] = []
+    pos = get_position(st, symbol)
+    if pos is None:
+        return events
+    book_ts = float(book.get("fetched_at") or time.time())
+    mark = mark_price_for_side(pos.side, book)
+
+    # 更新極值（用可成交價；多只升、空只降）並立刻保存，避免後續 get_position 讀回舊值
+    # 注意：啟用前的極值只供後續 trail 計算參考，不得拿來倒填歷史成交價。
+    if pos.side == "LONG":
+        pos.extreme_price = max(pos.extreme_price, mark)
+    else:
+        if pos.extreme_price <= 0:
+            pos.extreme_price = mark
+        pos.extreme_price = min(pos.extreme_price, mark)
+    set_position(st, pos)
+    save_account(st)
+
+    # 1) 部分止盈（成功後才開保本／移動停利）
+    if not pos.partial_tp_done:
+        net_u = estimate_net_unrealized(pos, mark)
+        if net_u >= config.PARTIAL_TP_NET_USDT:
+            step = 0.001
+            qty_tp = round_step(pos.qty_initial * config.PARTIAL_TP_FRACTION, step)
+            qty_tp = min(qty_tp, pos.qty_remaining)
+            if qty_tp > 0:
+                # close_qty 會從帳戶重讀；極值已保存
+                extreme_saved = pos.extreme_price
+                r = close_qty(st, symbol, qty=qty_tp, exit_price=mark, reason="PARTIAL_TP", book_ts=book_ts)
+                events.append({"action": "PARTIAL_TP", **r})
+                if not r.get("ok"):
+                    # 部分止盈失敗：不啟用保本／移動停利；初始止損路徑繼續
+                    events.append({"action": "PARTIAL_TP_FAILED", "block_reason": r.get("block_reason") or r.get("error")})
+                else:
+                    pos = get_position(st, symbol)
+                    if pos is None:
+                        return events
+                    # 確保部分平倉後極值／狀態不遺失
+                    pos.extreme_price = max(pos.extreme_price, extreme_saved) if pos.side == "LONG" else (
+                        min(pos.extreme_price, extreme_saved) if pos.extreme_price > 0 else extreme_saved
+                    )
+                    pos.partial_tp_done = True
+                    pos.partial_tp_qty = qty_tp
+                    pos.partial_tp_price = mark
+                    be = breakeven_price(pos)
+                    pos.breakeven_stop = be
+                    # 啟用當下若報價已越過保本：只能用當下 mark 處理，禁止倒填停損價成交
+                    if pos.side == "LONG" and mark <= be:
+                        r2 = close_qty(st, symbol, qty=pos.qty_remaining, exit_price=mark, reason="BREAKEVEN_STOP", book_ts=book_ts)
+                        events.append({"action": "BREAKEVEN_STOP_IMMEDIATE", "fill_price": mark, "stop_level": be, **r2})
+                        return events
+                    if pos.side == "SHORT" and mark >= be:
+                        r2 = close_qty(st, symbol, qty=pos.qty_remaining, exit_price=mark, reason="BREAKEVEN_STOP", book_ts=book_ts)
+                        events.append({"action": "BREAKEVEN_STOP_IMMEDIATE", "fill_price": mark, "stop_level": be, **r2})
+                        return events
+                    tighten_stop(pos, be, "BREAKEVEN_STOP", book_ts, atr_latest=atr_latest, mark=mark)
+                    set_position(st, pos)
+                    save_account(st)
+
+    pos = get_position(st, symbol)
+    if pos is None:
+        return events
+
+    # 2) 移動停利：僅部分止盈成功後；需最新 ATR；只收緊不放寬
+    if pos.partial_tp_done and atr_latest and atr_latest > 0:
+        if pos.side == "LONG":
+            trail = pos.extreme_price - config.TRAIL_ATR_MULT * atr_latest
+        else:
+            trail = pos.extreme_price + config.TRAIL_ATR_MULT * atr_latest
+        pos.trailing_stop = trail
+        tighten_stop(pos, trail, "TRAILING_STOP", book_ts, atr_latest=atr_latest, mark=mark)
+        set_position(st, pos)
+        save_account(st)
+        # 啟用／更新後若當下報價已越過有效停損：用 mark 平倉，不倒填 trail 價
+        pos = get_position(st, symbol)
+        if pos is None:
+            return events
+
+    # 3) 觸發有效止損（僅當下 book；成交價=mark，絕不使用歷史極值或停損價倒填）
+    hit = False
+    reason = "INITIAL_STOP"
+    if pos.side == "LONG" and mark <= pos.effective_stop:
+        hit = True
+        if pos.partial_tp_done and pos.trailing_stop is not None and abs(pos.effective_stop - pos.trailing_stop) < 1e-12:
+            reason = "TRAILING_STOP"
+        elif pos.partial_tp_done and pos.breakeven_stop is not None and abs(pos.effective_stop - pos.breakeven_stop) < 1e-12:
+            reason = "BREAKEVEN_STOP"
+        elif abs(pos.effective_stop - pos.initial_stop) < 1e-12:
+            reason = "INITIAL_STOP"
+        else:
+            reason = "TRAILING_STOP" if (pos.partial_tp_done and pos.trailing_stop is not None) else (
+                "BREAKEVEN_STOP" if pos.breakeven_stop is not None else "INITIAL_STOP"
+            )
+    if pos.side == "SHORT" and mark >= pos.effective_stop:
+        hit = True
+        if pos.partial_tp_done and pos.trailing_stop is not None and abs(pos.effective_stop - pos.trailing_stop) < 1e-12:
+            reason = "TRAILING_STOP"
+        elif pos.partial_tp_done and pos.breakeven_stop is not None and abs(pos.effective_stop - pos.breakeven_stop) < 1e-12:
+            reason = "BREAKEVEN_STOP"
+        elif abs(pos.effective_stop - pos.initial_stop) < 1e-12:
+            reason = "INITIAL_STOP"
+        else:
+            reason = "TRAILING_STOP" if (pos.partial_tp_done and pos.trailing_stop is not None) else (
+                "BREAKEVEN_STOP" if pos.breakeven_stop is not None else "INITIAL_STOP"
+            )
+
+    if hit:
+        r = close_qty(st, symbol, qty=pos.qty_remaining, exit_price=mark, reason=reason, book_ts=book_ts)
+        events.append({"action": reason, "fill_price": mark, "stop_level": pos.effective_stop, **r})
+    return events
+
+
+def count_reverses(st: AccountState, symbol: str, now: Optional[float] = None) -> int:
+    now = now or now_ts()
+    window = config.REVERSE_WINDOW_MINUTES * 60
+    ev = [t for t in st.reverse_events.get(symbol, []) if now - t <= window]
+    st.reverse_events[symbol] = ev
+    return len(ev)
+
+
+def note_reverse(st: AccountState, symbol: str) -> None:
+    st.reverse_events.setdefault(symbol, []).append(now_ts())
+    save_account(st)

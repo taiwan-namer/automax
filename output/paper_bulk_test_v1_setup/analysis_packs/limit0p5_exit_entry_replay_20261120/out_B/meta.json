@@ -1,0 +1,104 @@
+{
+  "label": "B",
+  "profile": "paper_reverse_fixed_usdt_50_75_v1",
+  "runs": [
+    "20261120T042025_ab76e26a",
+    "20261120T040855_67e68885"
+  ],
+  "cutoff": "2026-11-20T08:16:25+08:00",
+  "rebuild": {
+    "n_closed": 35,
+    "n_open": 1,
+    "sum_complete_net": -146.1378750087361,
+    "expected": {
+      "n_closed": 35,
+      "n_open": 1,
+      "sum_net": -146.1378750087361
+    },
+    "open_trade_ids": [
+      {
+        "trade_id": "20261120T042025_ab76e26a:ETHFIUSDT:43f4f53aad",
+        "close_after_cutoff": true,
+        "close_ts": "2026-11-20T09:02:05+08:00",
+        "actual_exit_reason": "FIXED_TP"
+      }
+    ]
+  },
+  "assumptions": {
+    "price_path": "1m_ohlc_kline_approx",
+    "fee_rate_one_side": 0.0005,
+    "slippage_adverse_on_exit": 0.0002,
+    "same_bar_rule": "conservative=SL_wins; optimistic=TP_wins",
+    "stage1": "fixed_actual_entries_independent_exit_sensitivity"
+  },
+  "entry": {
+    "coverage": 62,
+    "assumptions": {
+      "model": "1m_ohlc_limit_touch_approx",
+      "fee_rate_one_side": 0.0005,
+      "slippage_adverse_market_only": 0.0002,
+      "limit_fill_price": "limit_price_no_extra_slip",
+      "cancel": "mid=(h+l)/2 vs signal_ref adverse 1%",
+      "notional": 10000.0,
+      "exit": "fixed_gross_tp50_sl75_conservative_ohlc",
+      "selection": "LIMIT_QUEUED cohort in limit0p5 runs only — exploratory, not full strategy backtest"
+    },
+    "wait_diag": {
+      "le_1m": {
+        "n": 3,
+        "sum_net": 113.74643873920012,
+        "avg_net": 37.91547957973337
+      },
+      "1_to_5m": {
+        "n": 8,
+        "sum_net": 52.35036805598834,
+        "avg_net": 6.543796006998543
+      },
+      "gt_5m": {
+        "n": 28,
+        "sum_net": 64.25437623018077,
+        "avg_net": 2.2947991510778847
+      }
+    }
+  },
+  "atr_offset": {
+    "n": 36,
+    "median_offset_over_atr": 2.2850434769768273,
+    "p25": 1.611752293388769,
+    "p75": 2.856066863074618,
+    "mean": 2.231034603395147
+  },
+  "bars_coverage_n": {
+    "1000LUNCUSDT": 240,
+    "1000PEPEUSDT": 240,
+    "AKEUSDT": 240,
+    "ARBUSDT": 240,
+    "ASTERUSDT": 240,
+    "BCHUSDT": 240,
+    "BMTUSDT": 240,
+    "BREVUSDT": 240,
+    "CROSSUSDT": 240,
+    "DOGEUSDT": 240,
+    "ENAUSDT": 240,
+    "ETHFIUSDT": 240,
+    "FETUSDT": 240,
+    "FILUSDT": 240,
+    "HBARUSDT": 240,
+    "HUMAUSDT": 240,
+    "ICNTUSDT": 240,
+    "IDOLUSDT": 240,
+    "IRYSUSDT": 240,
+    "JCTUSDT": 240,
+    "KAVAUSDT": 240,
+    "LINKUSDT": 240,
+    "LTCUSDT": 240,
+    "MEGAUSDT": 240,
+    "NAORISUSDT": 240,
+    "NEARUSDT": 240,
+    "ONDOUSDT": 240,
+    "SENTUSDT": 240,
+    "SOLUSDT": 240,
+    "STRKUSDT": 240,
+    "VELVETUSDT": 240
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "recon": {
+    "report_C_sum_net": -3604.6890080763887,
+    "computed_C_sum_net": -3604.6890080763887,
+    "delta_vs_report": 0.0,
+    "n_C": 106,
+    "account_realized_net_u": -3614.688987623117,
+    "account_vs_C": -9.999979546728355,
+    "open_positions_n": 2,
+    "open_fees_paid_u": 9.99997954672992,
+    "note": "帳戶已實現 ≈ C完整平倉淨利 + 未平倉已扣開倉費（及可能極小捨入）。權益變化另含未實現。"
+  },
+  "aggs": [
+    {
+      "label": "C_window_all",
+      "n": 106,
+      "wins": 10,
+      "losses": 96,
+      "flats": 0,
+      "win_rate": 0.09433962264150944,
+      "sum_gross": -2544.5270536207227,
+      "sum_fees": 1060.1619544556645,
+      "sum_net": -3604.6890080763887,
+      "avg_win": 94.87633965679935,
+      "med_win": 90.18876716803872,
+      "avg_loss": -47.431795881712304,
+      "med_loss": -37.094318291331,
+      "max_win": 183.77466775181978,
+      "max_loss": -184.84502738326847,
+      "pf": 0.2083613294387977,
+      "breakeven_wr": 0.33330347349590733
+    },
+    {
+      "label": "all_complete",
+      "n": 106,
+      "wins": 10,
+      "losses": 96,
+      "flats": 0,
+      "win_rate": 0.09433962264150944,
+      "sum_gross": -2544.5270536207227,
+      "sum_fees": 1060.1619544556645,
+      "sum_net": -3604.6890080763887,
+      "avg_win": 94.87633965679935,
+      "med_win": 90.18876716803872,
+      "avg_loss": -47.431795881712304,
+      "med_loss": -37.094318291331,
+      "max_win": 183.77466775181978,
+      "max_loss": -184.84502738326847,
+      "pf": 0.2083613294387977,
+      "breakeven_wr": 0.33330347349590733
+    },
+    {
+      "label": "C_window_ver_A",
+      "n": 53,
+      "wins": 5,
+      "losses": 48,
+      "flats": 0,
+      "win_rate": 0.09433962264150944,
+      "sum_gross": -1415.8491530833835,
+      "sum_fees": 530.1485284450075,
+      "sum_net": -1945.9976815283915,
+      "avg_win": 100.38997178822365,
+      "med_win": 87.92186972903363,
+      "avg_loss": -50.99890709311478,
+      "med_loss": -42.910530486352236,
+      "max_win": 183.77466775181978,
+      "max_loss": -184.84502738326847,
+      "pf": 0.20504927113137628,
+      "breakeven_wr": 0.33687353701250883
+    },
+    {
+      "label": "C_window_ver_B",
+      "n": 2,
+      "wins": 0,
+      "losses": 2,
+      "flats": 0,
+      "win_rate": 0.0,
+      "sum_gross": -86.84522958799977,
+      "sum_fees": 20.01633185387,
+      "sum_net": -106.86156144186978,
+      "avg_win": null,
+      "med_win": null,
+      "avg_loss": -53.43078072093489,
+      "med_loss": -53.43078072093489,
+      "max_win": null,
+      "max_loss": -72.51935990557052,
+      "pf": 0.0,
+      "breakeven_wr": null
+    },
+    {
+      "label": "C_window_ver_C",
+      "n": 51,
+      "wins": 5,
+      "losses": 46,
+      "flats": 0,
+      "win_rate": 0.09803921568627451,
+      "sum_gross": -1041.83267094934,
+      "sum_fees": 509.99709415678666,
+      "sum_net": -1551.8297651061264,
+      "avg_win": 89.36270752537504,
+      "med_win": 92.45566460704381,
+      "avg_loss": -43.44876745071743,
+      "med_loss": -33.319769336614414,
+      "max_win": 106.46320032145974,
+      "max_loss": -159.34165022631637,
+      "pf": 0.22355841936171883,
+      "breakeven_wr": 0.3271461856630889
+    }
+  ],
+  "vol_groups": [
+    {
+      "group": "low",
+      "n": 36,
+      "atr_pct_range": "<= 0.1242%",
+      "avg_notional": 9998.129634567455,
+      "win_rate": 0.027777777777777776,
+      "avg_win": 92.45566460704381,
+      "avg_loss": -25.443335179893275,
+      "sum_fees": 359.89811775527124,
+      "sum_net": -798.0610666892209,
+      "exit_reasons": {
+        "INITIAL_STOP": 35,
+        "TRAILING_STOP": 1
+      },
+      "avg_planned_sl_u": 13.286093885093454,
+      "n_initial_stop": 35,
+      "n_trailing": 1
+    },
+    {
+      "group": "mid",
+      "n": 35,
+      "atr_pct_range": "(0.1242%, 0.2569%]",
+      "avg_notional": 9999.67084022056,
+      "win_rate": 0.11428571428571428,
+      "avg_win": 117.83685149985648,
+      "avg_loss": -40.344691978708276,
+      "sum_fees": 349.98425308211034,
+      "sum_net": -779.3380453405306,
+      "exit_reasons": {
+        "INITIAL_STOP": 31,
+        "TRAILING_STOP": 4
+      },
+      "avg_planned_sl_u": 26.89530871980679,
+      "n_initial_stop": 31,
+      "n_trailing": 4
+    },
+    {
+      "group": "high",
+      "n": 35,
+      "atr_pct_range": "> 0.2569%",
+      "avg_notional": 9999.925327789171,
+      "win_rate": 0.14285714285714285,
+      "avg_win": 76.99206519230474,
+      "avg_loss": -80.40834073360533,
+      "sum_fees": 350.27958361828263,
+      "sum_net": -2027.2898960466368,
+      "exit_reasons": {
+        "INITIAL_STOP": 30,
+        "TRAILING_STOP": 5
+      },
+      "avg_planned_sl_u": 58.377248104639456,
+      "n_initial_stop": 30,
+      "n_trailing": 5
+    }
+  ],
+  "hyp": {
+    "A_sl_vs_tp_distance": {
+      "verdict": "支持（就舊策略結構）",
+      "detail": "舊策略無固定TP；出場 INITIAL_STOP=96 / TRAILING_STOP=10；多數以初始止損結束，非對稱風險／報酬在入場時未設固定TP。"
+    },
+    "B_tp_space_vs_fees": {
+      "verdict": "資料不足／部分支持",
+      "detail": "無固定TP；trail/partial 路徑 n=10，其中淨虧 n=0，|net|≤5.0 n=0。無法用1ATR TP口徑評估舊單。"
+    },
+    "C_fixed_notional_inconsistent_risk": {
+      "verdict": "支持",
+      "detail": "名義≈1萬固定；planned_sl_gross_u min=7.58 max=84.03 median=25.64（同1.5ATR但金額差很大）"
+    },
+    "D_signal_winrate_insufficient": {
+      "verdict": "支持",
+      "detail": "C窗勝率=9.434%；樣本損益兩平勝率≈0.33330347349590733"
+    },
+    "E_other_exec": {
+      "verdict": "資料不足",
+      "detail": "有部分止盈/移動止損路徑；滑價在成交價內。未另做執行異常審計。"
+    }
+  },
+  "reason_c": {
+    "INITIAL_STOP": 96,
+    "TRAILING_STOP": 10
+  },
+  "top10": [
+    {
+      "trade_id": "20261119T132017_bd1972b2:PIPPINUSDT:004beb352f",
+      "symbol": "PIPPINUSDT",
+      "side": "SHORT",
+      "net_u": -184.84502738326847,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5395766976684879,
+      "planned_sl_gross_u": 80.93646912560622
+    },
+    {
+      "trade_id": "20261119T161354_5cb8369a:JCTUSDT:2caa4005dc",
+      "symbol": "JCTUSDT",
+      "side": "SHORT",
+      "net_u": -159.34165022631637,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.3202083947642132,
+      "planned_sl_gross_u": 48.03125620809326
+    },
+    {
+      "trade_id": "20261119T161354_5cb8369a:EVAAUSDT:08e6af6d23",
+      "symbol": "EVAAUSDT",
+      "side": "LONG",
+      "net_u": -101.04344656074133,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5602166487754832,
+      "planned_sl_gross_u": 84.03137147656935
+    },
+    {
+      "trade_id": "20261119T124504_79a79b4d:EVAAUSDT:5ebc3f2359",
+      "symbol": "EVAAUSDT",
+      "side": "LONG",
+      "net_u": -92.93562118839786,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5300958047909212,
+      "planned_sl_gross_u": 79.51288525282385
+    },
+    {
+      "trade_id": "20261119T161354_5cb8369a:1000LUNCUSDT:7c4952fb9c",
+      "symbol": "1000LUNCUSDT",
+      "side": "LONG",
+      "net_u": -92.91160061696966,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5171772078730422,
+      "planned_sl_gross_u": 77.57642017797738
+    },
+    {
+      "trade_id": "20261119T132017_bd1972b2:PIPPINUSDT:a70f7f2bf0",
+      "symbol": "PIPPINUSDT",
+      "side": "LONG",
+      "net_u": -92.47625638540208,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.47519999244465766,
+      "planned_sl_gross_u": 71.27990618473794
+    },
+    {
+      "trade_id": "20261119T161354_5cb8369a:EVAAUSDT:ade16ca631",
+      "symbol": "EVAAUSDT",
+      "side": "SHORT",
+      "net_u": -91.68008053232636,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5132190656949734,
+      "planned_sl_gross_u": 76.98107821079002
+    },
+    {
+      "trade_id": "20261119T124504_79a79b4d:ICNTUSDT:46e687b135",
+      "symbol": "ICNTUSDT",
+      "side": "SHORT",
+      "net_u": -91.59163073346133,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.5436023276383876,
+      "planned_sl_gross_u": 81.54004750615421
+    },
+    {
+      "trade_id": "20261119T132017_bd1972b2:EVAAUSDT:534efcba07",
+      "symbol": "EVAAUSDT",
+      "side": "LONG",
+      "net_u": -89.11757950135346,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.4468320796892699,
+      "planned_sl_gross_u": 67.02209650391305
+    },
+    {
+      "trade_id": "20261119T124504_79a79b4d:KAVAUSDT:6e910c1849",
+      "symbol": "KAVAUSDT",
+      "side": "SHORT",
+      "net_u": -87.83103896315967,
+      "exit_reason_final": "INITIAL_STOP",
+      "atr_pct_of_entry": 0.4582631557404054,
+      "planned_sl_gross_u": 68.73945574610687
+    }
+  ],
+  "atr_bounds": {
+    "low_max_pct": 0.1242185902039552,
+    "mid_max_pct": 0.25686387050506415
+  },
+  "near_flat_threshold_u": 5.0
+}

@@ -1,0 +1,855 @@
+{
+  "cutoff": "2026-11-20T03:01:00+08:00",
+  "generated_at": "2026-11-20T03:03:46.922135+08:00",
+  "accounts": {
+    "A": {
+      "n": 90,
+      "n_closed": 90,
+      "n_open": 0,
+      "sum_rt_net_closed": -693.9642422614211,
+      "sum_gross_closed": 205.65677576805834,
+      "sum_fees_closed": 899.6210180294798,
+      "wl_sequence": "LWLWLWWLWLLWLLWLLWLWWWWWLWLLWLWLWWWWWLWLWLWLLWLWLWLWWLWWWWWLLWWLLWWLWLWWLWLLWWWLLLLWLLLLWW",
+      "longest_losing_streak": 4,
+      "longest_losing_trades": [
+        {
+          "trade_id": "20261120T010737_9a6b56f8:APTUSDT:9efc25a7c4",
+          "symbol": "APTUSDT",
+          "rt_net_u": -42.98639699633282,
+          "exit_ts": "2026-11-20T02:24:23+08:00"
+        },
+        {
+          "trade_id": "20261120T010737_9a6b56f8:INITUSDT:3b59815be2",
+          "symbol": "INITUSDT",
+          "rt_net_u": -38.78383452839878,
+          "exit_ts": "2026-11-20T02:24:43+08:00"
+        },
+        {
+          "trade_id": "20261120T010737_9a6b56f8:ARBUSDT:76282ca452",
+          "symbol": "ARBUSDT",
+          "rt_net_u": -38.83108064109125,
+          "exit_ts": "2026-11-20T02:31:48+08:00"
+        },
+        {
+          "trade_id": "20261120T010737_9a6b56f8:TAOUSDT:4d9b1082fe",
+          "symbol": "TAOUSDT",
+          "rt_net_u": -42.58941153667086,
+          "exit_ts": "2026-11-20T02:36:08+08:00"
+        }
+      ],
+      "rolling10": [
+        {
+          "chunk": 1,
+          "n": 10,
+          "from_exit": "2026-11-19T21:00:56+08:00",
+          "to_exit": "2026-11-19T21:31:28+08:00",
+          "wins": 5,
+          "losses": 5,
+          "avg_net": -2.7398323569995267,
+          "sum_gross": 72.49547362420503,
+          "sum_fees": 99.8937971942003,
+          "sum_net": -27.398323569995267,
+          "trade_ids_short": "da8d6d08ee|ef54a9f090|cd2154dd27|306deb6d4f|6488536862|650949c390|046427dce3|e050dd04d9|590a9fab3d|70319d847b"
+        },
+        {
+          "chunk": 2,
+          "n": 10,
+          "from_exit": "2026-11-19T21:35:42+08:00",
+          "to_exit": "2026-11-19T22:01:53+08:00",
+          "wins": 4,
+          "losses": 6,
+          "avg_net": -25.070256600283336,
+          "sum_gross": -150.72102997999136,
+          "sum_fees": 99.98153602284201,
+          "sum_net": -250.70256600283338,
+          "trade_ids_short": "bdc572b6ec|863674b39a|9d7c3f6cc5|7954645d39|d051941374|21b20c4af3|a8f9b904e5|123f208a91|0f6e6f869e|7d2029d3b2"
+        },
+        {
+          "chunk": 3,
+          "n": 10,
+          "from_exit": "2026-11-19T22:06:33+08:00",
+          "to_exit": "2026-11-19T22:35:56+08:00",
+          "wins": 6,
+          "losses": 4,
+          "avg_net": -4.96464621311887,
+          "sum_gross": 50.3638939520073,
+          "sum_fees": 100.01035608319599,
+          "sum_net": -49.6464621311887,
+          "trade_ids_short": "8ccc7e0dfb|42c847400f|181fd90b22|bfd407338e|4669f18294|e78e8bf5d7|6f83ab2538|4037d5d521|f21e346c17|c43b53fd1a"
+        },
+        {
+          "chunk": 4,
+          "n": 10,
+          "from_exit": "2026-11-19T22:48:58+08:00",
+          "to_exit": "2026-11-19T23:20:03+08:00",
+          "wins": 7,
+          "losses": 3,
+          "avg_net": 6.532803377097655,
+          "sum_gross": 165.37464520904675,
+          "sum_fees": 100.04661143807019,
+          "sum_net": 65.32803377097655,
+          "trade_ids_short": "24a8e84bdf|eeac06d4f6|4c3ce38dad|1c073a309b|cf4832e0b7|c2e11514a5|f01fa2fee5|871a678bd8|581544ea2b|ab80e14f01"
+        },
+        {
+          "chunk": 5,
+          "n": 10,
+          "from_exit": "2026-11-19T23:21:44+08:00",
+          "to_exit": "2026-11-20T00:29:38+08:00",
+          "wins": 5,
+          "losses": 5,
+          "avg_net": -26.7437458212623,
+          "sum_gross": -167.66232069639588,
+          "sum_fees": 99.77513751622709,
+          "sum_net": -267.437458212623,
+          "trade_ids_short": "cbe0d462ad|ca77c929ad|3f8bd728e4|73fadc8c9b|3ff6986647|0599a4d93b|c35bf9ccfd|7b626532aa|6308260914|70e2bc584e"
+        },
+        {
+          "chunk": 6,
+          "n": 10,
+          "from_exit": "2026-11-20T00:53:23+08:00",
+          "to_exit": "2026-11-20T01:34:14+08:00",
+          "wins": 7,
+          "losses": 3,
+          "avg_net": 2.575629391999771,
+          "sum_gross": 125.84132452356337,
+          "sum_fees": 100.08503060356566,
+          "sum_net": 25.75629391999771,
+          "trade_ids_short": "c79c89c5a7|eaa8b43783|aade55d73a|49f9f027aa|4f613d3bff|f78af599d6|e2ef9ae758|d056fc43a2|a6805ff221|581b31b15a"
+        },
+        {
+          "chunk": 7,
+          "n": 10,
+          "from_exit": "2026-11-20T01:34:44+08:00",
+          "to_exit": "2026-11-20T02:00:48+08:00",
+          "wins": 5,
+          "losses": 5,
+          "avg_net": 8.686680613804565,
+          "sum_gross": 186.7693309900107,
+          "sum_fees": 99.90252485196501,
+          "sum_net": 86.86680613804566,
+          "trade_ids_short": "e17d0d3a9b|ab08259a50|d9154240a5|671eb0d723|a2ea5be970|b089ca89a1|40c175735a|c3dbe03b31|344c127cd8|8611af2e9c"
+        },
+        {
+          "chunk": 8,
+          "n": 10,
+          "from_exit": "2026-11-20T02:01:22+08:00",
+          "to_exit": "2026-11-20T02:24:23+08:00",
+          "wins": 6,
+          "losses": 4,
+          "avg_net": -9.878406062146855,
+          "sum_gross": 1.170466503803567,
+          "sum_fees": 99.95452712527211,
+          "sum_net": -98.78406062146854,
+          "trade_ids_short": "eb16f6d90e|c4ffc8f0fd|ea68e26d33|8032376b2b|0261412d49|77b89ecc9a|8ccb4e27c3|e49fcbcc58|3dc2b70e6c|9efc25a7c4"
+        },
+        {
+          "chunk": 9,
+          "n": 10,
+          "from_exit": "2026-11-20T02:24:43+08:00",
+          "to_exit": "2026-11-20T03:00:23+08:00",
+          "wins": 3,
+          "losses": 7,
+          "avg_net": -17.794650555233215,
+          "sum_gross": -77.97500835819105,
+          "sum_fees": 99.97149719414111,
+          "sum_net": -177.94650555233216,
+          "trade_ids_short": "3b59815be2|76282ca452|4d9b1082fe|94f893aa1b|b854104c30|673e85cf46|ae823e0fd8|6d9fb3e937|5b189e9bc5|d755943503"
+        }
+      ],
+      "top5_losses_sum": -554.47052755188,
+      "top5_share_of_total_net": 0.7989900542209885,
+      "top5_share_of_negative": 0.26284696578641253,
+      "net_without_top5_losses": -139.4937147095411,
+      "top5_losses": [
+        {
+          "trade_id": "20261119T204955_8327b8b5:BLESSUSDT:3ff6986647",
+          "symbol": "BLESSUSDT",
+          "rt_net_u": -146.15318129755445
+        },
+        {
+          "trade_id": "20261120T010737_9a6b56f8:BTWUSDT:c3dbe03b31",
+          "symbol": "BTWUSDT",
+          "rt_net_u": -116.64553700714914
+        },
+        {
+          "trade_id": "20261120T010737_9a6b56f8:EVAAUSDT:77b89ecc9a",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -102.45614945209067
+        },
+        {
+          "trade_id": "20261119T204955_8327b8b5:1000LUNCUSDT:bdc572b6ec",
+          "symbol": "1000LUNCUSDT",
+          "rt_net_u": -98.1864667704782
+        },
+        {
+          "trade_id": "20261119T204955_8327b8b5:ARIAUSDT:9d7c3f6cc5",
+          "symbol": "ARIAUSDT",
+          "rt_net_u": -91.02919302460745
+        }
+      ],
+      "by_version": {
+        "A1_selfscan_flip_ATR": {
+          "n": 55,
+          "closed": 55,
+          "sum_net": -541.3394042835853
+        },
+        "A2_mirror_same_ATR": {
+          "n": 35,
+          "closed": 35,
+          "sum_net": -152.6248379778358
+        }
+      }
+    },
+    "B": {
+      "n": 65,
+      "n_closed": 60,
+      "n_open": 5,
+      "sum_rt_net_closed": -1838.184709831002,
+      "sum_gross_closed": -1238.071505722376,
+      "sum_fees_closed": 600.1132041086264,
+      "wl_sequence": "LLLLLWWLLLWLWLWLLWLLLLLWLLLWWWWWWWWLLLWWLLWWWLWWLWWLWLLLLWLW",
+      "longest_losing_streak": 5,
+      "longest_losing_trades": [
+        {
+          "trade_id": "20261119T232447_2056c35e:VVVUSDT:dcd0fc0dcb",
+          "symbol": "VVVUSDT",
+          "rt_net_u": -93.78395825428953,
+          "exit_ts": "2026-11-19T23:31:13+08:00"
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:IRYSUSDT:8d5d6fcae8",
+          "symbol": "IRYSUSDT",
+          "rt_net_u": -97.6427477724134,
+          "exit_ts": "2026-11-19T23:33:28+08:00"
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:TAOUSDT:45a9061fd4",
+          "symbol": "TAOUSDT",
+          "rt_net_u": -86.29500096785152,
+          "exit_ts": "2026-11-19T23:38:03+08:00"
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:OPUSDT:3267eb40b1",
+          "symbol": "OPUSDT",
+          "rt_net_u": -97.54282803541534,
+          "exit_ts": "2026-11-19T23:38:14+08:00"
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:IRYSUSDT:c2d6e35f6c",
+          "symbol": "IRYSUSDT",
+          "rt_net_u": -85.60008450430445,
+          "exit_ts": "2026-11-19T23:40:48+08:00"
+        }
+      ],
+      "rolling10": [
+        {
+          "chunk": 1,
+          "n": 10,
+          "from_exit": "2026-11-19T23:31:13+08:00",
+          "to_exit": "2026-11-19T23:48:08+08:00",
+          "wins": 2,
+          "losses": 8,
+          "avg_net": -60.89139704141254,
+          "sum_gross": -509.01487385959996,
+          "sum_fees": 99.8990965545254,
+          "sum_net": -608.9139704141254,
+          "trade_ids_short": "dcd0fc0dcb|8d5d6fcae8|45a9061fd4|3267eb40b1|c2d6e35f6c|5388b399a5|7756cb2682|f1f5e53a6c|0e86570cea|0528042d17"
+        },
+        {
+          "chunk": 2,
+          "n": 10,
+          "from_exit": "2026-11-19T23:56:26+08:00",
+          "to_exit": "2026-11-20T00:48:43+08:00",
+          "wins": 4,
+          "losses": 6,
+          "avg_net": -36.96058835586443,
+          "sum_gross": -269.64198159800134,
+          "sum_fees": 99.963901960643,
+          "sum_net": -369.60588355864434,
+          "trade_ids_short": "655648fd17|69d47cee88|a0e3900534|08cfa67a7e|8fed471589|e2dad7ebe6|d490b76287|0904d0613f|e334b9993c|47ca7b09f9"
+        },
+        {
+          "chunk": 3,
+          "n": 10,
+          "from_exit": "2026-11-20T00:51:08+08:00",
+          "to_exit": "2026-11-20T01:20:19+08:00",
+          "wins": 4,
+          "losses": 6,
+          "avg_net": -35.42146936867863,
+          "sum_gross": -254.35198278459572,
+          "sum_fees": 99.86271090219068,
+          "sum_net": -354.2146936867863,
+          "trade_ids_short": "ebb3428276|430bc99848|1f8195dafc|829be54251|6ff5812eea|c96572da9f|0c422e4b6d|f82690fc0f|05bfb669e9|8388e9b01a"
+        },
+        {
+          "chunk": 4,
+          "n": 10,
+          "from_exit": "2026-11-20T01:21:05+08:00",
+          "to_exit": "2026-11-20T01:45:08+08:00",
+          "wins": 7,
+          "losses": 3,
+          "avg_net": 2.4825859148770077,
+          "sum_gross": 124.78998076320649,
+          "sum_fees": 99.9641216144364,
+          "sum_net": 24.82585914877008,
+          "trade_ids_short": "f3ceefc951|cf0df99ce1|c56a1ed1cb|6690df103f|10440e1434|e1b2d27080|111f9cea59|545217a32c|235f45f305|1965f03d81"
+        },
+        {
+          "chunk": 5,
+          "n": 10,
+          "from_exit": "2026-11-20T01:50:08+08:00",
+          "to_exit": "2026-11-20T02:21:38+08:00",
+          "wins": 6,
+          "losses": 4,
+          "avg_net": -17.06156380208848,
+          "sum_gross": -70.39941142559253,
+          "sum_fees": 100.2162265952922,
+          "sum_net": -170.61563802088477,
+          "trade_ids_short": "b6d4c51832|e2e8c18154|aa33d6512a|30ee8f111d|836b967658|8ceece1bcf|bb1947e30e|b9c63a34b4|c69e8146c4|943629058d"
+        },
+        {
+          "chunk": 6,
+          "n": 10,
+          "from_exit": "2026-11-20T02:21:53+08:00",
+          "to_exit": "2026-11-20T02:59:39+08:00",
+          "wins": 4,
+          "losses": 6,
+          "avg_net": -35.96603832993315,
+          "sum_gross": -259.4532368177928,
+          "sum_fees": 100.2071464815387,
+          "sum_net": -359.6603832993315,
+          "trade_ids_short": "9c0b3e1009|0e0c398356|c7aeb0adfc|1e66781062|f695bc4c63|72ed9c02c8|c9c4ae1c6a|f72ed1fd22|662e013669|549278ac69"
+        }
+      ],
+      "top5_losses_sum": -606.7375174719031,
+      "top5_share_of_total_net": 0.33007429244022213,
+      "top5_share_of_negative": 0.1945072798239508,
+      "net_without_top5_losses": -1231.447192359099,
+      "top5_losses": [
+        {
+          "trade_id": "20261119T232447_2056c35e:SKYUSDT:e2dad7ebe6",
+          "symbol": "SKYUSDT",
+          "rt_net_u": -127.7319452484472
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:BTWUSDT:b6d4c51832",
+          "symbol": "BTWUSDT",
+          "rt_net_u": -123.91373504341965
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:ETHFIUSDT:08cfa67a7e",
+          "symbol": "ETHFIUSDT",
+          "rt_net_u": -121.04364459814195
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:NAORISUSDT:111f9cea59",
+          "symbol": "NAORISUSDT",
+          "rt_net_u": -117.46762586629205
+        },
+        {
+          "trade_id": "20261119T232447_2056c35e:HUMAUSDT:c69e8146c4",
+          "symbol": "HUMAUSDT",
+          "rt_net_u": -116.58056671560217
+        }
+      ],
+      "by_version": {
+        "B_selfscan_flip_fixed50_75": {
+          "n": 65,
+          "closed": 60,
+          "sum_net": -1838.1847098310018
+        }
+      }
+    },
+    "C": {
+      "n": 41,
+      "n_closed": 35,
+      "n_open": 6,
+      "sum_rt_net_closed": -1688.5211283394915,
+      "sum_gross_closed": -1338.4204801432647,
+      "sum_fees_closed": 350.1006481962268,
+      "wl_sequence": "WWWLLLLLLLLWLLWLLLWLWLLLLWLLWLWWWLL",
+      "longest_losing_streak": 8,
+      "longest_losing_trades": [
+        {
+          "trade_id": "20261120T004904_5a92b898:MEGAUSDT:d0022ed71a",
+          "symbol": "MEGAUSDT",
+          "rt_net_u": -85.84610895430467,
+          "exit_ts": "2026-11-20T01:20:24+08:00"
+        },
+        {
+          "trade_id": "20261120T004904_5a92b898:QNTUSDT:0034ced0e6",
+          "symbol": "QNTUSDT",
+          "rt_net_u": -88.28420242499966,
+          "exit_ts": "2026-11-20T01:21:39+08:00"
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:1000PEPEUSDT:ad7e026d99",
+          "symbol": "1000PEPEUSDT",
+          "rt_net_u": -89.05161918911116,
+          "exit_ts": "2026-11-20T01:21:39+08:00"
+        },
+        {
+          "trade_id": "20261120T004904_5a92b898:FETUSDT:e329413e87",
+          "symbol": "FETUSDT",
+          "rt_net_u": -85.83692157839953,
+          "exit_ts": "2026-11-20T01:22:39+08:00"
+        },
+        {
+          "trade_id": "20261120T004904_5a92b898:BCHUSDT:3c6327a10a",
+          "symbol": "BCHUSDT",
+          "rt_net_u": -90.89220766358004,
+          "exit_ts": "2026-11-20T01:22:44+08:00"
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:LINKUSDT:827c4f66f4",
+          "symbol": "LINKUSDT",
+          "rt_net_u": -86.72625826325884,
+          "exit_ts": "2026-11-20T01:22:49+08:00"
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:EVAAUSDT:9843864106",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -274.21802147431674,
+          "exit_ts": "2026-11-20T01:35:19+08:00"
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:INITUSDT:9145f0cbc6",
+          "symbol": "INITUSDT",
+          "rt_net_u": -84.69570058435183,
+          "exit_ts": "2026-11-20T01:36:29+08:00"
+        }
+      ],
+      "rolling10": [
+        {
+          "chunk": 1,
+          "n": 10,
+          "from_exit": "2026-11-20T00:58:13+08:00",
+          "to_exit": "2026-11-20T01:35:19+08:00",
+          "wins": 3,
+          "losses": 7,
+          "avg_net": -66.50140763435192,
+          "sum_gross": -565.0114816692728,
+          "sum_fees": 100.00259467424647,
+          "sum_net": -665.0140763435193,
+          "trade_ids_short": "22d9d53d75|62fe167d5d|766b4778bf|d0022ed71a|0034ced0e6|ad7e026d99|e329413e87|3c6327a10a|827c4f66f4|9843864106"
+        },
+        {
+          "chunk": 2,
+          "n": 10,
+          "from_exit": "2026-11-20T01:36:29+08:00",
+          "to_exit": "2026-11-20T02:11:49+08:00",
+          "wins": 3,
+          "losses": 7,
+          "avg_net": -49.184636584588375,
+          "sum_gross": -391.9909873259986,
+          "sum_fees": 99.85537851988501,
+          "sum_net": -491.8463658458837,
+          "trade_ids_short": "9145f0cbc6|3046bc1bb4|e9c2f61f1d|a43a84c44a|1534d71af5|ab4ab05b50|7822bc9065|d2794447a9|ae3d0382a8|c9a92b2025"
+        },
+        {
+          "chunk": 3,
+          "n": 10,
+          "from_exit": "2026-11-20T02:12:05+08:00",
+          "to_exit": "2026-11-20T02:26:49+08:00",
+          "wins": 3,
+          "losses": 7,
+          "avg_net": -48.51128373567649,
+          "sum_gross": -384.89487653599446,
+          "sum_fees": 100.21796082077061,
+          "sum_net": -485.11283735676494,
+          "trade_ids_short": "feaf996d77|2cba87e3b8|a4339597cd|60e58391f9|077c0a0c6b|6b6857c4b2|f96424ab55|373e01bd81|8e490f8cda|8bbe265770"
+        },
+        {
+          "chunk": 4,
+          "n": 5,
+          "from_exit": "2026-11-20T02:35:50+08:00",
+          "to_exit": "2026-11-20T03:00:29+08:00",
+          "wins": 3,
+          "losses": 2,
+          "avg_net": -9.309569758664693,
+          "sum_gross": 3.476865388001329,
+          "sum_fees": 50.024714181324796,
+          "sum_net": -46.54784879332347,
+          "trade_ids_short": "ccb4168e54|c9b671c9c0|a79d0d7bed|a153531c24|13d8e7d2a9"
+        }
+      ],
+      "top5_losses_sum": -648.1412141836113,
+      "top5_share_of_total_net": 0.3838514089669697,
+      "top5_share_of_negative": 0.29218145511447297,
+      "net_without_top5_losses": -1040.3799141558802,
+      "top5_losses": [
+        {
+          "trade_id": "20261120T010734_2045e335:EVAAUSDT:9843864106",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -274.21802147431674
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:1000LUNCUSDT:a43a84c44a",
+          "symbol": "1000LUNCUSDT",
+          "rt_net_u": -97.86681742283986
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:YBUSDT:d2794447a9",
+          "symbol": "YBUSDT",
+          "rt_net_u": -92.37725807850107
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:NAORISUSDT:e9c2f61f1d",
+          "symbol": "NAORISUSDT",
+          "rt_net_u": -91.88149641142358
+        },
+        {
+          "trade_id": "20261120T010734_2045e335:HYPEUSDT:c9a92b2025",
+          "symbol": "HYPEUSDT",
+          "rt_net_u": -91.79762079653004
+        }
+      ],
+      "by_version": {
+        "C_mirror_inv_fixed50_75": {
+          "n": 41,
+          "closed": 35,
+          "sum_net": -1688.5211283394915
+        }
+      }
+    },
+    "BULK": {
+      "n": 108,
+      "n_closed": 106,
+      "n_open": 2,
+      "sum_rt_net_closed": -3940.3298412611693,
+      "sum_gross_closed": -2895.207715860341,
+      "sum_fees_closed": 1045.1221254008256,
+      "wl_sequence": "LLLLLLLLLLLLLLLLWLLLLLLLWLLLLLWLLLLWWLLLLLLLLLLLLLLLLLLLWWLLWLLLLLLWLLLLLLLLLLLLLLLLLLLLLLLLWLLLLLLLLLLLLL",
+      "longest_losing_streak": 24,
+      "longest_losing_trades": [
+        {
+          "trade_id": "20261119T161354_5cb8369a:LINKUSDT:c8ba12ce76",
+          "symbol": "LINKUSDT",
+          "rt_net_u": -20.52142150289044,
+          "exit_ts": "2026-11-19T17:28:19+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ETHFIUSDT:43ce8e8550",
+          "symbol": "ETHFIUSDT",
+          "rt_net_u": -33.25494263313023,
+          "exit_ts": "2026-11-19T17:29:24+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:HUMAUSDT:17db240eba",
+          "symbol": "HUMAUSDT",
+          "rt_net_u": -58.37766857798205,
+          "exit_ts": "2026-11-19T17:31:14+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:DOTUSDT:0418ec3ef4",
+          "symbol": "DOTUSDT",
+          "rt_net_u": -22.35398927454021,
+          "exit_ts": "2026-11-19T17:31:19+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:EVAAUSDT:08e6af6d23",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -101.04344656074133,
+          "exit_ts": "2026-11-19T17:35:19+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:JCTUSDT:2caa4005dc",
+          "symbol": "JCTUSDT",
+          "rt_net_u": -159.34165022631637,
+          "exit_ts": "2026-11-19T17:40:38+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:FILUSDT:681f9ef4a1",
+          "symbol": "FILUSDT",
+          "rt_net_u": -43.090490452368634,
+          "exit_ts": "2026-11-19T17:46:19+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ARBUSDT:1b52dee955",
+          "symbol": "ARBUSDT",
+          "rt_net_u": -24.972000503049145,
+          "exit_ts": "2026-11-19T17:47:24+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:BLESSUSDT:04a6577693",
+          "symbol": "BLESSUSDT",
+          "rt_net_u": -82.0954942192988,
+          "exit_ts": "2026-11-19T17:59:19+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:APTUSDT:da2c27bab7",
+          "symbol": "APTUSDT",
+          "rt_net_u": -25.523441520435203,
+          "exit_ts": "2026-11-19T18:00:54+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:BREVUSDT:05de2b4616",
+          "symbol": "BREVUSDT",
+          "rt_net_u": -70.39822762360738,
+          "exit_ts": "2026-11-19T18:05:04+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:1000LUNCUSDT:7c4952fb9c",
+          "symbol": "1000LUNCUSDT",
+          "rt_net_u": -92.91160061696966,
+          "exit_ts": "2026-11-19T18:05:39+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:BCHUSDT:cf52cb8924",
+          "symbol": "BCHUSDT",
+          "rt_net_u": -26.44303208147834,
+          "exit_ts": "2026-11-19T18:10:13+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:AKEUSDT:be3e00b7a6",
+          "symbol": "AKEUSDT",
+          "rt_net_u": -62.15192154554423,
+          "exit_ts": "2026-11-19T18:12:24+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ENAUSDT:7c97256536",
+          "symbol": "ENAUSDT",
+          "rt_net_u": -34.885030399766194,
+          "exit_ts": "2026-11-19T18:20:14+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:KAVAUSDT:848129389c",
+          "symbol": "KAVAUSDT",
+          "rt_net_u": -54.29703726800508,
+          "exit_ts": "2026-11-19T18:21:14+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:HEIUSDT:c5c20acf8c",
+          "symbol": "HEIUSDT",
+          "rt_net_u": -34.22188532518646,
+          "exit_ts": "2026-11-19T18:22:29+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:AAVEUSDT:a37eb606e1",
+          "symbol": "AAVEUSDT",
+          "rt_net_u": -22.21904272170047,
+          "exit_ts": "2026-11-19T18:34:49+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ETHFIUSDT:3843d7a4bc",
+          "symbol": "ETHFIUSDT",
+          "rt_net_u": -36.93852325574164,
+          "exit_ts": "2026-11-19T18:40:29+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ARBUSDT:342df2a7b4",
+          "symbol": "ARBUSDT",
+          "rt_net_u": -27.354136333130512,
+          "exit_ts": "2026-11-19T18:52:39+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ETHFIUSDT:9fa6130c8e",
+          "symbol": "ETHFIUSDT",
+          "rt_net_u": -42.61918231720284,
+          "exit_ts": "2026-11-19T18:53:24+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:ENAUSDT:eb39048e8f",
+          "symbol": "ENAUSDT",
+          "rt_net_u": -36.75866651399987,
+          "exit_ts": "2026-11-19T19:03:14+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:APTUSDT:61879da2bf",
+          "symbol": "APTUSDT",
+          "rt_net_u": -25.62489848139856,
+          "exit_ts": "2026-11-19T19:04:44+08:00"
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:HBARUSDT:9160b5e8c1",
+          "symbol": "HBARUSDT",
+          "rt_net_u": -23.037812396869732,
+          "exit_ts": "2026-11-19T19:05:55+08:00"
+        }
+      ],
+      "rolling10": [
+        {
+          "chunk": 1,
+          "n": 10,
+          "from_exit": "2026-11-19T12:49:28+08:00",
+          "to_exit": "2026-11-19T13:21:28+08:00",
+          "wins": 0,
+          "losses": 10,
+          "avg_net": -54.555413677463164,
+          "sum_gross": -445.47497106579954,
+          "sum_fees": 100.0791657088321,
+          "sum_net": -545.5541367746316,
+          "trade_ids_short": "6e910c1849|7d173cf94e|be81240e93|336de6aea5|4d51e95bd8|5ebc3f2359|a100c93070|46e687b135|8bab328585|58ea98544c"
+        },
+        {
+          "chunk": 2,
+          "n": 10,
+          "from_exit": "2026-11-19T13:23:23+08:00",
+          "to_exit": "2026-11-19T13:59:05+08:00",
+          "wins": 1,
+          "losses": 9,
+          "avg_net": -52.442985233574724,
+          "sum_gross": -425.86250380871166,
+          "sum_fees": 98.56734852703568,
+          "sum_net": -524.4298523357472,
+          "trade_ids_short": "dc430e6c79|d62206cf8c|ea27df1488|a539837ca6|fa7df76bcd|fd41d22346|c7c28ec23f|534efcba07|be82e85f49|004beb352f"
+        },
+        {
+          "chunk": 3,
+          "n": 10,
+          "from_exit": "2026-11-19T14:04:17+08:00",
+          "to_exit": "2026-11-19T14:31:02+08:00",
+          "wins": 1,
+          "losses": 9,
+          "avg_net": -25.629663363873505,
+          "sum_gross": -157.74785459155322,
+          "sum_fees": 98.54877904718185,
+          "sum_net": -256.29663363873505,
+          "trade_ids_short": "0b68f52101|92719e314c|5e8d15abab|6787454908|24c0102897|d37701a392|3937c7c6ea|5cfdcf34dc|153ab149ff|44a243dfdf"
+        },
+        {
+          "chunk": 4,
+          "n": 10,
+          "from_exit": "2026-11-19T14:34:47+08:00",
+          "to_exit": "2026-11-19T15:12:15+08:00",
+          "wins": 3,
+          "losses": 7,
+          "avg_net": -12.437400091704143,
+          "sum_gross": -28.877318146261004,
+          "sum_fees": 95.49668277078042,
+          "sum_net": -124.37400091704143,
+          "trade_ids_short": "2eb79a9a4d|80f0a787df|7e97f2101b|44f7811e3b|e8195899ca|d1044663d3|045d40c364|b1d6d0a4be|a7314a5fae|f4484d1baa"
+        },
+        {
+          "chunk": 5,
+          "n": 10,
+          "from_exit": "2026-11-19T15:12:56+08:00",
+          "to_exit": "2026-11-19T15:39:41+08:00",
+          "wins": 0,
+          "losses": 10,
+          "avg_net": -48.092269867474485,
+          "sum_gross": -380.988952735198,
+          "sum_fees": 99.9337459395468,
+          "sum_net": -480.9226986747448,
+          "trade_ids_short": "7c5071d093|4db0f220a9|f266fbebea|80b0d8a560|fd54a3fd9c|9840ab61ea|c3505deb5d|73beb7397e|16c592a2b9|5ad02f319d"
+        },
+        {
+          "chunk": 6,
+          "n": 10,
+          "from_exit": "2026-11-19T15:50:16+08:00",
+          "to_exit": "2026-11-19T16:57:23+08:00",
+          "wins": 2,
+          "losses": 8,
+          "avg_net": -29.375155357188287,
+          "sum_gross": -196.68696168839446,
+          "sum_fees": 97.06459188348839,
+          "sum_net": -293.7515535718829,
+          "trade_ids_short": "a70f7f2bf0|a3748ec163|67e371c0b1|e7f064154c|b782bf069a|4d7a57163b|31a1d73c41|93c478256a|1a795b6055|50b679ed7b"
+        },
+        {
+          "chunk": 7,
+          "n": 10,
+          "from_exit": "2026-11-19T17:00:09+08:00",
+          "to_exit": "2026-11-19T17:29:24+08:00",
+          "wins": 2,
+          "losses": 8,
+          "avg_net": -22.147188619843746,
+          "sum_gross": -124.43946702823666,
+          "sum_fees": 97.03241917020077,
+          "sum_net": -221.47188619843746,
+          "trade_ids_short": "15c084ad81|db31752565|bff58f86cb|cd1f2725f2|ade16ca631|a5cd7306b3|e3bd8d128f|ff66cbb90f|c8ba12ce76|43ce8e8550"
+        },
+        {
+          "chunk": 8,
+          "n": 10,
+          "from_exit": "2026-11-19T17:31:14+08:00",
+          "to_exit": "2026-11-19T18:05:39+08:00",
+          "wins": 0,
+          "losses": 10,
+          "avg_net": -68.01080095753088,
+          "sum_gross": -580.1280694461973,
+          "sum_fees": 99.9799401291115,
+          "sum_net": -680.1080095753088,
+          "trade_ids_short": "17db240eba|0418ec3ef4|08e6af6d23|2caa4005dc|681f9ef4a1|1b52dee955|04a6577693|da2c27bab7|05de2b4616|7c4952fb9c"
+        },
+        {
+          "chunk": 9,
+          "n": 10,
+          "from_exit": "2026-11-19T18:10:13+08:00",
+          "to_exit": "2026-11-19T19:03:14+08:00",
+          "wins": 0,
+          "losses": 10,
+          "avg_net": -37.78884577617556,
+          "sum_gross": -277.91641113399544,
+          "sum_fees": 99.97204662776021,
+          "sum_net": -377.8884577617556,
+          "trade_ids_short": "cf52cb8924|be3e00b7a6|7c97256536|848129389c|c5c20acf8c|a37eb606e1|3843d7a4bc|342df2a7b4|9fa6130c8e|eb39048e8f"
+        },
+        {
+          "chunk": 10,
+          "n": 10,
+          "from_exit": "2026-11-19T19:04:44+08:00",
+          "to_exit": "2026-11-19T19:37:44+08:00",
+          "wins": 1,
+          "losses": 9,
+          "avg_net": -23.65409033511458,
+          "sum_gross": -138.03945708599485,
+          "sum_fees": 98.501446265151,
+          "sum_net": -236.54090335114583,
+          "trade_ids_short": "61879da2bf|9160b5e8c1|a1ad4e28e1|eec394ae0a|6c3590255d|3fcf9ccf92|35c21bf559|45a7194fad|1aaa09d3ae|59a138ea0f"
+        },
+        {
+          "chunk": 11,
+          "n": 6,
+          "from_exit": "2026-11-19T19:40:05+08:00",
+          "to_exit": "2026-11-19T20:01:29+08:00",
+          "wins": 0,
+          "losses": 6,
+          "avg_net": -33.16528474362281,
+          "sum_gross": -139.04574912999988,
+          "sum_fees": 59.94595933173701,
+          "sum_net": -198.99170846173686,
+          "trade_ids_short": "48bb8c334a|10600e04bb|d3fd50a95d|f6a44b16a5|6620eb66cf|d03116f901"
+        }
+      ],
+      "top5_losses_sum": -631.0773459756937,
+      "top5_share_of_total_net": 0.16015850738366275,
+      "top5_share_of_negative": 0.1385931574319333,
+      "net_without_top5_losses": -3309.2524952854756,
+      "top5_losses": [
+        {
+          "trade_id": "20261119T132017_bd1972b2:PIPPINUSDT:004beb352f",
+          "symbol": "PIPPINUSDT",
+          "rt_net_u": -184.84502738326847
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:JCTUSDT:2caa4005dc",
+          "symbol": "JCTUSDT",
+          "rt_net_u": -159.34165022631637
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:EVAAUSDT:08e6af6d23",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -101.04344656074133
+        },
+        {
+          "trade_id": "20261119T124504_79a79b4d:EVAAUSDT:5ebc3f2359",
+          "symbol": "EVAAUSDT",
+          "rt_net_u": -92.93562118839786
+        },
+        {
+          "trade_id": "20261119T161354_5cb8369a:1000LUNCUSDT:7c4952fb9c",
+          "symbol": "1000LUNCUSDT",
+          "rt_net_u": -92.91160061696966
+        }
+      ],
+      "by_version": {
+        "BULK_selfscan_atr_trail": {
+          "n": 108,
+          "closed": 106,
+          "sum_net": -3940.329841261169
+        }
+      }
+    }
+  }
+}

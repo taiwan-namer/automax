@@ -1,0 +1,528 @@
+{
+  "ts": "2026-11-19T12:07:50+08:00",
+  "passed": 65,
+  "failed": 0,
+  "total": 65,
+  "results": [
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_config_hash_stable",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_config_hash_stable_8ume88qg",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_live_order_paths_blocked",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_live_order_paths_blocked_6365co9f",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_long_short_breakout_and_vol_boundary",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_long_short_breakout_and_vol_boundary_r9pvla8t",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_lot_round",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_lot_round_63e_hlcd",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_partial_tp_once_and_breakeven_tighten",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_partial_tp_once_and_breakeven_tighten_le1o_m15",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_range_excludes_signal_bar_and_unclosed",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_range_excludes_signal_bar_and_unclosed_ukqunjrf",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_restart_preserves_capital",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_restart_preserves_capital_zk4wiatt",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_reverse_close_keeps_flat_if_reopen_fails",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_reverse_close_keeps_flat_if_reopen_fails_nhojg41a",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_breakout_core",
+      "test": "test_spread_chase_risk_rejects",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_spread_chase_risk_rejects_13kjhj4p",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_closed_not_overwritten_by_stale_unclosed",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_closed_not_overwritten_by_stale_unclosed_lgliavgl",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_decision_snapshot_immutable_after_kline_update",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_decision_snapshot_immutable_after_kline_update_o1piyjaz",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_no_signal_on_unclosed_only",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_no_signal_on_unclosed_only_3v1f2f31",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_old_response_cannot_clobber_newer",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_old_response_cannot_clobber_newer_kwnco8fj",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_unclosed_then_closed_updates",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_unclosed_then_closed_updates_7g9hz3qp",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_vault_save_load_roundtrip",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_vault_save_load_roundtrip_z3wfsq7u",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_klines_merge",
+      "test": "test_warmup_short_and_time_boundary",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_warmup_short_and_time_boundary_l1qt7ua5",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_extreme_trail",
+      "test": "test_extreme_never_retreats_on_pullback",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_extreme_never_retreats_on_pullback_kjqq0ir0",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_extreme_trail",
+      "test": "test_long_extreme_updates_before_partial_no_trail",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_long_extreme_updates_before_partial_no_trail_3siuzx79",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_extreme_trail",
+      "test": "test_restart_preserves_extreme_twice",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_restart_preserves_extreme_twice_tb__6tzd",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_extreme_trail",
+      "test": "test_short_extreme_updates_before_partial_no_trail",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_short_extreme_updates_before_partial_no_trail_mj9fu_3w",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_activation_past_stop_uses_mark_not_backfill",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_activation_past_stop_uses_mark_not_backfill_k7hyroe2",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_atr_increase_does_not_widen_after_partial",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_atr_increase_does_not_widen_after_partial_hpy5dh12",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_initial_stop_still_works_before_partial",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_initial_stop_still_works_before_partial_ezmqyf89",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_long_no_trail_until_partial_success",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_long_no_trail_until_partial_success_t54g386v",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_no_backfill_on_breakeven_immediate",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_no_backfill_on_breakeven_immediate_nhdlno5e",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_partial_fraction_zero_skips_arm",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_partial_fraction_zero_skips_arm_ulowqq13",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_partial_success_no_double_and_restart",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_partial_success_no_double_and_restart_qn43wxf5",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_partial_tp_failure_does_not_arm_trail",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_partial_tp_failure_does_not_arm_trail_jontj92m",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_trail_after_partial_policy",
+      "test": "test_short_no_trail_until_partial_success",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_short_no_trail_until_partial_success_zrfgxw9u",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_definitions_documented",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_definitions_documented_zq5x3nd9",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_duplicate_signal_rejected",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_duplicate_signal_rejected_4l5ni6ng",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_live_fills_trades_and_sources_stable_despite_running_process",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_live_fills_trades_and_sources_stable_despite_running_process_31z4lk9j",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_loss_close_cash_equals_equity",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_loss_close_cash_equals_equity_9i29j243",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_migration_dry_run_target_9668_and_idempotent",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_migration_dry_run_target_9668_and_idempotent_jn04wj_r",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_partial_then_full_fee_gross_once",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_partial_then_full_fee_gross_once_zd35j_l1",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_cash_accounting",
+      "test": "test_profit_close_cash_equals_equity",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_profit_close_cash_equals_equity_4zyv_joa",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_reverse_engine",
+      "test": "test_close_failed_does_not_open",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_close_failed_does_not_open_7xouix0y",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_reverse_engine",
+      "test": "test_daily_lock_blocks_new_but_exit_ok",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_daily_lock_blocks_new_but_exit_ok_f_fphtfn",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_reverse_engine",
+      "test": "test_full_reverse_opens_opposite",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_full_reverse_opens_opposite_y579ua6k",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_reverse_engine",
+      "test": "test_reopen_rejected_keeps_flat",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_reopen_rejected_keeps_flat_l1oj_adm",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_reverse_engine",
+      "test": "test_same_side_signal_is_not_reverse",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_same_side_signal_is_not_reverse_fhesrafi",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_safety_and_isolation",
+      "test": "test_paths_redirected_not_live",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_paths_redirected_not_live_hk_ixi1g",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_safety_and_isolation",
+      "test": "test_private_order_paths_blocked",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_private_order_paths_blocked_4d2x7_tk",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_dedup_semantics",
+      "test": "test_engine_oneshot_block_still_allows_new_signal_bar",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_engine_oneshot_block_still_allows_new_signal_bar_tc5gwtvp",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_dedup_semantics",
+      "test": "test_opposite_side_different_key_allowed",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_opposite_side_different_key_allowed_anhxr1uf",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_dedup_semantics",
+      "test": "test_rejected_try_open_does_not_consume_key_in_portfolio_layer",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_rejected_try_open_does_not_consume_key_in_portfolio_layer_q_gen7ok",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_dedup_semantics",
+      "test": "test_success_dedup_persists_across_restart",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_success_dedup_persists_across_restart_qsz1ij3a",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_at_or_over_2000_blocks_new_but_exit_ok",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_at_or_over_2000_blocks_new_but_exit_ok_tqyypqmi",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_config_daily_loss_is_2000_not_300",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_config_daily_loss_is_2000_not_300_z3f74p9x",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_exact_2000_locks",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_exact_2000_locks_j6uk8fb_",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_loss_below_2000_does_not_trip_threshold",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_loss_below_2000_does_not_trip_threshold_cojxprvl",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_reevaluate_dry_keeps_sticky_lock_apply_unlocks_under_2000",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_reevaluate_dry_keeps_sticky_lock_apply_unlocks_under_2000_dd4kzikd",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_daily_loss_lock_2000",
+      "test": "test_restart_preserves_day_basis_and_lock",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_restart_preserves_day_basis_and_lock_zt96dul1",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_can_open_more_than_3_up_to_20",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_can_open_more_than_3_up_to_20_48tdpeo_",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_daily_loss_boundaries",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_daily_loss_boundaries_3vrtgood",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_first_capital_50000_restart_no_reset",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_first_capital_50000_restart_no_reset_dq2t9k16",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_lock_persists_restart_and_taipei_rollover",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_lock_persists_restart_and_taipei_rollover_43c8_w3c",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_margin_and_risk_still_reject",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_margin_and_risk_still_reject_zm7kz9po",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_same_profile_conflict_detection",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_same_profile_conflict_detection_z0js8az7",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_same_symbol_and_opposite_blocked",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_same_symbol_and_opposite_blocked_m0ynjilu",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_bulk_writes_isolated_from_legacy_account",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_bulk_writes_isolated_from_legacy_account_73hdvwtl",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_claimed_reuse_params_match_overlay",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_claimed_reuse_params_match_overlay_dh9x64az",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_decision_fields_do_not_change_open_outcome",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_decision_fields_do_not_change_open_outcome_bexlqibf",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_no_live_order_path_reachable",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_no_live_order_path_reachable_r6m2ee1r",
+      "stdout": "",
+      "error": ""
+    },
+    {
+      "module": "tests.test_paper_bulk_test_v1",
+      "test": "test_review_reconciles_and_handles_empty",
+      "status": "PASSED",
+      "tmp": "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/test_results/tmp/bfv1_test_review_reconciles_and_handles_empty_ogll9yrc",
+      "stdout": "",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "tag": "base",
+    "fee_mult": 1.0,
+    "slip_mult": 1.0,
+    "touch_nofill": false,
+    "sum_mark": 78.43568337044833,
+    "sum_realized": 213.8757711627749,
+    "sum_mtm": -135.4400877923266,
+    "sum_fees": 196.57574820114863,
+    "n_stop": 5,
+    "n_ambiguous": 0,
+    "n_open": 11,
+    "risk": {
+      "n_full_stop_cycles": 5,
+      "avg_full_stop_net": -64.76392953359755,
+      "max_full_stop_net": -101.25941662632839,
+      "n_success_rebound_cycles_no_stop": 12,
+      "avg_success_rebound_cycle_net": 25.938091163594066,
+      "n_any_positive_rebound_component": 15,
+      "avg_positive_rebound_component": 18.5493029930939,
+      "one_max_stop_eats_n_avg_success_cycles": 3.903888531645424,
+      "one_avg_stop_eats_n_avg_success_cycles": 2.496865676241368,
+      "method": "per_complete_trade_cycle; NOT max_stop/total_rebound_pool",
+      "drawdown_note": "dd_from_peak_indep = independent-trade mark path; NOT full-account drawdown"
+    }
+  },
+  {
+    "tag": "fee_slip_1p5",
+    "fee_mult": 1.5,
+    "slip_mult": 1.5,
+    "touch_nofill": false,
+    "sum_mark": -53.0244723899107,
+    "sum_realized": 109.42248418590226,
+    "sum_mtm": -162.44695657581298,
+    "sum_fees": 294.8671887932963,
+    "n_stop": 5,
+    "n_ambiguous": 0,
+    "n_open": 11,
+    "risk": {
+      "n_full_stop_cycles": 5,
+      "avg_full_stop_net": -70.17687792800896,
+      "max_full_stop_net": -106.69219086908646,
+      "n_success_rebound_cycles_no_stop": 12,
+      "avg_success_rebound_cycle_net": 21.738175187490587,
+      "n_any_positive_rebound_component": 15,
+      "avg_positive_rebound_component": 16.270287536736635,
+      "one_max_stop_eats_n_avg_success_cycles": 4.908056446728949,
+      "one_avg_stop_eats_n_avg_success_cycles": 3.228278239674544,
+      "method": "per_complete_trade_cycle; NOT max_stop/total_rebound_pool",
+      "drawdown_note": "dd_from_peak_indep = independent-trade mark path; NOT full-account drawdown"
+    }
+  },
+  {
+    "tag": "fee_slip_2p0",
+    "fee_mult": 2.0,
+    "slip_mult": 2.0,
+    "touch_nofill": false,
+    "sum_mark": -184.48776006953574,
+    "sum_realized": 4.966819547977381,
+    "sum_mtm": -189.4545796175131,
+    "sum_fees": 393.16100704649233,
+    "n_stop": 5,
+    "n_ambiguous": 0,
+    "n_open": 11,
+    "risk": {
+      "n_full_stop_cycles": 5,
+      "avg_full_stop_net": -75.59009905416205,
+      "max_full_stop_net": -112.12541963157383,
+      "n_success_rebound_cycles_no_stop": 12,
+      "avg_success_rebound_cycle_net": 17.538210928537826,
+      "n_any_positive_rebound_component": 15,
+      "avg_positive_rebound_component": 13.991243245109468,
+      "one_max_stop_eats_n_avg_success_cycles": 6.393207385202877,
+      "one_avg_stop_eats_n_avg_success_cycles": 4.310023374799499,
+      "method": "per_complete_trade_cycle; NOT max_stop/total_rebound_pool",
+      "drawdown_note": "dd_from_peak_indep = independent-trade mark path; NOT full-account drawdown"
+    }
+  },
+  {
+    "tag": "touch_nofill",
+    "fee_mult": 1.0,
+    "slip_mult": 1.0,
+    "touch_nofill": true,
+    "sum_mark": 67.2808541144994,
+    "sum_realized": 202.72094190682597,
+    "sum_mtm": -135.4400877923266,
+    "sum_fees": 193.58282075949742,
+    "n_stop": 5,
+    "n_ambiguous": 1,
+    "n_open": 11,
+    "risk": {
+      "n_full_stop_cycles": 5,
+      "avg_full_stop_net": -64.76392953359755,
+      "max_full_stop_net": -101.25941662632839,
+      "n_success_rebound_cycles_no_stop": 11,
+      "avg_success_rebound_cycle_net": 26.244732646435605,
+      "n_any_positive_rebound_component": 14,
+      "avg_positive_rebound_component": 19.077479688604257,
+      "one_max_stop_eats_n_avg_success_cycles": 3.8582757915836803,
+      "one_avg_stop_eats_n_avg_success_cycles": 2.467692485425009,
+      "method": "per_complete_trade_cycle; NOT max_stop/total_rebound_pool",
+      "drawdown_note": "dd_from_peak_indep = independent-trade mark path; NOT full-account drawdown"
+    }
+  },
+  {
+    "tag": "gap_stop_note",
+    "note": "pyramid simulator already uses gap_open when bar.open beyond Pstop; touch_nofill suppresses first OHLC extremes to close-only"
+  }
+]

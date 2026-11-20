@@ -1,0 +1,316 @@
+{
+  "day": "2026-11-20",
+  "completeness": {
+    "status": "部分日／試產",
+    "reason": "截止 asof=2026-11-20T08:16:25.590545+08:00 早於日界 2026-11-20T20:15:00+08:00；交易仍可能進行中",
+    "window": [
+      "2026-11-19T20:15:00+08:00",
+      "2026-11-20T20:15:00+08:00"
+    ],
+    "asof": "2026-11-20T08:16:25.590545+08:00",
+    "first_fill_in_sources": "2026-11-20T04:01:11+08:00",
+    "last_fill_in_sources": "2026-11-20T08:16:07+08:00",
+    "truncated_tails": []
+  },
+  "A": {
+    "midnight_snapshot_ok": false,
+    "settlement_snapshot_ok": false,
+    "start_equity_u": 50000.0,
+    "end_equity_u": 49419.577129749814,
+    "day_equity_delta_u": -580.422870250186,
+    "start_cash_u": 50000.0,
+    "end_cash_u": 39548.37241137032,
+    "day_cash_delta_u": -10451.627588629679,
+    "cash_delta_is_not_pnl": true,
+    "funding_data_gap": true,
+    "day_loss_lock": false,
+    "day_loss_lock_source": "account_state.day_new_entries_locked",
+    "start_snap_ts": "2026-11-20T03:58:33+08:00",
+    "start_lag_sec": 27813.0,
+    "end_snap_ts": "2026-11-20T08:15:34+08:00",
+    "end_lag_sec": -43166.0
+  },
+  "B": {
+    "by_run": {
+      "20261120T040855_cfc21db0": {
+        "opens": 2,
+        "closes": 0,
+        "partials": 0,
+        "seg_net_u": -9.999996528
+      },
+      "20261120T042025_b9dc1424": {
+        "opens": 42,
+        "closes": 36,
+        "partials": 0,
+        "seg_net_u": -481.2685514983839
+      }
+    },
+    "n_segment_events": 80,
+    "note": "B = event/segment PnL in window; NOT complete-trade winrate"
+  },
+  "C": {
+    "n_complete_closed": 36,
+    "wins": 21,
+    "losses": 15,
+    "flats": 0,
+    "win_rate": 0.5833333333333334,
+    "avg_net_u": -12.535285239510669,
+    "sum_net_u": -451.2702686223841,
+    "profit_factor": 0.6742592143464694,
+    "expectancy_u": -12.535285239510669,
+    "fees_u": 359.9971508604102,
+    "note": "C = complete trade_id with CLOSE in day window; OPEN fee may belong to prior calendar day"
+  },
+  "D": {
+    "n_open": 8,
+    "open_fee_component_in_day_u": -39.998279403999994,
+    "note": "OPEN fees for open positions stay in account A; not mixed into C winrate"
+  },
+  "manage_health": {
+    "quote_batch_intervals": {
+      "metric": "pre_manage_quote_batch_interval_sec",
+      "manage_only": {
+        "n_batches": 2381,
+        "n_gaps": 2380,
+        "mean": 6.079465585294121,
+        "p50": 5.0018715,
+        "p95": 10.046227,
+        "max": 729.070824,
+        "max_span": [
+          "2026-11-20T05:02:48.822617+08:00",
+          "2026-11-20T05:14:57.893441+08:00"
+        ]
+      },
+      "all_purposes_including_signal": {
+        "n_batches": 2772,
+        "n_gaps": 2771,
+        "mean": 5.582391573800085,
+        "p50": 5.001053,
+        "p95": 5.1309635,
+        "max": 686.691827,
+        "max_span": [
+          "2026-11-20T08:03:26.204887+08:00",
+          "2026-11-20T08:14:52.896714+08:00"
+        ]
+      },
+      "n_batches": 2381,
+      "n_gaps": 2380,
+      "mean": 6.079465585294121,
+      "p50": 5.0018715,
+      "p95": 10.046227,
+      "max": 729.070824,
+      "max_span": [
+        "2026-11-20T05:02:48.822617+08:00",
+        "2026-11-20T05:14:57.893441+08:00"
+      ],
+      "note": "MANAGE/MANAGE_POLL pre-manage quote batches only by default. NOT manage-complete; NOT configured poll; NOT 「失管」. All-purpose max may be cross-run SIGNAL_EVAL (see GAP evidence)."
+    },
+    "manage_complete_intervals": {
+      "metric": "manage_complete_interval_sec",
+      "n": 2998,
+      "mean": 5.159773182121414,
+      "p50": 5.0,
+      "p95": 5.0,
+      "max": 687.0,
+      "status": "ok"
+    },
+    "data_quality": {
+      "counts": {
+        "KLINE_WARMUP_SHORT": 201,
+        "HTTP_CLIENT_ERROR": 29,
+        "MANAGE_BOOK_GIVE_UP": 11,
+        "WARMUP_VAULT_MISSING": 5,
+        "HTTP_TIMEOUT": 2,
+        "LOOP_ERROR": 2
+      },
+      "timeouts": 2,
+      "http_429": 0,
+      "http_418": 0,
+      "manage_blocked": 0,
+      "note": "From data_quality.jsonl `code`/`kind`; excess stop overshoot is separate fill analysis"
+    },
+    "sources_non_atomic": true,
+    "note": "Multi-file reads are non-atomic across runs; truncated tails deferred per file"
+  },
+  "kline_qa": {
+    "missing_symbols": [],
+    "n_symbols": 37
+  },
+  "candidates": [
+    {
+      "id": "CAND_BATCH_SAME_DIR",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_clusters": 7,
+        "clusters": [
+          {
+            "t0": "2026-11-20T05:44:58+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "CHIPUSDT",
+              "XLMUSDT"
+            ],
+            "notional_u": 19999.95141,
+            "initial_risk_sum_u": 151.75534000000192,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T06:24:13+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "UNIUSDT",
+              "ARBUSDT"
+            ],
+            "notional_u": 19996.575168,
+            "initial_risk_sum_u": 150.45801599999902,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T06:28:08+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "STRKUSDT",
+              "1000SHIBUSDT"
+            ],
+            "notional_u": 19999.998921,
+            "initial_risk_sum_u": 147.46258700000098,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T06:28:53+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "ONDOUSDT",
+              "DOGEUSDT"
+            ],
+            "notional_u": 19999.932309999997,
+            "initial_risk_sum_u": 149.61429999999982,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T07:00:18+08:00",
+            "side": "LONG",
+            "n": 2,
+            "symbols": [
+              "HUMAUSDT",
+              "KAVAUSDT"
+            ],
+            "notional_u": 19999.994966,
+            "initial_risk_sum_u": 149.02140800000103,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T07:32:18+08:00",
+            "side": "LONG",
+            "n": 3,
+            "symbols": [
+              "BTCUSDT",
+              "DOTUSDT",
+              "ASTERUSDT"
+            ],
+            "notional_u": 29942.788480000003,
+            "initial_risk_sum_u": 224.2539799999994,
+            "window_sec": 30.0
+          },
+          {
+            "t0": "2026-11-20T07:44:17+08:00",
+            "side": "SHORT",
+            "n": 2,
+            "symbols": [
+              "LTCUSDT",
+              "AVAXUSDT"
+            ],
+            "notional_u": 19998.696799999998,
+            "initial_risk_sum_u": 150.02960000000076,
+            "window_sec": 30.0
+          }
+        ],
+        "window_sec": 30.0
+      }
+    },
+    {
+      "id": "CAND_BREAKOUT_QUALITY",
+      "worth_next_stage": true,
+      "insufficient": false,
+      "evidence": {
+        "n_complete": 36,
+        "exit_reason_counts": {
+          "FIXED_TP": 21,
+          "INITIAL_STOP": 15
+        },
+        "sum_net_u": -451.2702686223841,
+        "post_entry_labels_attached": false,
+        "note": "進場後1/3/5m報酬僅作結果標籤，不可當進場特徵；10m/15m濾鏡僅用當時已完整收盤K"
+      }
+    },
+    {
+      "id": "CAND_COST_THRESHOLD",
+      "worth_next_stage": false,
+      "insufficient": false,
+      "evidence": {
+        "n_with_risk": 36,
+        "n_total": 36,
+        "median_fee_to_risk": 0.13344250147058753,
+        "mean_fee_to_risk": 0.13352078185370586,
+        "pct_fee_to_risk_gt_0_25": 0.0,
+        "pct_fee_to_risk_gt_0_40": 0.0
+      }
+    }
+  ],
+  "zh_char_count_summary": 2454,
+  "tool_version": "0.1.0",
+  "schema": "daily_report_v1",
+  "profile_id": "paper_reverse_fixed_usdt_50_75_inv_v1",
+  "experiment_meta": {
+    "profile_id": "paper_reverse_fixed_usdt_50_75_inv_v1",
+    "experiment_label": "C 鏡像 B 反向",
+    "exit_mode": "FIXED_GROSS_TP50_SL75_MIRROR_INV_B",
+    "mirror_source_profile": "paper_reverse_fixed_usdt_50_75_v1",
+    "mirror_entry_status": "尚無鏡像進場",
+    "experiment_start": "2026-11-20T00:49:04+08:00",
+    "report_window_start": "2026-11-19T20:15:00+08:00",
+    "report_window_end": "2026-11-20T20:15:00+08:00",
+    "coverage_start": "2026-11-20T00:49:04+08:00",
+    "coverage_end": "2026-11-20T08:16:25.590545+08:00",
+    "coverage_note": "非完整24小時；自穩定啟動起算至 asof／日界",
+    "settlement_boundary": "20:15 Asia/Taipei（報告日界；與引擎日曆午夜日損切日分離）",
+    "report_schedule": "20:25 Asia/Taipei",
+    "initial_capital_u": 50000.0,
+    "daily_loss_lock_usdt": 8000.0,
+    "calendar_day_loss_windows": [
+      {
+        "calendar_day": "2026-11-19",
+        "note": "啟動後至當日午夜；日損上限 8000 適用該日曆日"
+      },
+      {
+        "calendar_day": "2026-11-20",
+        "note": "午夜至報告結算 20:15；另計新的 8000 日損上限（≠整場累計保證）"
+      }
+    ],
+    "new_entries_until_iso": "2026-11-20T20:15:00+08:00",
+    "observation_cutoff_status": "已寫入設定／程式閘門；尚未到點（截止 2026-11-20T20:15:00+08:00）",
+    "long_to_short_fill_status": "尚無成交證據",
+    "short_to_long_fill_status": "尚無成交證據",
+    "realized_net_u": -491.2685480263839,
+    "unrealized_u": -128.79528162053373,
+    "equity_u": 49419.577129749814,
+    "cash_u": 41508.731451973596,
+    "margin_used_u": 8000.0,
+    "open_notional_u": 79996.558808,
+    "fees_u": 399.9954302644101,
+    "gross_u": -91.27311776197377,
+    "win_rate": 0.5833333333333334,
+    "profit_factor": 0.6742592143464694,
+    "config_hash": "8a69edec1ca30383",
+    "manage_note": "保證金占用≠虧損；本金注入≠盈利；新舊 profile 報告不得混算",
+    "fixed_gross_tp_usdt": 50.0,
+    "fixed_gross_sl_usdt": 75.0,
+    "fixed_gross_enabled": true,
+    "mirror_only_entries": false
+  }
+}

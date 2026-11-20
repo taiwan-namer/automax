@@ -1,0 +1,2 @@
+timestamp,event,trade_id,symbol,side,qty,price,fee_u,realized_net_u,exit_reason,linked_prev_trade_id,run_id
+2026-11-19T12:28:26+08:00,OPEN,t:REVUSDT:1f43e765a8,REVUSDT,LONG,100.0,100.0,5.0,-5.0,,,t

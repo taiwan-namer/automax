@@ -1,0 +1,32 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "profile_id": "paper_bulk_test_v1",
+  "initial_capital_u": 50000.0,
+  "cash_u": 50114.88633075743,
+  "realized_net_u": 114.88633075742051,
+  "realized_fees_u": 10.06247440258,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {},
+  "cooldowns_until": {
+    "RECONUSDT": 1795061895.327152
+  },
+  "reverse_events": {},
+  "processed_signals": [
+    "RECONUSDT:1:LONG"
+  ],
+  "day_key": "2026-11-19",
+  "day_start_equity_u": 50000.0,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "filters": {},
+  "run_id": "recon_v1",
+  "created_at": "",
+  "updated_at": "2026-11-19T12:15:15+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null
+}

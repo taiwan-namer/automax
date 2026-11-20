@@ -1,0 +1,94 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "profile_id": "breakout_follow_v1",
+  "initial_capital_u": 10000,
+  "cash_u": 8931.047413300998,
+  "realized_net_u": -68.95258669900113,
+  "realized_fees_u": 14.972984698999998,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {
+    "REVUSDT": {
+      "trade_id": "t:REVUSDT:9a09af1fd9",
+      "symbol": "REVUSDT",
+      "side": "SHORT",
+      "qty_initial": 100.502,
+      "qty_remaining": 100.502,
+      "entry_price": 99.5,
+      "entry_time": "2026-11-19T12:07:50+08:00",
+      "entry_ts": 1795061270.182724,
+      "margin_u": 1000.0,
+      "notional_initial": 9999.948999999999,
+      "leverage": 10.0,
+      "atr_at_entry": 0.4,
+      "atr_time": "2026-11-19T12:07:50+08:00",
+      "initial_stop": 100.1,
+      "effective_stop": 100.1,
+      "breakeven_stop": null,
+      "trailing_stop": null,
+      "partial_tp_done": false,
+      "partial_tp_qty": 0.0,
+      "partial_tp_price": null,
+      "extreme_price": 99.5,
+      "fees_paid_u": 4.9999744999999995,
+      "funding_paid_u": 0.0,
+      "funding_gap": true,
+      "realized_net_u": 0.0,
+      "source_tags": [
+        "MARKET_SPIKE"
+      ],
+      "signal_open_time": 2,
+      "linked_prev_trade_id": "t:REVUSDT:54b606a7a5",
+      "range_high": 100.5,
+      "range_low": 99.6,
+      "vol_x": 5.0,
+      "stop_set_events": [
+        {
+          "ts": 1795061270.182724,
+          "kind": "INITIAL_STOP",
+          "price": 100.1
+        }
+      ],
+      "mfe_u": 0.0,
+      "mae_u": 0.0,
+      "mfe_mark": null,
+      "mae_mark": null,
+      "mfe_ts": null,
+      "mae_ts": null,
+      "excursion_source": "polled_quote_estimate"
+    }
+  },
+  "cooldowns_until": {
+    "REVUSDT": 1795061450.176272
+  },
+  "reverse_events": {
+    "REVUSDT": [
+      1795061270.186025
+    ]
+  },
+  "processed_signals": [
+    "REVUSDT:1:LONG",
+    "REVUSDT:2:SHORT",
+    "REVUSDT:2:SHORT"
+  ],
+  "day_key": "2026-11-19",
+  "day_start_equity_u": 10000,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "filters": {
+    "REVUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5
+    }
+  },
+  "run_id": "t",
+  "created_at": "",
+  "updated_at": "2026-11-19T12:07:50+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null
+}

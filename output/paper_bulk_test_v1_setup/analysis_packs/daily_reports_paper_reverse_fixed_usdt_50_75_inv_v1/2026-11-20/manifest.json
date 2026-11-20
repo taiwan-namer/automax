@@ -1,0 +1,161 @@
+{
+  "tool_version": "0.1.0",
+  "schema_version": "daily_report_v1",
+  "day": "2026-11-20",
+  "timezone": "Asia/Taipei",
+  "profile_id": "paper_reverse_fixed_usdt_50_75_inv_v1",
+  "account_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1",
+  "daily_reports_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/analysis_packs/daily_reports_paper_reverse_fixed_usdt_50_75_inv_v1",
+  "window": [
+    "2026-11-19T20:15:00+08:00",
+    "2026-11-20T20:15:00+08:00"
+  ],
+  "asof": "2026-11-20T08:16:25.590545+08:00",
+  "completeness": {
+    "status": "部分日／試產",
+    "reason": "截止 asof=2026-11-20T08:16:25.590545+08:00 早於日界 2026-11-20T20:15:00+08:00；交易仍可能進行中",
+    "window": [
+      "2026-11-19T20:15:00+08:00",
+      "2026-11-20T20:15:00+08:00"
+    ],
+    "asof": "2026-11-20T08:16:25.590545+08:00",
+    "first_fill_in_sources": "2026-11-20T04:01:11+08:00",
+    "last_fill_in_sources": "2026-11-20T08:16:07+08:00",
+    "truncated_tails": []
+  },
+  "experiment_meta": {
+    "profile_id": "paper_reverse_fixed_usdt_50_75_inv_v1",
+    "experiment_label": "C 鏡像 B 反向",
+    "exit_mode": "FIXED_GROSS_TP50_SL75_MIRROR_INV_B",
+    "mirror_source_profile": "paper_reverse_fixed_usdt_50_75_v1",
+    "mirror_entry_status": "尚無鏡像進場",
+    "experiment_start": "2026-11-20T00:49:04+08:00",
+    "report_window_start": "2026-11-19T20:15:00+08:00",
+    "report_window_end": "2026-11-20T20:15:00+08:00",
+    "coverage_start": "2026-11-20T00:49:04+08:00",
+    "coverage_end": "2026-11-20T08:16:25.590545+08:00",
+    "coverage_note": "非完整24小時；自穩定啟動起算至 asof／日界",
+    "settlement_boundary": "20:15 Asia/Taipei（報告日界；與引擎日曆午夜日損切日分離）",
+    "report_schedule": "20:25 Asia/Taipei",
+    "initial_capital_u": 50000.0,
+    "daily_loss_lock_usdt": 8000.0,
+    "calendar_day_loss_windows": [
+      {
+        "calendar_day": "2026-11-19",
+        "note": "啟動後至當日午夜；日損上限 8000 適用該日曆日"
+      },
+      {
+        "calendar_day": "2026-11-20",
+        "note": "午夜至報告結算 20:15；另計新的 8000 日損上限（≠整場累計保證）"
+      }
+    ],
+    "new_entries_until_iso": "2026-11-20T20:15:00+08:00",
+    "observation_cutoff_status": "已寫入設定／程式閘門；尚未到點（截止 2026-11-20T20:15:00+08:00）",
+    "long_to_short_fill_status": "尚無成交證據",
+    "short_to_long_fill_status": "尚無成交證據",
+    "realized_net_u": -491.2685480263839,
+    "unrealized_u": -128.79528162053373,
+    "equity_u": 49419.577129749814,
+    "cash_u": 41508.731451973596,
+    "margin_used_u": 8000.0,
+    "open_notional_u": 79996.558808,
+    "fees_u": 399.9954302644101,
+    "gross_u": -91.27311776197377,
+    "win_rate": 0.5833333333333334,
+    "profit_factor": 0.6742592143464694,
+    "config_hash": "8a69edec1ca30383",
+    "manage_note": "保證金占用≠虧損；本金注入≠盈利；新舊 profile 報告不得混算",
+    "fixed_gross_tp_usdt": 50.0,
+    "fixed_gross_sl_usdt": 75.0,
+    "fixed_gross_enabled": true,
+    "mirror_only_entries": false
+  },
+  "sources": {
+    "sources": [
+      {
+        "label": "root",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1/fills.jsonl",
+        "bytes": 174026,
+        "lines_ok": 215,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795133767.6827097
+      },
+      {
+        "label": "run:20261120T035817_306f9614",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1/runs/20261120T035817_306f9614/fills.jsonl",
+        "bytes": 2865,
+        "lines_ok": 6,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795118833.2276561
+      },
+      {
+        "label": "run:20261120T040855_cfc21db0",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1/runs/20261120T040855_cfc21db0/fills.jsonl",
+        "bytes": 6534,
+        "lines_ok": 9,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795119613.211955
+      },
+      {
+        "label": "run:20261120T042025_b9dc1424",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_reverse_fixed_usdt_50_75_inv_v1/runs/20261120T042025_b9dc1424/fills.jsonl",
+        "bytes": 164627,
+        "lines_ok": 200,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795133767.6829884
+      }
+    ],
+    "dup_removed": 215,
+    "truncated_tails": [],
+    "rows_after_dedupe": 215
+  },
+  "non_atomic_multi_file": true,
+  "outputs": [
+    "DAILY_SUMMARY.md",
+    "metrics.json",
+    "trades_complete.csv",
+    "evidence_index.csv",
+    "manifest.json"
+  ],
+  "quality": {
+    "truncated_tails": [],
+    "midnight_snapshot_ok": false,
+    "manage_complete_events": "ok"
+  },
+  "mutations": {
+    "account": false,
+    "vault": false,
+    "strategy": false,
+    "runtime": false,
+    "schedule_loaded": false
+  },
+  "inventory": {
+    "available": [
+      "fills.jsonl (root+runs): OPEN/CLOSE/CLOSE_PARTIAL, fees, net_u, trade_id, run_id, stops, tags",
+      "equity_snapshots.jsonl: equity/cash/realized/floating/positions snapshots",
+      "account_state.json: live cash/realized/positions (NOT midnight unless coincidentally)",
+      "quote_events.jsonl (per run): pre-manage quote batches MANAGE/MANAGE_POLL",
+      "data_quality.jsonl: HTTP_TIMEOUT/MANAGE_POLL_ERROR/429/418 notes",
+      "launch.json + code_hashes.json: seal identity",
+      "klines_1m / vault: 1m OHLC for QA/derived HTF",
+      "review.md: human snapshot (event-mix; not C complete)",
+      "prior analysis_packs summaries: reusable A/B/C/D framing"
+    ],
+    "missing_or_na": [
+      "midnight account snapshot → day A delta may use nearest equity snap + lag",
+      "manage completion events (NOOP/FILLED/…) → manage-complete interval = NA until deployed",
+      "exchange event timestamps on quotes → fetched_at is local receipt time",
+      "tick path → cannot claim true first stop pierce time",
+      "complete funding → funding_data_gap"
+    ],
+    "reusable": [
+      "analysis_packs/analysis_20261119_chatgpt_replay trade_id complete_net merge rules",
+      "stage2 pre-manage quote batch interval methodology",
+      "MGMT design docs (not code)"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-11-19T20:44:49.461759+08:00",
+  "stamp": "20261119T204210",
+  "tag": "fix_20261119_reverse_tp1_sl15_dl8000",
+  "profile": "paper_reverse_fixed_exit_v1",
+  "copied_from_dev": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/dev_reverse_fixed_exit_20261119T204210",
+  "new_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_rev_fixed_exit_20261119T204210",
+  "aggregate_sha256": "cd5230d0413a02b1be118fee284235a4985fe3186f5b1d86e84e06ef193ef1de",
+  "files": {
+    "__init__.py": "a78eafc5ba943f92968e23d19d20bb4d01680a4659505ac4f3e346dfc3c81147",
+    "__main__.py": "3e3f9055737e03fae2212143f72f9e572f2c2ca7827a540fffe57ef118e468c0",
+    "account.py": "b0bd8f822bb99b02ab2f8a2a3b9b67b63ee6fab29efd93bf3903334a58757652",
+    "config.py": "4ca777d0abee5a880b0b405b2545f22d79a77a922699b185b79f131216728c21",
+    "console_zh.py": "1218238df081af62d2de6aebd48d07860831df411a33a2d50f2a7e2ffdcaf7f3",
+    "engine.py": "3d3c9dd9e1c00f0590f688ed63ac10d940c115ff99bc9c350e88f798c9977799",
+    "export_snapshot.py": "798a456c8fd5e921c94bc5a53af1c5ff545df1d9466db5d2a57c897310afc585",
+    "manage_pass.py": "6cf8648fc2b27fe3d8e095b84f40c214b5dfedf3ccc2214d53aff3676aaaf159",
+    "market_data.py": "d6e1b7e302fc6a03e07a52019f126ef8e8aaca9d97043ffdc3d2f8e4e81dfd3c",
+    "paper_main.py": "f40b97bbf8d710e57842635203c552d87564a5ff44a368b5c8e079820ff4685f",
+    "portfolio.py": "2ae2314f44c442aeb031f0326478722813f93c2a984e946d11b7469bdc648056",
+    "profiles.py": "079355c31dee802c25a79d643cf8e3a8b1b6f7d4847223434fc94b8909efcfb9",
+    "review.py": "5e93ed0fd9232233ac1aa66affff1df736407c7ef9fc40513f14ccc14b1e0b2b",
+    "run_store.py": "5940f47352a0239f56a7e8880469c82618ab1ad6cc175af0d812e043d2419ded",
+    "safety.py": "ae8e5ac64532904c4bcc1b3878e73dcee95f30ae36c3a27d89bfd4b403896f23",
+    "signals.py": "80c4f2931b243d3157d1e5886d4091ec479e89d8732c1748d3c1330aacefa4f1",
+    "util.py": "312e5b6891f352a042bcb49379c04d68f32e441d8ca4c98962eeb047a735eaaf"
+  },
+  "changed_py": [
+    "account.py",
+    "config.py",
+    "engine.py",
+    "portfolio.py",
+    "profiles.py",
+    "signals.py"
+  ],
+  "approved_scope": "one-day reverse paper: flip signal side; fixed TP=1ATR SL=1.5ATR; disable BE/partial/trail/reverse; daily loss 8000; capital 50000; notional unchanged 10000; observation cutoff 2026-11-20 20:15+08; paper only",
+  "strategy_changes": {
+    "SIGNAL_DIRECTION_FLIP": true,
+    "ATR_STOP_MULT": 1.5,
+    "ATR_TP_MULT": 1.0,
+    "FIXED_TAKE_PROFIT_ENABLED": true,
+    "ENABLE_PARTIAL_TP": false,
+    "ENABLE_BREAKEVEN": false,
+    "ENABLE_TRAILING_STOP": false,
+    "ENABLE_REVERSE_REOPEN": false,
+    "DAILY_LOSS_LOCK_USDT": 8000.0,
+    "INITIAL_CAPITAL_USDT": 50000.0,
+    "NOTIONAL_USDT": 10000.0,
+    "MARGIN_PER_TRADE_USDT": 1000.0,
+    "MAX_LOSS_PER_TRADE_USDT": 100.0,
+    "NEW_ENTRIES_UNTIL_ISO": "2026-11-20T20:15:00+08:00"
+  },
+  "offline_tests": {
+    "reverse_fixed_exit": "passed"
+  },
+  "paper_only": true
+}

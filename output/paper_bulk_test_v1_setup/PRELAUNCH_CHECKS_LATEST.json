@@ -1,0 +1,80 @@
+{
+  "prelaunch_checks": [
+    {
+      "check": "legacy_process_present",
+      "ok": true,
+      "detail": "alan             33829   0.0  0.4 435353216  91088   ??  Ss   11:53AM   1:45.10 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -u -m breakout_follow_v1.paper_main --paper --hours 0.0"
+    },
+    {
+      "check": "no_bulk_process",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "check": "legacy_account_exists",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/breakout_follow_v1/account_state.json"
+    },
+    {
+      "check": "legacy_account_path_identity",
+      "ok": true,
+      "detail": "cash=9668.782178357955 locked=True pos=0 run=20261119T115315_b984d9a7"
+    },
+    {
+      "check": "no_formal_bulk_account",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1/account_state.json"
+    },
+    {
+      "check": "no_fixed_bulk_account_yet",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/account_state.json"
+    },
+    {
+      "check": "hash_match",
+      "ok": true,
+      "detail": "02833bd0a5843b973c9781a3f560dcb7477b5520869d9dd24e44dd151e022a6b"
+    },
+    {
+      "check": "fixed_data_root",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root"
+    },
+    {
+      "check": "disk_free_gt_1gb",
+      "ok": true,
+      "detail": "free_bytes=362060546048"
+    },
+    {
+      "check": "public_market_reachable",
+      "ok": true,
+      "detail": "{\"serverTime\":1795062559800}"
+    },
+    {
+      "check": "import_is_new_runtime",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code/breakout_follow_v1/config.py"
+    },
+    {
+      "check": "paths_under_fixed_root",
+      "ok": true,
+      "detail": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/account_state.json"
+    },
+    {
+      "check": "bulk_params",
+      "ok": true,
+      "detail": "50000.0/20/2000.0"
+    },
+    {
+      "check": "live_order_blocked",
+      "ok": true,
+      "detail": "blocked"
+    }
+  ],
+  "critical_ok": true,
+  "runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904",
+  "fixed_data_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "seal_aggregate": "02833bd0a5843b973c9781a3f560dcb7477b5520869d9dd24e44dd151e022a6b",
+  "tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+  "legacy_account_bytes_before": 88987
+}

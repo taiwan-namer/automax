@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-11-19T15:53:04.874588+08:00",
+  "stamp": "20261119T155304",
+  "tag": "fix_20261119_mgmt_reliability_v1",
+  "copied_from_dev": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/dev_mgmt_reliability_20261119",
+  "previous_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904",
+  "new_runtime": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T155304",
+  "aggregate_sha256": "20a5ed6e89f5c8cce19f9faeb6e99962854ccc069fa0834d28d5ea3b81175514",
+  "files": {
+    "__init__.py": "a78eafc5ba943f92968e23d19d20bb4d01680a4659505ac4f3e346dfc3c81147",
+    "__main__.py": "3e3f9055737e03fae2212143f72f9e572f2c2ca7827a540fffe57ef118e468c0",
+    "account.py": "f4963888b99e399b63540daf5d109b53134ac50a4b3f3d6d2ecdf6e6ebf30ad6",
+    "config.py": "c0454f36ef26835a3fe3b1484b1404cef020f6d63ea0e2698b0a361cea7a887e",
+    "console_zh.py": "1218238df081af62d2de6aebd48d07860831df411a33a2d50f2a7e2ffdcaf7f3",
+    "engine.py": "be33a2bcad1cec83768856cfcb7f4c5c1221d3bfbe5345c25c082e5a48b97c5e",
+    "export_snapshot.py": "798a456c8fd5e921c94bc5a53af1c5ff545df1d9466db5d2a57c897310afc585",
+    "manage_pass.py": "6cf8648fc2b27fe3d8e095b84f40c214b5dfedf3ccc2214d53aff3676aaaf159",
+    "market_data.py": "d6e1b7e302fc6a03e07a52019f126ef8e8aaca9d97043ffdc3d2f8e4e81dfd3c",
+    "paper_main.py": "f40b97bbf8d710e57842635203c552d87564a5ff44a368b5c8e079820ff4685f",
+    "portfolio.py": "4b3022f2ca8499a170bd87fbe45029363d28397338a24b31fbfdeec790f45922",
+    "profiles.py": "1f4589624b9fa822d54d08c914a9ffd6019aad6ebfac51347644e993b15af8ee",
+    "review.py": "5e93ed0fd9232233ac1aa66affff1df736407c7ef9fc40513f14ccc14b1e0b2b",
+    "run_store.py": "5940f47352a0239f56a7e8880469c82618ab1ad6cc175af0d812e043d2419ded",
+    "safety.py": "ae8e5ac64532904c4bcc1b3878e73dcee95f30ae36c3a27d89bfd4b403896f23",
+    "signals.py": "e2cc5f0b911dc497f091cd80af9607ff73aba44431ee995756457c22b0e3e7ae",
+    "util.py": "312e5b6891f352a042bcb49379c04d68f32e441d8ca4c98962eeb047a735eaaf"
+  },
+  "changed_py": [
+    "config.py",
+    "engine.py",
+    "manage_pass.py",
+    "market_data.py",
+    "portfolio.py",
+    "run_store.py"
+  ],
+  "added_py": [
+    "manage_pass.py"
+  ],
+  "unchanged_py_n": 11,
+  "approved_scope": "mgmt reliability + manage_events only; no strategy/entry/N-T/schedule",
+  "offline_tests": {
+    "mgmt": "22 passed",
+    "handoff_compat": "11 passed"
+  },
+  "budgets": {
+    "MANAGE_DUE_SEC": 5.0,
+    "MANAGE_BOOK_REQUEST_TIMEOUT_SEC": 5.0,
+    "MANAGE_BOOK_MAX_ATTEMPTS": 2,
+    "MANAGE_BOOK_OP_BUDGET_SEC": 10.0,
+    "SCAN_SLICE_MAX_WAIT_SEC": 2.0
+  },
+  "config_hash_engine": "be33a2bcad1cec83768856cfcb7f4c5c1221d3bfbe5345c25c082e5a48b97c5e",
+  "config_hash_config": "c0454f36ef26835a3fe3b1484b1404cef020f6d63ea0e2698b0a361cea7a887e"
+}

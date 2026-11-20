@@ -1,0 +1,129 @@
+{
+  "tool_version": "0.1.0",
+  "schema_version": "daily_report_v1",
+  "day": "2026-11-19",
+  "timezone": "Asia/Taipei",
+  "window": [
+    "2026-11-18T20:15:00+08:00",
+    "2026-11-19T20:15:00+08:00"
+  ],
+  "asof": "2026-11-19T20:18:12.063889+08:00",
+  "completeness": {
+    "status": "完整日",
+    "reason": "asof 已過日界且來源讀取無截斷尾",
+    "window": [
+      "2026-11-18T20:15:00+08:00",
+      "2026-11-19T20:15:00+08:00"
+    ],
+    "asof": "2026-11-19T20:18:12.063889+08:00",
+    "first_fill_in_sources": "2026-11-19T12:47:07+08:00",
+    "last_fill_in_sources": "2026-11-19T20:07:13+08:00",
+    "truncated_tails": []
+  },
+  "sources": {
+    "sources": [
+      {
+        "label": "root",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/fills.jsonl",
+        "bytes": 207995,
+        "lines_ok": 224,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795090033.0565703
+      },
+      {
+        "label": "run:20261119T124504_79a79b4d",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T124504_79a79b4d/fills.jsonl",
+        "bytes": 17967,
+        "lines_ok": 20,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795064947.5206697
+      },
+      {
+        "label": "run:20261119T131629_436e6cae",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T131629_436e6cae/fills.jsonl",
+        "bytes": 1438,
+        "lines_ok": 2,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795065548.4739158
+      },
+      {
+        "label": "run:20261119T132017_bd1972b2",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T132017_bd1972b2/fills.jsonl",
+        "bytes": 81616,
+        "lines_ok": 87,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795074616.6067612
+      },
+      {
+        "label": "run:20261119T155834_00889cc1",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T155834_00889cc1/fills.jsonl",
+        "bytes": 2517,
+        "lines_ok": 3,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795075273.70628
+      },
+      {
+        "label": "run:20261119T161354_5cb8369a",
+        "path": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/runs/20261119T161354_5cb8369a/fills.jsonl",
+        "bytes": 104457,
+        "lines_ok": 112,
+        "truncated_tail": false,
+        "parse_errors": 0,
+        "mtime": 1795090033.0569098
+      }
+    ],
+    "dup_removed": 224,
+    "truncated_tails": [],
+    "rows_after_dedupe": 224
+  },
+  "non_atomic_multi_file": true,
+  "outputs": [
+    "DAILY_SUMMARY.md",
+    "metrics.json",
+    "trades_complete.csv",
+    "evidence_index.csv",
+    "manifest.json"
+  ],
+  "quality": {
+    "truncated_tails": [],
+    "midnight_snapshot_ok": false,
+    "manage_complete_events": "ok"
+  },
+  "mutations": {
+    "account": false,
+    "vault": false,
+    "strategy": false,
+    "runtime": false,
+    "schedule_loaded": false
+  },
+  "inventory": {
+    "available": [
+      "fills.jsonl (root+runs): OPEN/CLOSE/CLOSE_PARTIAL, fees, net_u, trade_id, run_id, stops, tags",
+      "equity_snapshots.jsonl: equity/cash/realized/floating/positions snapshots",
+      "account_state.json: live cash/realized/positions (NOT midnight unless coincidentally)",
+      "quote_events.jsonl (per run): pre-manage quote batches MANAGE/MANAGE_POLL",
+      "data_quality.jsonl: HTTP_TIMEOUT/MANAGE_POLL_ERROR/429/418 notes",
+      "launch.json + code_hashes.json: seal identity",
+      "klines_1m / vault: 1m OHLC for QA/derived HTF",
+      "review.md: human snapshot (event-mix; not C complete)",
+      "prior analysis_packs summaries: reusable A/B/C/D framing"
+    ],
+    "missing_or_na": [
+      "midnight account snapshot → day A delta may use nearest equity snap + lag",
+      "manage completion events (NOOP/FILLED/…) → manage-complete interval = NA until deployed",
+      "exchange event timestamps on quotes → fetched_at is local receipt time",
+      "tick path → cannot claim true first stop pierce time",
+      "complete funding → funding_data_gap"
+    ],
+    "reusable": [
+      "analysis_packs/analysis_20261119_chatgpt_replay trade_id complete_net merge rules",
+      "stage2 pre-manage quote batch interval methodology",
+      "MGMT design docs (not code)"
+    ]
+  }
+}

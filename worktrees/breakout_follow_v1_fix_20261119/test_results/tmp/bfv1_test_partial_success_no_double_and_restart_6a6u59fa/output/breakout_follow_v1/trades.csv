@@ -1,0 +1,3 @@
+timestamp,event,trade_id,symbol,side,qty,price,fee_u,realized_net_u,exit_reason,linked_prev_trade_id,run_id
+2026-11-19T12:28:25+08:00,OPEN,t:AAAUSDT:dde288ed1a,AAAUSDT,LONG,100.0,100.0,5.0,-5.0,,,t
+2026-11-19T12:28:25+08:00,CLOSE_PARTIAL,t:AAAUSDT:dde288ed1a,AAAUSDT,LONG,30.0,101.45940406,1.5218910609,42.26023073909991,PARTIAL_TP,,t

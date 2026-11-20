@@ -1,0 +1,152 @@
+{
+  "label": "C",
+  "profile": "paper_reverse_fixed_usdt_50_75_inv_v1",
+  "runs": [
+    "20261120T040855_cfc21db0",
+    "20261120T042025_b9dc1424"
+  ],
+  "cutoff": "2026-11-20T08:16:25+08:00",
+  "rebuild": {
+    "n_closed": 36,
+    "n_open": 8,
+    "sum_complete_net": -451.2702686223841,
+    "expected": {
+      "n_closed": 36,
+      "n_open": 8,
+      "sum_net": -451.2702686223841
+    },
+    "open_trade_ids": [
+      {
+        "trade_id": "20261120T042025_b9dc1424:ARBUSDT:7a6279cf3d",
+        "close_after_cutoff": true,
+        "close_ts": "2026-11-20T09:02:03+08:00",
+        "actual_exit_reason": "FIXED_TP"
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:XRPUSDT:4494158923",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:1000SHIBUSDT:18e77c8310",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:DOGEUSDT:1984d7831a",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:ETHUSDT:522069f0c7",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:PIEVERSEUSDT:e468ff8aa7",
+        "close_after_cutoff": true,
+        "close_ts": "2026-11-20T09:02:03+08:00",
+        "actual_exit_reason": "INITIAL_STOP"
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:LTCUSDT:3ba40fef58",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      },
+      {
+        "trade_id": "20261120T042025_b9dc1424:AVAXUSDT:7a5a2511b1",
+        "close_after_cutoff": false,
+        "close_ts": null,
+        "actual_exit_reason": null
+      }
+    ]
+  },
+  "assumptions": {
+    "price_path": "1m_ohlc_kline_approx",
+    "fee_rate_one_side": 0.0005,
+    "slippage_adverse_on_exit": 0.0002,
+    "same_bar_rule": "conservative=SL_wins; optimistic=TP_wins",
+    "stage1": "fixed_actual_entries_independent_exit_sensitivity"
+  },
+  "entry": {
+    "coverage": 67,
+    "assumptions": {
+      "model": "1m_ohlc_limit_touch_approx",
+      "fee_rate_one_side": 0.0005,
+      "slippage_adverse_market_only": 0.0002,
+      "limit_fill_price": "limit_price_no_extra_slip",
+      "cancel": "mid=(h+l)/2 vs signal_ref adverse 1%",
+      "notional": 10000.0,
+      "exit": "fixed_gross_tp50_sl75_conservative_ohlc",
+      "selection": "LIMIT_QUEUED cohort in limit0p5 runs only — exploratory, not full strategy backtest"
+    },
+    "wait_diag": {
+      "le_1m": {
+        "n": 1,
+        "sum_net": 37.69853098733409,
+        "avg_net": 37.69853098733409
+      },
+      "1_to_5m": {
+        "n": 16,
+        "sum_net": 234.00044725026643,
+        "avg_net": 14.625027953141652
+      },
+      "gt_5m": {
+        "n": 32,
+        "sum_net": -154.90443143555527,
+        "avg_net": -4.840763482361102
+      }
+    }
+  },
+  "atr_offset": {
+    "n": 44,
+    "median_offset_over_atr": 2.305514797013075,
+    "p25": 1.588807167180398,
+    "p75": 3.134374493369617,
+    "mean": 2.4231863995246323
+  },
+  "bars_coverage_n": {
+    "1000LUNCUSDT": 244,
+    "1000PEPEUSDT": 244,
+    "1000SHIBUSDT": 244,
+    "AKEUSDT": 244,
+    "ARBUSDT": 244,
+    "ARIAUSDT": 244,
+    "ASTERUSDT": 244,
+    "AVAXUSDT": 244,
+    "BCHUSDT": 244,
+    "BLESSUSDT": 244,
+    "BTCUSDT": 244,
+    "BULLAUSDT": 244,
+    "CHIPUSDT": 244,
+    "DOGEUSDT": 244,
+    "DOTUSDT": 244,
+    "ENAUSDT": 244,
+    "ETCUSDT": 185,
+    "ETHUSDT": 244,
+    "FETUSDT": 244,
+    "HUMAUSDT": 244,
+    "HYPEUSDT": 244,
+    "ICNTUSDT": 244,
+    "IDOLUSDT": 244,
+    "IRYSUSDT": 244,
+    "JCTUSDT": 244,
+    "KAVAUSDT": 244,
+    "LTCUSDT": 244,
+    "ONDOUSDT": 244,
+    "PIEVERSEUSDT": 244,
+    "PUMPUSDT": 244,
+    "SENTUSDT": 244,
+    "SKYUSDT": 244,
+    "STRKUSDT": 244,
+    "UNIUSDT": 244,
+    "XLMUSDT": 244,
+    "XRPUSDT": 244,
+    "ZKCUSDT": 244
+  }
+}

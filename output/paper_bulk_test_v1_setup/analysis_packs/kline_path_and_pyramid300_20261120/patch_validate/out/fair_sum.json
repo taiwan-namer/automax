@@ -1,0 +1,37 @@
+{
+  "fair_sum": {
+    "n": 44,
+    "A_sum_mark": -39.60553253188871,
+    "A_sum_realized": 77.07277540523918,
+    "A_sum_mtm": -116.67830793712787,
+    "A_sum_fees": 115.55287315126567,
+    "A_avg_hold": 37.61060606060607,
+    "A_max_notional": 3000.0,
+    "A_worst_dd_peak": -51.28072610645589,
+    "B_sum_mark": 78.43568337044833,
+    "B_sum_realized": 213.8757711627749,
+    "B_sum_mtm": -135.4400877923266,
+    "B_sum_fees": 196.57574820114863,
+    "B_avg_hold": 37.61060606060607,
+    "B_max_notional": 9000.0,
+    "B_worst_dd_peak": -105.30560297939635,
+    "B_n_ambiguous": 0,
+    "B_n_open": 11,
+    "A_n_open": 11,
+    "delta_sum_mark": 118.04121590233709,
+    "classic_sl75_sum_mark": -87.90016072665394
+  },
+  "risk_fair": {
+    "n_full_stop_cycles": 5,
+    "avg_full_stop_net": -64.76392953359755,
+    "max_full_stop_net": -101.25941662632839,
+    "n_success_rebound_cycles_no_stop": 12,
+    "avg_success_rebound_cycle_net": 25.938091163594066,
+    "n_any_positive_rebound_component": 15,
+    "avg_positive_rebound_component": 18.5493029930939,
+    "one_max_stop_eats_n_avg_success_cycles": 3.903888531645424,
+    "one_avg_stop_eats_n_avg_success_cycles": 2.496865676241368,
+    "method": "per_complete_trade_cycle; NOT max_stop/total_rebound_pool",
+    "drawdown_note": "dd_from_peak_indep = independent-trade mark path; NOT full-account drawdown"
+  }
+}

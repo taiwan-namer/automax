@@ -1,0 +1,186 @@
+{
+  "profile": "paper_bulk_test_v1",
+  "funding_note": "funding_data_gap=true；資金費未完整計入，不得宣稱完整淨收益",
+  "rows": [
+    {
+      "item": "open.qty",
+      "expected": 100.0,
+      "actual": 100.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.entry_price",
+      "expected": 100.0,
+      "actual": 100.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.fee_u",
+      "expected": 5.0,
+      "actual": 5.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.cash",
+      "expected": 48995.0,
+      "actual": 48995.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.realized_fees",
+      "expected": 5.0,
+      "actual": 5.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.realized_net",
+      "expected": -5.0,
+      "actual": -5.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "open.funding_data_gap",
+      "expected": true,
+      "actual": true,
+      "diff": null,
+      "ok": true,
+      "note": "資金費缺漏；不得當成已完整計費"
+    },
+    {
+      "item": "unrealized.formula_vs_helper",
+      "expected": 70.93041899839956,
+      "actual": 70.93041899839956,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "equity.with_unrealized",
+      "expected": 50065.9304189984,
+      "actual": 50065.9304189984,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.qty_closed",
+      "expected": 30.0,
+      "actual": 30.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.qty_remaining",
+      "expected": 70.0,
+      "actual": 70.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.fill.fee",
+      "expected": 1.5218910609,
+      "actual": 1.5218910609,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.fill.net",
+      "expected": 42.26023073909991,
+      "actual": 42.26023073909991,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.funding_data_gap",
+      "expected": true,
+      "actual": true,
+      "diff": null,
+      "ok": true,
+      "note": "資金費缺漏明示"
+    },
+    {
+      "item": "partial.cash",
+      "expected": 49037.260230739106,
+      "actual": 49037.260230739106,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "partial.margin_still_full",
+      "expected": 1000.0,
+      "actual": 1000.0,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "final.close.gross",
+      "expected": 81.1666833600006,
+      "actual": 81.1666833600006,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "final.close.fee",
+      "expected": 3.54058334168,
+      "actual": 3.54058334168,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "final.close.net",
+      "expected": 77.6261000183206,
+      "actual": 77.6261000183206,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "final.realized_fees",
+      "expected": 10.06247440258,
+      "actual": 10.06247440258,
+      "diff": 0.0,
+      "ok": true
+    },
+    {
+      "item": "final.cash_eq_capital_plus_net",
+      "expected": 50114.88633075742,
+      "actual": 50114.88633075743,
+      "diff": 7.275957614183426e-12,
+      "ok": true
+    },
+    {
+      "item": "final.equity_eq_cash",
+      "expected": 50114.88633075743,
+      "actual": 50114.88633075742,
+      "diff": -7.275957614183426e-12,
+      "ok": true
+    },
+    {
+      "item": "final.funding_data_gap_account",
+      "expected": true,
+      "actual": true,
+      "diff": null,
+      "ok": true,
+      "note": "帳戶層資金費缺口旗標仍為 True"
+    },
+    {
+      "item": "fills.sequence",
+      "expected": [
+        "OPEN",
+        "CLOSE_PARTIAL",
+        "CLOSE"
+      ],
+      "actual": [
+        "OPEN",
+        "CLOSE_PARTIAL",
+        "CLOSE"
+      ],
+      "diff": null,
+      "ok": true
+    }
+  ],
+  "all_ok": true
+}

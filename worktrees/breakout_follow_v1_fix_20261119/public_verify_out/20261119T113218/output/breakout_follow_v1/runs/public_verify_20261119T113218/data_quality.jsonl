@@ -1,0 +1,15 @@
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:33:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "BTCUSDT", "detail": "bars=40<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:33:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "ETHUSDT", "detail": "bars=40<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:33:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "SOLUSDT", "detail": "bars=40<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:34:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "BTCUSDT", "detail": "bars=41<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:34:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "ETHUSDT", "detail": "bars=41<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:34:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "SOLUSDT", "detail": "bars=41<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:35:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "BTCUSDT", "detail": "bars=42<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:35:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "ETHUSDT", "detail": "bars=43<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:35:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "SOLUSDT", "detail": "bars=42<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:36:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "BTCUSDT", "detail": "bars=43<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:36:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "ETHUSDT", "detail": "bars=44<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:36:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "SOLUSDT", "detail": "bars=44<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:37:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "BTCUSDT", "detail": "bars=44<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:37:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "ETHUSDT", "detail": "bars=44<100", "replay_precise": false}
+{"run_id": "public_verify_20261119T113218", "ts": "2026-11-19T11:37:02+08:00", "code": "KLINE_WARMUP_SHORT", "symbol": "SOLUSDT", "detail": "bars=44<100", "replay_precise": false}

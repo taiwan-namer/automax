@@ -1,0 +1,4 @@
+LIVE: merged_volume=3.0 → DEFECT
+LIVE: extreme=100.0 entry=100.0 → DEFECT
+FIX: merged_volume=100.0 → FIXED
+FIX: extreme=100.87982000000001 entry=100.0 → FIXED

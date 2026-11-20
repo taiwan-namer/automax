@@ -1,0 +1,569 @@
+"""Main paper loop: universe refresh, scan, manage, review."""
+
+from __future__ import annotations
+
+import asyncio
+import time
+from typing import Any, Optional
+
+import aiohttp
+
+from . import config
+from .account import (
+    ensure_day_rollover,
+    get_position,
+    load_or_create_account,
+    save_account,
+    write_run_manifest,
+)
+from .market_data import (
+    GuardedSession,
+    backfill_warmup_klines,
+    fetch_book_tickers,
+    fetch_klines_incremental,
+    latest_final_atr,
+    refresh_universe,
+)
+from .portfolio import (
+    close_qty,
+    count_reverses,
+    manage_position,
+    mark_price_for_side,
+    note_reverse,
+    try_open,
+)
+from .signals import detect_breakout
+from .util import append_jsonl, ensure_dirs, now_iso, now_ts, report_error
+from .review import write_review
+from .run_store import begin_run, get_store
+
+
+def _source_tags(symbol: str, gainers: set[str], losers: set[str], vol_ok: bool) -> list[str]:
+    tags = []
+    if symbol in gainers:
+        tags.append("TOP_GAINERS")
+    if symbol in losers:
+        tags.append("TOP_LOSERS")
+    if vol_ok:
+        tags.append("MARKET_SPIKE")
+    return tags or ["MARKET_SPIKE"]
+
+
+def _sig_key(symbol: str, open_time: int, side: str) -> str:
+    return f"{symbol}:{open_time}:{side}"
+
+
+async def scan_once(gs: GuardedSession, st, stats: dict[str, Any]) -> dict[str, Any]:
+    """一輪分鐘掃描：先管理持倉，再收集候選，排序後開倉。"""
+    t0 = time.time()
+    books = await fetch_book_tickers(gs)
+    eligible = [r["symbol"] for r in (st.universe or [])]
+    gainers = set(st.top_gainers or [])
+    losers = set(st.top_losers or [])
+    # 持倉幣即使掉榜也要管
+    symbols = sorted(set(eligible) | set(st.positions.keys()))
+    stats.update(
+        {
+            "expected": len(symbols),
+            "success": 0,
+            "failed": 0,
+            "deferred": 0,
+            "candidates": 0,
+            "opened": 0,
+            "rejected": {},
+        }
+    )
+
+    # floating equity for day lock
+    floating = 0.0
+    for sym, pdct in list(st.positions.items()):
+        b = books.get(sym)
+        if not b:
+            continue
+        from .account import Position
+        from .portfolio import estimate_net_unrealized
+
+        pos = Position.from_dict(pdct)
+        mark = mark_price_for_side(pos.side, b)
+        floating += estimate_net_unrealized(pos, mark)
+
+    equity = st.equity_mark(floating)
+    ensure_day_rollover(st, equity)
+    if equity <= st.day_start_equity_u - config.DAILY_LOSS_LOCK_USDT:
+        st.day_new_entries_locked = True
+        save_account(st)
+
+    eq_row = {
+        "ts": now_iso(),
+        "equity": equity,
+        "cash": st.cash_u,
+        "realized_net_u": st.realized_net_u,
+        "realized_fees_u": st.realized_fees_u,
+        "floating_u": floating,
+        "positions": len(st.positions),
+        "day_locked": st.day_new_entries_locked,
+        "day_start_equity_u": st.day_start_equity_u,
+    }
+    store = get_store()
+    if store is not None:
+        store.log_equity(eq_row, reason="MINUTE")
+        store.mirror_account(st.to_dict())
+    else:
+        append_jsonl(config.EQUITY_PATH, eq_row)
+
+    # manage existing
+    for sym in list(st.positions.keys()):
+        b = books.get(sym)
+        if not b:
+            if store is not None:
+                store.note_quality("QUOTE_MISSING", symbol=sym, detail="manage", replay_precise=False)
+            continue
+        if store is not None:
+            store.log_quote_event(
+                {
+                    "purpose": "MANAGE",
+                    "symbol": sym,
+                    "bid": b.get("bid"),
+                    "ask": b.get("ask"),
+                    "mid": b.get("mid"),
+                    "spread": b.get("spread"),
+                    "fetched_at": b.get("fetched_at"),
+                    "trade_id": (st.positions.get(sym) or {}).get("trade_id"),
+                }
+            )
+        # 資料問題只影響移動停利的更新，不停止止損／退出管理
+        atr = None
+        try:
+            df, err = await fetch_klines_incremental(gs, sym)
+            if err is None:
+                atr, why = latest_final_atr(df)
+                if atr is None:
+                    report_error("MANAGE_ATR_UNAVAILABLE", f"{why}; trailing not updated this scan, stops still checked", symbol=sym)
+            else:
+                report_error("MANAGE_KLINE_FAIL", f"{err}; trailing not updated this scan, stops still checked", symbol=sym)
+        except Exception as exc:
+            report_error("MANAGE_KLINE_EXCEPTION", f"{type(exc).__name__}: {exc}", symbol=sym)
+        try:
+            manage_position(st, sym, book=b, atr_latest=atr)
+        except Exception as exc:
+            report_error("MANAGE_POSITION_EXCEPTION", f"{type(exc).__name__}: {exc}", symbol=sym)
+
+    # fetch & detect candidates
+    candidates: list[dict[str, Any]] = []
+    now_ms = int(time.time() * 1000)
+
+    async def eval_symbol(sym: str) -> Optional[dict[str, Any]]:
+        fetched_at = time.time()
+        df, err = await fetch_klines_incremental(gs, sym)
+        if err:
+            return {"symbol": sym, "error": err}
+        book = books.get(sym)
+        probe = detect_breakout(df, now_ms=now_ms, book=book, data_fetched_at=fetched_at)
+        return {"symbol": sym, "probe": probe, "book": book, "fetched_at": fetched_at}
+
+    # bounded gather
+    sem = asyncio.Semaphore(config.KLINES_API_CONCURRENCY)
+
+    async def wrapped(sym: str):
+        async with sem:
+            return await eval_symbol(sym)
+
+    results = await asyncio.gather(*[wrapped(s) for s in symbols], return_exceptions=True)
+
+    for item in results:
+        if isinstance(item, Exception):
+            stats["failed"] += 1
+            continue
+        if not item:
+            stats["failed"] += 1
+            continue
+        if item.get("error"):
+            stats["failed"] += 1
+            fail_row = {
+                "event": "SCAN_FAIL",
+                "symbol": item["symbol"],
+                "error": item["error"],
+                "ts": now_iso(),
+                "run_id": st.run_id,
+            }
+            if store is not None:
+                store.log_decision(fail_row)
+            else:
+                append_jsonl(config.DECISION_TRACE_PATH, fail_row)
+            continue
+        stats["success"] += 1
+        probe = item["probe"]
+        sym = item["symbol"]
+        sig = probe.get("signal")
+        tags = _source_tags(sym, gainers, losers, bool(sig) or (probe.get("vol_metric") or {}).get("vol_x", 0) >= config.VOL_X_MIN)
+        # archive closed bars used for eval
+        if store is not None and item.get("book"):
+            store.log_quote_event(
+                {
+                    "purpose": "SIGNAL_EVAL",
+                    "symbol": sym,
+                    "bid": item["book"].get("bid"),
+                    "ask": item["book"].get("ask"),
+                    "mid": item["book"].get("mid"),
+                    "spread": item["book"].get("spread"),
+                    "fetched_at": item["book"].get("fetched_at"),
+                    "signal_open_time": probe.get("signal_open_time"),
+                }
+            )
+
+        # reverse check first if holding opposite
+        pos = get_position(st, sym)
+        if pos and sig and sig["side"] != pos.side:
+            # full reverse signal → close then maybe reopen
+            book = item["book"]
+            if book:
+                mark = mark_price_for_side(pos.side, book)
+                cr = close_qty(
+                    st,
+                    sym,
+                    qty=pos.qty_remaining,
+                    exit_price=mark,
+                    reason="REVERSE_SIGNAL",
+                    book_ts=float(book.get("fetched_at") or time.time()),
+                )
+                if not cr.get("ok") or sym in st.positions:
+                    # 平倉失敗或未完成：不得開反向新倉
+                    fail_row = {
+                        "event": "REVERSE_CLOSE_FAILED",
+                        "symbol": sym,
+                        "old_trade_id": pos.trade_id,
+                        "close_result": cr,
+                        "still_holding": sym in st.positions,
+                        "ts": now_iso(),
+                        "run_id": st.run_id,
+                    }
+                    report_error("REVERSE_CLOSE_FAILED", f"{cr}", symbol=sym)
+                    if store is not None:
+                        store.log_decision(fail_row)
+                    else:
+                        append_jsonl(config.DECISION_TRACE_PATH, fail_row)
+                    continue
+                rev_row = {
+                    "event": "REVERSE_CLOSE",
+                    "symbol": sym,
+                    "old_side": pos.side,
+                    "new_side": sig["side"],
+                    "ts": now_iso(),
+                    "run_id": st.run_id,
+                    "old_trade_id": pos.trade_id,
+                    "reason": "REVERSE_SIGNAL",
+                }
+                if store is not None:
+                    store.log_decision(rev_row)
+                else:
+                    append_jsonl(config.DECISION_TRACE_PATH, rev_row)
+                # reopen checks
+                if count_reverses(st, sym) >= config.MAX_REVERSES_PER_WINDOW:
+                    blk = {
+                        "event": "REVERSE_OPEN_BLOCKED",
+                        "symbol": sym,
+                        "block_reason": "REVERSE_LIMIT",
+                        "ts": now_iso(),
+                        "run_id": st.run_id,
+                    }
+                    if store is not None:
+                        store.log_decision(blk)
+                    else:
+                        append_jsonl(config.DECISION_TRACE_PATH, blk)
+                else:
+                    sk = _sig_key(sym, int(sig["signal_open_time"]), sig["side"])
+                    if sk not in st.processed_signals:
+                        filt = (st.filters or {}).get(sym, {})
+                        opened = try_open(
+                            st,
+                            symbol=sym,
+                            side=sig["side"],
+                            signal=sig,
+                            source_tags=tags,
+                            filters=filt,
+                            linked_prev=pos.trade_id,
+                            bypass_cooldown=True,
+                        )
+                        if opened.get("ok"):
+                            note_reverse(st, sym)
+                            st.processed_signals.append(sk)
+                            save_account(st)
+                            stats["opened"] += 1
+                        else:
+                            # 平倉已生效；新倉拒絕不撤銷平倉
+                            rej = {
+                                "event": "REVERSE_OPEN_REJECTED",
+                                "symbol": sym,
+                                "block_reason": opened.get("block_reason"),
+                                "ts": now_iso(),
+                                "run_id": st.run_id,
+                            }
+                            if store is not None:
+                                store.log_decision(rej)
+                            else:
+                                append_jsonl(config.DECISION_TRACE_PATH, rej)
+            continue
+
+        if not sig:
+            fr = probe.get("first_reject_code")
+            if fr and fr not in ("NO_BREAKOUT", "INSUFFICIENT_BARS"):
+                stats["rejected"][fr] = stats["rejected"].get(fr, 0) + 1
+            decision_id = f"dec:{sym}:{probe.get('signal_open_time')}:{fr or 'NONE'}:{int(time.time()*1000)}"
+            eval_row = {
+                "event": "SIGNAL_EVAL",
+                "decision_id": decision_id,
+                "symbol": sym,
+                "ts": now_iso(),
+                "run_id": st.run_id,
+                "strategy_version": config.STRATEGY_VERSION,
+                "source_tags": tags,
+                "first_reject_code": fr,
+                "result": probe.get("result"),
+                "vol_metric": probe.get("vol_metric"),
+                "range": probe.get("range"),
+                "atr": probe.get("atr"),
+                "conditions": probe.get("conditions"),
+                "bars_raw": probe.get("bars_raw"),
+                "bars_closed": probe.get("bars_closed"),
+                "excluded_unclosed": probe.get("excluded_unclosed"),
+                "signal_open_time": probe.get("signal_open_time"),
+                "final_action": "NO_ENTRY",
+            }
+            if store is not None:
+                store.log_decision(eval_row)
+                store.save_decision_snapshot(decision_id, {"probe": probe, "tags": tags})
+            else:
+                append_jsonl(config.DECISION_TRACE_PATH, eval_row)
+            continue
+
+        sk = _sig_key(sym, int(sig["signal_open_time"]), sig["side"])
+        if sk in st.processed_signals:
+            continue
+        candidates.append(
+            {
+                "symbol": sym,
+                "side": sig["side"],
+                "signal": sig,
+                "probe": probe,
+                "tags": tags,
+                "vol_x": float(sig["vol_x"]),
+                "spread": float(sig["spread"]),
+                "sig_key": sk,
+            }
+        )
+
+    # sort: vol_x desc, spread asc, symbol asc
+    candidates.sort(key=lambda c: (-c["vol_x"], c["spread"], c["symbol"]))
+    stats["candidates"] = len(candidates)
+
+    # prioritize focus pool order within same sort already global; focus only affects scan priority conceptually —
+    # we already scanned all; opening uses deterministic sort.
+    for c in candidates:
+        sym = c["symbol"]
+        if sym in st.positions:
+            continue
+        filt = (st.filters or {}).get(sym, {})
+        opened = try_open(
+            st,
+            symbol=sym,
+            side=c["side"],
+            signal=c["signal"],
+            source_tags=c["tags"],
+            filters=filt,
+        )
+        decision_id = f"dec:{sym}:{c['signal']['signal_open_time']}:{c['side']}"
+        decision = {
+            "event": "SIGNAL_EVAL",
+            "decision_id": decision_id,
+            "symbol": sym,
+            "ts": now_iso(),
+            "run_id": st.run_id,
+            "strategy_version": config.STRATEGY_VERSION,
+            "source_tags": c["tags"],
+            "side": c["side"],
+            "vol_x": c["vol_x"],
+            "spread": c["spread"],
+            "atr": c["signal"]["atr"],
+            "range": {"high": c["signal"]["range_high"], "low": c["signal"]["range_low"]},
+            "est_fill": c["signal"]["est_fill_price"],
+            "risk_estimate_u": opened.get("risk_estimate_u"),
+            "conditions": (c.get("probe") or {}).get("conditions"),
+            "vol_metric": (c.get("probe") or {}).get("vol_metric"),
+            "first_reject_code": None if opened.get("ok") else opened.get("block_reason"),
+            "final_action": "OPEN" if opened.get("ok") else "BLOCKED",
+            "trade_id": opened.get("trade_id"),
+            "simulation_assumption": config.SIMULATION_ASSUMPTIONS,
+        }
+        if store is not None:
+            store.log_decision(decision)
+            store.save_decision_snapshot(decision_id, {"probe": c.get("probe"), "open_result": opened, "tags": c["tags"]})
+            if opened.get("ok"):
+                store.log_equity(
+                    {
+                        "ts": now_iso(),
+                        "equity": st.equity_mark(0.0),
+                        "cash": st.cash_u,
+                        "realized_net_u": st.realized_net_u,
+                        "realized_fees_u": st.realized_fees_u,
+                        "floating_u": 0.0,
+                        "positions": len(st.positions),
+                        "trade_id": opened.get("trade_id"),
+                    },
+                    reason="FILL",
+                )
+        else:
+            append_jsonl(config.DECISION_TRACE_PATH, decision)
+        st.processed_signals.append(c["sig_key"])
+        if opened.get("ok"):
+            stats["opened"] += 1
+        else:
+            br = opened.get("block_reason") or "UNKNOWN"
+            stats["rejected"][br] = stats["rejected"].get(br, 0) + 1
+        save_account(st)
+        if store is not None:
+            store.mirror_account(st.to_dict())
+            store.write_data_quality_md()
+        if len(st.positions) >= config.MAX_CONCURRENT_POSITIONS:
+            break
+
+    stats["duration_sec"] = round(time.time() - t0, 3)
+    stats["coverage"] = {
+        "expected": stats["expected"],
+        "success": stats["success"],
+        "failed": stats["failed"],
+        "note": "failed symbols are NOT claimed scanned",
+    }
+    return stats
+
+
+async def maybe_refresh_universe(gs: GuardedSession, st, *, force: bool = False) -> None:
+    if (
+        not force
+        and now_ts() - float(st.last_universe_refresh_ts or 0) < config.UNIVERSE_REFRESH_MINUTES * 60
+    ):
+        return
+    snap = await refresh_universe(gs)
+    st.universe = snap["eligible"]
+    st.top_gainers = [x["symbol"] for x in snap["top_gainers"]]
+    st.top_losers = [x["symbol"] for x in snap["top_losers"]]
+    st.filters = snap["filters"]
+    st.last_universe_refresh_ts = now_ts()
+    save_account(st)
+    store = get_store()
+    if store is not None:
+        store.log_universe(snap)
+        store.mirror_account(st.to_dict())
+        # seed any new symbols' warmup from vault
+        store.seed_warmup_from_vault([r["symbol"] for r in st.universe])
+
+
+async def run_paper_loop(
+    *,
+    hours: float = 6.0,
+    once: bool = False,
+    launch_command: Optional[list] = None,
+) -> None:
+    ensure_dirs()
+    st = load_or_create_account()
+    # New observability run dir (does not reset account capital)
+    store = begin_run()
+    st.run_id = store.run_id  # align account run_id with overnight archive
+    save_account(st)
+    store.write_code_hashes()
+    store.write_launch_meta(
+        command=launch_command or ["python3", "-m", "breakout_follow_v1.paper_main", "--paper"],
+        hours=hours,
+        once=once,
+    )
+    man = store.write_run_manifest(st.to_dict())
+    write_run_manifest(st)  # keep root pointer too
+    store.mirror_account(st.to_dict())
+
+    import os
+
+    config.PID_PATH.write_text(str(os.getpid()), encoding="utf-8")
+    store.path("paper.pid").write_text(str(os.getpid()), encoding="utf-8")
+
+    timeout = aiohttp.ClientTimeout(total=60)
+    connector = aiohttp.TCPConnector(limit=config.KLINES_API_CONCURRENCY + 4)
+    start = time.time()
+    last_review = 0.0
+
+    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
+        gs = GuardedSession(session)
+        await maybe_refresh_universe(gs, st, force=True)
+        # ensure warmup archive for current universe + backfill ≥100 bars (observability only)
+        syms = [r["symbol"] for r in (st.universe or [])]
+        store.seed_warmup_from_vault(syms)
+        print(f"[breakout_follow_v1] warmup backfill for {len(syms)} symbols…")
+        bf = await backfill_warmup_klines(gs, syms, min_bars=100)
+        print(f"[breakout_follow_v1] warmup backfill done {bf}")
+        store.write_data_quality_md()
+        print(
+            f"[breakout_follow_v1] paper start run_id={st.run_id} "
+            f"version={config.STRATEGY_VERSION} account={config.ACCOUNT_PATH} "
+            f"run_dir={store.root} eligible={len(st.universe)} capital={st.initial_capital_u}"
+        )
+        first_stats = await scan_once(gs, st, {})
+        print(f"[breakout_follow_v1] first scan {first_stats}")
+        write_review(st, first_stats, man, store=store)
+        store.write_data_quality_md()
+        if once:
+            return
+
+        while True:
+            if hours > 0 and (time.time() - start) >= hours * 3600:
+                print("[breakout_follow_v1] observation window reached; leaving positions as-is (no force flat)")
+                write_review(st, first_stats, man, store=store)
+                store.write_data_quality_md()
+                break
+            # align near SCAN_SECOND
+            now = time.time()
+            sec = time.localtime(now).tm_sec
+            wait = (60 - sec + config.SCAN_SECOND) % 60
+            if wait == 0:
+                wait = 60
+            # also manage mid-minute roughly every MANAGE_POLL_SEC via short sleeps chunks
+            slept = 0.0
+            while slept < wait:
+                chunk = min(config.MANAGE_POLL_SEC, wait - slept)
+                await asyncio.sleep(chunk)
+                slept += chunk
+                # mid manage with fresh books
+                try:
+                    books = await fetch_book_tickers(gs)
+                except Exception as exc:
+                    report_error("MANAGE_POLL_BOOK_FAIL", f"{type(exc).__name__}: {exc}")
+                    continue
+                for sym in list(st.positions.keys()):
+                    b = books.get(sym)
+                    if not b:
+                        report_error("QUOTE_MISSING", "manage_poll", symbol=sym)
+                        continue
+                    try:
+                        store.log_quote_event(
+                            {
+                                "purpose": "MANAGE_POLL",
+                                "symbol": sym,
+                                "bid": b.get("bid"),
+                                "ask": b.get("ask"),
+                                "mid": b.get("mid"),
+                                "spread": b.get("spread"),
+                                "fetched_at": b.get("fetched_at"),
+                                "trade_id": (st.positions.get(sym) or {}).get("trade_id"),
+                            }
+                        )
+                        manage_position(st, sym, book=b, atr_latest=None)
+                    except Exception as exc:
+                        report_error("MANAGE_POLL_ERROR", f"{type(exc).__name__}: {exc}", symbol=sym)
+
+            try:
+                await maybe_refresh_universe(gs, st)
+                stats = await scan_once(gs, st, {})
+                if time.time() - last_review >= config.UNIVERSE_REFRESH_MINUTES * 60:
+                    write_review(st, stats, man, store=store)
+                    store.write_data_quality_md()
+                    last_review = time.time()
+            except Exception as exc:
+                report_error("LOOP_ERROR", f"{type(exc).__name__}: {exc}")
+                await asyncio.sleep(5)

@@ -1,0 +1,137 @@
+{
+  "runtime_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459",
+  "created_at": "2026-11-19T12:14:59+08:00",
+  "seal_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T121459",
+  "seal_aggregate_sha256": "716f24017a83632216a85b1b1a58f03ed3b5de2f058977b0ea374f4b2701d6ac",
+  "code_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/code",
+  "data_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root",
+  "BREAKOUT_RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root",
+  "hash_verify_all_match": true,
+  "hash_verify": [
+    {
+      "rel": "breakout_follow_v1/__init__.py",
+      "runtime": "a78eafc5ba943f92968e23d19d20bb4d01680a4659505ac4f3e346dfc3c81147",
+      "seal": "a78eafc5ba943f92968e23d19d20bb4d01680a4659505ac4f3e346dfc3c81147",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/__main__.py",
+      "runtime": "3e3f9055737e03fae2212143f72f9e572f2c2ca7827a540fffe57ef118e468c0",
+      "seal": "3e3f9055737e03fae2212143f72f9e572f2c2ca7827a540fffe57ef118e468c0",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/account.py",
+      "runtime": "f4963888b99e399b63540daf5d109b53134ac50a4b3f3d6d2ecdf6e6ebf30ad6",
+      "seal": "f4963888b99e399b63540daf5d109b53134ac50a4b3f3d6d2ecdf6e6ebf30ad6",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/config.py",
+      "runtime": "b159d639988e8e050da469b10388b9eb74c914642625d8bccb4e5a20dad03ce0",
+      "seal": "b159d639988e8e050da469b10388b9eb74c914642625d8bccb4e5a20dad03ce0",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/engine.py",
+      "runtime": "1bc865b308e2bf64ea48d968590eef0551468d0bdab12e864be8361ccad691d0",
+      "seal": "1bc865b308e2bf64ea48d968590eef0551468d0bdab12e864be8361ccad691d0",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/export_snapshot.py",
+      "runtime": "798a456c8fd5e921c94bc5a53af1c5ff545df1d9466db5d2a57c897310afc585",
+      "seal": "798a456c8fd5e921c94bc5a53af1c5ff545df1d9466db5d2a57c897310afc585",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/market_data.py",
+      "runtime": "8dc14175d2ab3c8a7af38e3b186b0149682af0c36c050a06749387aae5b08c32",
+      "seal": "8dc14175d2ab3c8a7af38e3b186b0149682af0c36c050a06749387aae5b08c32",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/paper_main.py",
+      "runtime": "60043be0dd5715e29be06d2eb3540fcd133476910f329c248ff5a68121496979",
+      "seal": "60043be0dd5715e29be06d2eb3540fcd133476910f329c248ff5a68121496979",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/portfolio.py",
+      "runtime": "af494ebd930e54c8b9d5d2e30897f35a7561e1ed7093ec9ae15a15f83fac7984",
+      "seal": "af494ebd930e54c8b9d5d2e30897f35a7561e1ed7093ec9ae15a15f83fac7984",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/profiles.py",
+      "runtime": "8d891476202fa85509e71eea3908c50bb7cfbaa48347d5714a8cf1acec02c9dc",
+      "seal": "8d891476202fa85509e71eea3908c50bb7cfbaa48347d5714a8cf1acec02c9dc",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/review.py",
+      "runtime": "5e93ed0fd9232233ac1aa66affff1df736407c7ef9fc40513f14ccc14b1e0b2b",
+      "seal": "5e93ed0fd9232233ac1aa66affff1df736407c7ef9fc40513f14ccc14b1e0b2b",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/run_store.py",
+      "runtime": "304fc1031066b40bcda748b06a14f1750ce6dea3e64317a03f3b8a270a01d90f",
+      "seal": "304fc1031066b40bcda748b06a14f1750ce6dea3e64317a03f3b8a270a01d90f",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/safety.py",
+      "runtime": "ae8e5ac64532904c4bcc1b3878e73dcee95f30ae36c3a27d89bfd4b403896f23",
+      "seal": "ae8e5ac64532904c4bcc1b3878e73dcee95f30ae36c3a27d89bfd4b403896f23",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/signals.py",
+      "runtime": "e2cc5f0b911dc497f091cd80af9607ff73aba44431ee995756457c22b0e3e7ae",
+      "seal": "e2cc5f0b911dc497f091cd80af9607ff73aba44431ee995756457c22b0e3e7ae",
+      "match": true
+    },
+    {
+      "rel": "breakout_follow_v1/util.py",
+      "runtime": "312e5b6891f352a042bcb49379c04d68f32e441d8ca4c98962eeb047a735eaaf",
+      "seal": "312e5b6891f352a042bcb49379c04d68f32e441d8ca4c98962eeb047a735eaaf",
+      "match": true
+    }
+  ],
+  "import_probe_bulk": {
+    "import_file": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/code/breakout_follow_v1/config.py",
+    "module_file": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/code/breakout_follow_v1/config.py",
+    "RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root",
+    "ROOT_OUT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1",
+    "ACCOUNT_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1/account_state.json",
+    "KLINE_VAULT_DIR": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+    "LOCK_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1/paper_profile.lock",
+    "PID_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1/paper.pid",
+    "INITIAL_CAPITAL_USDT": 50000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 2000.0,
+    "CODE_FIX_TAG": "fix_20261119_p0p1_trail_after_partial_bulk_v1",
+    "applied": {
+      "profile": "paper_bulk_test_v1",
+      "PROFILE_ID": "paper_bulk_test_v1",
+      "RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root",
+      "ROOT_OUT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1",
+      "ACCOUNT_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1/account_state.json",
+      "KLINE_VAULT_DIR": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+      "LOCK_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/paper_bulk_test_v1/paper_profile.lock",
+      "INITIAL_CAPITAL_USDT": 50000.0,
+      "MAX_CONCURRENT_POSITIONS": 20,
+      "DAILY_LOSS_LOCK_USDT": 2000.0,
+      "CODE_FIX_TAG": "fix_20261119_p0p1_trail_after_partial_bulk_v1"
+    }
+  },
+  "import_probe_legacy_defaults_after_switch": {
+    "INITIAL_CAPITAL_USDT": 10000.0,
+    "MAX_CONCURRENT_POSITIONS": 3,
+    "DAILY_LOSS_LOCK_USDT": 300.0,
+    "ROOT_OUT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T121459/data_root/output/breakout_follow_v1"
+  },
+  "live_package_untouched": "/Users/alan/MyProjects/automax/breakout_follow_v1",
+  "note": "Do NOT long-run from worktree; use code_dir + BREAKOUT_RUNTIME_ROOT=data_root. Account NOT initialized."
+}

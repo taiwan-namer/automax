@@ -1,0 +1,21 @@
+{
+  "before": {
+    "account_state": "8418c0ccad1b64cf3276762097370ab24ffd5baa5623631f84a3a58b2e8b0b2c",
+    "fills": "d4f089dc8b546b1ed6fb38a98fffab4aa1aa00f252a9f4ce8f4a9b59e9867a7b",
+    "trades": "9807823fa279d850f8b912b6533444d6b5ad514f5f8fc6bee1fdadf9602d56cb",
+    "vault_file_count": 72,
+    "vault_sample_BTC": "f477aeaec54a4313c4b47ac06ceb5d671cf38ad7e873a618979b29543dc06682",
+    "pid": "86206"
+  },
+  "after": {
+    "account_state": "f99a552e0c3ae00928214a5b49b7ea1df3e6368ce0bda2c8ea0a8fb0a9901bb8",
+    "fills": "d4f089dc8b546b1ed6fb38a98fffab4aa1aa00f252a9f4ce8f4a9b59e9867a7b",
+    "trades": "9807823fa279d850f8b912b6533444d6b5ad514f5f8fc6bee1fdadf9602d56cb",
+    "vault_sample_BTC": "f17c8977d7791fe2b12c7eccc49fea23345efb0b36ff45aa86f3dab6da5b55b2",
+    "pid": "86206"
+  },
+  "fills_same": true,
+  "trades_same": true,
+  "account_same": false,
+  "note": "account/vault may change due to live PID 86206"
+}

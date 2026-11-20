@@ -1,0 +1,40 @@
+{
+  "runtime_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904",
+  "created_at": "2026-11-19T12:29:04+08:00",
+  "tag": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+  "seal_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fix_source_sealed_20261119T122904",
+  "seal_aggregate_sha256": "02833bd0a5843b973c9781a3f560dcb7477b5520869d9dd24e44dd151e022a6b",
+  "code_dir": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code",
+  "fixed_data_root": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "BREAKOUT_RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+  "hash_verify_all_match": true,
+  "hash_verify_count": 15,
+  "import_probe_bulk": {
+    "module_file": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/runtime_bulk_v1_20261119T122904/code/breakout_follow_v1/config.py",
+    "RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+    "ROOT_OUT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1",
+    "ACCOUNT_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/account_state.json",
+    "KLINE_VAULT_DIR": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+    "LOCK_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/paper_profile.lock",
+    "INITIAL_CAPITAL_USDT": 50000.0,
+    "MAX_CONCURRENT_POSITIONS": 20,
+    "DAILY_LOSS_LOCK_USDT": 2000.0,
+    "CODE_FIX_TAG": "fix_20261119_p0p1_trail_http429_bulk_reverse",
+    "config_hash": "1ad6a35c98b26446",
+    "applied": {
+      "profile": "paper_bulk_test_v1",
+      "PROFILE_ID": "paper_bulk_test_v1",
+      "RUNTIME_ROOT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root",
+      "ROOT_OUT": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1",
+      "ACCOUNT_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/account_state.json",
+      "KLINE_VAULT_DIR": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/data/paper_bulk_test_v1/kline_vault_v2_clean",
+      "LOCK_PATH": "/Users/alan/MyProjects/automax/output/paper_bulk_test_v1_setup/fixed_data_root/output/paper_bulk_test_v1/paper_profile.lock",
+      "INITIAL_CAPITAL_USDT": 50000.0,
+      "MAX_CONCURRENT_POSITIONS": 20,
+      "DAILY_LOSS_LOCK_USDT": 2000.0,
+      "CODE_FIX_TAG": "fix_20261119_p0p1_trail_http429_bulk_reverse"
+    }
+  },
+  "existing_bulk_account": false,
+  "note": "DATA ROOT is FIXED across seals; code dir is versioned. Do not long-run from worktree."
+}

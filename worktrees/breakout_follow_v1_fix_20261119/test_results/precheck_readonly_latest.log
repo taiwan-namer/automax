@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/deploy_switch_ops.py", line 547, in <module>
+    raise SystemExit(main())
+  File "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/deploy_switch_ops.py", line 475, in main
+    return cmd_precheck_readonly()
+  File "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/deploy_switch_ops.py", line 430, in cmd_precheck_readonly
+    acc = read_account()
+  File "/Users/alan/MyProjects/automax/worktrees/breakout_follow_v1_fix_20261119/deploy_switch_ops.py", line 58, in read_account
+    raise Abort(f"必要帳戶檔不存在: {ACCOUNT_PATH}")
+__main__.Abort: 必要帳戶檔不存在: /Users/alan/MyProjects/automax/worktrees/output/breakout_follow_v1/account_state.json

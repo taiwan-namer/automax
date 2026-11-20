@@ -1,0 +1,58 @@
+[
+  {
+    "file": "__init__.py",
+    "fix_sha256": "a78eafc5ba943f92968e23d19d20bb4d01680a4659505ac4f3e346dfc3c81147"
+  },
+  {
+    "file": "__main__.py",
+    "fix_sha256": "3e3f9055737e03fae2212143f72f9e572f2c2ca7827a540fffe57ef118e468c0"
+  },
+  {
+    "file": "account.py",
+    "fix_sha256": "66e6a2ee869fbfa3386f481ef6434be237c670549130e1cfb86210c200552826"
+  },
+  {
+    "file": "config.py",
+    "fix_sha256": "2303ff4fda2f97c707746595d7a62ce726dff7774c6080d5d0ce148bba3bb9fc"
+  },
+  {
+    "file": "engine.py",
+    "fix_sha256": "4c1f57ea4e66d08c47f1ab27e72fb7fc94f615dbf1896886f202922c17b1b7e2"
+  },
+  {
+    "file": "export_snapshot.py",
+    "fix_sha256": "798a456c8fd5e921c94bc5a53af1c5ff545df1d9466db5d2a57c897310afc585"
+  },
+  {
+    "file": "market_data.py",
+    "fix_sha256": "adf8a04a8e8334ae5d46b61baed9d778b693963bd8e70b60a8eb5b02dfc96bb5"
+  },
+  {
+    "file": "paper_main.py",
+    "fix_sha256": "2cb414d1bffafad579a960d9c1985b118c8f69471b397cf071a693dd3ea1c3db"
+  },
+  {
+    "file": "portfolio.py",
+    "fix_sha256": "45b58411aa062548be6558c164d97a362f3dd05c241dbeb024f6f554d8bd5a24"
+  },
+  {
+    "file": "review.py",
+    "fix_sha256": "392f71c064b3757cd1d8de55a39cccb39884a1ba43f2ec821096f971eaf48dd6"
+  },
+  {
+    "file": "run_store.py",
+    "fix_sha256": "5527a43c6abd855a1a32021c50fc1bb5da4bd1e875bd4cc5f7781df91575e994"
+  },
+  {
+    "file": "safety.py",
+    "fix_sha256": "ae8e5ac64532904c4bcc1b3878e73dcee95f30ae36c3a27d89bfd4b403896f23"
+  },
+  {
+    "file": "signals.py",
+    "fix_sha256": "e2cc5f0b911dc497f091cd80af9607ff73aba44431ee995756457c22b0e3e7ae"
+  },
+  {
+    "file": "util.py",
+    "fix_sha256": "312e5b6891f352a042bcb49379c04d68f32e441d8ca4c98962eeb047a735eaaf"
+  }
+]
