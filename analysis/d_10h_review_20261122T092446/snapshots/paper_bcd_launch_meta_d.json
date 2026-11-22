@@ -1,0 +1,9 @@
+{
+  "mode": "paper",
+  "strategy": "D",
+  "started_at": 1795257403.594939,
+  "pid": 23544,
+  "range_amp_max": 0.02,
+  "bar_amp_max": 0.01,
+  "log": "C:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\logs\\strat_d_paper.log"
+}

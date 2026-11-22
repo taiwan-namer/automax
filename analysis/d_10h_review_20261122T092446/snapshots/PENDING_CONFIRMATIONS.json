@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-21T20:15:33.837050+08:00",
+  "strategy_version": "d_quiet_short_testnet_20261121",
+  "confirmed_magnitudes": {
+    "stake_usdt": 30.0,
+    "tp_usdt": 15.0,
+    "sl_usdt": 3.0,
+    "max_slots": 10
+  },
+  "pending": [],
+  "paper_fills_allowed": true,
+  "note": "Do not start paper fills until capital + depth are confirmed."
+}

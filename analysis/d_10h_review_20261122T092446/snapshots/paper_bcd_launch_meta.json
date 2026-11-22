@@ -1,0 +1,26 @@
+{
+  "mode": "paper",
+  "started_at": 1795242785.6073723,
+  "pids": {
+    "B": 3436,
+    "C": 23944,
+    "D": 11284
+  },
+  "note": "BCD paper only; no --testnet; A testnet untouched",
+  "stopped_at": 1795257186.081089,
+  "stopped": {
+    "B": {
+      "pid": 3436,
+      "status": "force_killed"
+    },
+    "C": {
+      "pid": 23944,
+      "status": "force_killed"
+    },
+    "D": {
+      "pid": 11284,
+      "status": "already_dead"
+    }
+  },
+  "settle_dir": "output\\paper_bcd_local\\settlement_reports\\paper_bcd_settle_20261121T183306+0800"
+}

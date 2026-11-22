@@ -1,0 +1,1885 @@
+{
+  "generated_at": "2026-11-22T10:33:17.542263+08:00",
+  "mother_set": "signals.jsonl EVENT=SIGNAL only",
+  "n": 21,
+  "funnel": {
+    "signals_n": 21,
+    "queued_n": 19,
+    "filled_n": 11,
+    "canceled_n": 8,
+    "no_queue_n": 2,
+    "unknown_terminal_n": 0,
+    "link_status_counts": {
+      "SIGNAL_QUEUE_CANCEL": 8,
+      "SIGNAL_QUEUE_FILL": 11,
+      "SIGNAL_NO_QUEUE": 2
+    }
+  },
+  "clusters_15m": {
+    "2026-11-21T14:30:00+08:00": [
+      "TRXUSDT"
+    ],
+    "2026-11-21T18:30:00+08:00": [
+      "1000PEPEUSDT",
+      "AAVEUSDT",
+      "ADAUSDT",
+      "AVAXUSDT",
+      "BCHUSDT",
+      "BNBUSDT",
+      "DOGEUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "XLMUSDT",
+      "XRPUSDT"
+    ],
+    "2026-11-21T18:45:00+08:00": [
+      "DOTUSDT",
+      "SOLUSDT"
+    ],
+    "2026-11-21T19:00:00+08:00": [
+      "WLDUSDT"
+    ],
+    "2026-11-21T19:15:00+08:00": [
+      "1000SHIBUSDT"
+    ],
+    "2026-11-21T19:30:00+08:00": [
+      "TAOUSDT",
+      "UNIUSDT",
+      "NEARUSDT",
+      "SUIUSDT",
+      "HYPEUSDT"
+    ]
+  },
+  "rows": [
+    {
+      "signal_id": "TRXUSDT:1795242599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "TRXUSDT",
+      "emitted_at": "2026-11-21T14:35:12.980208+08:00",
+      "P": 0.299905,
+      "limit_px": 0.3014,
+      "range_amp": 0.004941074349814647,
+      "bar_amps": [
+        0.0014708831985023598,
+        0.0023089278543703116,
+        0.002777777777777769,
+        0.003240678872110019
+      ],
+      "B": 0.0025433528160740404,
+      "T": 0.008,
+      "slope": 0.0022753889911327216,
+      "spread": 3.3343892232573654e-05,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:TRXUSDT:3f4c92f125",
+      "queued_at": "2026-11-21T14:35:14.306242+08:00",
+      "cancel_reason": "QUIET_FAIL:BAR_AMP_FAIL",
+      "cancel_at": "2026-11-21T14:45:08.268484+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01000400160065026,
+        "amp_pct": 0.01000400160065026,
+        "bar_ot": "2026-11-21T14:34:00+08:00",
+        "o": 0.29988,
+        "c": 0.29991
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0014708831985023598,
+          0.0023089278543703116,
+          0.002777777777777769,
+          0.003240678872110019
+        ],
+        "range_amp_embedded": 0.004941074349814647,
+        "range_amp_signal_field": 0.004941074349814647,
+        "B_signal": 0.0025433528160740404,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.061185075098029125,
+        "amp_pct": 0.16475633265527523,
+        "bar_ot": "2026-11-21T14:34:00+08:00",
+        "o": 56386.3,
+        "c": 56420.8
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.036796893834612376,
+        "amp_pct": 0.19603862404993705,
+        "bar_ot": "2026-11-21T14:34:00+08:00",
+        "o": 1576.22,
+        "c": 1576.8
+      }
+    },
+    {
+      "signal_id": "1000PEPEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "1000PEPEUSDT",
+      "emitted_at": "2026-11-21T18:37:06.512971+08:00",
+      "P": 0.00328845,
+      "limit_px": 0.0033049,
+      "range_amp": 0.010569672007026269,
+      "bar_amps": [
+        0.0073391724554515555,
+        0.004249804087045622,
+        0.009063808003854484,
+        0.006061524473405078
+      ],
+      "B": 0.006700348464428317,
+      "T": 0.013400696928856634,
+      "slope": -0.0047923322683706415,
+      "spread": 3.0409463425101028e-05,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:1000PEPEUSDT:4d757ff3f6",
+      "queued_at": "2026-11-21T18:37:08.269941+08:00",
+      "cancel_reason": "DEPTH_FAIL_DUAL_NEAR_TOUCH",
+      "cancel_at": "2026-11-21T18:38:25.771992+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.024329420351560715,
+        "amp_pct": 0.07298826105468215,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 0.0032882,
+        "c": 0.003289
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0073391724554515555,
+          0.004249804087045622,
+          0.009063808003854484,
+          0.006061524473405078
+        ],
+        "range_amp_embedded": 0.010569672007026269,
+        "range_amp_signal_field": 0.010569672007026269,
+        "B_signal": 0.006700348464428317,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "AAVEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "AAVEUSDT",
+      "emitted_at": "2026-11-21T18:37:07.009941+08:00",
+      "P": 97.16499999999999,
+      "limit_px": 97.65,
+      "range_amp": 0.012761140269630492,
+      "bar_amps": [
+        0.006830176963675842,
+        0.0034133223003723445,
+        0.005280049694585266,
+        0.008917461634176685
+      ],
+      "B": 0.0060551133291305535,
+      "T": 0.012110226658261107,
+      "slope": 0.005068266446007394,
+      "spread": 0.00010291771728508328,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:AAVEUSDT:cb120a4934",
+      "queued_at": "2026-11-21T18:37:08.274942+08:00",
+      "cancel_reason": "DEPTH_FAIL_DUAL_NEAR_TOUCH",
+      "cancel_at": "2026-11-21T18:37:31.269940+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.18550963619498362,
+        "amp_pct": 0.18550963619498362,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 97.03,
+        "c": 97.21
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006830176963675842,
+          0.0034133223003723445,
+          0.005280049694585266,
+          0.008917461634176685
+        ],
+        "range_amp_embedded": 0.012761140269630492,
+        "range_amp_signal_field": 0.012761140269630492,
+        "B_signal": 0.0060551133291305535,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "ADAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "ADAUSDT",
+      "emitted_at": "2026-11-21T18:37:07.292973+08:00",
+      "P": 0.13905,
+      "limit_px": 0.1397,
+      "range_amp": 0.009305654974946283,
+      "bar_amps": [
+        0.007896625987078175,
+        0.0035816618911174818,
+        0.0057388809182209125,
+        0.009345794392523333
+      ],
+      "B": 0.006817753452649544,
+      "T": 0.013635506905299088,
+      "slope": 0.0007163323782234168,
+      "spread": 0.0007191657677093777,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:ADAUSDT:ed9a628238",
+      "queued_at": "2026-11-21T18:37:08.278941+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T18:49:11.499547+08:00",
+      "fill_px": 0.1397,
+      "fill_qty": 2147.0,
+      "signal_to_fill_sec": 724.206574,
+      "exit_reason": "SL+VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.0,
+        "amp_pct": 0.07194244604315753,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 0.139,
+        "c": 0.139
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.007896625987078175,
+          0.0035816618911174818,
+          0.0057388809182209125,
+          0.009345794392523333
+        ],
+        "range_amp_embedded": 0.009305654974946283,
+        "range_amp_signal_field": 0.009305654974946283,
+        "B_signal": 0.006817753452649544,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "AVAXUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "AVAXUSDT",
+      "emitted_at": "2026-11-21T18:37:15.184937+08:00",
+      "P": 6.3685,
+      "limit_px": 6.4,
+      "range_amp": 0.008754103486009074,
+      "bar_amps": [
+        0.006740868474682576,
+        0.004072043852779922,
+        0.005010176921872419,
+        0.00879673264216149
+      ],
+      "B": 0.005875522698277498,
+      "T": 0.011751045396554995,
+      "slope": 0.0018794048551292804,
+      "spread": 0.0001570228468241259,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+      "queued_at": "2026-11-21T18:37:19.279956+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:10:47.213221+08:00",
+      "fill_px": 6.4,
+      "fill_qty": 46.0,
+      "signal_to_fill_sec": 2012.028284,
+      "exit_reason": "VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.015696123057610013,
+        "amp_pct": 0.12556898446083828,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 6.371,
+        "c": 6.37
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006740868474682576,
+          0.004072043852779922,
+          0.005010176921872419,
+          0.00879673264216149
+        ],
+        "range_amp_embedded": 0.008754103486009074,
+        "range_amp_signal_field": 0.008754103486009074,
+        "B_signal": 0.005875522698277498,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "BCHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "BCHUSDT",
+      "emitted_at": "2026-11-21T18:37:16.482939+08:00",
+      "P": 189.095,
+      "limit_px": 190.04,
+      "range_amp": 0.011630354699505206,
+      "bar_amps": [
+        0.008557778127789128,
+        0.002823824713695657,
+        0.009218038024406803,
+        0.006862331081080991
+      ],
+      "B": 0.00771005460443506,
+      "T": 0.01542010920887012,
+      "slope": -0.00627549419516781,
+      "spread": 5.2883471271006135e-05,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:BCHUSDT:557688a583",
+      "queued_at": "2026-11-21T18:37:19.275937+08:00",
+      "cancel_reason": "DEPTH_FAIL_DUAL_NEAR_TOUCH",
+      "cancel_at": "2026-11-21T18:46:09.685781+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.04227436060030253,
+        "amp_pct": 0.08454872120059004,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 189.24,
+        "c": 189.16
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.008557778127789128,
+          0.002823824713695657,
+          0.009218038024406803,
+          0.006862331081080991
+        ],
+        "range_amp_embedded": 0.011630354699505206,
+        "range_amp_signal_field": 0.011630354699505206,
+        "B_signal": 0.00771005460443506,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "BNBUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "BNBUSDT",
+      "emitted_at": "2026-11-21T18:37:18.329939+08:00",
+      "P": 523.975,
+      "limit_px": 526.59,
+      "range_amp": 0.00896537314566837,
+      "bar_amps": [
+        0.0038618852848853282,
+        0.0017295119355328573,
+        0.006240487062404819,
+        0.00816053511705682
+      ],
+      "B": 0.005051186173645073,
+      "T": 0.010102372347290146,
+      "slope": 0.0005891743956212163,
+      "spread": 1.9084880003799616e-05,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+      "queued_at": "2026-11-21T18:37:19.271940+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:30:23.646030+08:00",
+      "fill_px": 526.59,
+      "fill_qty": 0.56,
+      "signal_to_fill_sec": 3185.316091,
+      "exit_reason": "SL+VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.0019083969465631498,
+        "amp_pct": 0.06106870229008588,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 524.0,
+        "c": 524.01
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0038618852848853282,
+          0.0017295119355328573,
+          0.006240487062404819,
+          0.00816053511705682
+        ],
+        "range_amp_embedded": 0.00896537314566837,
+        "range_amp_signal_field": 0.00896537314566837,
+        "B_signal": 0.005051186173645073,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "DOGEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "DOGEUSDT",
+      "emitted_at": "2026-11-21T18:37:29.797939+08:00",
+      "P": 0.052934999999999996,
+      "limit_px": 0.0532,
+      "range_amp": 0.008472980606288816,
+      "bar_amps": [
+        0.005828163188569238,
+        0.0022543678376855543,
+        0.006952273581360433,
+        0.006989044200982287
+      ],
+      "B": 0.006390218384964836,
+      "T": 0.012780436769929671,
+      "slope": -0.0022543678376855543,
+      "spread": 0.00018891092849727142,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:DOGEUSDT:9667e15363",
+      "queued_at": "2026-11-21T18:37:32.486938+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:10:58.652901+08:00",
+      "fill_px": 0.0532,
+      "fill_qty": 5639.0,
+      "signal_to_fill_sec": 2008.854962,
+      "exit_reason": "SL",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.0,
+        "amp_pct": 0.07561436672967556,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 0.0529,
+        "c": 0.0529
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.005828163188569238,
+          0.0022543678376855543,
+          0.006952273581360433,
+          0.006989044200982287
+        ],
+        "range_amp_embedded": 0.008472980606288816,
+        "range_amp_signal_field": 0.008472980606288816,
+        "B_signal": 0.006390218384964836,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01833263000601612,
+        "amp_pct": 0.056554434075165666,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 57820.4,
+        "c": 57831.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.058643860720833,
+        "amp_pct": 0.061698228466706834,
+        "bar_ot": "2026-11-21T18:36:00+08:00",
+        "o": 1637.0,
+        "c": 1637.96
+      }
+    },
+    {
+      "signal_id": "LINKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "LINKUSDT",
+      "emitted_at": "2026-11-21T18:39:07.919464+08:00",
+      "P": 8.351500000000001,
+      "limit_px": 8.393,
+      "range_amp": 0.009909264565425046,
+      "bar_amps": [
+        0.006914639961850242,
+        0.003330954080418804,
+        0.005721778519489813,
+        0.0074242605675968335
+      ],
+      "B": 0.006318209240670027,
+      "T": 0.012636418481340055,
+      "slope": -0.0035688793718773653,
+      "spread": 0.00011973896904741012,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+      "queued_at": "2026-11-21T18:39:13.329439+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T18:50:26.085863+08:00",
+      "fill_px": 8.393,
+      "fill_qty": 35.74,
+      "signal_to_fill_sec": 678.166399,
+      "exit_reason": "SL+VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.05983724269984449,
+        "amp_pct": 0.10770703685974559,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 8.356,
+        "c": 8.351
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006914639961850242,
+          0.003330954080418804,
+          0.005721778519489813,
+          0.0074242605675968335
+        ],
+        "range_amp_embedded": 0.009909264565425046,
+        "range_amp_signal_field": 0.009909264565425046,
+        "B_signal": 0.006318209240670027,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "SOLUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.08166464663207211,
+        "amp_pct": 0.13794937137214122,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 57919.8,
+        "c": 57872.5
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.04266809706382815,
+        "amp_pct": 0.11337522934102948,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 1640.57,
+        "c": 1639.87
+      }
+    },
+    {
+      "signal_id": "LTCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "LTCUSDT",
+      "emitted_at": "2026-11-21T18:39:09.558439+08:00",
+      "P": 38.665,
+      "limit_px": 38.86,
+      "range_amp": 0.01211028085544978,
+      "bar_amps": [
+        0.0048593350383632945,
+        0.0040952137189658715,
+        0.0076962544894817134,
+        0.0059370160041302
+      ],
+      "B": 0.005398175521246747,
+      "T": 0.010796351042493494,
+      "slope": -0.006654722293319632,
+      "spread": 0.0002586318375793383,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:LTCUSDT:ae9617fef1",
+      "queued_at": "2026-11-21T18:39:13.333452+08:00",
+      "cancel_reason": "DEPTH_FAIL_DUAL_NEAR_TOUCH",
+      "cancel_at": "2026-11-21T18:40:15.634472+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.07751937984496418,
+        "amp_pct": 0.1291989664082614,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 38.7,
+        "c": 38.67
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0048593350383632945,
+          0.0040952137189658715,
+          0.0076962544894817134,
+          0.0059370160041302
+        ],
+        "range_amp_embedded": 0.01211028085544978,
+        "range_amp_signal_field": 0.01211028085544978,
+        "B_signal": 0.005398175521246747,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "SOLUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.08166464663207211,
+        "amp_pct": 0.13794937137214122,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 57919.8,
+        "c": 57872.5
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.04266809706382815,
+        "amp_pct": 0.11337522934102948,
+        "bar_ot": "2026-11-21T18:38:00+08:00",
+        "o": 1640.57,
+        "c": 1639.87
+      }
+    },
+    {
+      "signal_id": "XLMUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "XLMUSDT",
+      "emitted_at": "2026-11-21T18:40:24.269439+08:00",
+      "P": 0.124415,
+      "limit_px": 0.12504,
+      "range_amp": 0.009154420621536995,
+      "bar_amps": [
+        0.006130020971124348,
+        0.002093566309686741,
+        0.004913015463917521,
+        0.008562197092084051
+      ],
+      "B": 0.005521518217520935,
+      "T": 0.01104303643504187,
+      "slope": 0.0027377405588212174,
+      "spread": 8.037616043078506e-05,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+      "queued_at": "2026-11-21T18:40:29.521438+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:31:37.623453+08:00",
+      "fill_px": 0.12504,
+      "fill_qty": 2399.0,
+      "signal_to_fill_sec": 3073.354014,
+      "exit_reason": "SL",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.14485755673587608,
+        "amp_pct": 0.16900048285852395,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 0.12426,
+        "c": 0.12444
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006130020971124348,
+          0.002093566309686741,
+          0.004913015463917521,
+          0.008562197092084051
+        ],
+        "range_amp_embedded": 0.009154420621536995,
+        "range_amp_signal_field": 0.009154420621536995,
+        "B_signal": 0.005521518217520935,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "SOLUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.013132316730741795,
+        "amp_pct": 0.0727461229426732,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 57872.5,
+        "c": 57880.1
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.03231963509303787,
+        "amp_pct": 0.08964125205046909,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 1639.87,
+        "c": 1640.4
+      }
+    },
+    {
+      "signal_id": "XRPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "XRPUSDT",
+      "emitted_at": "2026-11-21T18:40:26.754439+08:00",
+      "P": 0.89515,
+      "limit_px": 0.8996,
+      "range_amp": 0.008262617239839173,
+      "bar_amps": [
+        0.005027932960893797,
+        0.002902757619738804,
+        0.005474860335195548,
+        0.008188446438586622
+      ],
+      "B": 0.005251396648044673,
+      "T": 0.010502793296089346,
+      "slope": -0.00011164452383621749,
+      "spread": 0.00011171312070601462,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+      "queued_at": "2026-11-21T18:40:29.526439+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:31:43.328419+08:00",
+      "fill_px": 0.8996,
+      "fill_qty": 333.4,
+      "signal_to_fill_sec": 3076.57398,
+      "exit_reason": "SL",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.13427324605572102,
+        "amp_pct": 0.1790309947409572,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 0.8937,
+        "c": 0.8949
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.005027932960893797,
+          0.002902757619738804,
+          0.005474860335195548,
+          0.008188446438586622
+        ],
+        "range_amp_embedded": 0.008262617239839173,
+        "range_amp_signal_field": 0.008262617239839173,
+        "B_signal": 0.005251396648044673,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "DOTUSDT",
+        "SOLUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.013132316730741795,
+        "amp_pct": 0.0727461229426732,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 57872.5,
+        "c": 57880.1
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.03231963509303787,
+        "amp_pct": 0.08964125205046909,
+        "bar_ot": "2026-11-21T18:39:00+08:00",
+        "o": 1639.87,
+        "c": 1640.4
+      }
+    },
+    {
+      "signal_id": "DOTUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "DOTUSDT",
+      "emitted_at": "2026-11-21T18:51:25.434229+08:00",
+      "P": 0.64745,
+      "limit_px": 0.6507,
+      "range_amp": 0.009295120061967475,
+      "bar_amps": [
+        0.0018487136034508994,
+        0.007710100231303014,
+        0.008065767023421891,
+        0.004942848316342263
+      ],
+      "B": 0.0063264742738226385,
+      "T": 0.012652948547645277,
+      "slope": -0.004779525131051483,
+      "spread": 0.00015445208124177773,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:DOTUSDT:8b69211253",
+      "queued_at": "2026-11-21T18:51:28.774235+08:00",
+      "cancel_reason": "DEPTH_FAIL_DUAL_NEAR_TOUCH",
+      "cancel_at": "2026-11-21T18:51:40.103227+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.046367851622869695,
+        "amp_pct": 0.06182380216382627,
+        "bar_ot": "2026-11-21T18:50:00+08:00",
+        "o": 0.647,
+        "c": 0.6473
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0018487136034508994,
+          0.007710100231303014,
+          0.008065767023421891,
+          0.004942848316342263
+        ],
+        "range_amp_embedded": 0.009295120061967475,
+        "range_amp_signal_field": 0.009295120061967475,
+        "B_signal": 0.0063264742738226385,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000PEPEUSDT",
+        "AAVEUSDT",
+        "ADAUSDT",
+        "AVAXUSDT",
+        "BCHUSDT",
+        "BNBUSDT",
+        "DOGEUSDT",
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "SOLUSDT",
+        "WLDUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.043132823215810766,
+        "amp_pct": 0.08574805255302678,
+        "bar_ot": "2026-11-21T18:50:00+08:00",
+        "o": 57960.5,
+        "c": 57985.5
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.09621884305976863,
+        "amp_pct": 0.14980908476393112,
+        "bar_ot": "2026-11-21T18:50:00+08:00",
+        "o": 1642.09,
+        "c": 1643.67
+      }
+    },
+    {
+      "signal_id": "SOLUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "SOLUSDT",
+      "emitted_at": "2026-11-21T18:53:23.245276+08:00",
+      "P": 68.17500000000001,
+      "limit_px": 68.52,
+      "range_amp": 0.007490086650022105,
+      "bar_amps": [
+        0.0030837004405287515,
+        0.003820720058780384,
+        0.006621542083578618,
+        0.005714285714285723
+      ],
+      "B": 0.004767502886533053,
+      "T": 0.009535005773066107,
+      "slope": 0.0004407875404055412,
+      "spread": 0.00014668133480022169,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:SOLUSDT:b3a67523aa",
+      "queued_at": "2026-11-21T18:53:25.120277+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:31:48.866418+08:00",
+      "fill_px": 68.52,
+      "fill_qty": 4.37,
+      "signal_to_fill_sec": 2305.621142,
+      "exit_reason": "SL+VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.04400117336460387,
+        "amp_pct": 0.04400117336460387,
+        "bar_ot": "2026-11-21T18:52:00+08:00",
+        "o": 68.18,
+        "c": 68.21
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.0030837004405287515,
+          0.003820720058780384,
+          0.006621542083578618,
+          0.005714285714285723
+        ],
+        "range_amp_embedded": 0.007490086650022105,
+        "range_amp_signal_field": 0.007490086650022105,
+        "B_signal": 0.004767502886533053,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "LINKUSDT",
+        "LTCUSDT",
+        "XLMUSDT",
+        "XRPUSDT",
+        "DOTUSDT",
+        "WLDUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.05554367250622209,
+        "amp_pct": 0.05554367250622209,
+        "bar_ot": "2026-11-21T18:52:00+08:00",
+        "o": 57972.4,
+        "c": 58004.6
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.0322545308487185,
+        "amp_pct": 0.05903187721368322,
+        "bar_ot": "2026-11-21T18:52:00+08:00",
+        "o": 1643.18,
+        "c": 1643.71
+      }
+    },
+    {
+      "signal_id": "WLDUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "WLDUSDT",
+      "emitted_at": "2026-11-21T19:03:10.188474+08:00",
+      "P": 0.21965,
+      "limit_px": 0.2207,
+      "range_amp": 0.01186672752167956,
+      "bar_amps": [
+        0.006331976481230269,
+        0.007259528130671588,
+        0.009515178975985458,
+        0.006830601092896182
+      ],
+      "B": 0.007045064611783884,
+      "T": 0.014090129223567768,
+      "slope": -0.005447117566954184,
+      "spread": 0.0004552697473253664,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:WLDUSDT:5aea42e042",
+      "queued_at": "2026-11-21T19:03:13.070495+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:10:58.653901+08:00",
+      "fill_px": 0.2207,
+      "fill_qty": 1359.0,
+      "signal_to_fill_sec": 468.465427,
+      "exit_reason": "SL",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.22820629849383867,
+        "amp_pct": 0.3194888178913767,
+        "bar_ot": "2026-11-21T19:02:00+08:00",
+        "o": 0.2191,
+        "c": 0.2196
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006331976481230269,
+          0.007259528130671588,
+          0.009515178975985458,
+          0.006830601092896182
+        ],
+        "range_amp_embedded": 0.01186672752167956,
+        "range_amp_signal_field": 0.01186672752167956,
+        "B_signal": 0.007045064611783884,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "DOTUSDT",
+        "SOLUSDT",
+        "1000SHIBUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.06237742662876541,
+        "amp_pct": 0.09676276706955689,
+        "bar_ot": "2026-11-21T19:02:00+08:00",
+        "o": 57873.5,
+        "c": 57909.6
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.009760561232275849,
+        "amp_pct": 0.06344364800975834,
+        "bar_ot": "2026-11-21T19:02:00+08:00",
+        "o": 1639.25,
+        "c": 1639.41
+      }
+    },
+    {
+      "signal_id": "1000SHIBUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "1000SHIBUSDT",
+      "emitted_at": "2026-11-21T19:17:12.372569+08:00",
+      "P": 0.0035104999999999997,
+      "limit_px": 0.003528,
+      "range_amp": 0.010801591813530369,
+      "bar_amps": [
+        0.004016064257028148,
+        0.0040080160320641635,
+        0.0020051561157261705,
+        0.008311837202636844
+      ],
+      "B": 0.004012040144546156,
+      "T": 0.008024080289092312,
+      "slope": 0.0068689181453920195,
+      "spread": 0.0002848597065944165,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+      "queued_at": "2026-11-21T19:17:15.669543+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T19:31:43.331419+08:00",
+      "fill_px": 0.003528,
+      "fill_qty": 85034.0,
+      "signal_to_fill_sec": 870.95885,
+      "exit_reason": "VOL_SPIKE",
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.0569476082004508,
+        "amp_pct": 0.08542141230068237,
+        "bar_ot": "2026-11-21T19:16:00+08:00",
+        "o": 0.003512,
+        "c": 0.00351
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.004016064257028148,
+          0.0040080160320641635,
+          0.0020051561157261705,
+          0.008311837202636844
+        ],
+        "range_amp_embedded": 0.010801591813530369,
+        "range_amp_signal_field": 0.010801591813530369,
+        "B_signal": 0.004012040144546156,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "WLDUSDT",
+        "TAOUSDT",
+        "UNIUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.03248997649661778,
+        "amp_pct": 0.04303193695562259,
+        "bar_ot": "2026-11-21T19:16:00+08:00",
+        "o": 57864.0,
+        "c": 57845.2
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.07194156881394347,
+        "amp_pct": 0.10059626147712447,
+        "bar_ot": "2026-11-21T19:16:00+08:00",
+        "o": 1640.22,
+        "c": 1639.04
+      }
+    },
+    {
+      "signal_id": "TAOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "TAOUSDT",
+      "emitted_at": "2026-11-21T19:30:10.647704+08:00",
+      "P": 178.755,
+      "limit_px": null,
+      "range_amp": 0.010069930069930134,
+      "bar_amps": [
+        0.007544849941317802,
+        0.007908463738852413,
+        0.006138078612456376,
+        0.005275564036367705
+      ],
+      "B": 0.006841464276887089,
+      "T": 0.013682928553774178,
+      "slope": 0.0026363024455911986,
+      "spread": 5.5942491119078654e-05,
+      "link_status": "SIGNAL_NO_QUEUE",
+      "trade_id": null,
+      "queued_at": null,
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.07278020378456805,
+        "amp_pct": 0.13436345314075082,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 178.62,
+        "c": 178.75
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.007544849941317802,
+          0.007908463738852413,
+          0.006138078612456376,
+          0.005275564036367705
+        ],
+        "range_amp_embedded": 0.010069930069930134,
+        "range_amp_signal_field": 0.010069930069930134,
+        "B_signal": 0.006841464276887089,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": false,
+        "filled": false,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000SHIBUSDT",
+        "UNIUSDT",
+        "NEARUSDT",
+        "SUIUSDT",
+        "HYPEUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.05389038488443291,
+        "amp_pct": 0.05389038488443291,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 57895.3,
+        "c": 57926.5
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01951397993719936,
+        "amp_pct": 0.03232002927096824,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 1639.85,
+        "c": 1640.17
+      }
+    },
+    {
+      "signal_id": "UNIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "UNIUSDT",
+      "emitted_at": "2026-11-21T19:30:14.050006+08:00",
+      "P": 4.4465,
+      "limit_px": null,
+      "range_amp": 0.013720197930724234,
+      "bar_amps": [
+        0.008865651284382948,
+        0.007024699750736391,
+        0.007249660172179436,
+        0.007212080234392614
+      ],
+      "B": 0.0072308702032860255,
+      "T": 0.014461740406572051,
+      "slope": 0.0074779061862677255,
+      "spread": 0.00022489598560673202,
+      "link_status": "SIGNAL_NO_QUEUE",
+      "trade_id": null,
+      "queued_at": null,
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.09004952723997207,
+        "amp_pct": 0.1350742908599581,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 4.442,
+        "c": 4.446
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.008865651284382948,
+          0.007024699750736391,
+          0.007249660172179436,
+          0.007212080234392614
+        ],
+        "range_amp_embedded": 0.013720197930724234,
+        "range_amp_signal_field": 0.013720197930724234,
+        "B_signal": 0.0072308702032860255,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": false,
+        "filled": false,
+        "canceled": false,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "1000SHIBUSDT",
+        "TAOUSDT",
+        "NEARUSDT",
+        "SUIUSDT",
+        "HYPEUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.05389038488443291,
+        "amp_pct": 0.05389038488443291,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 57895.3,
+        "c": 57926.5
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.01951397993719936,
+        "amp_pct": 0.03232002927096824,
+        "bar_ot": "2026-11-21T19:29:00+08:00",
+        "o": 1639.85,
+        "c": 1640.17
+      }
+    },
+    {
+      "signal_id": "NEARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "NEARUSDT",
+      "emitted_at": "2026-11-21T19:33:17.040302+08:00",
+      "P": 2.8095,
+      "limit_px": 2.824,
+      "range_amp": 0.012274368231047023,
+      "bar_amps": [
+        0.006911604219716307,
+        0.004720406681190959,
+        0.006543075245365247,
+        0.007973903588256703
+      ],
+      "B": 0.006727339732540777,
+      "T": 0.013454679465081554,
+      "slope": 0.006175081729022849,
+      "spread": 0.00035593521978995906,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:NEARUSDT:b3bef7e03f",
+      "queued_at": "2026-11-21T19:33:18.463326+08:00",
+      "cancel_reason": "PRICE_DROP_FROM_P",
+      "cancel_at": "2026-11-21T19:36:27.928098+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 1.4780100937274667,
+        "amp_pct": 1.91059841384284,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 2.774,
+        "c": 2.815
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.006911604219716307,
+          0.004720406681190959,
+          0.006543075245365247,
+          0.007973903588256703
+        ],
+        "range_amp_embedded": 0.012274368231047023,
+        "range_amp_signal_field": 0.012274368231047023,
+        "B_signal": 0.006727339732540777,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "TAOUSDT",
+        "UNIUSDT",
+        "SUIUSDT",
+        "HYPEUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.7499504912132666,
+        "amp_pct": 0.8871974582619352,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 58070.5,
+        "c": 58506.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 1.2555808656036491,
+        "amp_pct": 1.4961275626423756,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 1646.25,
+        "c": 1666.92
+      }
+    },
+    {
+      "signal_id": "SUIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "SUIUSDT",
+      "emitted_at": "2026-11-21T19:33:26.305326+08:00",
+      "P": 0.63465,
+      "limit_px": 0.6378,
+      "range_amp": 0.009630818619582673,
+      "bar_amps": [
+        0.005785920925747246,
+        0.005795235028976252,
+        0.005312298776561445,
+        0.0062680810028929845
+      ],
+      "B": 0.005790577977361749,
+      "T": 0.011581155954723497,
+      "slope": 0.002897617514488126,
+      "spread": 0.00015756716300321277,
+      "link_status": "SIGNAL_QUEUE_CANCEL",
+      "trade_id": "2026-11-21T1433_040b980f:SUIUSDT:af15de2712",
+      "queued_at": "2026-11-21T19:33:27.239301+08:00",
+      "cancel_reason": "PRICE_DROP_FROM_P",
+      "cancel_at": "2026-11-21T19:36:04.802151+08:00",
+      "filled_at": null,
+      "fill_px": null,
+      "fill_qty": null,
+      "signal_to_fill_sec": null,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 1.3424964040274834,
+        "amp_pct": 1.8059773054179458,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 0.6257,
+        "c": 0.6341
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.005785920925747246,
+          0.005795235028976252,
+          0.005312298776561445,
+          0.0062680810028929845
+        ],
+        "range_amp_embedded": 0.009630818619582673,
+        "range_amp_signal_field": 0.009630818619582673,
+        "B_signal": 0.005790577977361749,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": false,
+        "canceled": true,
+        "still_open": false
+      },
+      "peers_within_15m": [
+        "TAOUSDT",
+        "UNIUSDT",
+        "NEARUSDT",
+        "HYPEUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 0.7499504912132666,
+        "amp_pct": 0.8871974582619352,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 58070.5,
+        "c": 58506.0
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": 1.2555808656036491,
+        "amp_pct": 1.4961275626423756,
+        "bar_ot": "2026-11-21T19:32:00+08:00",
+        "o": 1646.25,
+        "c": 1666.92
+      }
+    },
+    {
+      "signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "symbol": "HYPEUSDT",
+      "emitted_at": "2026-11-21T19:36:12.573151+08:00",
+      "P": 59.1505,
+      "limit_px": 59.446,
+      "range_amp": 0.01301544204988975,
+      "bar_amps": [
+        0.007812898942960785,
+        0.006279970647963312,
+        0.008583397452338127,
+        0.004363327674023854
+      ],
+      "B": 0.007046434795462048,
+      "T": 0.014092869590924095,
+      "slope": 0.005545601911099784,
+      "spread": 1.6906027844308582e-05,
+      "link_status": "SIGNAL_QUEUE_FILL",
+      "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+      "queued_at": "2026-11-21T19:36:13.335150+08:00",
+      "cancel_reason": null,
+      "cancel_at": null,
+      "filled_at": "2026-11-21T20:15:34.261048+08:00",
+      "fill_px": 59.446,
+      "fill_qty": 5.04,
+      "signal_to_fill_sec": 2361.687897,
+      "exit_reason": null,
+      "pre_fill_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.09796966318705422,
+        "amp_pct": 0.22972196885239637,
+        "bar_ot": "2026-11-21T19:35:00+08:00",
+        "o": 59.202,
+        "c": 59.144
+      },
+      "quiet_check": {
+        "status": "FROM_SIGNAL_EMBEDDED",
+        "note": "embedded bars are the decision-time 15m set; not a live re-fetch",
+        "bar_amps": [
+          0.007812898942960785,
+          0.006279970647963312,
+          0.008583397452338127,
+          0.004363327674023854
+        ],
+        "range_amp_embedded": 0.01301544204988975,
+        "range_amp_signal_field": 0.01301544204988975,
+        "B_signal": 0.007046434795462048,
+        "still_matches_signal_fields": true
+      },
+      "lifecycle": {
+        "queued": true,
+        "filled": true,
+        "canceled": false,
+        "still_open": true
+      },
+      "peers_within_15m": [
+        "TAOUSDT",
+        "UNIUSDT",
+        "NEARUSDT",
+        "SUIUSDT"
+      ],
+      "btc_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.11614023289804551,
+        "amp_pct": 0.20963569365055063,
+        "bar_ot": "2026-11-21T19:35:00+08:00",
+        "o": 58291.6,
+        "c": 58223.9
+      },
+      "eth_1m_at_signal": {
+        "status": "OK",
+        "ret_pct": -0.2436038904264855,
+        "amp_pct": 0.29184228457034167,
+        "bar_ot": "2026-11-21T19:35:00+08:00",
+        "o": 1658.43,
+        "c": 1654.39
+      }
+    }
+  ],
+  "hypotheses_forward_only": [
+    {
+      "id": "H1_CLUSTER_COOLDOWN",
+      "statement": "同 15m 桶內多標的同時觸發時，後續成交常共享同一波動事件；前瞻可測『同桶僅允許 1 個新掛／或冷卻』是否降低聚集虧損相關性。",
+      "evidence_descriptive": {
+        "buckets_with_ge_2": {
+          "2026-11-21T18:30:00+08:00": [
+            "1000PEPEUSDT",
+            "AAVEUSDT",
+            "ADAUSDT",
+            "AVAXUSDT",
+            "BCHUSDT",
+            "BNBUSDT",
+            "DOGEUSDT",
+            "LINKUSDT",
+            "LTCUSDT",
+            "XLMUSDT",
+            "XRPUSDT"
+          ],
+          "2026-11-21T18:45:00+08:00": [
+            "DOTUSDT",
+            "SOLUSDT"
+          ],
+          "2026-11-21T19:30:00+08:00": [
+            "TAOUSDT",
+            "UNIUSDT",
+            "NEARUSDT",
+            "SUIUSDT",
+            "HYPEUSDT"
+          ]
+        },
+        "note": "描述性；非本樣本最佳化結果；未部署"
+      }
+    },
+    {
+      "id": "H2_POST_SIGNAL_1M_ADVERSE",
+      "statement": "訊號發出後、成交前若最近已收盤 1m 已出現對空頭不利的上漲振幅，前瞻可測『成交前再確認 1m 不利過濾』；僅用決策時已收盤 K，不用成交後路徑反推。",
+      "evidence_descriptive": {
+        "filled_with_1m_ret": [
+          {
+            "symbol": "ADAUSDT",
+            "ret_pct": 0.0,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "AVAXUSDT",
+            "ret_pct": -0.015696123057610013,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "BNBUSDT",
+            "ret_pct": 0.0019083969465631498,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "DOGEUSDT",
+            "ret_pct": 0.0,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "LINKUSDT",
+            "ret_pct": -0.05983724269984449,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "XLMUSDT",
+            "ret_pct": 0.14485755673587608,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "XRPUSDT",
+            "ret_pct": 0.13427324605572102,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "SOLUSDT",
+            "ret_pct": 0.04400117336460387,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "WLDUSDT",
+            "ret_pct": 0.22820629849383867,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "1000SHIBUSDT",
+            "ret_pct": -0.0569476082004508,
+            "link": "SIGNAL_QUEUE_FILL"
+          },
+          {
+            "symbol": "HYPEUSDT",
+            "ret_pct": -0.09796966318705422,
+            "link": "SIGNAL_QUEUE_FILL"
+          }
+        ],
+        "note": "描述性對照；未搜尋最佳門檻；未部署"
+      }
+    }
+  ],
+  "limits": [
+    "no fill-inferred signals",
+    "no post-hoc threshold search on these 21",
+    "cancels/unfilled are descriptive only — not claimed profitable if filled",
+    "10 fills are not 10 independent validations when clustered"
+  ]
+}

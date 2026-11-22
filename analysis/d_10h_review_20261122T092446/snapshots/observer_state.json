@@ -1,0 +1,3373 @@
+{
+  "symbols": {
+    "1000BONKUSDT": {
+      "symbol": "1000BONKUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "1000BONKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "1000BONKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "1000BONKUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.0019935,
+        "price_source": "bookTicker",
+        "price_ts": 1795257425.8159373,
+        "spread": 0.0005016302984700941,
+        "range_amp": 0.012475049900199525,
+        "bar_amps": [
+          0.006451612903225802,
+          0.005937654626422493,
+          0.006467661691542284,
+          0.005994005994005924
+        ],
+        "B": 0.0062228094486158625,
+        "T": 0.012445618897231725,
+        "slope": -0.008411677387431794,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.002015,
+            "h": 0.002023,
+            "l": 0.00201,
+            "c": 0.002021,
+            "amp": 0.006451612903225802
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.002021,
+            "h": 0.002021,
+            "l": 0.002009,
+            "c": 0.00201,
+            "amp": 0.005937654626422493
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.00201,
+            "h": 0.002012,
+            "l": 0.001999,
+            "c": 0.002001,
+            "amp": 0.006467661691542284
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.002002,
+            "h": 0.00201,
+            "l": 0.001998,
+            "c": 0.002004,
+            "amp": 0.005994005994005924
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:06.015940+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:15.196769+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:06.015940+08:00",
+          "event": "SIGNAL",
+          "signal_id": "1000BONKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "1000LUNCUSDT": {
+      "symbol": "1000LUNCUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "1000LUNCUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "1000LUNCUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "1000LUNCUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795258800000,
+        "bar_close_time": 1795259699999,
+        "P": 0.040375,
+        "price_source": "bookTicker",
+        "price_ts": 1795259828.592544,
+        "spread": 0.00024767801857575534,
+        "range_amp": 0.008399209486166008,
+        "bar_amps": [
+          0.006660088801184001,
+          0.0061789421651013395,
+          0.0074183976261128015,
+          0.006451612903225715
+        ],
+        "B": 0.006555850852204858,
+        "T": 0.013111701704409716,
+        "slope": 0.0007416563658838627,
+        "bars": [
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.04054,
+            "h": 0.04056,
+            "l": 0.04029,
+            "c": 0.04045,
+            "amp": 0.006660088801184001
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.04046,
+            "h": 0.04056,
+            "l": 0.04031,
+            "c": 0.04045,
+            "amp": 0.0061789421651013395
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.04044,
+            "h": 0.04057,
+            "l": 0.04027,
+            "c": 0.0403,
+            "amp": 0.0074183976261128015
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.0403,
+            "h": 0.04049,
+            "l": 0.04023,
+            "c": 0.04048,
+            "amp": 0.006451612903225715
+          }
+        ],
+        "emitted_at": "2026-11-21T19:17:10.665580+08:00",
+        "fill_allowed_after_ms": 1795259700000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:15.407769+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:17:10.665580+08:00",
+          "event": "SIGNAL",
+          "signal_id": "1000LUNCUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "1000PEPEUSDT": {
+      "symbol": "1000PEPEUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "1000PEPEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "1000PEPEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "1000PEPEUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.00328845,
+        "price_source": "bookTicker",
+        "price_ts": 1795257425.8159373,
+        "spread": 3.0409463425101028e-05,
+        "range_amp": 0.010569672007026269,
+        "bar_amps": [
+          0.0073391724554515555,
+          0.004249804087045622,
+          0.009063808003854484,
+          0.006061524473405078
+        ],
+        "B": 0.006700348464428317,
+        "T": 0.013400696928856634,
+        "slope": -0.0047923322683706415,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.003311,
+            "h": 0.0033226,
+            "l": 0.0032983,
+            "c": 0.0033178,
+            "amp": 0.0073391724554515555
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.0033178,
+            "h": 0.0033282,
+            "l": 0.0033141,
+            "c": 0.003321,
+            "amp": 0.004249804087045622
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.0033209,
+            "h": 0.0033245,
+            "l": 0.0032944,
+            "c": 0.0032992,
+            "amp": 0.009063808003854484
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.0032995,
+            "h": 0.0033133,
+            "l": 0.0032933,
+            "c": 0.0033019,
+            "amp": 0.006061524473405078
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:06.512971+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:15.603770+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:06.512971+08:00",
+          "event": "SIGNAL",
+          "signal_id": "1000PEPEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "1000SHIBUSDT": {
+      "symbol": "1000SHIBUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "1000SHIBUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "BAR_AMP_FAIL",
+      "updated_at": "2026-11-21T21:00:15.798769+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:17:12.372569+08:00",
+          "event": "SIGNAL",
+          "signal_id": "1000SHIBUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:43.889455+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "VOL_SPIKE"
+        }
+      ]
+    },
+    "AAVEUSDT": {
+      "symbol": "AAVEUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "AAVEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "AAVEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "AAVEUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 97.16499999999999,
+        "price_source": "bookTicker",
+        "price_ts": 1795257425.8159373,
+        "spread": 0.00010291771728508328,
+        "range_amp": 0.012761140269630492,
+        "bar_amps": [
+          0.006830176963675842,
+          0.0034133223003723445,
+          0.005280049694585266,
+          0.008917461634176685
+        ],
+        "B": 0.0060551133291305535,
+        "T": 0.012110226658261107,
+        "slope": 0.005068266446007394,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 96.63,
+            "h": 96.72,
+            "l": 96.06,
+            "c": 96.68,
+            "amp": 0.006830176963675842
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 96.68,
+            "h": 96.78,
+            "l": 96.45,
+            "c": 96.6,
+            "amp": 0.0034133223003723445
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 96.59,
+            "h": 96.8,
+            "l": 96.29,
+            "c": 96.44,
+            "amp": 0.005280049694585266
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 96.44,
+            "h": 97.3,
+            "l": 96.44,
+            "c": 97.17,
+            "amp": 0.008917461634176685
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:07.009941+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:16.006770+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:07.009941+08:00",
+          "event": "SIGNAL",
+          "signal_id": "AAVEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ADAUSDT": {
+      "symbol": "ADAUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "ADAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:00:16.227771+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:07.292973+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ADAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:38.337452+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL+VOL_SPIKE"
+        }
+      ]
+    },
+    "AEROUSDT": {
+      "symbol": "AEROUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "AEROUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "AEROUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "AEROUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.38515,
+        "price_source": "bookTicker",
+        "price_ts": 1795257425.8159373,
+        "spread": 0.0002596391016486797,
+        "range_amp": 0.012119649303764924,
+        "bar_amps": [
+          0.008481110254433372,
+          0.004344492716585687,
+          0.006912442396313313,
+          0.004895645452203073
+        ],
+        "B": 0.005904043924258194,
+        "T": 0.011808087848516387,
+        "slope": -0.008944543828264767,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.3891,
+            "h": 0.3915,
+            "l": 0.3882,
+            "c": 0.3913,
+            "amp": 0.008481110254433372
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.3913,
+            "h": 0.3913,
+            "l": 0.3896,
+            "c": 0.3907,
+            "amp": 0.004344492716585687
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.3906,
+            "h": 0.3906,
+            "l": 0.3879,
+            "c": 0.3881,
+            "amp": 0.006912442396313313
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.3881,
+            "h": 0.3887,
+            "l": 0.3868,
+            "c": 0.3878,
+            "amp": 0.004895645452203073
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:07.590938+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:16.428769+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:07.590938+08:00",
+          "event": "SIGNAL",
+          "signal_id": "AEROUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "AKEUSDT": {
+      "symbol": "AKEUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:16.640769+08:00",
+      "history": []
+    },
+    "APTUSDT": {
+      "symbol": "APTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:16.828769+08:00",
+      "history": []
+    },
+    "ARBUSDT": {
+      "symbol": "ARBUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:17.099769+08:00",
+      "history": []
+    },
+    "ASTERUSDT": {
+      "symbol": "ASTERUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ASTERUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ASTERUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ASTERUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795258800000,
+        "bar_close_time": 1795259699999,
+        "P": 0.47475,
+        "price_source": "bookTicker",
+        "price_ts": 1795259841.467545,
+        "spread": 0.00021063717746179882,
+        "range_amp": 0.00985118423810518,
+        "bar_amps": [
+          0.00607075570441691,
+          0.005220296512841934,
+          0.007521938988717075,
+          0.005666316894018846
+        ],
+        "B": 0.0058685362992178785,
+        "T": 0.011737072598435757,
+        "slope": -0.003758613489246123,
+        "bars": [
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.4777,
+            "h": 0.48,
+            "l": 0.4771,
+            "c": 0.4789,
+            "amp": 0.00607075570441691
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.4789,
+            "h": 0.4791,
+            "l": 0.4766,
+            "c": 0.4786,
+            "amp": 0.005220296512841934
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.4786,
+            "h": 0.4799,
+            "l": 0.4763,
+            "c": 0.4766,
+            "amp": 0.007521938988717075
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.4765,
+            "h": 0.478,
+            "l": 0.4753,
+            "c": 0.4771,
+            "amp": 0.005666316894018846
+          }
+        ],
+        "emitted_at": "2026-11-21T19:17:23.056543+08:00",
+        "fill_allowed_after_ms": 1795259700000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:22.477792+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:17:23.056543+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ASTERUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "AVAXUSDT": {
+      "symbol": "AVAXUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "AVAXUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:00:22.773771+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:15.184937+08:00",
+          "event": "SIGNAL",
+          "signal_id": "AVAXUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:32.971450+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "VOL_SPIKE"
+        }
+      ]
+    },
+    "BCHUSDT": {
+      "symbol": "BCHUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "BCHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "BCHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "BCHUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 189.095,
+        "price_source": "bookTicker",
+        "price_ts": 1795257433.7449374,
+        "spread": 5.2883471271006135e-05,
+        "range_amp": 0.011630354699505206,
+        "bar_amps": [
+          0.008557778127789128,
+          0.002823824713695657,
+          0.009218038024406803,
+          0.006862331081080991
+        ],
+        "B": 0.00771005460443506,
+        "T": 0.01542010920887012,
+        "slope": -0.00627549419516781,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 190.47,
+            "h": 191.39,
+            "l": 189.76,
+            "c": 191.22,
+            "amp": 0.008557778127789128
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 191.23,
+            "h": 191.3,
+            "l": 190.76,
+            "c": 190.94,
+            "amp": 0.002823824713695657
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 190.93,
+            "h": 190.94,
+            "l": 189.18,
+            "c": 189.45,
+            "amp": 0.009218038024406803
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 189.44,
+            "h": 190.54,
+            "l": 189.24,
+            "c": 190.02,
+            "amp": 0.006862331081080991
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:16.482939+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:23.068771+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:16.482939+08:00",
+          "event": "SIGNAL",
+          "signal_id": "BCHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "BLESSUSDT": {
+      "symbol": "BLESSUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T20:57:20.884781+08:00",
+      "history": []
+    },
+    "BLURUSDT": {
+      "symbol": "BLURUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:23.350768+08:00",
+      "history": []
+    },
+    "BMTUSDT": {
+      "symbol": "BMTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T16:32:22.484157+08:00",
+      "history": []
+    },
+    "BNBUSDT": {
+      "symbol": "BNBUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "BNBUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "BAR_AMP_FAIL",
+      "updated_at": "2026-11-21T21:00:23.534768+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:18.329939+08:00",
+          "event": "SIGNAL",
+          "signal_id": "BNBUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:43.699451+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL+VOL_SPIKE"
+        }
+      ]
+    },
+    "BREVUSDT": {
+      "symbol": "BREVUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:23.721771+08:00",
+      "history": []
+    },
+    "BTWUSDT": {
+      "symbol": "BTWUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:10.125159+08:00",
+      "history": []
+    },
+    "CRVUSDT": {
+      "symbol": "CRVUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "CRVUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "CRVUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "CRVUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795258800000,
+        "bar_close_time": 1795259699999,
+        "P": 0.16815,
+        "price_source": "bookTicker",
+        "price_ts": 1795259888.951544,
+        "spread": 0.0005947071067498602,
+        "range_amp": 0.013657957244655562,
+        "bar_amps": [
+          0.005291005291005361,
+          0.008839127872716568,
+          0.007109004739336532,
+          0.005344418052256438
+        ],
+        "B": 0.006226711395796485,
+        "T": 0.01245342279159297,
+        "slope": -0.008244994110718565,
+        "bars": [
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.1701,
+            "h": 0.1703,
+            "l": 0.1694,
+            "c": 0.1698,
+            "amp": 0.005291005291005361
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.1697,
+            "h": 0.1698,
+            "l": 0.1683,
+            "c": 0.1687,
+            "amp": 0.008839127872716568
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.1688,
+            "h": 0.1696,
+            "l": 0.1684,
+            "c": 0.1684,
+            "amp": 0.007109004739336532
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.1684,
+            "h": 0.1689,
+            "l": 0.168,
+            "c": 0.1684,
+            "amp": 0.005344418052256438
+          }
+        ],
+        "emitted_at": "2026-11-21T19:18:11.825545+08:00",
+        "fill_allowed_after_ms": 1795259700000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:10.345157+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:18:11.825545+08:00",
+          "event": "SIGNAL",
+          "signal_id": "CRVUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "CYBERUSDT": {
+      "symbol": "CYBERUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "CYBERUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "CYBERUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "CYBERUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 0.21655,
+        "price_source": "bookTicker",
+        "price_ts": 1795258028.9531138,
+        "spread": 0.00046178711613940887,
+        "range_amp": 0.017193308550185915,
+        "bar_amps": [
+          0.009225092250922518,
+          0.009250693802035161,
+          0.006986492780624003,
+          0.005111524163568726
+        ],
+        "B": 0.008105792515773261,
+        "T": 0.016211585031546523,
+        "slope": -0.004164738546968923,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.2168,
+            "h": 0.2179,
+            "l": 0.2159,
+            "c": 0.2161,
+            "amp": 0.009225092250922518
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.2162,
+            "h": 0.2162,
+            "l": 0.2142,
+            "c": 0.2148,
+            "amp": 0.009250693802035161
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.2147,
+            "h": 0.2161,
+            "l": 0.2146,
+            "c": 0.2152,
+            "amp": 0.006986492780624003
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.2152,
+            "h": 0.2153,
+            "l": 0.2142,
+            "c": 0.2152,
+            "amp": 0.005111524163568726
+          }
+        ],
+        "emitted_at": "2026-11-21T18:47:09.819121+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:10.573159+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:47:09.819121+08:00",
+          "event": "SIGNAL",
+          "signal_id": "CYBERUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "DASHUSDT": {
+      "symbol": "DASHUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "DASHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "DASHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "DASHUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 32.224999999999994,
+        "price_source": "bookTicker",
+        "price_ts": 1795257444.9849637,
+        "spread": 0.00031031807602786696,
+        "range_amp": 0.009597523219814092,
+        "bar_amps": [
+          0.007151741293532242,
+          0.005588326606643891,
+          0.004953560371516922,
+          0.005900621118012352
+        ],
+        "B": 0.005744473862328121,
+        "T": 0.011488947724656242,
+        "slope": 0.0024829298572314803,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 32.16,
+            "h": 32.29,
+            "l": 32.06,
+            "c": 32.22,
+            "amp": 0.007151741293532242
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 32.21,
+            "h": 32.36,
+            "l": 32.18,
+            "c": 32.3,
+            "amp": 0.005588326606643891
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 32.3,
+            "h": 32.33,
+            "l": 32.17,
+            "c": 32.19,
+            "amp": 0.004953560371516922
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 32.2,
+            "h": 32.37,
+            "l": 32.18,
+            "c": 32.3,
+            "amp": 0.005900621118012352
+          }
+        ],
+        "emitted_at": "2026-11-21T18:37:28.076939+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:10.812158+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:28.076939+08:00",
+          "event": "SIGNAL",
+          "signal_id": "DASHUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "DOGEUSDT": {
+      "symbol": "DOGEUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "DOGEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:01:11.150156+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:37:29.797939+08:00",
+          "event": "SIGNAL",
+          "signal_id": "DOGEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:33.052451+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL"
+        }
+      ]
+    },
+    "DOTUSDT": {
+      "symbol": "DOTUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "DOTUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "DOTUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "DOTUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 0.64745,
+        "price_source": "bookTicker",
+        "price_ts": 1795258282.0882277,
+        "spread": 0.00015445208124177773,
+        "range_amp": 0.009295120061967475,
+        "bar_amps": [
+          0.0018487136034508994,
+          0.007710100231303014,
+          0.008065767023421891,
+          0.004942848316342263
+        ],
+        "B": 0.0063264742738226385,
+        "T": 0.012652948547645277,
+        "slope": -0.004779525131051483,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.6491,
+            "h": 0.6495,
+            "l": 0.6483,
+            "c": 0.6486,
+            "amp": 0.0018487136034508994
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.6485,
+            "h": 0.6489,
+            "l": 0.6439,
+            "c": 0.6447,
+            "amp": 0.007710100231303014
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.6447,
+            "h": 0.6487,
+            "l": 0.6435,
+            "c": 0.6475,
+            "amp": 0.008065767023421891
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.6474,
+            "h": 0.6475,
+            "l": 0.6443,
+            "c": 0.6455,
+            "amp": 0.004942848316342263
+          }
+        ],
+        "emitted_at": "2026-11-21T18:51:25.434229+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:11.377158+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:51:25.434229+08:00",
+          "event": "SIGNAL",
+          "signal_id": "DOTUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ELSAUSDT": {
+      "symbol": "ELSAUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:11.601158+08:00",
+      "history": []
+    },
+    "ENAUSDT": {
+      "symbol": "ENAUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ENAUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ENAUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ENAUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 0.095335,
+        "price_source": "bookTicker",
+        "price_ts": 1795260725.7814171,
+        "spread": 0.00010489327109661847,
+        "range_amp": 0.01021052631578946,
+        "bar_amps": [
+          0.006427818756585874,
+          0.009186906019007346,
+          0.00720949957591179,
+          0.007195767195767196
+        ],
+        "B": 0.007202633385839493,
+        "T": 0.014405266771678986,
+        "slope": 0.003167898627243872,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.0949,
+            "h": 0.09496,
+            "l": 0.09435,
+            "c": 0.0947,
+            "amp": 0.006427818756585874
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.0947,
+            "h": 0.09518,
+            "l": 0.09431,
+            "c": 0.09433,
+            "amp": 0.009186906019007346
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.09432,
+            "h": 0.09489,
+            "l": 0.09421,
+            "c": 0.0945,
+            "amp": 0.00720949957591179
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 0.0945,
+            "h": 0.09505,
+            "l": 0.09437,
+            "c": 0.095,
+            "amp": 0.007195767195767196
+          }
+        ],
+        "emitted_at": "2026-11-21T19:32:09.584418+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:11.826156+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:32:09.584418+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ENAUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ENSOUSDT": {
+      "symbol": "ENSOUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:12.035157+08:00",
+      "history": []
+    },
+    "ETCUSDT": {
+      "symbol": "ETCUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ETCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ETCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ETCUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 5.310499999999999,
+        "price_source": "bookTicker",
+        "price_ts": 1795257486.4768293,
+        "spread": 0.00018830618585826835,
+        "range_amp": 0.012567998499343494,
+        "bar_amps": [
+          0.006924948530787932,
+          0.0035447761194030087,
+          0.00842223469960695,
+          0.007348784624081345
+        ],
+        "B": 0.007136866577434639,
+        "T": 0.014273733154869277,
+        "slope": -0.005410447761194014,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 5.343,
+            "h": 5.368,
+            "l": 5.331,
+            "c": 5.36,
+            "amp": 0.006924948530787932
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 5.36,
+            "h": 5.361,
+            "l": 5.342,
+            "c": 5.344,
+            "amp": 0.0035447761194030087
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 5.343,
+            "h": 5.346,
+            "l": 5.301,
+            "c": 5.307,
+            "amp": 0.00842223469960695
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 5.307,
+            "h": 5.345,
+            "l": 5.306,
+            "c": 5.331,
+            "amp": 0.007348784624081345
+          }
+        ],
+        "emitted_at": "2026-11-21T18:38:08.092829+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:17.413203+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:38:08.092829+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ETCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ETHFIUSDT": {
+      "symbol": "ETHFIUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ETHFIUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ETHFIUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ETHFIUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.42695,
+        "price_source": "bookTicker",
+        "price_ts": 1795257486.4768293,
+        "spread": 0.00023421946363740248,
+        "range_amp": 0.014225746268656702,
+        "bar_amps": [
+          0.00997679814385144,
+          0.004163775156141623,
+          0.009749303621170002,
+          0.007478382799719645
+        ],
+        "B": 0.008613843210444824,
+        "T": 0.01722768642088965,
+        "slope": -0.008096229470275279,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.431,
+            "h": 0.4326,
+            "l": 0.4283,
+            "c": 0.4323,
+            "amp": 0.00997679814385144
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.4323,
+            "h": 0.4323,
+            "l": 0.4305,
+            "c": 0.4307,
+            "amp": 0.004163775156141623
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.4308,
+            "h": 0.4308,
+            "l": 0.4266,
+            "c": 0.428,
+            "amp": 0.009749303621170002
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.4279,
+            "h": 0.4297,
+            "l": 0.4265,
+            "c": 0.4288,
+            "amp": 0.007478382799719645
+          }
+        ],
+        "emitted_at": "2026-11-21T18:38:09.037828+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:17.617207+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:38:09.037828+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ETHFIUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "EVAAUSDT": {
+      "symbol": "EVAAUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:17.814204+08:00",
+      "history": []
+    },
+    "FILUSDT": {
+      "symbol": "FILUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:18.264203+08:00",
+      "history": []
+    },
+    "HBARUSDT": {
+      "symbol": "HBARUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "HBARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "HBARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "HBARUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 0.050185,
+        "price_source": "bookTicker",
+        "price_ts": 1795260737.107482,
+        "spread": 0.0001992627279066678,
+        "range_amp": 0.014408645187112235,
+        "bar_amps": [
+          0.005451241671714101,
+          0.0038407115423489523,
+          0.009894991922455661,
+          0.004408817635270501
+        ],
+        "B": 0.004930029653492301,
+        "T": 0.009860059306984602,
+        "slope": 0.010311362717347422,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.04953,
+            "h": 0.04954,
+            "l": 0.04927,
+            "c": 0.04946,
+            "amp": 0.005451241671714101
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.04947,
+            "h": 0.04963,
+            "l": 0.04944,
+            "c": 0.04952,
+            "amp": 0.0038407115423489523
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.04952,
+            "h": 0.04991,
+            "l": 0.04942,
+            "c": 0.0499,
+            "amp": 0.009894991922455661
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 0.0499,
+            "h": 0.04999,
+            "l": 0.04977,
+            "c": 0.04997,
+            "amp": 0.004408817635270501
+          }
+        ],
+        "emitted_at": "2026-11-21T19:32:20.108452+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:18.598204+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:32:20.108452+08:00",
+          "event": "SIGNAL",
+          "signal_id": "HBARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "HMSTRUSDT": {
+      "symbol": "HMSTRUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T17:59:13.702645+08:00",
+      "history": []
+    },
+    "HUMAUSDT": {
+      "symbol": "HUMAUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "HUMAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "HUMAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "HUMAUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.0084725,
+        "price_source": "bookTicker",
+        "price_ts": 1795257500.165993,
+        "spread": 0.00011802891708459903,
+        "range_amp": 0.010563798219584633,
+        "bar_amps": [
+          0.00559990468247351,
+          0.007639054666984939,
+          0.00901970092570611,
+          0.009067048437127346
+        ],
+        "B": 0.008329377796345523,
+        "T": 0.016658755592691046,
+        "slope": 0.005609930771067101,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.008393,
+            "h": 0.008416,
+            "l": 0.008369,
+            "c": 0.008378,
+            "amp": 0.00559990468247351
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.008378,
+            "h": 0.008442,
+            "l": 0.008378,
+            "c": 0.008426,
+            "amp": 0.007639054666984939
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.008426,
+            "h": 0.008442,
+            "l": 0.008366,
+            "c": 0.008382,
+            "amp": 0.00901970092570611
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.008382,
+            "h": 0.008429,
+            "l": 0.008353,
+            "c": 0.008425,
+            "amp": 0.009067048437127346
+          }
+        ],
+        "emitted_at": "2026-11-21T18:38:20.927993+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:19.043204+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:38:20.927993+08:00",
+          "event": "SIGNAL",
+          "signal_id": "HUMAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "HYPEUSDT": {
+      "symbol": "HYPEUSDT",
+      "phase": "IN_TRADE",
+      "last_signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "HYPEUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 59.1505,
+        "price_source": "bookTicker",
+        "price_ts": 1795260970.0641508,
+        "spread": 1.6906027844308582e-05,
+        "range_amp": 0.01301544204988975,
+        "bar_amps": [
+          0.007812898942960785,
+          0.006279970647963312,
+          0.008583397452338127,
+          0.004363327674023854
+        ],
+        "B": 0.007046434795462048,
+        "T": 0.014092869590924095,
+        "slope": 0.005545601911099784,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 58.749,
+            "h": 58.798,
+            "l": 58.339,
+            "c": 58.605,
+            "amp": 0.007812898942960785
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 58.599,
+            "h": 58.853,
+            "l": 58.485,
+            "c": 58.485,
+            "amp": 0.006279970647963312
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 58.485,
+            "h": 58.94,
+            "l": 58.438,
+            "c": 58.901,
+            "amp": 0.008583397452338127
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 58.9,
+            "h": 59.106,
+            "l": 58.849,
+            "c": 58.93,
+            "amp": 0.004363327674023854
+          }
+        ],
+        "emitted_at": "2026-11-21T19:36:12.573151+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T19:36:12.573151+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:36:12.573151+08:00",
+          "event": "SIGNAL",
+          "signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ICNTUSDT": {
+      "symbol": "ICNTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:24.763202+08:00",
+      "history": []
+    },
+    "ICPUSDT": {
+      "symbol": "ICPUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ICPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ICPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ICPUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 1.9144999999999999,
+        "price_source": "bookTicker",
+        "price_ts": 1795257500.165993,
+        "spread": 0.0005223295899713303,
+        "range_amp": 0.016675351745700902,
+        "bar_amps": [
+          0.006707946336429257,
+          0.00619195046439629,
+          0.00830737279335411,
+          0.00732217573221758
+        ],
+        "B": 0.007015061034323419,
+        "T": 0.014030122068646837,
+        "slope": -0.009803921568627402,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 1.938,
+            "h": 1.94,
+            "l": 1.927,
+            "c": 1.938,
+            "amp": 0.006707946336429257
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 1.938,
+            "h": 1.938,
+            "l": 1.926,
+            "c": 1.926,
+            "amp": 0.00619195046439629
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 1.926,
+            "h": 1.926,
+            "l": 1.91,
+            "c": 1.912,
+            "amp": 0.00830737279335411
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 1.912,
+            "h": 1.922,
+            "l": 1.908,
+            "c": 1.919,
+            "amp": 0.00732217573221758
+          }
+        ],
+        "emitted_at": "2026-11-21T18:38:24.180994+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:24.975205+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:38:24.180994+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ICPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "IDOLUSDT": {
+      "symbol": "IDOLUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:25.209204+08:00",
+      "history": []
+    },
+    "INITUSDT": {
+      "symbol": "INITUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:25.436203+08:00",
+      "history": []
+    },
+    "INJUSDT": {
+      "symbol": "INJUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:25.672204+08:00",
+      "history": []
+    },
+    "IRYSUSDT": {
+      "symbol": "IRYSUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:25.939204+08:00",
+      "history": []
+    },
+    "JCTUSDT": {
+      "symbol": "JCTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:26.199725+08:00",
+      "history": []
+    },
+    "KERNELUSDT": {
+      "symbol": "KERNELUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:26.470842+08:00",
+      "history": []
+    },
+    "LINKUSDT": {
+      "symbol": "LINKUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "LINKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:02:07.694025+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:39:07.919464+08:00",
+          "event": "SIGNAL",
+          "signal_id": "LINKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:38.427451+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL+VOL_SPIKE"
+        }
+      ]
+    },
+    "LITUSDT": {
+      "symbol": "LITUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "LITUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "LITUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "LITUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 2.31665,
+        "price_source": "bookTicker",
+        "price_ts": 1795258100.4023328,
+        "spread": 4.316577817096537e-05,
+        "range_amp": 0.013373728630166597,
+        "bar_amps": [
+          0.00824283658249375,
+          0.006265227984684888,
+          0.006506745325987995,
+          0.007839570339570341
+        ],
+        "B": 0.007173157832779168,
+        "T": 0.014346315665558336,
+        "slope": 0.00513333623352331,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 2.2929,
+            "h": 2.303,
+            "l": 2.2841,
+            "c": 2.2987,
+            "amp": 0.00824283658249375
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 2.2984,
+            "h": 2.3057,
+            "l": 2.2913,
+            "c": 2.3052,
+            "amp": 0.006265227984684888
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 2.3053,
+            "h": 2.3144,
+            "l": 2.2994,
+            "c": 2.3091,
+            "amp": 0.006506745325987995
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 2.3088,
+            "h": 2.315,
+            "l": 2.2969,
+            "c": 2.3105,
+            "amp": 0.007839570339570341
+          }
+        ],
+        "emitted_at": "2026-11-21T18:48:21.278330+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:07.924155+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:48:21.278330+08:00",
+          "event": "SIGNAL",
+          "signal_id": "LITUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "LTCUSDT": {
+      "symbol": "LTCUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "LTCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "LTCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "LTCUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 38.665,
+        "price_source": "bookTicker",
+        "price_ts": 1795257546.531441,
+        "spread": 0.0002586318375793383,
+        "range_amp": 0.01211028085544978,
+        "bar_amps": [
+          0.0048593350383632945,
+          0.0040952137189658715,
+          0.0076962544894817134,
+          0.0059370160041302
+        ],
+        "B": 0.005398175521246747,
+        "T": 0.010796351042493494,
+        "slope": -0.006654722293319632,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 39.1,
+            "h": 39.13,
+            "l": 38.94,
+            "c": 39.07,
+            "amp": 0.0048593350383632945
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 39.07,
+            "h": 39.11,
+            "l": 38.95,
+            "c": 38.99,
+            "amp": 0.0040952137189658715
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 38.98,
+            "h": 39.01,
+            "l": 38.71,
+            "c": 38.74,
+            "amp": 0.0076962544894817134
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 38.74,
+            "h": 38.89,
+            "l": 38.66,
+            "c": 38.81,
+            "amp": 0.0059370160041302
+          }
+        ],
+        "emitted_at": "2026-11-21T18:39:09.558439+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:08.149374+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:39:09.558439+08:00",
+          "event": "SIGNAL",
+          "signal_id": "LTCUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "MMTUSDT": {
+      "symbol": "MMTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:08.375303+08:00",
+      "history": []
+    },
+    "NAORISUSDT": {
+      "symbol": "NAORISUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T18:57:22.878600+08:00",
+      "history": []
+    },
+    "NEARUSDT": {
+      "symbol": "NEARUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "NEARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "NEARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "NEARUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 2.8095,
+        "price_source": "bookTicker",
+        "price_ts": 1795260796.418301,
+        "spread": 0.00035593521978995906,
+        "range_amp": 0.012274368231047023,
+        "bar_amps": [
+          0.006911604219716307,
+          0.004720406681190959,
+          0.006543075245365247,
+          0.007973903588256703
+        ],
+        "B": 0.006727339732540777,
+        "T": 0.013454679465081554,
+        "slope": 0.006175081729022849,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 2.749,
+            "h": 2.758,
+            "l": 2.739,
+            "c": 2.753,
+            "amp": 0.006911604219716307
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 2.754,
+            "h": 2.764,
+            "l": 2.751,
+            "c": 2.752,
+            "amp": 0.004720406681190959
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 2.751,
+            "h": 2.764,
+            "l": 2.746,
+            "c": 2.758,
+            "amp": 0.006543075245365247
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 2.759,
+            "h": 2.773,
+            "l": 2.751,
+            "c": 2.77,
+            "amp": 0.007973903588256703
+          }
+        ],
+        "emitted_at": "2026-11-21T19:33:17.040302+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:08.608235+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:33:17.040302+08:00",
+          "event": "SIGNAL",
+          "signal_id": "NEARUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "ONDOUSDT": {
+      "symbol": "ONDOUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ONDOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ONDOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ONDOUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 0.27215,
+        "price_source": "bookTicker",
+        "price_ts": 1795260796.418301,
+        "spread": 0.00036744442403082486,
+        "range_amp": 0.007448789571694606,
+        "bar_amps": [
+          0.006711409395973036,
+          0.005237560793116395,
+          0.005620082427875614,
+          0.005974607916355453
+        ],
+        "B": 0.005797345172115533,
+        "T": 0.011594690344231067,
+        "slope": 0.004865269461077932,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.2682,
+            "h": 0.2683,
+            "l": 0.2665,
+            "c": 0.2672,
+            "amp": 0.006711409395973036
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.2673,
+            "h": 0.2682,
+            "l": 0.2668,
+            "c": 0.2669,
+            "amp": 0.005237560793116395
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.2669,
+            "h": 0.268,
+            "l": 0.2665,
+            "c": 0.2678,
+            "amp": 0.005620082427875614
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 0.2678,
+            "h": 0.2685,
+            "l": 0.2669,
+            "c": 0.2685,
+            "amp": 0.005974607916355453
+          }
+        ],
+        "emitted_at": "2026-11-21T19:33:17.345333+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:08.833692+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:33:17.345333+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ONDOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "OPUSDT": {
+      "symbol": "OPUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "OPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "OPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "OPUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 0.06798499999999999,
+        "price_source": "bookTicker",
+        "price_ts": 1795258385.931285,
+        "spread": 0.0001470912701330606,
+        "range_amp": 0.008974547594526988,
+        "bar_amps": [
+          0.003222498901421003,
+          0.00645445210503148,
+          0.008536944362672905,
+          0.0070401877383396054
+        ],
+        "B": 0.006747319921685543,
+        "T": 0.013494639843371086,
+        "slope": -0.003080082135523641,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.06827,
+            "h": 0.06839,
+            "l": 0.06817,
+            "c": 0.06818,
+            "amp": 0.003222498901421003
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.06817,
+            "h": 0.0683,
+            "l": 0.06786,
+            "c": 0.06794,
+            "amp": 0.00645445210503148
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.06794,
+            "h": 0.06836,
+            "l": 0.06778,
+            "c": 0.06818,
+            "amp": 0.008536944362672905
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.06818,
+            "h": 0.06826,
+            "l": 0.06778,
+            "c": 0.06797,
+            "amp": 0.0070401877383396054
+          }
+        ],
+        "emitted_at": "2026-11-21T18:53:10.361313+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:09.047886+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:53:10.361313+08:00",
+          "event": "SIGNAL",
+          "signal_id": "OPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "PENGUUSDT": {
+      "symbol": "PENGUUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "PENGUUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "PENGUUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "PENGUUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 0.004184500000000001,
+        "price_source": "bookTicker",
+        "price_ts": 1795258641.3475914,
+        "spread": 0.00023897717767956328,
+        "range_amp": 0.009782868050584642,
+        "bar_amps": [
+          0.002849679411066221,
+          0.007134363852556601,
+          0.007872137404580162,
+          0.007137758743754377
+        ],
+        "B": 0.007136061298155489,
+        "T": 0.014272122596310978,
+        "slope": -0.0035663338088443627,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.004211,
+            "h": 0.004213,
+            "l": 0.004201,
+            "c": 0.004206,
+            "amp": 0.002849679411066221
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.004205,
+            "h": 0.00421,
+            "l": 0.00418,
+            "c": 0.004192,
+            "amp": 0.007134363852556601
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.004192,
+            "h": 0.004217,
+            "l": 0.004184,
+            "c": 0.004204,
+            "amp": 0.007872137404580162
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.004203,
+            "h": 0.004206,
+            "l": 0.004176,
+            "c": 0.004191,
+            "amp": 0.007137758743754377
+          }
+        ],
+        "emitted_at": "2026-11-21T18:57:25.886593+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:09.247884+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:57:25.886593+08:00",
+          "event": "SIGNAL",
+          "signal_id": "PENGUUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "PIEVERSEUSDT": {
+      "symbol": "PIEVERSEUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:09.450884+08:00",
+      "history": []
+    },
+    "PIPPINUSDT": {
+      "symbol": "PIPPINUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:09.655886+08:00",
+      "history": []
+    },
+    "PROMUSDT": {
+      "symbol": "PROMUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:15.098886+08:00",
+      "history": []
+    },
+    "PUMPUSDT": {
+      "symbol": "PUMPUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "PUMPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "PUMPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "PUMPUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257000000,
+        "bar_close_time": 1795257899999,
+        "P": 0.0023135,
+        "price_source": "bookTicker",
+        "price_ts": 1795258148.9765468,
+        "spread": 0.00043224551545283454,
+        "range_amp": 0.009978308026030376,
+        "bar_amps": [
+          0.005644811115935732,
+          0.006079027355623154,
+          0.009982638888888897,
+          0.007359307359307397
+        ],
+        "B": 0.006719167357465276,
+        "T": 0.013438334714930552,
+        "slope": 0.0004340277777778354,
+        "bars": [
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.002303,
+            "h": 0.002309,
+            "l": 0.002296,
+            "c": 0.002304,
+            "amp": 0.005644811115935732
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.002303,
+            "h": 0.002308,
+            "l": 0.002294,
+            "c": 0.002304,
+            "amp": 0.006079027355623154
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.002304,
+            "h": 0.002316,
+            "l": 0.002293,
+            "c": 0.002311,
+            "amp": 0.009982638888888897
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.00231,
+            "h": 0.002311,
+            "l": 0.002294,
+            "c": 0.002305,
+            "amp": 0.007359307359307397
+          }
+        ],
+        "emitted_at": "2026-11-21T18:49:11.656547+08:00",
+        "fill_allowed_after_ms": 1795257900000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:15.299885+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:49:11.656547+08:00",
+          "event": "SIGNAL",
+          "signal_id": "PUMPUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "QNTUSDT": {
+      "symbol": "QNTUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "QNTUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "QNTUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "QNTUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 132.20499999999998,
+        "price_source": "bookTicker",
+        "price_ts": 1795257559.1424642,
+        "spread": 7.564010438349024e-05,
+        "range_amp": 0.011307100859339666,
+        "bar_amps": [
+          0.008819538670284845,
+          0.005420054200541997,
+          0.005941189742047019,
+          0.007632434066349424
+        ],
+        "B": 0.006786811904198222,
+        "T": 0.013573623808396443,
+        "slope": -0.0012798313633969427,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 132.66,
+            "h": 132.94,
+            "l": 131.77,
+            "c": 132.83,
+            "amp": 0.008819538670284845
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 132.84,
+            "h": 133.27,
+            "l": 132.55,
+            "c": 132.97,
+            "amp": 0.005420054200541997
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 132.97,
+            "h": 132.97,
+            "l": 132.18,
+            "c": 132.34,
+            "amp": 0.005941189742047019
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 132.33,
+            "h": 133.02,
+            "l": 132.01,
+            "c": 132.66,
+            "amp": 0.007632434066349424
+          }
+        ],
+        "emitted_at": "2026-11-21T18:39:24.197437+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:15.497912+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:39:24.197437+08:00",
+          "event": "SIGNAL",
+          "signal_id": "QNTUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "RAREUSDT": {
+      "symbol": "RAREUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:15.720886+08:00",
+      "history": []
+    },
+    "SKYUSDT": {
+      "symbol": "SKYUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:16.236884+08:00",
+      "history": []
+    },
+    "SOLUSDT": {
+      "symbol": "SOLUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "SOLUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 4,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:02:16.421883+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:53:23.245276+08:00",
+          "event": "SIGNAL",
+          "signal_id": "SOLUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:43.993454+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL+VOL_SPIKE"
+        }
+      ]
+    },
+    "STRKUSDT": {
+      "symbol": "STRKUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "STRKUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "STRKUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "STRKUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795257900000,
+        "bar_close_time": 1795258799999,
+        "P": 0.028845000000000003,
+        "price_source": "bookTicker",
+        "price_ts": 1795258943.7504022,
+        "spread": 0.00034668053388800806,
+        "range_amp": 0.011091854419410773,
+        "bar_amps": [
+          0.005545927209705387,
+          0.007258900795022412,
+          0.007941988950276278,
+          0.005882352941176471
+        ],
+        "B": 0.006570626868099442,
+        "T": 0.013141253736198883,
+        "slope": -0.0027652955409609476,
+        "bars": [
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.02885,
+            "h": 0.02897,
+            "l": 0.02881,
+            "c": 0.02893,
+            "amp": 0.005545927209705387
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.02893,
+            "h": 0.02905,
+            "l": 0.02884,
+            "c": 0.02897,
+            "amp": 0.007258900795022412
+          },
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.02896,
+            "h": 0.02896,
+            "l": 0.02873,
+            "c": 0.0289,
+            "amp": 0.007941988950276278
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.0289,
+            "h": 0.02902,
+            "l": 0.02885,
+            "c": 0.02885,
+            "amp": 0.005882352941176471
+          }
+        ],
+        "emitted_at": "2026-11-21T19:02:28.257377+08:00",
+        "fill_allowed_after_ms": 1795258800000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:16.620910+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:02:28.257377+08:00",
+          "event": "SIGNAL",
+          "signal_id": "STRKUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "SUIUSDT": {
+      "symbol": "SUIUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "SUIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "SUIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "SUIUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 0.63465,
+        "price_source": "bookTicker",
+        "price_ts": 1795260803.7083018,
+        "spread": 0.00015756716300321277,
+        "range_amp": 0.009630818619582673,
+        "bar_amps": [
+          0.005785920925747246,
+          0.005795235028976252,
+          0.005312298776561445,
+          0.0062680810028929845
+        ],
+        "B": 0.005790577977361749,
+        "T": 0.011581155954723497,
+        "slope": 0.002897617514488126,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 0.6222,
+            "h": 0.6224,
+            "l": 0.6188,
+            "c": 0.6212,
+            "amp": 0.005785920925747246
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 0.6212,
+            "h": 0.6248,
+            "l": 0.6212,
+            "c": 0.6213,
+            "amp": 0.005795235028976252
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 0.6212,
+            "h": 0.6233,
+            "l": 0.62,
+            "c": 0.6223,
+            "amp": 0.005312298776561445
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 0.6222,
+            "h": 0.623,
+            "l": 0.6191,
+            "c": 0.623,
+            "amp": 0.0062680810028929845
+          }
+        ],
+        "emitted_at": "2026-11-21T19:33:26.305326+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:22.001883+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:33:26.305326+08:00",
+          "event": "SIGNAL",
+          "signal_id": "SUIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "TAOUSDT": {
+      "symbol": "TAOUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "TAOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "TAOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "TAOUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 178.755,
+        "price_source": "bookTicker",
+        "price_ts": 1795260609.5370536,
+        "spread": 5.5942491119078654e-05,
+        "range_amp": 0.010069930069930134,
+        "bar_amps": [
+          0.007544849941317802,
+          0.007908463738852413,
+          0.006138078612456376,
+          0.005275564036367705
+        ],
+        "B": 0.006841464276887089,
+        "T": 0.013682928553774178,
+        "slope": 0.0026363024455911986,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 178.93,
+            "h": 178.93,
+            "l": 177.58,
+            "c": 178.28,
+            "amp": 0.007544849941317802
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 178.29,
+            "h": 178.97,
+            "l": 177.56,
+            "c": 177.59,
+            "amp": 0.007908463738852413
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 177.58,
+            "h": 178.26,
+            "l": 177.17,
+            "c": 178.18,
+            "amp": 0.006138078612456376
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 178.18,
+            "h": 178.8,
+            "l": 177.86,
+            "c": 178.75,
+            "amp": 0.005275564036367705
+          }
+        ],
+        "emitted_at": "2026-11-21T19:30:10.647704+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:22.202882+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:30:10.647704+08:00",
+          "event": "SIGNAL",
+          "signal_id": "TAOUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "TIAUSDT": {
+      "symbol": "TIAUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "TIAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "TIAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "TIAUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.30774999999999997,
+        "price_source": "bookTicker",
+        "price_ts": 1795257607.8584394,
+        "spread": 0.0003249390739237839,
+        "range_amp": 0.017129928894634862,
+        "bar_amps": [
+          0.007051282051282164,
+          0.0073599999999999,
+          0.006763285024154559,
+          0.008749189889824953
+        ],
+        "B": 0.0072056410256410314,
+        "T": 0.014411282051282063,
+        "slope": -0.009919999999999974,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.312,
+            "h": 0.3128,
+            "l": 0.3106,
+            "c": 0.3125,
+            "amp": 0.007051282051282164
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.3125,
+            "h": 0.3127,
+            "l": 0.3104,
+            "c": 0.3106,
+            "amp": 0.0073599999999999
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.3105,
+            "h": 0.3105,
+            "l": 0.3084,
+            "c": 0.3087,
+            "amp": 0.006763285024154559
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.3086,
+            "h": 0.3102,
+            "l": 0.3075,
+            "c": 0.3094,
+            "amp": 0.008749189889824953
+          }
+        ],
+        "emitted_at": "2026-11-21T18:40:11.579438+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:22.401882+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:40:11.579438+08:00",
+          "event": "SIGNAL",
+          "signal_id": "TIAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "TRXUSDT": {
+      "symbol": "TRXUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "TRXUSDT:1795242599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "TRXUSDT:1795242599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "TRXUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795241700000,
+        "bar_close_time": 1795242599999,
+        "P": 0.299905,
+        "price_source": "bookTicker",
+        "price_ts": 1795242912.2892096,
+        "spread": 3.3343892232573654e-05,
+        "range_amp": 0.004941074349814647,
+        "bar_amps": [
+          0.0014708831985023598,
+          0.0023089278543703116,
+          0.002777777777777769,
+          0.003240678872110019
+        ],
+        "B": 0.0025433528160740404,
+        "T": 0.008,
+        "slope": 0.0022753889911327216,
+        "bars": [
+          {
+            "open_time": 1795239000000,
+            "close_time": 1795239899999,
+            "o": 0.29914,
+            "h": 0.29925,
+            "l": 0.29881,
+            "c": 0.29885,
+            "amp": 0.0014708831985023598
+          },
+          {
+            "open_time": 1795239900000,
+            "close_time": 1795240799999,
+            "o": 0.29884,
+            "h": 0.29935,
+            "l": 0.29866,
+            "c": 0.2988,
+            "amp": 0.0023089278543703116
+          },
+          {
+            "open_time": 1795240800000,
+            "close_time": 1795241699999,
+            "o": 0.2988,
+            "h": 0.29935,
+            "l": 0.29852,
+            "c": 0.29933,
+            "amp": 0.002777777777777769
+          },
+          {
+            "open_time": 1795241700000,
+            "close_time": 1795242599999,
+            "o": 0.29932,
+            "h": 0.3,
+            "l": 0.29903,
+            "c": 0.29953,
+            "amp": 0.003240678872110019
+          }
+        ],
+        "emitted_at": "2026-11-21T14:35:12.980208+08:00",
+        "fill_allowed_after_ms": 1795242600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:22.710915+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T14:35:12.980208+08:00",
+          "event": "SIGNAL",
+          "signal_id": "TRXUSDT:1795242599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "UNIUSDT": {
+      "symbol": "UNIUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "UNIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "UNIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "UNIUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 4.4465,
+        "price_source": "bookTicker",
+        "price_ts": 1795260609.5370536,
+        "spread": 0.00022489598560673202,
+        "range_amp": 0.013720197930724234,
+        "bar_amps": [
+          0.008865651284382948,
+          0.007024699750736391,
+          0.007249660172179436,
+          0.007212080234392614
+        ],
+        "B": 0.0072308702032860255,
+        "T": 0.014461740406572051,
+        "slope": 0.0074779061862677255,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 4.399,
+            "h": 4.424,
+            "l": 4.385,
+            "c": 4.413,
+            "amp": 0.008865651284382948
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 4.413,
+            "h": 4.439,
+            "l": 4.408,
+            "c": 4.414,
+            "amp": 0.007024699750736391
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 4.414,
+            "h": 4.442,
+            "l": 4.41,
+            "c": 4.438,
+            "amp": 0.007249660172179436
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 4.437,
+            "h": 4.446,
+            "l": 4.414,
+            "c": 4.446,
+            "amp": 0.007212080234392614
+          }
+        ],
+        "emitted_at": "2026-11-21T19:30:14.050006+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:22.909885+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:30:14.050006+08:00",
+          "event": "SIGNAL",
+          "signal_id": "UNIUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "USELESSUSDT": {
+      "symbol": "USELESSUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:23.126885+08:00",
+      "history": []
+    },
+    "VVVUSDT": {
+      "symbol": "VVVUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:23.323885+08:00",
+      "history": []
+    },
+    "WLDUSDT": {
+      "symbol": "WLDUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "WLDUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:02:23.621907+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:03:10.188474+08:00",
+          "event": "SIGNAL",
+          "signal_id": "WLDUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:21.753452+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL"
+        }
+      ]
+    },
+    "WLFIUSDT": {
+      "symbol": "WLFIUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "WLFIUSDT:1795251599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "WLFIUSDT:1795251599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "WLFIUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795250700000,
+        "bar_close_time": 1795251599999,
+        "P": 0.043605000000000005,
+        "price_source": "bookTicker",
+        "price_ts": 1795251676.9311666,
+        "spread": 0.00022933149868141408,
+        "range_amp": 0.007570543702684192,
+        "bar_amps": [
+          0.0020656414964425017,
+          0.0016062413951353973,
+          0.0034466911764705274,
+          0.004589261128958369
+        ],
+        "B": 0.0027561663364565146,
+        "T": 0.008,
+        "slope": 0.00022946305644782293,
+        "bars": [
+          {
+            "open_time": 1795248000000,
+            "close_time": 1795248899999,
+            "o": 0.04357,
+            "h": 0.0436,
+            "l": 0.04351,
+            "c": 0.04358,
+            "amp": 0.0020656414964425017
+          },
+          {
+            "open_time": 1795248900000,
+            "close_time": 1795249799999,
+            "o": 0.04358,
+            "h": 0.04358,
+            "l": 0.04351,
+            "c": 0.04353,
+            "amp": 0.0016062413951353973
+          },
+          {
+            "open_time": 1795249800000,
+            "close_time": 1795250699999,
+            "o": 0.04352,
+            "h": 0.04359,
+            "l": 0.04344,
+            "c": 0.04357,
+            "amp": 0.0034466911764705274
+          },
+          {
+            "open_time": 1795250700000,
+            "close_time": 1795251599999,
+            "o": 0.04358,
+            "h": 0.04377,
+            "l": 0.04357,
+            "c": 0.04359,
+            "amp": 0.004589261128958369
+          }
+        ],
+        "emitted_at": "2026-11-21T17:01:17.664192+08:00",
+        "fill_allowed_after_ms": 1795251600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:03:10.830799+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T17:01:17.664192+08:00",
+          "event": "SIGNAL",
+          "signal_id": "WLFIUSDT:1795251599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "XLMUSDT": {
+      "symbol": "XLMUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "XLMUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:03:11.088902+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:40:24.269439+08:00",
+          "event": "SIGNAL",
+          "signal_id": "XLMUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:43.792453+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL"
+        }
+      ]
+    },
+    "XMRUSDT": {
+      "symbol": "XMRUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:03:11.326901+08:00",
+      "history": []
+    },
+    "XPLUSDT": {
+      "symbol": "XPLUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "XPLUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "XPLUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "XPLUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795256100000,
+        "bar_close_time": 1795256999999,
+        "P": 0.045305,
+        "price_source": "bookTicker",
+        "price_ts": 1795257622.0194392,
+        "spread": 0.0002207261891624117,
+        "range_amp": 0.018921892189218914,
+        "bar_amps": [
+          0.009619588981197988,
+          0.009619588981198138,
+          0.006121556624398678,
+          0.007461048935703314
+        ],
+        "B": 0.00854031895845065,
+        "T": 0.0170806379169013,
+        "slope": -0.006557377049180364,
+        "bars": [
+          {
+            "open_time": 1795253400000,
+            "close_time": 1795254299999,
+            "o": 0.04574,
+            "h": 0.04575,
+            "l": 0.04531,
+            "c": 0.04575,
+            "amp": 0.009619588981197988
+          },
+          {
+            "open_time": 1795254300000,
+            "close_time": 1795255199999,
+            "o": 0.04574,
+            "h": 0.04617,
+            "l": 0.04573,
+            "c": 0.04573,
+            "amp": 0.009619588981198138
+          },
+          {
+            "open_time": 1795255200000,
+            "close_time": 1795256099999,
+            "o": 0.04574,
+            "h": 0.04581,
+            "l": 0.04553,
+            "c": 0.04557,
+            "amp": 0.006121556624398678
+          },
+          {
+            "open_time": 1795256100000,
+            "close_time": 1795256999999,
+            "o": 0.04557,
+            "h": 0.04568,
+            "l": 0.04534,
+            "c": 0.04545,
+            "amp": 0.007461048935703314
+          }
+        ],
+        "emitted_at": "2026-11-21T18:40:25.899438+08:00",
+        "fill_allowed_after_ms": 1795257000000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:08.711692+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:40:25.899438+08:00",
+          "event": "SIGNAL",
+          "signal_id": "XPLUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "XRPUSDT": {
+      "symbol": "XRPUSDT",
+      "phase": "IDLE",
+      "last_signal_id": "XRPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": null,
+      "rebuild_after_close_ms": 1795260600000,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": "RANGE_AMP_FAIL",
+      "updated_at": "2026-11-21T21:00:09.086690+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T18:40:26.754439+08:00",
+          "event": "SIGNAL",
+          "signal_id": "XRPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121"
+        },
+        {
+          "at": "2026-11-21T19:32:38.519451+08:00",
+          "event": "EXIT_CLEAR",
+          "reason": "SL"
+        }
+      ]
+    },
+    "YBUSDT": {
+      "symbol": "YBUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:09.343689+08:00",
+      "history": []
+    },
+    "ZECUSDT": {
+      "symbol": "ZECUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:09.567713+08:00",
+      "history": []
+    },
+    "ZROUSDT": {
+      "symbol": "ZROUSDT",
+      "phase": "ARMED_SIGNAL",
+      "last_signal_id": "ZROUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+      "last_signal": {
+        "signal_id": "ZROUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "symbol": "ZROUSDT",
+        "side": "SHORT",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "bar_open_time": 1795259700000,
+        "bar_close_time": 1795260599999,
+        "P": 1.1323500000000002,
+        "price_source": "bookTicker",
+        "price_ts": 1795260858.9935787,
+        "spread": 0.0002649357530798489,
+        "range_amp": 0.010587188612099662,
+        "bar_amps": [
+          0.008485173276170118,
+          0.008828250401284127,
+          0.007181328545780975,
+          0.008397355726282004
+        ],
+        "B": 0.008441264501226061,
+        "T": 0.016882529002452122,
+        "slope": 0.002407919379292024,
+        "bars": [
+          {
+            "open_time": 1795257000000,
+            "close_time": 1795257899999,
+            "o": 1.1196,
+            "h": 1.1227,
+            "l": 1.1132,
+            "c": 1.1213,
+            "amp": 0.008485173276170118
+          },
+          {
+            "open_time": 1795257900000,
+            "close_time": 1795258799999,
+            "o": 1.1214,
+            "h": 1.1236,
+            "l": 1.1137,
+            "c": 1.114,
+            "amp": 0.008828250401284127
+          },
+          {
+            "open_time": 1795258800000,
+            "close_time": 1795259699999,
+            "o": 1.114,
+            "h": 1.1214,
+            "l": 1.1134,
+            "c": 1.1196,
+            "amp": 0.007181328545780975
+          },
+          {
+            "open_time": 1795259700000,
+            "close_time": 1795260599999,
+            "o": 1.1194,
+            "h": 1.1251,
+            "l": 1.1157,
+            "c": 1.124,
+            "amp": 0.008397355726282004
+          }
+        ],
+        "emitted_at": "2026-11-21T19:34:21.005615+08:00",
+        "fill_allowed_after_ms": 1795260600000
+      },
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:09.787771+08:00",
+      "history": [
+        {
+          "at": "2026-11-21T19:34:21.005615+08:00",
+          "event": "SIGNAL",
+          "signal_id": "ZROUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121"
+        }
+      ]
+    },
+    "DOSUSDT": {
+      "symbol": "DOSUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T20:43:17.221818+08:00",
+      "history": []
+    },
+    "BRUSDT": {
+      "symbol": "BRUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:00:23.908770+08:00",
+      "history": []
+    },
+    "DODOXUSDT": {
+      "symbol": "DODOXUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T20:58:08.614780+08:00",
+      "history": []
+    },
+    "HOTUSDT": {
+      "symbol": "HOTUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:01:18.820204+08:00",
+      "history": []
+    },
+    "SKYAIUSDT": {
+      "symbol": "SKYAIUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T20:59:18.075160+08:00",
+      "history": []
+    },
+    "RENDERUSDT": {
+      "symbol": "RENDERUSDT",
+      "phase": "IDLE",
+      "last_signal_id": null,
+      "last_signal": null,
+      "rebuild_after_close_ms": null,
+      "rebuild_need_bars": 1,
+      "cooldown_reason": null,
+      "updated_at": "2026-11-21T21:02:15.928886+08:00",
+      "history": []
+    }
+  },
+  "updated_at": "2026-11-21T21:03:11.490903+08:00"
+}

@@ -1,0 +1,1977 @@
+{
+  "tpsl_rows": [
+    {
+      "trade_id": "2026-11-21T1433_040b980f:ADAUSDT:ed9a628238",
+      "symbol": "ADAUSDT",
+      "entry_ts": "2026-11-21T18:49:11.499547+08:00",
+      "entry_px": 0.1397,
+      "qty": 2147.0,
+      "notional": 299.9359,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.13271350721937586,
+      "sl_px": 0.14109729855612482,
+      "tp_pct": 5.001068561649343,
+      "sl_pct": 1.0002137123298724,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 0.1411,
+      "exit_ts": "2026-11-21T19:32:38.325485+08:00",
+      "entry_fee": 0.14996795000000002
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+      "symbol": "LINKUSDT",
+      "entry_ts": "2026-11-21T18:50:26.085863+08:00",
+      "entry_px": 8.393,
+      "qty": 35.74,
+      "notional": 299.96582000000006,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 7.973302182428652,
+      "sl_px": 8.47693956351427,
+      "tp_pct": 5.000569731578084,
+      "sl_pct": 1.0001139463156081,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 8.501,
+      "exit_ts": "2026-11-21T19:32:38.421485+08:00",
+      "entry_fee": 0.14998291000000002
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+      "symbol": "AVAXUSDT",
+      "entry_ts": "2026-11-21T19:10:47.213221+08:00",
+      "entry_px": 6.4,
+      "qty": 46.0,
+      "notional": 294.40000000000003,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 6.073913043478261,
+      "sl_px": 6.465217391304348,
+      "tp_pct": 5.095108695652176,
+      "sl_pct": 1.0190217391304324,
+      "exit_reason": "VOL_SPIKE",
+      "exit_px": 6.450152173913043,
+      "exit_ts": "2026-11-21T19:32:32.935450+08:00",
+      "entry_fee": 0.14720000000000003
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:DOGEUSDT:9667e15363",
+      "symbol": "DOGEUSDT",
+      "entry_ts": "2026-11-21T19:10:58.652901+08:00",
+      "entry_px": 0.0532,
+      "qty": 5639.0,
+      "notional": 299.9948,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.050539953892534135,
+      "sl_px": 0.05373200922149317,
+      "tp_pct": 5.000086668168914,
+      "sl_pct": 1.00001733363378,
+      "exit_reason": "SL",
+      "exit_px": 0.05375,
+      "exit_ts": "2026-11-21T19:32:33.035453+08:00",
+      "entry_fee": 0.1499974
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:WLDUSDT:5aea42e042",
+      "symbol": "WLDUSDT",
+      "entry_ts": "2026-11-21T19:10:58.653901+08:00",
+      "entry_px": 0.2207,
+      "qty": 1359.0,
+      "notional": 299.9313,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.20966247240618102,
+      "sl_px": 0.22290750551876382,
+      "tp_pct": 5.001145262265059,
+      "sl_pct": 1.0002290524530169,
+      "exit_reason": "SL",
+      "exit_px": 0.223,
+      "exit_ts": "2026-11-21T19:32:21.706452+08:00",
+      "entry_fee": 0.14996565
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+      "symbol": "BNBUSDT",
+      "entry_ts": "2026-11-21T19:30:23.646030+08:00",
+      "entry_px": 526.59,
+      "qty": 0.56,
+      "notional": 294.89040000000006,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 499.80428571428575,
+      "sl_px": 531.9471428571429,
+      "tp_pct": 5.086635577150017,
+      "sl_pct": 1.01732711543001,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 532.27,
+      "exit_ts": "2026-11-21T19:32:43.695452+08:00",
+      "entry_fee": 0.14744520000000003
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+      "symbol": "XLMUSDT",
+      "entry_ts": "2026-11-21T19:31:37.623453+08:00",
+      "entry_px": 0.12504,
+      "qty": 2399.0,
+      "notional": 299.97096000000005,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.1187873947478116,
+      "sl_px": 0.1262905210504377,
+      "tp_pct": 5.00048404685574,
+      "sl_pct": 1.0000968093711502,
+      "exit_reason": "SL",
+      "exit_px": 0.12640030012505213,
+      "exit_ts": "2026-11-21T19:32:43.788452+08:00",
+      "entry_fee": 0.14998548000000003
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+      "symbol": "XRPUSDT",
+      "entry_ts": "2026-11-21T19:31:43.328419+08:00",
+      "entry_px": 0.8996,
+      "qty": 333.4,
+      "notional": 299.92663999999996,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.8546089982003598,
+      "sl_px": 0.908598200359928,
+      "tp_pct": 5.0012229657225555,
+      "sl_pct": 1.0002445931445134,
+      "exit_reason": "SL",
+      "exit_px": 0.9085,
+      "exit_ts": "2026-11-21T19:32:38.513451+08:00",
+      "entry_fee": 0.14996331999999998
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+      "symbol": "1000SHIBUSDT",
+      "entry_ts": "2026-11-21T19:31:43.331419+08:00",
+      "entry_px": 0.003528,
+      "qty": 85034.0,
+      "notional": 299.999952,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.0033515999717759954,
+      "sl_px": 0.003563280005644801,
+      "tp_pct": 5.000000800000127,
+      "sl_pct": 1.000000160000028,
+      "exit_reason": "VOL_SPIKE",
+      "exit_px": 0.003558,
+      "exit_ts": "2026-11-21T19:32:43.884451+08:00",
+      "entry_fee": 0.149999976
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:SOLUSDT:b3a67523aa",
+      "symbol": "SOLUSDT",
+      "entry_ts": "2026-11-21T19:31:48.866418+08:00",
+      "entry_px": 68.52,
+      "qty": 4.37,
+      "notional": 299.4324,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 65.0875057208238,
+      "sl_px": 69.20649885583524,
+      "tp_pct": 5.0094779322478065,
+      "sl_pct": 1.0018955864495613,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 69.24,
+      "exit_ts": "2026-11-21T19:32:43.989452+08:00",
+      "entry_fee": 0.1497162
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+      "symbol": "HYPEUSDT",
+      "entry_ts": "2026-11-21T20:15:34.261048+08:00",
+      "entry_px": 59.446,
+      "qty": 5.04,
+      "notional": 299.60784,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 56.46980952380952,
+      "sl_px": 60.04123809523809,
+      "tp_pct": 5.006544555042349,
+      "sl_pct": 1.0013089110084699,
+      "exit_reason": "OPEN",
+      "exit_px": null,
+      "exit_ts": null,
+      "entry_fee": 0.14980392
+    }
+  ],
+  "sig_amp_summary": {
+    "n": 21,
+    "n_gt_0075": 16,
+    "n_gt_01": 0,
+    "max_bar": 0.009515178975985458,
+    "max_range": 0.013720197930724234
+  },
+  "path_rows": [
+    {
+      "trade_id": "2026-11-21T1433_040b980f:ADAUSDT:ed9a628238",
+      "symbol": "ADAUSDT",
+      "entry_ts": "2026-11-21T18:49:11.499547+08:00",
+      "entry_px": 0.1397,
+      "qty": 2147.0,
+      "notional": 299.9359,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.13271350721937586,
+      "sl_px": 0.14109729855612482,
+      "tp_pct": 5.001068561649343,
+      "sl_pct": 1.0002137123298724,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 0.1411,
+      "exit_ts": "2026-11-21T19:32:38.325485+08:00",
+      "entry_fee": 0.14996795000000002,
+      "hold_sec": 2606.825938,
+      "path_overlap": {
+        "n": 44,
+        "mfe_pct": 0.5010737294201707,
+        "mae_pct": 1.4316392269148188,
+        "mfe_u": 1.5028999999999537,
+        "mae_u": -4.294000000000004,
+        "mfe_ts": "2026-11-21T19:00:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 42,
+        "mfe_pct": 0.5010737294201707,
+        "mae_pct": 0.4294917680744576,
+        "mfe_u": 1.5028999999999537,
+        "mae_u": -1.2882000000000369,
+        "mfe_ts": "2026-11-21T19:00:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": 0.0,
+          "mfe_pct": 0.071581961345733,
+          "mae_pct": 0.14316392269148587,
+          "mfe_u": 0.21469999999997635,
+          "mae_u": -0.4294000000000123,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": 0.3579098067287047,
+          "mfe_pct": 0.5010737294201707,
+          "mae_pct": 0.14316392269148587,
+          "mfe_u": 1.5028999999999537,
+          "mae_u": -0.4294000000000123,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": 0.42949176807443773,
+          "mfe_pct": 0.5010737294201707,
+          "mae_pct": 0.14316392269148587,
+          "mfe_u": 1.5028999999999537,
+          "mae_u": -0.4294000000000123,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.3579098067287047,
+          "mfe_pct": 0.5010737294201707,
+          "mae_pct": 1.5032211882605717,
+          "mfe_u": 1.5028999999999537,
+          "mae_u": -4.50870000000004,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+      "symbol": "LINKUSDT",
+      "entry_ts": "2026-11-21T18:50:26.085863+08:00",
+      "entry_px": 8.393,
+      "qty": 35.74,
+      "notional": 299.96582000000006,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 7.973302182428652,
+      "sl_px": 8.47693956351427,
+      "tp_pct": 5.000569731578084,
+      "sl_pct": 1.0001139463156081,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 8.501,
+      "exit_ts": "2026-11-21T19:32:38.421485+08:00",
+      "entry_fee": 0.14998291000000002,
+      "hold_sec": 2532.335622,
+      "path_overlap": {
+        "n": 43,
+        "mfe_pct": 0.3216966519718935,
+        "mae_pct": 1.6918860955558137,
+        "mfe_u": 0.9649800000000366,
+        "mae_u": -5.075079999999981,
+        "mfe_ts": "2026-11-21T19:01:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 41,
+        "mfe_pct": 0.3216966519718935,
+        "mae_pct": 0.6076492315024443,
+        "mfe_u": 0.9649800000000366,
+        "mae_u": -1.8227400000000056,
+        "mfe_ts": "2026-11-21T19:01:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.05957345406885506,
+          "mfe_pct": 0.04765876325510944,
+          "mae_pct": 0.17872036220658633,
+          "mfe_u": 0.14296000000004774,
+          "mae_u": -0.5360999999999568,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": 0.11914690813775244,
+          "mfe_pct": 0.3216966519718935,
+          "mae_pct": 0.17872036220658633,
+          "mfe_u": 0.9649800000000366,
+          "mae_u": -0.5360999999999568,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": 0.02382938162755472,
+          "mfe_pct": 0.3216966519718935,
+          "mae_pct": 0.27403788871678403,
+          "mfe_u": 0.9649800000000366,
+          "mae_u": -0.8220199999999889,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.6791373763850661,
+          "mfe_pct": 0.3216966519718935,
+          "mae_pct": 1.727630167997135,
+          "mfe_u": 0.9649800000000366,
+          "mae_u": -5.1822999999999855,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+      "symbol": "AVAXUSDT",
+      "entry_ts": "2026-11-21T19:10:47.213221+08:00",
+      "entry_px": 6.4,
+      "qty": 46.0,
+      "notional": 294.40000000000003,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 6.073913043478261,
+      "sl_px": 6.465217391304348,
+      "tp_pct": 5.095108695652176,
+      "sl_pct": 1.0190217391304324,
+      "exit_reason": "VOL_SPIKE",
+      "exit_px": 6.450152173913043,
+      "exit_ts": "2026-11-21T19:32:32.935450+08:00",
+      "entry_fee": 0.14720000000000003,
+      "hold_sec": 1305.722229,
+      "path_overlap": {
+        "n": 23,
+        "mfe_pct": 0.4687500000000039,
+        "mae_pct": 1.5937499999999911,
+        "mfe_u": 1.3800000000000114,
+        "mae_u": -4.6919999999999735,
+        "mfe_ts": "2026-11-21T19:23:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 21,
+        "mfe_pct": 0.4687500000000039,
+        "mae_pct": 0.4062499999999969,
+        "mfe_u": 1.3800000000000114,
+        "mae_u": -1.1959999999999908,
+        "mfe_ts": "2026-11-21T19:23:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": 0.3125000000000072,
+          "mfe_pct": 0.3125000000000072,
+          "mae_pct": 0.07812499999999833,
+          "mfe_u": 0.9200000000000212,
+          "mae_u": -0.2299999999999951,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": 0.32812500000001243,
+          "mfe_pct": 0.4687500000000039,
+          "mae_pct": 0.07812499999999833,
+          "mfe_u": 1.3800000000000114,
+          "mae_u": -0.2299999999999951,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.7500000000000007,
+          "mfe_pct": 0.4687500000000039,
+          "mae_pct": 1.656249999999998,
+          "mfe_u": 1.3800000000000114,
+          "mae_u": -4.875999999999994,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.6562499999999971,
+          "mfe_pct": 0.4687500000000039,
+          "mae_pct": 1.656249999999998,
+          "mfe_u": 1.3800000000000114,
+          "mae_u": -4.875999999999994,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {},
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:DOGEUSDT:9667e15363",
+      "symbol": "DOGEUSDT",
+      "entry_ts": "2026-11-21T19:10:58.652901+08:00",
+      "entry_px": 0.0532,
+      "qty": 5639.0,
+      "notional": 299.9948,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.050539953892534135,
+      "sl_px": 0.05373200922149317,
+      "tp_pct": 5.000086668168914,
+      "sl_pct": 1.00001733363378,
+      "exit_reason": "SL",
+      "exit_px": 0.05375,
+      "exit_ts": "2026-11-21T19:32:33.035453+08:00",
+      "entry_fee": 0.1499974,
+      "hold_sec": 1294.382552,
+      "path_overlap": {
+        "n": 23,
+        "mfe_pct": 0.2067669172932312,
+        "mae_pct": 1.8233082706767025,
+        "mfe_u": 0.6202899999999942,
+        "mae_u": -5.469830000000031,
+        "mfe_ts": "2026-11-21T19:18:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 21,
+        "mfe_pct": 0.2067669172932312,
+        "mae_pct": 0.7518796992481288,
+        "mfe_u": 0.6202899999999942,
+        "mae_u": -2.2556000000000256,
+        "mfe_ts": "2026-11-21T19:18:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": 0.056390977443600214,
+          "mfe_pct": 0.07518796992480897,
+          "mae_pct": 0.075187969924822,
+          "mfe_u": 0.22555999999999082,
+          "mae_u": -0.22556000000002993,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.05639097744361325,
+          "mfe_pct": 0.2067669172932312,
+          "mae_pct": 0.075187969924822,
+          "mfe_u": 0.6202899999999942,
+          "mae_u": -0.22556000000002993,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.883458646616551,
+          "mfe_pct": 0.2067669172932312,
+          "mae_pct": 1.842105263157898,
+          "mfe_u": 0.6202899999999942,
+          "mae_u": -5.526220000000009,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.9022556390977469,
+          "mfe_pct": 0.2067669172932312,
+          "mae_pct": 1.842105263157898,
+          "mfe_u": 0.6202899999999942,
+          "mae_u": -5.526220000000009,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:WLDUSDT:5aea42e042",
+      "symbol": "WLDUSDT",
+      "entry_ts": "2026-11-21T19:10:58.653901+08:00",
+      "entry_px": 0.2207,
+      "qty": 1359.0,
+      "notional": 299.9313,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.20966247240618102,
+      "sl_px": 0.22290750551876382,
+      "tp_pct": 5.001145262265059,
+      "sl_pct": 1.0002290524530169,
+      "exit_reason": "SL",
+      "exit_px": 0.223,
+      "exit_ts": "2026-11-21T19:32:21.706452+08:00",
+      "entry_fee": 0.14996565,
+      "hold_sec": 1283.052551,
+      "path_overlap": {
+        "n": 23,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 2.129587675577699,
+        "mfe_u": 0.6795000000000007,
+        "mae_u": -6.387299999999976,
+        "mfe_ts": "2026-11-21T19:12:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 21,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 0.8155867693701839,
+        "mfe_u": 0.6795000000000007,
+        "mae_u": -2.446199999999995,
+        "mfe_ts": "2026-11-21T19:12:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": 0.22655188038060736,
+          "mfe_pct": 0.22655188038060736,
+          "mae_pct": 0.04531037607611644,
+          "mfe_u": 0.6795000000000007,
+          "mae_u": -0.13589999999998503,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.09062075215224547,
+          "mfe_pct": 0.22655188038060736,
+          "mae_pct": 0.18124150430447833,
+          "mfe_u": 0.6795000000000007,
+          "mae_u": -0.5435999999999779,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.8608971454463004,
+          "mfe_pct": 0.22655188038060736,
+          "mae_pct": 2.129587675577699,
+          "mfe_u": 0.6795000000000007,
+          "mae_u": -6.387299999999976,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.3171726325328528,
+          "mfe_pct": 0.22655188038060736,
+          "mae_pct": 2.129587675577699,
+          "mfe_u": 0.6795000000000007,
+          "mae_u": -6.387299999999976,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+      "symbol": "BNBUSDT",
+      "entry_ts": "2026-11-21T19:30:23.646030+08:00",
+      "entry_px": 526.59,
+      "qty": 0.56,
+      "notional": 294.89040000000006,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 499.80428571428575,
+      "sl_px": 531.9471428571429,
+      "tp_pct": 5.086635577150017,
+      "sl_pct": 1.01732711543001,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 532.27,
+      "exit_ts": "2026-11-21T19:32:43.695452+08:00",
+      "entry_fee": 0.14744520000000003,
+      "hold_sec": 140.049422,
+      "path_overlap": {
+        "n": 3,
+        "mfe_pct": 0.09684954138893463,
+        "mae_pct": 1.245750963747877,
+        "mfe_u": 0.2855999999999949,
+        "mae_u": -3.67359999999997,
+        "mfe_ts": "2026-11-21T19:30:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 1,
+        "mfe_pct": 0.026586148616568175,
+        "mae_pct": 0.3817011337093357,
+        "mfe_u": 0.07839999999999236,
+        "mae_u": -1.125599999999995,
+        "mfe_ts": "2026-11-21T19:31:00+08:00",
+        "mae_ts": "2026-11-21T19:31:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.6361685561822333,
+          "mfe_pct": 0.09684954138893463,
+          "mae_pct": 1.2875291972882075,
+          "mfe_u": 0.2855999999999949,
+          "mae_u": -3.796799999999985,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.6133804287966004,
+          "mfe_pct": 0.09684954138893463,
+          "mae_pct": 1.2875291972882075,
+          "mfe_u": 0.2855999999999949,
+          "mae_u": -3.796799999999985,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.7880894054197719,
+          "mfe_pct": 0.09684954138893463,
+          "mae_pct": 1.2875291972882075,
+          "mfe_u": 0.2855999999999949,
+          "mae_u": -3.796799999999985,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -1.1659925178981723,
+          "mfe_pct": 0.09684954138893463,
+          "mae_pct": 1.323610398982114,
+          "mfe_u": 0.2855999999999949,
+          "mae_u": -3.903199999999952,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+      "symbol": "XLMUSDT",
+      "entry_ts": "2026-11-21T19:31:37.623453+08:00",
+      "entry_px": 0.12504,
+      "qty": 2399.0,
+      "notional": 299.97096000000005,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.1187873947478116,
+      "sl_px": 0.1262905210504377,
+      "tp_pct": 5.00048404685574,
+      "sl_pct": 1.0000968093711502,
+      "exit_reason": "SL",
+      "exit_px": 0.12640030012505213,
+      "exit_ts": "2026-11-21T19:32:43.788452+08:00",
+      "entry_fee": 0.14998548000000003,
+      "hold_sec": 66.164999,
+      "path_overlap": {
+        "n": 2,
+        "mfe_pct": 0.11196417146514324,
+        "mae_pct": 1.311580294305802,
+        "mfe_u": 0.33586000000003624,
+        "mae_u": -3.9343599999999395,
+        "mfe_ts": "2026-11-21T19:31:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 0,
+        "note": "N/A_short_hold_no_full_bar"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.44785668586050636,
+          "mfe_pct": 0.11196417146514324,
+          "mae_pct": 1.311580294305802,
+          "mfe_u": 0.33586000000003624,
+          "mae_u": -3.9343599999999395,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.023992322456793416,
+          "mfe_pct": 0.11196417146514324,
+          "mae_pct": 1.311580294305802,
+          "mfe_u": 0.33586000000003624,
+          "mae_u": -3.9343599999999395,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.46385156749839823,
+          "mfe_pct": 0.11196417146514324,
+          "mae_pct": 1.311580294305802,
+          "mfe_u": 0.33586000000003624,
+          "mae_u": -3.9343599999999395,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.7357645553422715,
+          "mfe_pct": 0.11196417146514324,
+          "mae_pct": 1.311580294305802,
+          "mfe_u": 0.33586000000003624,
+          "mae_u": -3.9343599999999395,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": true,
+          "sec": 676.211548,
+          "mae_pct_before": 1.311580294305802,
+          "order": "HIT_OBSERVED_ON_1M",
+          "note": "1m OHLC; intra-bar order unknown"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+      "symbol": "XRPUSDT",
+      "entry_ts": "2026-11-21T19:31:43.328419+08:00",
+      "entry_px": 0.8996,
+      "qty": 333.4,
+      "notional": 299.92663999999996,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.8546089982003598,
+      "sl_px": 0.908598200359928,
+      "tp_pct": 5.0012229657225555,
+      "sl_pct": 1.0002445931445134,
+      "exit_reason": "SL",
+      "exit_px": 0.9085,
+      "exit_ts": "2026-11-21T19:32:38.513451+08:00",
+      "entry_fee": 0.14996331999999998,
+      "hold_sec": 55.185032,
+      "path_overlap": {
+        "n": 2,
+        "mfe_pct": 0.12227656736327144,
+        "mae_pct": 1.367274344152967,
+        "mfe_u": 0.3667399999999966,
+        "mae_u": -4.100820000000029,
+        "mfe_ts": "2026-11-21T19:31:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 0,
+        "note": "N/A_short_hold_no_full_bar"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.5224544241885325,
+          "mfe_pct": 0.12227656736327144,
+          "mae_pct": 1.4228546020453572,
+          "mfe_u": 0.3667399999999966,
+          "mae_u": -4.267520000000011,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.34459759893285813,
+          "mfe_pct": 0.12227656736327144,
+          "mae_pct": 1.4228546020453572,
+          "mfe_u": 0.3667399999999966,
+          "mae_u": -4.267520000000011,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.22232103156958669,
+          "mfe_pct": 0.12227656736327144,
+          "mae_pct": 1.4228546020453572,
+          "mfe_u": 0.3667399999999966,
+          "mae_u": -4.267520000000011,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.4557581147176515,
+          "mfe_pct": 0.12227656736327144,
+          "mae_pct": 1.4228546020453572,
+          "mfe_u": 0.3667399999999966,
+          "mae_u": -4.267520000000011,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+      "symbol": "1000SHIBUSDT",
+      "entry_ts": "2026-11-21T19:31:43.331419+08:00",
+      "entry_px": 0.003528,
+      "qty": 85034.0,
+      "notional": 299.999952,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 0.0033515999717759954,
+      "sl_px": 0.003563280005644801,
+      "tp_pct": 5.000000800000127,
+      "sl_pct": 1.000000160000028,
+      "exit_reason": "VOL_SPIKE",
+      "exit_px": 0.003558,
+      "exit_ts": "2026-11-21T19:32:43.884451+08:00",
+      "entry_fee": 0.149999976,
+      "hold_sec": 60.553032,
+      "path_overlap": {
+        "n": 2,
+        "mfe_pct": 0.17006802721088235,
+        "mae_pct": 0.9920634920635009,
+        "mfe_u": 0.510203999999994,
+        "mae_u": -2.976190000000026,
+        "mfe_ts": "2026-11-21T19:31:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 0,
+        "note": "N/A_short_hold_no_full_bar"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.11337868480725899,
+          "mfe_pct": 0.17006802721088235,
+          "mae_pct": 0.9920634920635009,
+          "mfe_u": 0.510203999999994,
+          "mae_u": -2.976190000000026,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.3117913832199592,
+          "mfe_pct": 0.17006802721088235,
+          "mae_pct": 0.9920634920635009,
+          "mfe_u": 0.510203999999994,
+          "mae_u": -2.976190000000026,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.14172335600907682,
+          "mfe_pct": 0.17006802721088235,
+          "mae_pct": 0.9920634920635009,
+          "mfe_u": 0.510203999999994,
+          "mae_u": -2.976190000000026,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.6802721088435416,
+          "mfe_pct": 0.17006802721088235,
+          "mae_pct": 0.9920634920635009,
+          "mfe_u": 0.510203999999994,
+          "mae_u": -2.976190000000026,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {},
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:SOLUSDT:b3a67523aa",
+      "symbol": "SOLUSDT",
+      "entry_ts": "2026-11-21T19:31:48.866418+08:00",
+      "entry_px": 68.52,
+      "qty": 4.37,
+      "notional": 299.4324,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 65.0875057208238,
+      "sl_px": 69.20649885583524,
+      "tp_pct": 5.0094779322478065,
+      "sl_pct": 1.0018955864495613,
+      "exit_reason": "SL+VOL_SPIKE",
+      "exit_px": 69.24,
+      "exit_ts": "2026-11-21T19:32:43.989452+08:00",
+      "entry_fee": 0.1497162,
+      "hold_sec": 55.123034,
+      "path_overlap": {
+        "n": 2,
+        "mfe_pct": 0.2918855808523101,
+        "mae_pct": 1.2405137186223125,
+        "mfe_u": 0.8740000000000124,
+        "mae_u": -3.7145000000000374,
+        "mfe_ts": "2026-11-21T19:31:00+08:00",
+        "mae_ts": "2026-11-21T19:32:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 0,
+        "note": "N/A_short_hold_no_full_bar"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.37945125510800515,
+          "mfe_pct": 0.2918855808523101,
+          "mae_pct": 1.2697022767075374,
+          "mfe_u": 0.8740000000000124,
+          "mae_u": -3.80190000000002,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.4232340922358527,
+          "mfe_pct": 0.2918855808523101,
+          "mae_pct": 1.2697022767075374,
+          "mfe_u": 0.8740000000000124,
+          "mae_u": -3.80190000000002,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.2772913018096873,
+          "mfe_pct": 0.2918855808523101,
+          "mae_pct": 1.2697022767075374,
+          "mfe_u": 0.8740000000000124,
+          "mae_u": -3.80190000000002,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "OK",
+          "minutes": 60,
+          "end_ret_pct": -0.8172796263864598,
+          "mfe_pct": 0.2918855808523101,
+          "mae_pct": 1.2697022767075374,
+          "mfe_u": 0.8740000000000124,
+          "mae_u": -3.80190000000002,
+          "n_bars": 61,
+          "coverage": "overlap_bars"
+        }
+      },
+      "post_sl": {
+        "back_to_entry": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "breakeven_cost": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_0.5pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        },
+        "fav_1.0pct": {
+          "hit": false,
+          "sec": null,
+          "mae_pct_before": "N/A",
+          "order": "N/A"
+        }
+      },
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+      "symbol": "HYPEUSDT",
+      "entry_ts": "2026-11-21T20:15:34.261048+08:00",
+      "entry_px": 59.446,
+      "qty": 5.04,
+      "notional": 299.60784,
+      "tp_usdt": 15.0,
+      "sl_usdt": 3.0,
+      "tp_px": 56.46980952380952,
+      "sl_px": 60.04123809523809,
+      "tp_pct": 5.006544555042349,
+      "sl_pct": 1.0013089110084699,
+      "exit_reason": "OPEN",
+      "exit_px": null,
+      "exit_ts": null,
+      "entry_fee": 0.14980392,
+      "hold_sec": 2857.421853,
+      "path_overlap": {
+        "n": 49,
+        "mfe_pct": 0.10597853514112857,
+        "mae_pct": 0.9639000100931945,
+        "mfe_u": 0.3175199999999762,
+        "mae_u": -2.887920000000002,
+        "mfe_ts": "2026-11-21T20:16:00+08:00",
+        "mae_ts": "2026-11-21T20:35:00+08:00"
+      },
+      "path_strict_inside": {
+        "n": 47,
+        "mfe_pct": 0.10597853514112857,
+        "mae_pct": 0.9639000100931945,
+        "mfe_u": 0.3175199999999762,
+        "mae_u": -2.887920000000002,
+        "mfe_ts": "2026-11-21T20:16:00+08:00",
+        "mae_ts": "2026-11-21T20:35:00+08:00"
+      },
+      "boundary_error": true,
+      "fixed_windows": {
+        "5": {
+          "status": "OK",
+          "minutes": 5,
+          "end_ret_pct": -0.4760623086498692,
+          "mfe_pct": 0.10597853514112857,
+          "mae_pct": 0.8461460821585979,
+          "mfe_u": 0.3175199999999762,
+          "mae_u": -2.5351200000000005,
+          "n_bars": 6,
+          "coverage": "overlap_bars"
+        },
+        "15": {
+          "status": "OK",
+          "minutes": 15,
+          "end_ret_pct": -0.05046596911482882,
+          "mfe_pct": 0.10597853514112857,
+          "mae_pct": 0.8461460821585979,
+          "mfe_u": 0.3175199999999762,
+          "mae_u": -2.5351200000000005,
+          "n_bars": 16,
+          "coverage": "overlap_bars"
+        },
+        "30": {
+          "status": "OK",
+          "minutes": 30,
+          "end_ret_pct": -0.7250277562830207,
+          "mfe_pct": 0.10597853514112857,
+          "mae_pct": 0.9639000100931945,
+          "mfe_u": 0.3175199999999762,
+          "mae_u": -2.887920000000002,
+          "n_bars": 31,
+          "coverage": "overlap_bars"
+        },
+        "60": {
+          "status": "CENSORED",
+          "minutes": 60
+        }
+      },
+      "post_sl": {},
+      "kline_vault": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "last_ohlc_1m_from_paper_C_sibling"
+    }
+  ],
+  "cf_table": [
+    {
+      "trade_id": "2026-11-21T1433_040b980f:ADAUSDT:ed9a628238",
+      "symbol": "ADAUSDT",
+      "actual_reason": "SL+VOL_SPIKE",
+      "actual_cycle_net": -3.3072388000000266,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.14109729855612482,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.000000000000014,
+        "exit_fee": 0.15146795000000002,
+        "entry_fee": 0.14996795000000002,
+        "cycle_net": -3.301435900000014,
+        "close_net": -3.151467950000014
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.1420288309268747,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.000000000000023,
+        "exit_fee": 0.15246795000000002,
+        "entry_fee": 0.14996795000000002,
+        "cycle_net": -5.302435900000023,
+        "close_net": -5.152467950000023
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.14109729855612482,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.000000000000014,
+        "exit_fee": 0.15146795000000002,
+        "entry_fee": 0.14996795000000002,
+        "cycle_net": -3.301435900000014,
+        "close_net": -3.151467950000014
+      },
+      "A_net": -3.301435900000014,
+      "B_net": -5.302435900000023,
+      "C_net": -3.301435900000014,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL+VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 0.1411,
+        "model_exit_px": 0.14109729855612482,
+        "px_err": -2.7014438751804537e-06,
+        "actual_cycle_net": -3.3072388000000266,
+        "model_cycle_net": -3.301435900000014,
+        "net_err": 0.005802900000012379,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+      "symbol": "LINKUSDT",
+      "actual_reason": "SL+VOL_SPIKE",
+      "actual_cycle_net": -4.161815779999956,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 8.47693956351427,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.9999999999999747,
+        "exit_fee": 0.15148291,
+        "entry_fee": 0.14998291000000002,
+        "cycle_net": -3.3014658199999745,
+        "close_net": -3.1514829099999746
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 8.532899272523784,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.0,
+        "exit_fee": 0.15248291000000003,
+        "entry_fee": 0.14998291000000002,
+        "cycle_net": -5.30246582,
+        "close_net": -5.15248291
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 8.47693956351427,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.9999999999999747,
+        "exit_fee": 0.15148291,
+        "entry_fee": 0.14998291000000002,
+        "cycle_net": -3.3014658199999745,
+        "close_net": -3.1514829099999746
+      },
+      "A_net": -3.3014658199999745,
+      "B_net": -5.30246582,
+      "C_net": -3.3014658199999745,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL+VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 8.501,
+        "model_exit_px": 8.47693956351427,
+        "px_err": -0.024060436485729753,
+        "actual_cycle_net": -4.161815779999956,
+        "model_cycle_net": -3.3014658199999745,
+        "net_err": 0.8603499599999815,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+      "symbol": "AVAXUSDT",
+      "actual_reason": "VOL_SPIKE",
+      "actual_cycle_net": -2.60255349999997,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 6.465217391304348,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.999999999999993,
+        "exit_fee": 0.14870000000000003,
+        "entry_fee": 0.14720000000000003,
+        "cycle_net": -3.295899999999993,
+        "close_net": -3.1486999999999927
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 6.508695652173913,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.000000000000002,
+        "exit_fee": 0.14970000000000003,
+        "entry_fee": 0.14720000000000003,
+        "cycle_net": -5.296900000000002,
+        "close_net": -5.149700000000002
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 6.465217391304348,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.999999999999993,
+        "exit_fee": 0.14870000000000003,
+        "entry_fee": 0.14720000000000003,
+        "cycle_net": -3.295899999999993,
+        "close_net": -3.1486999999999927
+      },
+      "A_net": -3.295899999999993,
+      "B_net": -5.296900000000002,
+      "C_net": -3.295899999999993,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 6.450152173913043,
+        "model_exit_px": 6.465217391304348,
+        "px_err": 0.015065217391304841,
+        "actual_cycle_net": -2.60255349999997,
+        "model_cycle_net": -3.295899999999993,
+        "net_err": -0.6933465000000227,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:DOGEUSDT:9667e15363",
+      "symbol": "DOGEUSDT",
+      "actual_reason": "SL",
+      "actual_cycle_net": -3.402995525000011,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.05373200922149317,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.999999999999991,
+        "exit_fee": 0.1514974,
+        "entry_fee": 0.1499974,
+        "cycle_net": -3.3014947999999915,
+        "close_net": -3.1514973999999913
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.054086682035821954,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.0000000000000115,
+        "exit_fee": 0.1524974,
+        "entry_fee": 0.1499974,
+        "cycle_net": -5.302494800000011,
+        "close_net": -5.152497400000011
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.05373200922149317,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.999999999999991,
+        "exit_fee": 0.1514974,
+        "entry_fee": 0.1499974,
+        "cycle_net": -3.3014947999999915,
+        "close_net": -3.1514973999999913
+      },
+      "A_net": -3.3014947999999915,
+      "B_net": -5.302494800000011,
+      "C_net": -3.3014947999999915,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL",
+        "model_reason": "SL",
+        "actual_exit_px": 0.05375,
+        "model_exit_px": 0.05373200922149317,
+        "px_err": -1.7990778506830896e-05,
+        "actual_cycle_net": -3.402995525000011,
+        "model_cycle_net": -3.3014947999999915,
+        "net_err": 0.10150072500001928,
+        "vol_in_actual": false
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:WLDUSDT:5aea42e042",
+      "symbol": "WLDUSDT",
+      "actual_reason": "SL",
+      "actual_cycle_net": -3.427194149999995,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.22290750551876382,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.000000000000015,
+        "exit_fee": 0.15146565,
+        "entry_fee": 0.14996565,
+        "cycle_net": -3.301431300000015,
+        "close_net": -3.151465650000015
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.22437917586460635,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.000000000000013,
+        "exit_fee": 0.15246565,
+        "entry_fee": 0.14996565,
+        "cycle_net": -5.302431300000014,
+        "close_net": -5.152465650000013
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.22290750551876382,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.000000000000015,
+        "exit_fee": 0.15146565,
+        "entry_fee": 0.14996565,
+        "cycle_net": -3.301431300000015,
+        "close_net": -3.151465650000015
+      },
+      "A_net": -3.301431300000015,
+      "B_net": -5.302431300000014,
+      "C_net": -3.301431300000015,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL",
+        "model_reason": "SL",
+        "actual_exit_px": 0.223,
+        "model_exit_px": 0.22290750551876382,
+        "px_err": -9.249448123618831e-05,
+        "actual_cycle_net": -3.427194149999995,
+        "model_cycle_net": -3.301431300000015,
+        "net_err": 0.1257628499999801,
+        "vol_in_actual": false
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+      "symbol": "BNBUSDT",
+      "actual_reason": "SL+VOL_SPIKE",
+      "actual_cycle_net": -3.477280799999972,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 531.9471428571429,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000187,
+        "exit_fee": 0.14894520000000003,
+        "entry_fee": 0.14744520000000003,
+        "cycle_net": -3.2963904000000186,
+        "close_net": -3.1489452000000187
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 535.5185714285715,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -5.00000000000001,
+        "exit_fee": 0.14994520000000003,
+        "entry_fee": 0.14744520000000003,
+        "cycle_net": -5.29739040000001,
+        "close_net": -5.14994520000001
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 531.9471428571429,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000187,
+        "exit_fee": 0.14894520000000003,
+        "entry_fee": 0.14744520000000003,
+        "cycle_net": -3.2963904000000186,
+        "close_net": -3.1489452000000187
+      },
+      "A_net": -3.2963904000000186,
+      "B_net": -5.29739040000001,
+      "C_net": -3.2963904000000186,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL+VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 532.27,
+        "model_exit_px": 531.9471428571429,
+        "px_err": -0.32285714285706035,
+        "actual_cycle_net": -3.477280799999972,
+        "model_cycle_net": -3.2963904000000186,
+        "net_err": 0.18089039999995338,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+      "symbol": "XLMUSDT",
+      "actual_reason": "SL",
+      "actual_cycle_net": -3.5649626400000276,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.1262905210504377,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000093,
+        "exit_fee": 0.15148548000000003,
+        "entry_fee": 0.14998548000000003,
+        "cycle_net": -3.3014709600000094,
+        "close_net": -3.151485480000009
+      },
+      "B": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 0.12641,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -3.2866299999999575,
+        "mtm_cycle_net_if_exit": -3.588244274999958,
+        "unrealized": true
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.1262905210504377,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000093,
+        "exit_fee": 0.15148548000000003,
+        "entry_fee": 0.14998548000000003,
+        "cycle_net": -3.3014709600000094,
+        "close_net": -3.151485480000009
+      },
+      "A_net": -3.3014709600000094,
+      "B_net": {
+        "unrealized_if_exit": -3.588244274999958
+      },
+      "C_net": -3.3014709600000094,
+      "B_effect": "EXTENDED_OPEN_AT_CUTOFF",
+      "repro_A": {
+        "actual_reason": "SL",
+        "model_reason": "SL",
+        "actual_exit_px": 0.12640030012505213,
+        "model_exit_px": 0.1262905210504377,
+        "px_err": -0.00010977907461443004,
+        "actual_cycle_net": -3.5649626400000276,
+        "model_cycle_net": -3.3014709600000094,
+        "net_err": 0.2634916800000182,
+        "vol_in_actual": false
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+      "symbol": "XRPUSDT",
+      "actual_reason": "SL",
+      "actual_cycle_net": -3.268670270000006,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.908598200359928,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000093,
+        "exit_fee": 0.15146331999999998,
+        "entry_fee": 0.14996331999999998,
+        "cycle_net": -3.301426640000009,
+        "close_net": -3.1514633200000093
+      },
+      "B": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 0.9052,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -1.8670400000000162,
+        "mtm_cycle_net_if_exit": -2.1679001600000163,
+        "unrealized": true
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.908598200359928,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000093,
+        "exit_fee": 0.15146331999999998,
+        "entry_fee": 0.14996331999999998,
+        "cycle_net": -3.301426640000009,
+        "close_net": -3.1514633200000093
+      },
+      "A_net": -3.301426640000009,
+      "B_net": {
+        "unrealized_if_exit": -2.1679001600000163
+      },
+      "C_net": -3.301426640000009,
+      "B_effect": "EXTENDED_OPEN_AT_CUTOFF",
+      "repro_A": {
+        "actual_reason": "SL",
+        "model_reason": "SL",
+        "actual_exit_px": 0.9085,
+        "model_exit_px": 0.908598200359928,
+        "px_err": 9.820035992802456e-05,
+        "actual_cycle_net": -3.268670270000006,
+        "model_cycle_net": -3.301426640000009,
+        "net_err": -0.03275637000000309,
+        "vol_in_actual": false
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+      "symbol": "1000SHIBUSDT",
+      "actual_reason": "VOL_SPIKE",
+      "actual_cycle_net": -2.8522954620000065,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.003563280005644801,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000067,
+        "exit_fee": 0.151499976,
+        "entry_fee": 0.149999976,
+        "cycle_net": -3.301499952000007,
+        "close_net": -3.151499976000007
+      },
+      "B": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 0.003546,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -1.5306120000000187,
+        "mtm_cycle_net_if_exit": -1.8313772580000187,
+        "unrealized": true
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 0.003563280005644801,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -3.0000000000000067,
+        "exit_fee": 0.151499976,
+        "entry_fee": 0.149999976,
+        "cycle_net": -3.301499952000007,
+        "close_net": -3.151499976000007
+      },
+      "A_net": -3.301499952000007,
+      "B_net": {
+        "unrealized_if_exit": -1.8313772580000187
+      },
+      "C_net": -3.301499952000007,
+      "B_effect": "EXTENDED_OPEN_AT_CUTOFF",
+      "repro_A": {
+        "actual_reason": "VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 0.003558,
+        "model_exit_px": 0.003563280005644801,
+        "px_err": 5.280005644800901e-06,
+        "actual_cycle_net": -2.8522954620000065,
+        "model_cycle_net": -3.301499952000007,
+        "net_err": -0.4492044900000005,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:SOLUSDT:b3a67523aa",
+      "symbol": "SOLUSDT",
+      "actual_reason": "SL+VOL_SPIKE",
+      "actual_cycle_net": -3.447405599999995,
+      "A": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 69.20649885583524,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.9999999999999964,
+        "exit_fee": 0.1512162,
+        "entry_fee": 0.1497162,
+        "cycle_net": -3.300932399999996,
+        "close_net": -3.1512161999999964
+      },
+      "B": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 69.6641647597254,
+        "exit_ts": "2026-11-21T20:35:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -4.999999999999994,
+        "exit_fee": 0.1522162,
+        "entry_fee": 0.1497162,
+        "cycle_net": -5.301932399999994,
+        "close_net": -5.152216199999994
+      },
+      "C": {
+        "status": "EXITED",
+        "reason": "SL",
+        "exit_px": 69.20649885583524,
+        "exit_ts": "2026-11-21T19:32:00+08:00",
+        "fill_tag": "STOP_PX_IDEALIZED",
+        "gross": -2.9999999999999964,
+        "exit_fee": 0.1512162,
+        "entry_fee": 0.1497162,
+        "cycle_net": -3.300932399999996,
+        "close_net": -3.1512161999999964
+      },
+      "A_net": -3.300932399999996,
+      "B_net": -5.301932399999994,
+      "C_net": -3.300932399999996,
+      "B_effect": "LARGER_LOSS",
+      "repro_A": {
+        "actual_reason": "SL+VOL_SPIKE",
+        "model_reason": "SL",
+        "actual_exit_px": 69.24,
+        "model_exit_px": 69.20649885583524,
+        "px_err": -0.03350114416475947,
+        "actual_cycle_net": -3.447405599999995,
+        "model_cycle_net": -3.300932399999996,
+        "net_err": 0.14647319999999864,
+        "vol_in_actual": true
+      }
+    },
+    {
+      "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+      "symbol": "HYPEUSDT",
+      "actual_reason": "OPEN",
+      "actual_cycle_net": null,
+      "A": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 59.738,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -1.471680000000008,
+        "mtm_cycle_net_if_exit": -1.7720236800000082,
+        "unrealized": true
+      },
+      "B": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 59.738,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -1.471680000000008,
+        "mtm_cycle_net_if_exit": -1.7720236800000082,
+        "unrealized": true
+      },
+      "C": {
+        "status": "OPEN_AT_CUTOFF",
+        "mtm_px": 59.738,
+        "mtm_ts": "2026-11-21T21:03:00+08:00",
+        "mtm_gross": -1.471680000000008,
+        "mtm_cycle_net_if_exit": -1.7720236800000082,
+        "unrealized": true
+      },
+      "A_net": {
+        "unrealized_if_exit": -1.7720236800000082
+      },
+      "B_net": {
+        "unrealized_if_exit": -1.7720236800000082
+      },
+      "C_net": {
+        "unrealized_if_exit": -1.7720236800000082
+      },
+      "B_effect": "N/A",
+      "repro_A": "N/A"
+    }
+  ],
+  "cf_sums": {
+    "A": {
+      "exited_n": 10,
+      "net_sum": -33.00344817200003,
+      "open_n": 1,
+      "amb_n": 0,
+      "unreal_sum": -1.7720236800000082
+    },
+    "B": {
+      "exited_n": 7,
+      "net_sum": -37.10605062000005,
+      "open_n": 4,
+      "amb_n": 0,
+      "unreal_sum": -9.359545373000001
+    },
+    "C": {
+      "exited_n": 10,
+      "net_sum": -33.00344817200003,
+      "open_n": 1,
+      "amb_n": 0,
+      "unreal_sum": -1.7720236800000082
+    }
+  },
+  "b_effects": {
+    "LARGER_LOSS": 7,
+    "EXTENDED_OPEN_AT_CUTOFF": 3
+  },
+  "overlap_peak": 10
+}

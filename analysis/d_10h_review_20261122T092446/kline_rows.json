@@ -1,0 +1,1477 @@
+[
+  {
+    "trade_id": "2026-11-21T1433_040b980f:ADAUSDT:ed9a628238",
+    "symbol": "ADAUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T18:49:11.499547+08:00",
+    "entry_px": 0.1397,
+    "qty": 2147.0,
+    "entry_fee": 0.14996795000000002,
+    "signal_id": "ADAUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.9359,
+    "exit_ts": "2026-11-21T19:32:38.325485+08:00",
+    "exit_px": 0.1411,
+    "exit_fee": 0.15147085000000002,
+    "exit_reason": "SL+VOL_SPIKE",
+    "gross_u": -3.0058000000000265,
+    "net_close_u": -3.1572708500000264,
+    "cycle_net_u": -3.3072388000000266,
+    "hold_sec": 2606.825938,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 44,
+      "mfe_pct": 0.5010737294201707,
+      "mae_pct": 1.4316392269148188,
+      "mfe_u": 1.5028999999999537,
+      "mae_u": -4.294000000000004,
+      "mfe_ts": "2026-11-21T19:00:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.0,
+        "mfe_pct": 0.071581961345733,
+        "mae_pct": 0.14316392269148587,
+        "end_px": 0.1397,
+        "end_bar_ot": "2026-11-21T18:54:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.3579098067287047,
+        "mfe_pct": 0.5010737294201707,
+        "mae_pct": 0.14316392269148587,
+        "end_px": 0.1392,
+        "end_bar_ot": "2026-11-21T19:04:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.42949176807443773,
+        "mfe_pct": 0.5010737294201707,
+        "mae_pct": 0.14316392269148587,
+        "end_px": 0.1391,
+        "end_bar_ot": "2026-11-21T19:19:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.3579098067287047,
+        "mfe_pct": 0.5010737294201707,
+        "mae_pct": 1.5032211882605717,
+        "end_px": 0.1402,
+        "end_bar_ot": "2026-11-21T19:49:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.49610205527994766,
+        "mfe_pct": 0.7087172218284911,
+        "mae_pct": 0.49610205527994766,
+        "end_px": 0.1404,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.49610205527994766,
+        "mfe_pct": 0.9213323883770344,
+        "mae_pct": 0.49610205527994766,
+        "end_px": 0.1404,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.7087172218284911,
+        "mfe_pct": 0.9213323883770344,
+        "mae_pct": 0.49610205527994766,
+        "end_px": 0.1401,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": true,
+        "sec": 468.500453
+      },
+      "0.50%": {
+        "hit": true,
+        "sec": 648.500453
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+    "symbol": "LINKUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T18:50:26.085863+08:00",
+    "entry_px": 8.393,
+    "qty": 35.74,
+    "entry_fee": 0.14998291000000002,
+    "signal_id": "LINKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.96582000000006,
+    "exit_ts": "2026-11-21T19:32:38.421485+08:00",
+    "exit_px": 8.501,
+    "exit_fee": 0.15191287,
+    "exit_reason": "SL+VOL_SPIKE",
+    "gross_u": -3.859919999999956,
+    "net_close_u": -4.011832869999956,
+    "cycle_net_u": -4.161815779999956,
+    "hold_sec": 2532.335622,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 43,
+      "mfe_pct": 0.3216966519718935,
+      "mae_pct": 1.6918860955558137,
+      "mfe_u": 0.9649800000000366,
+      "mae_u": -5.075079999999981,
+      "mfe_ts": "2026-11-21T19:01:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.05957345406885506,
+        "mfe_pct": 0.04765876325510944,
+        "mae_pct": 0.17872036220658633,
+        "end_px": 8.398,
+        "end_bar_ot": "2026-11-21T18:55:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.11914690813775244,
+        "mfe_pct": 0.3216966519718935,
+        "mae_pct": 0.17872036220658633,
+        "end_px": 8.383,
+        "end_bar_ot": "2026-11-21T19:05:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.02382938162755472,
+        "mfe_pct": 0.3216966519718935,
+        "mae_pct": 0.27403788871678403,
+        "end_px": 8.391,
+        "end_bar_ot": "2026-11-21T19:20:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.6791373763850661,
+        "mfe_pct": 0.3216966519718935,
+        "mae_pct": 1.727630167997135,
+        "end_px": 8.45,
+        "end_bar_ot": "2026-11-21T19:50:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.4587695565227585,
+        "mfe_pct": 0.7410892836136789,
+        "mae_pct": 0.4352429125985274,
+        "end_px": 8.462,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.5175861663333573,
+        "mfe_pct": 0.7528526055758153,
+        "mae_pct": 0.4352429125985274,
+        "end_px": 8.457,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.5881660981060927,
+        "mfe_pct": 0.764615927537931,
+        "mae_pct": 0.4352429125985274,
+        "end_px": 8.451,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": true,
+        "sec": 573.914137
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+    "symbol": "AVAXUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:10:47.213221+08:00",
+    "entry_px": 6.4,
+    "qty": 46.0,
+    "entry_fee": 0.14720000000000003,
+    "signal_id": "AVAXUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 294.40000000000003,
+    "exit_ts": "2026-11-21T19:32:32.935450+08:00",
+    "exit_px": 6.450152173913043,
+    "exit_fee": 0.1483535,
+    "exit_reason": "VOL_SPIKE",
+    "gross_u": -2.30699999999997,
+    "net_close_u": -2.45535349999997,
+    "cycle_net_u": -2.60255349999997,
+    "hold_sec": 1305.722229,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 23,
+      "mfe_pct": 0.4687500000000039,
+      "mae_pct": 1.5937499999999911,
+      "mfe_u": 1.3800000000000114,
+      "mae_u": -4.6919999999999735,
+      "mfe_ts": "2026-11-21T19:23:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.3125000000000072,
+        "mfe_pct": 0.3125000000000072,
+        "mae_pct": 0.07812499999999833,
+        "end_px": 6.38,
+        "end_bar_ot": "2026-11-21T19:15:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.32812500000001243,
+        "mfe_pct": 0.4687500000000039,
+        "mae_pct": 0.07812499999999833,
+        "end_px": 6.379,
+        "end_bar_ot": "2026-11-21T19:25:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.7500000000000007,
+        "mfe_pct": 0.4687500000000039,
+        "mae_pct": 1.656249999999998,
+        "end_px": 6.448,
+        "end_bar_ot": "2026-11-21T19:40:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.6562499999999971,
+        "mfe_pct": 0.4687500000000039,
+        "mae_pct": 1.656249999999998,
+        "end_px": 6.442,
+        "end_bar_ot": "2026-11-21T20:10:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.01786274000950221,
+        "mfe_pct": 0.4674645357204211,
+        "mae_pct": 0.8658373412154159,
+        "end_px": 6.449,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.11088380119107542,
+        "mfe_pct": 0.4674645357204211,
+        "mae_pct": 0.8658373412154159,
+        "end_px": 6.443,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.2969259235542081,
+        "mfe_pct": 0.49847155611427424,
+        "mae_pct": 0.8658373412154159,
+        "end_px": 6.431,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": true,
+        "sec": 252.786779
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:DOGEUSDT:9667e15363",
+    "symbol": "DOGEUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:10:58.652901+08:00",
+    "entry_px": 0.0532,
+    "qty": 5639.0,
+    "entry_fee": 0.1499974,
+    "signal_id": "DOGEUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.9948,
+    "exit_ts": "2026-11-21T19:32:33.035453+08:00",
+    "exit_px": 0.05375,
+    "exit_fee": 0.151548125,
+    "exit_reason": "SL",
+    "gross_u": -3.1014500000000105,
+    "net_close_u": -3.2529981250000106,
+    "cycle_net_u": -3.402995525000011,
+    "hold_sec": 1294.382552,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 23,
+      "mfe_pct": 0.2067669172932312,
+      "mae_pct": 1.8233082706767025,
+      "mfe_u": 0.6202899999999942,
+      "mae_u": -5.469830000000031,
+      "mfe_ts": "2026-11-21T19:18:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.056390977443600214,
+        "mfe_pct": 0.07518796992480897,
+        "mae_pct": 0.075187969924822,
+        "end_px": 0.05317,
+        "end_bar_ot": "2026-11-21T19:15:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.05639097744361325,
+        "mfe_pct": 0.2067669172932312,
+        "mae_pct": 0.075187969924822,
+        "end_px": 0.05323,
+        "end_bar_ot": "2026-11-21T19:25:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.883458646616551,
+        "mfe_pct": 0.2067669172932312,
+        "mae_pct": 1.842105263157898,
+        "end_px": 0.05367,
+        "end_bar_ot": "2026-11-21T19:40:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.9022556390977469,
+        "mfe_pct": 0.2067669172932312,
+        "mae_pct": 1.842105263157898,
+        "end_px": 0.05368,
+        "end_bar_ot": "2026-11-21T20:10:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.14883720930231953,
+        "mfe_pct": 0.427906976744188,
+        "mae_pct": 0.7999999999999997,
+        "end_px": 0.05367,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.018604651162783484,
+        "mfe_pct": 0.427906976744188,
+        "mae_pct": 0.7999999999999997,
+        "end_px": 0.05374,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.055813953488376276,
+        "mfe_pct": 0.427906976744188,
+        "mae_pct": 0.7999999999999997,
+        "end_px": 0.05372,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:WLDUSDT:5aea42e042",
+    "symbol": "WLDUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:10:58.653901+08:00",
+    "entry_px": 0.2207,
+    "qty": 1359.0,
+    "entry_fee": 0.14996565,
+    "signal_id": "WLDUSDT:1795258799999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.9313,
+    "exit_ts": "2026-11-21T19:32:21.706452+08:00",
+    "exit_px": 0.223,
+    "exit_fee": 0.1515285,
+    "exit_reason": "SL",
+    "gross_u": -3.1256999999999953,
+    "net_close_u": -3.277228499999995,
+    "cycle_net_u": -3.427194149999995,
+    "hold_sec": 1283.052551,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 23,
+      "mfe_pct": 0.22655188038060736,
+      "mae_pct": 2.129587675577699,
+      "mfe_u": 0.6795000000000007,
+      "mae_u": -6.387299999999976,
+      "mfe_ts": "2026-11-21T19:12:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.22655188038060736,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 0.04531037607611644,
+        "end_px": 0.2202,
+        "end_bar_ot": "2026-11-21T19:15:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.09062075215224547,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 0.18124150430447833,
+        "end_px": 0.2209,
+        "end_bar_ot": "2026-11-21T19:25:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.8608971454463004,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 2.129587675577699,
+        "end_px": 0.2226,
+        "end_bar_ot": "2026-11-21T19:40:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.3171726325328528,
+        "mfe_pct": 0.22655188038060736,
+        "mae_pct": 2.129587675577699,
+        "end_px": 0.2214,
+        "end_bar_ot": "2026-11-21T20:10:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.2690582959641333,
+        "mfe_pct": 0.3587443946188319,
+        "mae_pct": 1.0762331838564958,
+        "end_px": 0.2224,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.2242152466367715,
+        "mfe_pct": 0.3587443946188319,
+        "mae_pct": 1.0762331838564958,
+        "end_px": 0.2225,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.2242152466367715,
+        "mfe_pct": 0.5381165919282541,
+        "mae_pct": 1.0762331838564958,
+        "end_px": 0.2225,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+    "symbol": "BNBUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:30:23.646030+08:00",
+    "entry_px": 526.59,
+    "qty": 0.56,
+    "entry_fee": 0.14744520000000003,
+    "signal_id": "BNBUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 294.89040000000006,
+    "exit_ts": "2026-11-21T19:32:43.695452+08:00",
+    "exit_px": 532.27,
+    "exit_fee": 0.14903560000000002,
+    "exit_reason": "SL+VOL_SPIKE",
+    "gross_u": -3.180799999999972,
+    "net_close_u": -3.329835599999972,
+    "cycle_net_u": -3.477280799999972,
+    "hold_sec": 140.049422,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 3,
+      "mfe_pct": 0.09684954138893463,
+      "mae_pct": 1.245750963747877,
+      "mfe_u": 0.2855999999999949,
+      "mae_u": -3.67359999999997,
+      "mfe_ts": "2026-11-21T19:30:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.6361685561822333,
+        "mfe_pct": 0.09684954138893463,
+        "mae_pct": 1.2875291972882075,
+        "end_px": 529.94,
+        "end_bar_ot": "2026-11-21T19:35:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.6133804287966004,
+        "mfe_pct": 0.09684954138893463,
+        "mae_pct": 1.2875291972882075,
+        "end_px": 529.82,
+        "end_bar_ot": "2026-11-21T19:45:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.7880894054197719,
+        "mfe_pct": 0.09684954138893463,
+        "mae_pct": 1.2875291972882075,
+        "end_px": 530.74,
+        "end_bar_ot": "2026-11-21T20:00:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -1.1659925178981723,
+        "mfe_pct": 0.09684954138893463,
+        "mae_pct": 1.323610398982114,
+        "end_px": 532.73,
+        "end_bar_ot": "2026-11-21T20:30:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.5035038608225055,
+        "mfe_pct": 0.7684070114791425,
+        "mae_pct": 0.20666203242715592,
+        "end_px": 529.59,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.3550829466248307,
+        "mfe_pct": 0.7684070114791425,
+        "mae_pct": 0.20666203242715592,
+        "end_px": 530.38,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.4133240648542905,
+        "mfe_pct": 0.7684070114791425,
+        "mae_pct": 0.20666203242715592,
+        "end_px": 530.07,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+    "symbol": "XLMUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:31:37.623453+08:00",
+    "entry_px": 0.12504,
+    "qty": 2399.0,
+    "entry_fee": 0.14998548000000003,
+    "signal_id": "XLMUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.97096000000005,
+    "exit_ts": "2026-11-21T19:32:43.788452+08:00",
+    "exit_px": 0.12640030012505213,
+    "exit_fee": 0.15161716000000006,
+    "exit_reason": "SL",
+    "gross_u": -3.263360000000027,
+    "net_close_u": -3.4149771600000274,
+    "cycle_net_u": -3.5649626400000276,
+    "hold_sec": 66.164999,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 2,
+      "mfe_pct": 0.11196417146514324,
+      "mae_pct": 1.311580294305802,
+      "mfe_u": 0.33586000000003624,
+      "mae_u": -3.9343599999999395,
+      "mfe_ts": "2026-11-21T19:31:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.44785668586050636,
+        "mfe_pct": 0.11196417146514324,
+        "mae_pct": 1.311580294305802,
+        "end_px": 0.1256,
+        "end_bar_ot": "2026-11-21T19:36:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.023992322456793416,
+        "mfe_pct": 0.11196417146514324,
+        "mae_pct": 1.311580294305802,
+        "end_px": 0.12507,
+        "end_bar_ot": "2026-11-21T19:46:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.46385156749839823,
+        "mfe_pct": 0.11196417146514324,
+        "mae_pct": 1.311580294305802,
+        "end_px": 0.12562,
+        "end_bar_ot": "2026-11-21T20:01:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.7357645553422715,
+        "mfe_pct": 0.11196417146514324,
+        "mae_pct": 1.311580294305802,
+        "end_px": 0.12596,
+        "end_bar_ot": "2026-11-21T20:31:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.6806155714828142,
+        "mfe_pct": 0.9179567800900899,
+        "mae_pct": 0.22128102122474544,
+        "end_px": 0.12554,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.9891591426722506,
+        "mfe_pct": 1.1473866150770937,
+        "mae_pct": 0.22128102122474544,
+        "end_px": 0.12515,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.48283123097676584,
+        "mfe_pct": 1.1473866150770937,
+        "mae_pct": 0.22128102122474544,
+        "end_px": 0.12579,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+    "symbol": "XRPUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:31:43.328419+08:00",
+    "entry_px": 0.8996,
+    "qty": 333.4,
+    "entry_fee": 0.14996331999999998,
+    "signal_id": "XRPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.92663999999996,
+    "exit_ts": "2026-11-21T19:32:38.513451+08:00",
+    "exit_px": 0.9085,
+    "exit_fee": 0.15144695,
+    "exit_reason": "SL",
+    "gross_u": -2.9672600000000062,
+    "net_close_u": -3.118706950000006,
+    "cycle_net_u": -3.268670270000006,
+    "hold_sec": 55.185032,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 2,
+      "mfe_pct": 0.12227656736327144,
+      "mae_pct": 1.367274344152967,
+      "mfe_u": 0.3667399999999966,
+      "mae_u": -4.100820000000029,
+      "mfe_ts": "2026-11-21T19:31:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.5224544241885325,
+        "mfe_pct": 0.12227656736327144,
+        "mae_pct": 1.4228546020453572,
+        "end_px": 0.9043,
+        "end_bar_ot": "2026-11-21T19:36:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.34459759893285813,
+        "mfe_pct": 0.12227656736327144,
+        "mae_pct": 1.4228546020453572,
+        "end_px": 0.9027,
+        "end_bar_ot": "2026-11-21T19:46:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.22232103156958669,
+        "mfe_pct": 0.12227656736327144,
+        "mae_pct": 1.4228546020453572,
+        "end_px": 0.9016,
+        "end_bar_ot": "2026-11-21T20:01:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.4557581147176515,
+        "mfe_pct": 0.12227656736327144,
+        "mae_pct": 1.4228546020453572,
+        "end_px": 0.9037,
+        "end_bar_ot": "2026-11-21T20:31:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.594386351128229,
+        "mfe_pct": 0.9135938359933929,
+        "mae_pct": 0.42927903137039236,
+        "end_px": 0.9031,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.6053935057787506,
+        "mfe_pct": 0.9135938359933929,
+        "mae_pct": 0.42927903137039236,
+        "end_px": 0.903,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.6824435883324143,
+        "mfe_pct": 0.9135938359933929,
+        "mae_pct": 0.42927903137039236,
+        "end_px": 0.9023,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+    "symbol": "1000SHIBUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:31:43.331419+08:00",
+    "entry_px": 0.003528,
+    "qty": 85034.0,
+    "entry_fee": 0.149999976,
+    "signal_id": "1000SHIBUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.999952,
+    "exit_ts": "2026-11-21T19:32:43.884451+08:00",
+    "exit_px": 0.003558,
+    "exit_fee": 0.15127548600000001,
+    "exit_reason": "VOL_SPIKE",
+    "gross_u": -2.5510200000000065,
+    "net_close_u": -2.7022954860000064,
+    "cycle_net_u": -2.8522954620000065,
+    "hold_sec": 60.553032,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 2,
+      "mfe_pct": 0.17006802721088235,
+      "mae_pct": 0.9920634920635009,
+      "mfe_u": 0.510203999999994,
+      "mae_u": -2.976190000000026,
+      "mfe_ts": "2026-11-21T19:31:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.11337868480725899,
+        "mfe_pct": 0.17006802721088235,
+        "mae_pct": 0.9920634920635009,
+        "end_px": 0.003532,
+        "end_bar_ot": "2026-11-21T19:36:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.3117913832199592,
+        "mfe_pct": 0.17006802721088235,
+        "mae_pct": 0.9920634920635009,
+        "end_px": 0.003539,
+        "end_bar_ot": "2026-11-21T19:46:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.14172335600907682,
+        "mfe_pct": 0.17006802721088235,
+        "mae_pct": 0.9920634920635009,
+        "end_px": 0.003533,
+        "end_bar_ot": "2026-11-21T20:01:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.6802721088435416,
+        "mfe_pct": 0.17006802721088235,
+        "mae_pct": 0.9920634920635009,
+        "end_px": 0.003552,
+        "end_bar_ot": "2026-11-21T20:31:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.7588532883642528,
+        "mfe_pct": 0.7869589657110684,
+        "mae_pct": 0.14052838673412676,
+        "end_px": 0.003531,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.44969083754918365,
+        "mfe_pct": 0.8150646430578963,
+        "mae_pct": 0.14052838673412676,
+        "end_px": 0.003542,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.6464305789769538,
+        "mfe_pct": 0.8150646430578963,
+        "mae_pct": 0.14052838673412676,
+        "end_px": 0.003535,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:SOLUSDT:b3a67523aa",
+    "symbol": "SOLUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T19:31:48.866418+08:00",
+    "entry_px": 68.52,
+    "qty": 4.37,
+    "entry_fee": 0.1497162,
+    "signal_id": "SOLUSDT:1795257899999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.4324,
+    "exit_ts": "2026-11-21T19:32:43.989452+08:00",
+    "exit_px": 69.24,
+    "exit_fee": 0.1512894,
+    "exit_reason": "SL+VOL_SPIKE",
+    "gross_u": -3.146399999999995,
+    "net_close_u": -3.297689399999995,
+    "cycle_net_u": -3.447405599999995,
+    "hold_sec": 55.123034,
+    "status": "CLOSED",
+    "path": {
+      "ok": true,
+      "n_bars": 2,
+      "mfe_pct": 0.2918855808523101,
+      "mae_pct": 1.2405137186223125,
+      "mfe_u": 0.8740000000000124,
+      "mae_u": -3.7145000000000374,
+      "mfe_ts": "2026-11-21T19:31:00+08:00",
+      "mae_ts": "2026-11-21T19:32:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.37945125510800515,
+        "mfe_pct": 0.2918855808523101,
+        "mae_pct": 1.2697022767075374,
+        "end_px": 68.78,
+        "end_bar_ot": "2026-11-21T19:36:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.4232340922358527,
+        "mfe_pct": 0.2918855808523101,
+        "mae_pct": 1.2697022767075374,
+        "end_px": 68.81,
+        "end_bar_ot": "2026-11-21T19:46:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.2772913018096873,
+        "mfe_pct": 0.2918855808523101,
+        "mae_pct": 1.2697022767075374,
+        "end_px": 68.71,
+        "end_bar_ot": "2026-11-21T20:01:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "OK",
+        "minutes": 60,
+        "end_ret_pct_short": -0.8172796263864598,
+        "mfe_pct": 0.2918855808523101,
+        "mae_pct": 1.2697022767075374,
+        "end_px": 69.08,
+        "end_bar_ot": "2026-11-21T20:31:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "post_exit": {
+      "post5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": 0.7076834199884386,
+        "mfe_pct": 0.9243212016175629,
+        "mae_pct": 0.21663778162912434,
+        "end_px": 68.75,
+        "end_bar_ot": "2026-11-21T19:37:00+08:00",
+        "boundary_error": true
+      },
+      "post15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": 0.6932409012131568,
+        "mfe_pct": 0.9243212016175629,
+        "mae_pct": 0.21663778162912434,
+        "end_px": 68.76,
+        "end_bar_ot": "2026-11-21T19:47:00+08:00",
+        "boundary_error": true
+      },
+      "post30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": 0.7076834199884386,
+        "mfe_pct": 0.9243212016175629,
+        "mae_pct": 0.21663778162912434,
+        "end_px": 68.75,
+        "end_bar_ot": "2026-11-21T20:02:00+08:00",
+        "boundary_error": true
+      }
+    },
+    "touches": {
+      "0.25%": {
+        "hit": true,
+        "sec": -48.866418
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": true
+  },
+  {
+    "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+    "symbol": "HYPEUSDT",
+    "side": "SHORT",
+    "entry_ts": "2026-11-21T20:15:34.261048+08:00",
+    "entry_px": 59.446,
+    "qty": 5.04,
+    "entry_fee": 0.14980392,
+    "signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "notional_u": 299.60784,
+    "exit_ts": null,
+    "exit_px": null,
+    "exit_fee": 0.0,
+    "exit_reason": null,
+    "gross_u": null,
+    "net_close_u": null,
+    "cycle_net_u": null,
+    "hold_sec": null,
+    "status": "OPEN",
+    "acct_mfe_u": 0.2293199999999848,
+    "acct_mae_u": -2.706479999999995,
+    "tp_usdt": 15.0,
+    "sl_usdt": 3.0,
+    "path": {
+      "ok": true,
+      "n_bars": 49,
+      "mfe_pct": 0.10597853514112857,
+      "mae_pct": 0.9639000100931945,
+      "mfe_u": 0.3175199999999762,
+      "mae_u": -2.887920000000002,
+      "mfe_ts": "2026-11-21T20:16:00+08:00",
+      "mae_ts": "2026-11-21T20:35:00+08:00",
+      "boundary_error": true,
+      "notes": [
+        "entry_bar_includes_pre_entry_ohlc",
+        "exit_bar_may_include_post_exit_ohlc"
+      ],
+      "kline_source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+      "price_kind": "sibling_paper_c_vault_1m_last_ohlc",
+      "mark_series": "N/A"
+    },
+    "fixed_windows": {
+      "w5m": {
+        "status": "OK",
+        "minutes": 5,
+        "end_ret_pct_short": -0.4760623086498692,
+        "mfe_pct": 0.10597853514112857,
+        "mae_pct": 0.8461460821585979,
+        "end_px": 59.729,
+        "end_bar_ot": "2026-11-21T20:20:00+08:00",
+        "boundary_error": true
+      },
+      "w15m": {
+        "status": "OK",
+        "minutes": 15,
+        "end_ret_pct_short": -0.05046596911482882,
+        "mfe_pct": 0.10597853514112857,
+        "mae_pct": 0.8461460821585979,
+        "end_px": 59.476,
+        "end_bar_ot": "2026-11-21T20:30:00+08:00",
+        "boundary_error": true
+      },
+      "w30m": {
+        "status": "OK",
+        "minutes": 30,
+        "end_ret_pct_short": -0.7250277562830207,
+        "mfe_pct": 0.10597853514112857,
+        "mae_pct": 0.9639000100931945,
+        "end_px": 59.877,
+        "end_bar_ot": "2026-11-21T20:45:00+08:00",
+        "boundary_error": true
+      },
+      "w60m": {
+        "status": "CENSORED",
+        "minutes": 60,
+        "need_until": "2026-11-21T21:15:34.261048+08:00"
+      }
+    },
+    "post_exit": {},
+    "touches": {
+      "0.25%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.50%": {
+        "hit": false,
+        "sec": null
+      },
+      "0.75%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.00%": {
+        "hit": false,
+        "sec": null
+      },
+      "1.50%": {
+        "hit": false,
+        "sec": null
+      }
+    },
+    "path_ambiguity": "N/A",
+    "gave_back": false
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "launched_at": "2026-11-21T20:15:33.306048+08:00",
+  "pid": 8848,
+  "strategy_version": "d_quiet_short_testnet_20261121",
+  "mode": "PAPER_FILLS",
+  "ttl_policy": "no_time_ttl; cancel_when_mid_le_P_times_0.99_or_eligibility_fail",
+  "hard_exclude": [
+    "BTCUSDT",
+    "ETHUSDT"
+  ],
+  "pending": [],
+  "fee": 0.0005,
+  "slip": 0.0002,
+  "fill_model": {
+    "fee_rate_one_side": 0.0005,
+    "slippage_adverse_fallback": 0.0002,
+    "fill_model_entry": "limit_touch_bid_ge_limit_fill_at_limit; plus recorded book-walk sim for 3000U sell-into-bids (diagnostic)",
+    "fill_model_exit": "aggressive cover: walk asks for qty; disclose depth shortfall; mid never used as fill; no maker rebate",
+    "note": "SIMULATION_ASSUMPTION — not exchange actual; paper ≠ live results"
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "cutoff": "2026-11-22T09:24:54.432668+08:00",
+  "identity": {
+    "strategy_id": "d_quiet_short_v1",
+    "strategy_version": "d_quiet_short_testnet_20261121",
+    "profile_id": "testnet_d_quiet_short_v1",
+    "run_id": "2026-11-21T1433_040b980f",
+    "mode": "paper (PAPER_FILLS; simulation_assumption)",
+    "env": "paper_bcd_local/data_d — public fapi quotes; no exchange orders",
+    "pid_last_launch": 8848,
+    "launched_at": "2026-11-21T20:15:33.306048+08:00",
+    "acct_updated_at": "2026-11-21T21:03:11.682901+08:00",
+    "code_fix_tag": "testnet_d_size_x0_1_20261121",
+    "first_event": "2026-11-21T14:35:12.980208+08:00",
+    "run_span_hours": 6.466306303611111,
+    "window_start": "2026-11-21T14:35:12.980208+08:00",
+    "window_end": "2026-11-21T21:03:11.682901+08:00",
+    "window_note": "本次可用運行約 6.47h（不足10h）；主報告=本次全段至截止",
+    "launch_meta_d_amp_mismatch": {
+      "launch_meta_d": {
+        "range_amp_max": 0.02,
+        "bar_amp_max": 0.01
+      },
+      "config_py": {
+        "RANGE_AMP_MAX": 0.015,
+        "BAR_AMP_MAX": 0.0075
+      },
+      "evidence_runtime": "CANCEL reason QUIET_FAIL:BAR_AMP_FAIL present; treat config.py as loaded unless proven otherwise"
+    }
+  },
+  "funnel": {
+    "signals": 21,
+    "queue_limit_short": 19,
+    "cancel_pending": 8,
+    "cancel_reasons": {
+      "QUIET_FAIL:BAR_AMP_FAIL": 1,
+      "DEPTH_FAIL_DUAL_NEAR_TOUCH": 5,
+      "PRICE_DROP_FROM_P": 2
+    },
+    "entry_filled_events": 11,
+    "opens": 11,
+    "closes": 10,
+    "closed_trades": 10,
+    "open_trades": 1,
+    "scan_event_types": {
+      "QUEUE_RESULT": 19,
+      "SIGNAL_BLOCKED_DEPTH": 24,
+      "SIGNAL_BLOCKED_SLOT_CAP": 2
+    },
+    "unfilled_rate_vs_queues": 0.42105263157894735
+  },
+  "recon": {
+    "gross_realized_closed": -30.508709999999965,
+    "exit_fees_closed": 1.5094784410000002,
+    "entry_fees_all_opens": 1.644028006,
+    "entry_fees_closed_only": 1.494224086,
+    "open_entry_fees_still_booked": 0.14980392,
+    "close_nets_sum": -32.018188440999964,
+    "cycle_net_closed": -33.51241252699997,
+    "implied_realized_net_all_entry_fees": -33.66221644699996,
+    "acct_realized_net_u": -32.018188440999964,
+    "diff_if_mistakenly_subtract_entry_from_acct_net": -1.6440280059999992,
+    "acct_fees": 3.153506447,
+    "sum_all_fees": 3.1535064470000003,
+    "fee_diff": 4.440892098500626e-16,
+    "funding": "N/A",
+    "other_costs": "N/A",
+    "slippage_in_price": true,
+    "accounting_model": "D account.realized_net_u == Σ CLOSE.net_u (entry fees NOT subtracted into realized_net). Entry fees reduce cash and accumulate in realized_fees_u. Full economic closed PnL = Σ(close_net - entry_fee) = cycle_net_closed. cash ≈ initial + realized_net - all_entry_fees (verified).",
+    "cash_check": {
+      "acct_cash_u": 4966.337783553,
+      "implied_cash": 4966.337783553,
+      "diff": 0.0
+    },
+    "note": "Use cycle_net for economic closed PnL; do not equate account.realized_net to cycle_net"
+  },
+  "perf": {
+    "n_closed": 10,
+    "n_open": 1,
+    "wins": 0,
+    "losses": 10,
+    "flats": 0,
+    "win_rate": 0.0,
+    "gross_sum": -30.508709999999965,
+    "fees_closed": 3.003702527,
+    "funding": "N/A",
+    "net_sum": -33.51241252699997,
+    "avg_net": -3.3512412526999964,
+    "median_net": -3.415094837500003,
+    "avg_win": null,
+    "avg_loss": -3.3512412526999964,
+    "payoff": null,
+    "profit_factor": 0.0,
+    "avg_hold_sec": 939.9394411,
+    "median_hold_sec": 711.5509865,
+    "max_consecutive_losses": 10,
+    "max_dd_realized_curve": -33.51241252699997,
+    "dd_definition": "逐筆已實現累計曲線（不含未平浮盈虧）",
+    "by_exit_reason": {
+      "SL+VOL_SPIKE": {
+        "n": 4,
+        "sum_net": -14.393740979999949
+      },
+      "VOL_SPIKE": {
+        "n": 2,
+        "sum_net": -5.454848961999977
+      },
+      "SL": {
+        "n": 4,
+        "sum_net": -13.66382258500004
+      }
+    },
+    "top3_loss": [
+      {
+        "trade_id": "2026-11-21T1433_040b980f:LINKUSDT:3225002bdc",
+        "symbol": "LINKUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 18:50:26.085863+08:00",
+        "entry_px": 8.393,
+        "qty": 35.74,
+        "entry_fee": 0.14998291000000002,
+        "signal_id": "LINKUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 299.96582000000006,
+        "exit_ts": "2026-11-21 19:32:38.421485+08:00",
+        "exit_px": 8.501,
+        "exit_fee": 0.15191287,
+        "exit_reason": "SL+VOL_SPIKE",
+        "gross_u": -3.859919999999956,
+        "net_close_u": -4.011832869999956,
+        "cycle_net_u": -4.161815779999956,
+        "hold_sec": 2532.335622,
+        "status": "CLOSED"
+      },
+      {
+        "trade_id": "2026-11-21T1433_040b980f:XLMUSDT:691d616484",
+        "symbol": "XLMUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 19:31:37.623453+08:00",
+        "entry_px": 0.12504,
+        "qty": 2399.0,
+        "entry_fee": 0.14998548000000003,
+        "signal_id": "XLMUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 299.97096000000005,
+        "exit_ts": "2026-11-21 19:32:43.788452+08:00",
+        "exit_px": 0.12640030012505213,
+        "exit_fee": 0.15161716000000006,
+        "exit_reason": "SL",
+        "gross_u": -3.263360000000027,
+        "net_close_u": -3.4149771600000274,
+        "cycle_net_u": -3.5649626400000276,
+        "hold_sec": 66.164999,
+        "status": "CLOSED"
+      },
+      {
+        "trade_id": "2026-11-21T1433_040b980f:BNBUSDT:39934a6a37",
+        "symbol": "BNBUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 19:30:23.646030+08:00",
+        "entry_px": 526.59,
+        "qty": 0.56,
+        "entry_fee": 0.14744520000000003,
+        "signal_id": "BNBUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 294.89040000000006,
+        "exit_ts": "2026-11-21 19:32:43.695452+08:00",
+        "exit_px": 532.27,
+        "exit_fee": 0.14903560000000002,
+        "exit_reason": "SL+VOL_SPIKE",
+        "gross_u": -3.180799999999972,
+        "net_close_u": -3.329835599999972,
+        "cycle_net_u": -3.477280799999972,
+        "hold_sec": 140.049422,
+        "status": "CLOSED"
+      }
+    ],
+    "top3_win": [
+      {
+        "trade_id": "2026-11-21T1433_040b980f:AVAXUSDT:c987a1c7a4",
+        "symbol": "AVAXUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 19:10:47.213221+08:00",
+        "entry_px": 6.4,
+        "qty": 46.0,
+        "entry_fee": 0.14720000000000003,
+        "signal_id": "AVAXUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 294.40000000000003,
+        "exit_ts": "2026-11-21 19:32:32.935450+08:00",
+        "exit_px": 6.450152173913043,
+        "exit_fee": 0.1483535,
+        "exit_reason": "VOL_SPIKE",
+        "gross_u": -2.30699999999997,
+        "net_close_u": -2.45535349999997,
+        "cycle_net_u": -2.60255349999997,
+        "hold_sec": 1305.722229,
+        "status": "CLOSED"
+      },
+      {
+        "trade_id": "2026-11-21T1433_040b980f:1000SHIBUSDT:2e4b743db4",
+        "symbol": "1000SHIBUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 19:31:43.331419+08:00",
+        "entry_px": 0.003528,
+        "qty": 85034.0,
+        "entry_fee": 0.149999976,
+        "signal_id": "1000SHIBUSDT:1795259699999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 299.999952,
+        "exit_ts": "2026-11-21 19:32:43.884451+08:00",
+        "exit_px": 0.003558,
+        "exit_fee": 0.15127548600000001,
+        "exit_reason": "VOL_SPIKE",
+        "gross_u": -2.5510200000000065,
+        "net_close_u": -2.7022954860000064,
+        "cycle_net_u": -2.8522954620000065,
+        "hold_sec": 60.553032,
+        "status": "CLOSED"
+      },
+      {
+        "trade_id": "2026-11-21T1433_040b980f:XRPUSDT:d03bc3ddb1",
+        "symbol": "XRPUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 19:31:43.328419+08:00",
+        "entry_px": 0.8996,
+        "qty": 333.4,
+        "entry_fee": 0.14996331999999998,
+        "signal_id": "XRPUSDT:1795256999999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 299.92663999999996,
+        "exit_ts": "2026-11-21 19:32:38.513451+08:00",
+        "exit_px": 0.9085,
+        "exit_fee": 0.15144695,
+        "exit_reason": "SL",
+        "gross_u": -2.9672600000000062,
+        "net_close_u": -3.118706950000006,
+        "cycle_net_u": -3.268670270000006,
+        "hold_sec": 55.185032,
+        "status": "CLOSED"
+      }
+    ],
+    "open_residual": [
+      {
+        "trade_id": "2026-11-21T1433_040b980f:HYPEUSDT:c3ef1cb5fd",
+        "symbol": "HYPEUSDT",
+        "side": "SHORT",
+        "entry_ts": "2026-11-21 20:15:34.261048+08:00",
+        "entry_px": 59.446,
+        "qty": 5.04,
+        "entry_fee": 0.14980392,
+        "signal_id": "HYPEUSDT:1795260599999:SHORT:d_quiet_short_testnet_20261121",
+        "strategy_version": "d_quiet_short_testnet_20261121",
+        "notional_u": 299.60784,
+        "exit_ts": null,
+        "exit_px": null,
+        "exit_fee": 0.0,
+        "exit_reason": null,
+        "gross_u": null,
+        "net_close_u": null,
+        "cycle_net_u": null,
+        "hold_sec": null,
+        "status": "OPEN",
+        "acct_mfe_u": 0.2293199999999848,
+        "acct_mae_u": -2.706479999999995,
+        "tp_usdt": 15.0,
+        "sl_usdt": 3.0
+      }
+    ],
+    "acct_mfe_mae_open": {
+      "HYPEUSDT": {
+        "mfe": 0.2293199999999848,
+        "mae": -2.706479999999995
+      }
+    }
+  },
+  "kline": {
+    "source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_c\\data\\testnet_c_inv_v1\\kline_vault_v2_clean",
+    "caveat": "D 無專屬 vault；借用同環境 paper C 的 1m last OHLC。非 mark；非 D 當下拉取的15m。",
+    "n_closed_with_path": 10,
+    "mfe_pct_median": 0.2166593988369193,
+    "mae_pct_median": 1.3994567855338929,
+    "mfe_pct_p25": 0.13422443232517417,
+    "mfe_pct_p75": 0.31424388419199767,
+    "mae_pct_p25": 1.2622082963873582,
+    "mae_pct_p75": 1.667352071666858,
+    "giveback_n": 10,
+    "touch_hit_counts": {
+      "0.25%": 4,
+      "0.50%": 1,
+      "0.75%": 0,
+      "1.00%": 0,
+      "1.50%": 0
+    },
+    "touch_n": 10,
+    "fixed_window_n": {
+      "5": 11,
+      "15": 11,
+      "30": 11,
+      "60": 10
+    },
+    "fixed_window_median_ret": {
+      "5": -0.11337868480725899,
+      "15": -0.05639097744361325,
+      "30": -0.46385156749839823,
+      "60": -0.6797047426143039
+    }
+  },
+  "cf": {
+    "scope": "固定進場局部診斷（僅已平10筆）— 不代表改出場後完整策略",
+    "actual_cycle_net_sum": -33.51241252699997,
+    "cf0_gross_only_sum": -30.508709999999965,
+    "cost_drag": 3.003702527,
+    "candidates": [
+      {
+        "id": "CF1",
+        "change": "僅放寬 SL 觸發至 5U gross（現行 3U）",
+        "reason": "10/10 已平皆虧；多數 SL 或 SL+VOL；MAE 路徑常剛過 3U",
+        "computable": "PARTIAL — 無 tick；用1m高點代理是否觸及5U，延後出場會改後續機會故非完整績效",
+        "result": "N/A"
+      },
+      {
+        "id": "CF2",
+        "change": "取消 VOL_SPIKE 出場，僅留 TP/SL",
+        "reason": "多筆標 VOL_SPIKE／SL+VOL_SPIKE，可能在不利波動放大時與 SL 同輪觸發",
+        "computable": "PARTIAL — 同棒順序不明；需 paper 對照",
+        "result": "N/A"
+      },
+      {
+        "id": "CF3",
+        "change": "時間退出：持倉超過 30 分鐘強制平",
+        "reason": "本批已平持倉多在1–2分鐘內結束，時間退出對本樣本幾乎無影響；留待更長持倉樣本",
+        "computable": false,
+        "result": "本樣本不适用／效應≈0"
+      }
+    ],
+    "disclaimer": "十小時（實約6.5h）為探索樣本；不可宣稱參數已驗證；不可建議加碼或上實盤"
+  }
+}

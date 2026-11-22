@@ -1,0 +1,21 @@
+{
+  "cutoff_iso": "2026-11-22T09:24:54.432668+08:00",
+  "source": "c:\\Users\\Admin\\MyProjects\\automax\\output\\paper_bcd_local\\data_d\\output\\testnet_d_quiet_short_v1",
+  "method": "shutil.copy2 readonly snapshot",
+  "copied": [
+    "fills.jsonl",
+    "signals.jsonl",
+    "events.jsonl",
+    "scan_events.jsonl",
+    "account_state.json",
+    "LAUNCH_META.json",
+    "trades.csv",
+    "observer_state.json",
+    "universe_snapshot.json",
+    "PENDING_CONFIRMATIONS.json",
+    "review.md",
+    "paper_bcd_launch_meta_d.json",
+    "paper_bcd_launch_meta.json",
+    "strat_d_paper.log"
+  ]
+}
