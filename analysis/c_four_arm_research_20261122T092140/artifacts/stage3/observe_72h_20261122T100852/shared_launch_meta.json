@@ -1,0 +1,32 @@
+{
+  "shared_start": "2026-11-22T10:08:53+08:00",
+  "shared_start_unix": 1795313333.3958366,
+  "hours": 72.0,
+  "cutoff_unix": 1795572533.3958366,
+  "stop_new_entries_after_h": 72.0,
+  "arms": {
+    "B0": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b0",
+      "run_id": "20261122T100852_B0",
+      "profile": "research_c_arm_b0_20261122"
+    },
+    "B1": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b1",
+      "run_id": "20261122T100852_B1",
+      "profile": "research_c_arm_b1_20261122"
+    },
+    "B2": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b2",
+      "run_id": "20261122T100852_B2",
+      "profile": "research_c_arm_b2_20261122"
+    },
+    "B3": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b3",
+      "run_id": "20261122T100852_B3",
+      "profile": "research_c_arm_b3_20261122"
+    }
+  },
+  "fee_one_side": 0.0005,
+  "exchange_orders": "HARD_DISABLED",
+  "git_commit": "81813a261a94dbdbcecfaef9d62df5617098bfe6"
+}

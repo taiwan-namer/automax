@@ -1,0 +1,8 @@
+arm,n,gross_u,fees_u,net_u,delta_sum_u,improve_n,worsen_n,unchanged_n,note
+B0,14,-17.45987509299971,9.0029828860651,-26.46285797906481,,,,,
+B1,14,-12.945135107599834,6.5988961695708,-19.544031277170635,,,,,
+B2,14,-7.325073261599916,6.5932789235508,-13.918352185150718,,,,,
+B3,14,-11.661421049399907,4.2027445051763,-15.864165554576207,,,,,
+B1_vs_B0,14,,,,6.918826701894176,6,2,6,counts are per-arm; do not copy across arms even if coincident
+B2_vs_B0,14,,,,12.544505793914093,6,2,6,counts are per-arm; do not copy across arms even if coincident
+B3_vs_B0,14,,,,10.598692424488604,6,2,6,counts are per-arm; do not copy across arms even if coincident

@@ -1,0 +1,39 @@
+{
+  "stage": "final_pre_paper_v3",
+  "evaluated_at": "2026-11-22T10:20:00+08:00",
+  "essential_gates": {
+    "G7_event_schema": {"status": "PASS", "evidence": "test_g7_g8_g9 + enrich_paper_event"},
+    "G8_ledger_write_fail": {"status": "PASS", "evidence": "save raises+flag; add blocked; restart"},
+    "G9_full_apply": {
+      "status": "PASS",
+      "evidence": "test_g9_full_apply 8/8 OK — cancel/late fill, partial+late, same-batch stop, dedup, old/new cycle, restart replay, ledger-fail+protect, qty cap"
+    },
+    "accounting_consistency": {
+      "status": "PASS",
+      "evidence": "fixture_report final flat; cash≈equity; funding UNKNOWN not 0; fees inside realized"
+    },
+    "exchange_orders_hard_disabled": {"status": "PASS", "evidence": "EXCHANGE_ORDERS_HARD_DISABLED; testnet_hooks.enabled False"},
+    "four_arm_isolation": {
+      "status": "PASS",
+      "evidence": "separate arm_* roots, accounts, consume logs; same bus seq 1..4 consumed by all"
+    },
+    "shared_signal_quote_coordinator": {
+      "status": "PASS",
+      "evidence": "four_arm_coordinator EventBus; fixture dispatch identical event_id/seq; live_loop single fetch+raw signals"
+    },
+    "realtime_valuation_exposure": {
+      "status": "PASS",
+      "evidence": "fixture snapshots 4/arm with cash/margin/realized/fees/equity/gross_notional/exposure_integral_u_sec; restart non-decreasing"
+    }
+  },
+  "non_blocking": {
+    "G5": "INCOMPLETE_OK",
+    "G10_maker": "DISABLED",
+    "B2_historical_proxy": "LABELED_NOT_WINNER_CLAIM — forward paper allowed"
+  },
+  "smoke": {
+    "path": "analysis/c_four_arm_research_20261122T092140/artifacts/stage3/smoke_fixture",
+    "mixed_into_72h": false
+  },
+  "decision": "LAUNCH_PAPER_72H"
+}

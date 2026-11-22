@@ -1,0 +1,147 @@
+{
+  "ok": true,
+  "bus_events": [
+    {
+      "event_id": "ev:1:0f159fa8b7",
+      "seq": 1,
+      "kind": "QUOTE_BATCH"
+    },
+    {
+      "event_id": "ev:2:9a2b0b021f",
+      "seq": 2,
+      "kind": "MANAGE_TICK"
+    },
+    {
+      "event_id": "ev:3:522bd47923",
+      "seq": 3,
+      "kind": "MANAGE_TICK"
+    },
+    {
+      "event_id": "ev:4:1bfb9f39d2",
+      "seq": 4,
+      "kind": "MANAGE_TICK"
+    }
+  ],
+  "dispatch": {
+    "r1": {
+      "event_id": "ev:1:0f159fa8b7",
+      "seq": 1,
+      "kind": "QUOTE_BATCH",
+      "arms": {
+        "B0": {
+          "manage_events": 0,
+          "snapshot_equity": 4999.610050997
+        },
+        "B1": {
+          "manage_events": 0,
+          "snapshot_equity": 4999.610050997
+        },
+        "B2": {
+          "manage_events": 0,
+          "snapshot_equity": 4999.610050997
+        },
+        "B3": {
+          "manage_events": 0,
+          "snapshot_equity": 4999.610050997
+        }
+      }
+    },
+    "r2_keys": [
+      "B0",
+      "B1",
+      "B2",
+      "B3"
+    ],
+    "r4": {
+      "B0": {
+        "manage_events": 1,
+        "snapshot_equity": 4994.993746211646
+      },
+      "B1": {
+        "manage_events": 1,
+        "snapshot_equity": 4994.993746211646
+      },
+      "B2": {
+        "manage_events": 1,
+        "snapshot_equity": 4994.993746211646
+      },
+      "B3": {
+        "manage_events": 1,
+        "snapshot_equity": 4994.993746211646
+      }
+    }
+  },
+  "final_positions": {
+    "B0": [],
+    "B1": [],
+    "B2": [],
+    "B3": []
+  },
+  "final_cash": {
+    "B0": 4994.993746211647,
+    "B1": 4994.993746211647,
+    "B2": 4994.993746211647,
+    "B3": 4994.993746211647
+  },
+  "final_realized": {
+    "B0": -5.006253788353742,
+    "B1": -5.006253788353742,
+    "B2": -5.006253788353742,
+    "B3": -5.006253788353742
+  },
+  "snapshots_n": {
+    "B0": 4,
+    "B1": 4,
+    "B2": 4,
+    "B3": 4
+  },
+  "sample_snapshot_B0_last": {
+    "ts_unix": 1795313291.5619018,
+    "event_id": "ev:4:1bfb9f39d2",
+    "reason": "MANAGE_TICK",
+    "arm": "B0",
+    "run_id": "fixture_20261122T100810_B0",
+    "cash_u": 4994.993746211647,
+    "margin_u": 0.0,
+    "realized_net_u": -5.006253788353742,
+    "realized_fees_u": 0.2976456959538001,
+    "funding_u": "UNKNOWN",
+    "funding_note": "UNKNOWN_not_default_zero",
+    "positions": [],
+    "floating_unrealized_u": 0.0,
+    "equity_u": 4994.993746211646,
+    "gross_notional_u": 0.0,
+    "net_notional_u": 0.0,
+    "equity_formula": "initial + realized_net_u + floating_unrealized (fees already inside realized)",
+    "cash_identity_u": 4994.993746211647,
+    "wallet_balance_u": 4994.993746211646,
+    "exposure_integral_u_sec": 29.649742909037357,
+    "exposure_integral_u_hours": 0.00823603969695482,
+    "exposure_coverage_ratio": 1.0,
+    "exposure_gap": false,
+    "ledger_write_failed": false
+  },
+  "exposure_restart": {
+    "before": 29.649742909037357,
+    "after": 29.649742909037357,
+    "non_decreasing": true
+  },
+  "seq_consistency": {
+    "B0": {
+      "last_consumed_seq": 4,
+      "bus_seq": 4
+    },
+    "B1": {
+      "last_consumed_seq": 4,
+      "bus_seq": 4
+    },
+    "B2": {
+      "last_consumed_seq": 4,
+      "bus_seq": 4
+    },
+    "B3": {
+      "last_consumed_seq": 4,
+      "bus_seq": 4
+    }
+  }
+}

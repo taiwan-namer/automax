@@ -1,0 +1,39 @@
+{
+  "baseline_check": {
+    "paired_B0_closed_net_sum": -26.46285797906481,
+    "expected_approx_from_prior_review_closed_net": -26.46,
+    "abs_diff": 1.0209351906098618e-06,
+    "reproduce_closed_ok": true,
+    "note": "B0 paired uses same fills; small diffs if layer mapping edge cases"
+  },
+  "paired_summary": {
+    "B1_minus_B0": {
+      "n": 14,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "mean": 0.49420190727815544,
+      "median": 0.0,
+      "leave_one_out_sign_stable": true,
+      "sum": 6.918826701894176
+    },
+    "B2_minus_B0": {
+      "n": 14,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "mean": 0.896036128136721,
+      "median": 0.0,
+      "leave_one_out_sign_stable": true,
+      "sum": 12.544505793914093
+    },
+    "B3_minus_B0": {
+      "n": 14,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "mean": 0.7570494588920431,
+      "median": 0.0,
+      "leave_one_out_sign_stable": true,
+      "sum": 10.598692424488604
+    },
+    "sample_note": "n<=18 closed-ish pairs; descriptive only, not statistically significant"
+  }
+}

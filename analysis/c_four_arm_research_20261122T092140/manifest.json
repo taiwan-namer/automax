@@ -1,0 +1,85 @@
+{
+  "research_id": "c_four_arm_research_20261122T092140",
+  "generated_at": "2026-11-22T09:26:17.222660+08:00",
+  "paper_launch": "NOT_STARTED",
+  "comparison_type": "paired_path_management_only",
+  "baseline_reproduce_closed_ok": true,
+  "files": {
+    "DECISION_BRIEF.md": {
+      "sha256": "1f02326e521be3af08eb5ca19acf6ee3c956d22a487eed614f3b41223bb15881",
+      "bytes": 3761
+    },
+    "BASELINE_VALIDATION.md": {
+      "sha256": "b480290e623416b5bdd7c76f7fc4cae882beb0614f6dc2bb9dbee35cd1535dbd",
+      "bytes": 2630
+    },
+    "BASELINE_FREEZE.json": {
+      "sha256": "55efef496e31c33bde827ecc995fe61a705856e5d0acf572e22451ba45fbb5d5",
+      "bytes": 1600
+    },
+    "arms_config.json": {
+      "sha256": "2579dc7ac9960feac3c51b574d3bca3855c5d5950493a4481ae71339c9c76050",
+      "bytes": 3335
+    },
+    "paired_cycles.csv": {
+      "sha256": "5f62ec4b3d3dac05e9f14ad350b586c8e17dd9a92f9aa34bf1f8c08aa46268f8",
+      "bytes": 4351
+    },
+    "arm_metrics.csv": {
+      "sha256": "5643ce958b692e6d0084eb5ac7e951f040adc43b0f13f966fdd925bf03e22f55",
+      "bytes": 1675
+    },
+    "path_attribution.csv": {
+      "sha256": "01fa8091d55f2078a77afd4633cd06671071748310b87feae0a79fe91b92f0f7",
+      "bytes": 2339
+    },
+    "data_gaps.csv": {
+      "sha256": "d2d4088d4b4e7fe4736de4d40a96f6ce5867a3b7f1d72785e998918815635581",
+      "bytes": 1665
+    },
+    "tests_summary.md": {
+      "sha256": "ad8bbb21cfbb12125c78edff3a58f35500d31084104bf30195026582e9f85dbe",
+      "bytes": 1252
+    },
+    "paired_summary.json": {
+      "sha256": "d8ad145e15deb7f5b03c90a990f8f44fcd56091110d554b1d91ac0dcbba9d837",
+      "bytes": 1094
+    },
+    "profiles/research_c_arms_isolated.json": {
+      "sha256": "3e0d35119f75af7d3b80f4ee1b2edf884f6f59b46045f599eff18066e030d1b9",
+      "bytes": 1385
+    },
+    "code/paired_four_arm_replay.py": {
+      "sha256": "9cba9b88e957d676a002f1f5b559111d13ae26cc95b62385df6ff923abaeb4d2",
+      "bytes": 23047
+    },
+    "tests/test_c_research_gates.py": {
+      "sha256": "2a376b3d6a8d10e2ea7b14130e2cdf1dc476e981b96c26daee5699c654215879",
+      "bytes": 3412
+    },
+    "artifacts/top_deltas.json": {
+      "sha256": "be75db4394de562a1a167946cd43f711b679aacd137133d7574472b28091b658",
+      "bytes": 4990
+    },
+    "artifacts/paired_cycles_full.json": {
+      "sha256": "329232b25701335f44df76608e8d8e66b06962a9d660382ee685b02c677cc9f6",
+      "bytes": 77921
+    }
+  },
+  "blockers": [
+    "G5",
+    "G7",
+    "G8",
+    "G9",
+    "G10",
+    "G1",
+    "G4",
+    "G12"
+  ],
+  "acceptance": {
+    "unit_tests": "PASS_6_6",
+    "baseline_B0_closed": "PASS",
+    "full_ED": "FAIL_NOT_RUN",
+    "paper_gate": "BLOCKED"
+  }
+}

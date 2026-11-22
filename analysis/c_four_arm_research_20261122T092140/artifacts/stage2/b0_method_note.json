@@ -1,0 +1,5 @@
+{
+  "B0_method": "direct_reuse_historical_fills",
+  "label": "帳務重現 ≠ 模擬引擎路徑重現",
+  "detail": "B0 nets rebuild layer PnL from recorded OPEN/ADD/CLOSE fills; does not re-run manage_c_pyramid quote loop"
+}

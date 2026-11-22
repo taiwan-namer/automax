@@ -1,0 +1,148 @@
+{
+  "refreshed_at": "2026-11-22T10:08:53+08:00",
+  "eligible_count": 80,
+  "top_gainers": [
+    {
+      "symbol": "SKYAIUSDT",
+      "quote_volume_24h": 65478537.15251,
+      "price_change_pct_24h": 35.732,
+      "last_price": 0.03848,
+      "rank": 1
+    },
+    {
+      "symbol": "VVVUSDT",
+      "quote_volume_24h": 87576885.91231,
+      "price_change_pct_24h": 17.687,
+      "last_price": 24.959,
+      "rank": 2
+    },
+    {
+      "symbol": "DODOXUSDT",
+      "quote_volume_24h": 128978382.664652,
+      "price_change_pct_24h": 13.705,
+      "last_price": 0.039186,
+      "rank": 3
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "quote_volume_24h": 21022613.70078,
+      "price_change_pct_24h": 12.487,
+      "last_price": 0.2498,
+      "rank": 4
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "quote_volume_24h": 113009091.2695,
+      "price_change_pct_24h": 11.366,
+      "last_price": 3.3755,
+      "rank": 5
+    },
+    {
+      "symbol": "BTWUSDT",
+      "quote_volume_24h": 70132147.39844,
+      "price_change_pct_24h": 10.941,
+      "last_price": 0.7301,
+      "rank": 6
+    },
+    {
+      "symbol": "JCTUSDT",
+      "quote_volume_24h": 39202706.748926,
+      "price_change_pct_24h": 10.813,
+      "last_price": 0.001691,
+      "rank": 7
+    },
+    {
+      "symbol": "YBUSDT",
+      "quote_volume_24h": 38695603.36267,
+      "price_change_pct_24h": 8.969,
+      "last_price": 0.05346,
+      "rank": 8
+    },
+    {
+      "symbol": "USELESSUSDT",
+      "quote_volume_24h": 23194026.8829,
+      "price_change_pct_24h": 8.562,
+      "last_price": 0.08102,
+      "rank": 9
+    },
+    {
+      "symbol": "XMRUSDT",
+      "quote_volume_24h": 64566507.03,
+      "price_change_pct_24h": 8.21,
+      "last_price": 492.02,
+      "rank": 10
+    }
+  ],
+  "top_losers": [
+    {
+      "symbol": "AKEUSDT",
+      "quote_volume_24h": 156294207.216592,
+      "price_change_pct_24h": -29.262,
+      "last_price": 0.004286,
+      "rank": 1
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "quote_volume_24h": 428418389.628662,
+      "price_change_pct_24h": -20.066,
+      "last_price": 0.019165,
+      "rank": 2
+    },
+    {
+      "symbol": "MMTUSDT",
+      "quote_volume_24h": 136201799.3874,
+      "price_change_pct_24h": -19.678,
+      "last_price": 0.2147,
+      "rank": 3
+    },
+    {
+      "symbol": "BREVUSDT",
+      "quote_volume_24h": 26193113.8325,
+      "price_change_pct_24h": -13.557,
+      "last_price": 0.06453,
+      "rank": 4
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "quote_volume_24h": 34540831.1574,
+      "price_change_pct_24h": -10.929,
+      "last_price": 0.3472,
+      "rank": 5
+    },
+    {
+      "symbol": "KERNELUSDT",
+      "quote_volume_24h": 36428076.31859,
+      "price_change_pct_24h": -10.682,
+      "last_price": 0.04072,
+      "rank": 6
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "quote_volume_24h": 535050628.462323,
+      "price_change_pct_24h": -7.063,
+      "last_price": 0.01275,
+      "rank": 7
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "quote_volume_24h": 48118583.20457,
+      "price_change_pct_24h": -7.027,
+      "last_price": 0.2117,
+      "rank": 8
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "quote_volume_24h": 308266560.55872,
+      "price_change_pct_24h": -6.926,
+      "last_price": 5.9157,
+      "rank": 9
+    },
+    {
+      "symbol": "INJUSDT",
+      "quote_volume_24h": 87189654.4018,
+      "price_change_pct_24h": -5.616,
+      "last_price": 5.966,
+      "rank": 10
+    }
+  ]
+}

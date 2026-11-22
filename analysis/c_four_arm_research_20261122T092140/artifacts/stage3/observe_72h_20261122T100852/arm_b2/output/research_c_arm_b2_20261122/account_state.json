@@ -1,0 +1,3643 @@
+{
+  "strategy_version": "breakout_follow_v1",
+  "profile_id": "research_c_arm_b2_20261122",
+  "initial_capital_u": 5000.0,
+  "cash_u": 5000.0,
+  "realized_net_u": 0.0,
+  "realized_fees_u": 0.0,
+  "realized_funding_u": 0.0,
+  "funding_data_gap": true,
+  "positions": {},
+  "pending_limit_entries": {},
+  "settlement_pending": {},
+  "applied_exchange_trade_keys": [],
+  "settlement_journal": [],
+  "cooldowns_until": {},
+  "reverse_events": {},
+  "processed_signals": [],
+  "day_key": "",
+  "day_start_equity_u": 10000.0,
+  "day_new_entries_locked": false,
+  "last_universe_refresh_ts": 0.0,
+  "universe": [
+    {
+      "symbol": "WLFIUSDT",
+      "quote_volume_24h": 24776054.32743,
+      "price_change_pct_24h": -0.63,
+      "last_price": 0.04417
+    },
+    {
+      "symbol": "UNIUSDT",
+      "quote_volume_24h": 205550956.689,
+      "price_change_pct_24h": 5.81,
+      "last_price": 4.735
+    },
+    {
+      "symbol": "STRKUSDT",
+      "quote_volume_24h": 20853330.214199,
+      "price_change_pct_24h": -0.886,
+      "last_price": 0.03021
+    },
+    {
+      "symbol": "AKEUSDT",
+      "quote_volume_24h": 156294207.216592,
+      "price_change_pct_24h": -29.262,
+      "last_price": 0.004286
+    },
+    {
+      "symbol": "DOTUSDT",
+      "quote_volume_24h": 44965183.43562,
+      "price_change_pct_24h": -2.026,
+      "last_price": 0.6528
+    },
+    {
+      "symbol": "HBARUSDT",
+      "quote_volume_24h": 30238958.83268,
+      "price_change_pct_24h": 0.195,
+      "last_price": 0.0513
+    },
+    {
+      "symbol": "BARDUSDT",
+      "quote_volume_24h": 42105705.6595,
+      "price_change_pct_24h": 2.186,
+      "last_price": 0.0935
+    },
+    {
+      "symbol": "IDOLUSDT",
+      "quote_volume_24h": 428418389.628662,
+      "price_change_pct_24h": -20.066,
+      "last_price": 0.019165
+    },
+    {
+      "symbol": "ARBUSDT",
+      "quote_volume_24h": 51078114.210203,
+      "price_change_pct_24h": 0.461,
+      "last_price": 0.11336
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "quote_volume_24h": 47483609.90538,
+      "price_change_pct_24h": 1.728,
+      "last_price": 0.2826
+    },
+    {
+      "symbol": "PIEVERSEUSDT",
+      "quote_volume_24h": 113009091.2695,
+      "price_change_pct_24h": 11.366,
+      "last_price": 3.3755
+    },
+    {
+      "symbol": "1000SHIBUSDT",
+      "quote_volume_24h": 33556717.792221,
+      "price_change_pct_24h": 1.731,
+      "last_price": 0.003643
+    },
+    {
+      "symbol": "NEARUSDT",
+      "quote_volume_24h": 490914966.747,
+      "price_change_pct_24h": 4.779,
+      "last_price": 2.916
+    },
+    {
+      "symbol": "ADAUSDT",
+      "quote_volume_24h": 175820638.9527,
+      "price_change_pct_24h": 0.418,
+      "last_price": 0.144
+    },
+    {
+      "symbol": "CYBERUSDT",
+      "quote_volume_24h": 48118583.20457,
+      "price_change_pct_24h": -7.027,
+      "last_price": 0.2117
+    },
+    {
+      "symbol": "JCTUSDT",
+      "quote_volume_24h": 39202706.748926,
+      "price_change_pct_24h": 10.813,
+      "last_price": 0.001691
+    },
+    {
+      "symbol": "WLDUSDT",
+      "quote_volume_24h": 109696003.3057,
+      "price_change_pct_24h": 0.927,
+      "last_price": 0.2287
+    },
+    {
+      "symbol": "TIAUSDT",
+      "quote_volume_24h": 21630418.8333,
+      "price_change_pct_24h": -1.404,
+      "last_price": 0.3231
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "quote_volume_24h": 216460291.2427291,
+      "price_change_pct_24h": -0.735,
+      "last_price": 0.0034288
+    },
+    {
+      "symbol": "KERNELUSDT",
+      "quote_volume_24h": 36428076.31859,
+      "price_change_pct_24h": -10.682,
+      "last_price": 0.04072
+    },
+    {
+      "symbol": "APTUSDT",
+      "quote_volume_24h": 39845350.23202,
+      "price_change_pct_24h": 2.178,
+      "last_price": 0.3707
+    },
+    {
+      "symbol": "FILUSDT",
+      "quote_volume_24h": 87441659.4004,
+      "price_change_pct_24h": -2.748,
+      "last_price": 0.5167
+    },
+    {
+      "symbol": "HUMAUSDT",
+      "quote_volume_24h": 25170870.943536,
+      "price_change_pct_24h": -1.69,
+      "last_price": 0.008666
+    },
+    {
+      "symbol": "SKYAIUSDT",
+      "quote_volume_24h": 65478537.15251,
+      "price_change_pct_24h": 35.732,
+      "last_price": 0.03848
+    },
+    {
+      "symbol": "XPLUSDT",
+      "quote_volume_24h": 28515267.50871,
+      "price_change_pct_24h": -1.758,
+      "last_price": 0.0447
+    },
+    {
+      "symbol": "BTWUSDT",
+      "quote_volume_24h": 70132147.39844,
+      "price_change_pct_24h": 10.941,
+      "last_price": 0.7301
+    },
+    {
+      "symbol": "BLESSUSDT",
+      "quote_volume_24h": 535050628.462323,
+      "price_change_pct_24h": -7.063,
+      "last_price": 0.01275
+    },
+    {
+      "symbol": "JUPUSDT",
+      "quote_volume_24h": 20568338.1608,
+      "price_change_pct_24h": -2.697,
+      "last_price": 0.2201
+    },
+    {
+      "symbol": "ASTERUSDT",
+      "quote_volume_24h": 52793431.4366,
+      "price_change_pct_24h": -2.064,
+      "last_price": 0.4888
+    },
+    {
+      "symbol": "INITUSDT",
+      "quote_volume_24h": 30288778.14141,
+      "price_change_pct_24h": -0.576,
+      "last_price": 0.08804
+    },
+    {
+      "symbol": "BCHUSDT",
+      "quote_volume_24h": 65621526.7,
+      "price_change_pct_24h": 2.891,
+      "last_price": 199.64
+    },
+    {
+      "symbol": "DODOXUSDT",
+      "quote_volume_24h": 128978382.664652,
+      "price_change_pct_24h": 13.705,
+      "last_price": 0.039186
+    },
+    {
+      "symbol": "BNBUSDT",
+      "quote_volume_24h": 525493110.72,
+      "price_change_pct_24h": 1.916,
+      "last_price": 549.61
+    },
+    {
+      "symbol": "BTCUSDT",
+      "quote_volume_24h": 21023712510.58,
+      "price_change_pct_24h": 1.858,
+      "last_price": 60081.8
+    },
+    {
+      "symbol": "BREVUSDT",
+      "quote_volume_24h": 26193113.8325,
+      "price_change_pct_24h": -13.557,
+      "last_price": 0.06453
+    },
+    {
+      "symbol": "SUIUSDT",
+      "quote_volume_24h": 178011519.28214,
+      "price_change_pct_24h": 0.217,
+      "last_price": 0.6476
+    },
+    {
+      "symbol": "YBUSDT",
+      "quote_volume_24h": 38695603.36267,
+      "price_change_pct_24h": 8.969,
+      "last_price": 0.05346
+    },
+    {
+      "symbol": "MMTUSDT",
+      "quote_volume_24h": 136201799.3874,
+      "price_change_pct_24h": -19.678,
+      "last_price": 0.2147
+    },
+    {
+      "symbol": "INJUSDT",
+      "quote_volume_24h": 87189654.4018,
+      "price_change_pct_24h": -5.616,
+      "last_price": 5.966
+    },
+    {
+      "symbol": "XMRUSDT",
+      "quote_volume_24h": 64566507.03,
+      "price_change_pct_24h": 8.21,
+      "last_price": 492.02
+    },
+    {
+      "symbol": "VVVUSDT",
+      "quote_volume_24h": 87576885.91231,
+      "price_change_pct_24h": 17.687,
+      "last_price": 24.959
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "quote_volume_24h": 28924854.39446,
+      "price_change_pct_24h": -1.017,
+      "last_price": 0.004284
+    },
+    {
+      "symbol": "ZROUSDT",
+      "quote_volume_24h": 36358389.0327,
+      "price_change_pct_24h": 6.412,
+      "last_price": 1.1883
+    },
+    {
+      "symbol": "ETCUSDT",
+      "quote_volume_24h": 20106530.744,
+      "price_change_pct_24h": 0.055,
+      "last_price": 5.486
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "quote_volume_24h": 101864340.336,
+      "price_change_pct_24h": -0.998,
+      "last_price": 97.19
+    },
+    {
+      "symbol": "DASHUSDT",
+      "quote_volume_24h": 23201716.92,
+      "price_change_pct_24h": 5.794,
+      "last_price": 34.69
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "quote_volume_24h": 107633986.9971,
+      "price_change_pct_24h": -3.502,
+      "last_price": 0.002342
+    },
+    {
+      "symbol": "ICNTUSDT",
+      "quote_volume_24h": 34540831.1574,
+      "price_change_pct_24h": -10.929,
+      "last_price": 0.3472
+    },
+    {
+      "symbol": "LINKUSDT",
+      "quote_volume_24h": 130522584.593,
+      "price_change_pct_24h": 0.339,
+      "last_price": 8.583
+    },
+    {
+      "symbol": "LITUSDT",
+      "quote_volume_24h": 56327614.02412,
+      "price_change_pct_24h": 1.751,
+      "last_price": 2.3297
+    },
+    {
+      "symbol": "BRUSDT",
+      "quote_volume_24h": 22954833.74764,
+      "price_change_pct_24h": 3.291,
+      "last_price": 0.4017
+    },
+    {
+      "symbol": "EVAAUSDT",
+      "quote_volume_24h": 308266560.55872,
+      "price_change_pct_24h": -6.926,
+      "last_price": 5.9157
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "quote_volume_24h": 642150656.21325,
+      "price_change_pct_24h": 1.616,
+      "last_price": 61.378
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "quote_volume_24h": 335168432.30529,
+      "price_change_pct_24h": 1.008,
+      "last_price": 0.05512
+    },
+    {
+      "symbol": "USELESSUSDT",
+      "quote_volume_24h": 23194026.8829,
+      "price_change_pct_24h": 8.562,
+      "last_price": 0.08102
+    },
+    {
+      "symbol": "ZECUSDT",
+      "quote_volume_24h": 2151189891.93,
+      "price_change_pct_24h": 4.425,
+      "last_price": 779.0
+    },
+    {
+      "symbol": "QNTUSDT",
+      "quote_volume_24h": 42456813.874,
+      "price_change_pct_24h": 2.936,
+      "last_price": 142.69
+    },
+    {
+      "symbol": "ENAUSDT",
+      "quote_volume_24h": 155685472.77706,
+      "price_change_pct_24h": 0.102,
+      "last_price": 0.09861
+    },
+    {
+      "symbol": "FETUSDT",
+      "quote_volume_24h": 36859955.562,
+      "price_change_pct_24h": -3.277,
+      "last_price": 0.1092
+    },
+    {
+      "symbol": "ELSAUSDT",
+      "quote_volume_24h": 28334859.53154,
+      "price_change_pct_24h": 5.503,
+      "last_price": 0.0696
+    },
+    {
+      "symbol": "SOLUSDT",
+      "quote_volume_24h": 1950106817.3739,
+      "price_change_pct_24h": 2.359,
+      "last_price": 70.3
+    },
+    {
+      "symbol": "XLMUSDT",
+      "quote_volume_24h": 42993582.12998,
+      "price_change_pct_24h": 0.943,
+      "last_price": 0.12839
+    },
+    {
+      "symbol": "LTCUSDT",
+      "quote_volume_24h": 83142730.62,
+      "price_change_pct_24h": -1.946,
+      "last_price": 39.8
+    },
+    {
+      "symbol": "RAREUSDT",
+      "quote_volume_24h": 73884848.64161,
+      "price_change_pct_24h": 3.656,
+      "last_price": 0.01361
+    },
+    {
+      "symbol": "XRPUSDT",
+      "quote_volume_24h": 762284206.6574,
+      "price_change_pct_24h": 2.474,
+      "last_price": 0.9319
+    },
+    {
+      "symbol": "OPUSDT",
+      "quote_volume_24h": 24025057.392327,
+      "price_change_pct_24h": 1.061,
+      "last_price": 0.07048
+    },
+    {
+      "symbol": "IRYSUSDT",
+      "quote_volume_24h": 38302306.85006,
+      "price_change_pct_24h": -5.314,
+      "last_price": 0.02067
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "quote_volume_24h": 26357820.74112,
+      "price_change_pct_24h": 7.684,
+      "last_price": 0.4821
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "quote_volume_24h": 72552439.08842,
+      "price_change_pct_24h": 3.963,
+      "last_price": 0.892
+    },
+    {
+      "symbol": "GRAMUSDT",
+      "quote_volume_24h": 24250635.8807,
+      "price_change_pct_24h": -1.873,
+      "last_price": 0.943
+    },
+    {
+      "symbol": "TAOUSDT",
+      "quote_volume_24h": 100939662.08,
+      "price_change_pct_24h": 3.695,
+      "last_price": 186.63
+    },
+    {
+      "symbol": "RENDERUSDT",
+      "quote_volume_24h": 21176439.1109,
+      "price_change_pct_24h": 3.861,
+      "last_price": 1.318
+    },
+    {
+      "symbol": "ENSOUSDT",
+      "quote_volume_24h": 138133831.83853,
+      "price_change_pct_24h": 7.181,
+      "last_price": 0.5045
+    },
+    {
+      "symbol": "TRXUSDT",
+      "quote_volume_24h": 43506614.89107,
+      "price_change_pct_24h": 1.187,
+      "last_price": 0.30529
+    },
+    {
+      "symbol": "ORCAUSDT",
+      "quote_volume_24h": 45711382.4874,
+      "price_change_pct_24h": 6.673,
+      "last_price": 1.183
+    },
+    {
+      "symbol": "CRVUSDT",
+      "quote_volume_24h": 26273510.30803,
+      "price_change_pct_24h": -0.784,
+      "last_price": 0.1771
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "quote_volume_24h": 99558367.069,
+      "price_change_pct_24h": 1.216,
+      "last_price": 6.576
+    },
+    {
+      "symbol": "ETHUSDT",
+      "quote_volume_24h": 10173196651.21,
+      "price_change_pct_24h": 3.763,
+      "last_price": 1685.8
+    },
+    {
+      "symbol": "ICPUSDT",
+      "quote_volume_24h": 29025040.102,
+      "price_change_pct_24h": -4.632,
+      "last_price": 1.894
+    },
+    {
+      "symbol": "MAGMAUSDT",
+      "quote_volume_24h": 21022613.70078,
+      "price_change_pct_24h": 12.487,
+      "last_price": 0.2498
+    }
+  ],
+  "top_gainers": [
+    "SKYAIUSDT",
+    "VVVUSDT",
+    "DODOXUSDT",
+    "MAGMAUSDT",
+    "PIEVERSEUSDT",
+    "BTWUSDT",
+    "JCTUSDT",
+    "YBUSDT",
+    "USELESSUSDT",
+    "XMRUSDT"
+  ],
+  "top_losers": [
+    "AKEUSDT",
+    "IDOLUSDT",
+    "MMTUSDT",
+    "BREVUSDT",
+    "ICNTUSDT",
+    "KERNELUSDT",
+    "BLESSUSDT",
+    "CYBERUSDT",
+    "EVAAUSDT",
+    "INJUSDT"
+  ],
+  "filters": {
+    "BTCUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 50.0,
+      "tickSize": 0.1
+    },
+    "ETHUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 20.0,
+      "tickSize": 0.01
+    },
+    "BCHUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 20.0,
+      "tickSize": 0.01
+    },
+    "XRPUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "LTCUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 20.0,
+      "tickSize": 0.01
+    },
+    "TRXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ETCUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 20.0,
+      "tickSize": 0.001
+    },
+    "LINKUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 20.0,
+      "tickSize": 0.001
+    },
+    "XLMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ADAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "XMRUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "DASHUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "ZECUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "XTZUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BNBUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "ATOMUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "ONTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "IOTAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BATUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "VETUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "NEOUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "QTUMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "IOSTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "THETAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ALGOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZILUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "KNCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ZRXUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "COMPUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "DOGEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "KAVAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BANDUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "RLCUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SNXUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "DOTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "YFIUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 1.0
+    },
+    "CRVUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "TRBUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "RUNEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SUSHIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "EGLDUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SOLUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "UNIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "AVAXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "ENJUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "KSMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "NEARUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "AAVEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "FILUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "RSRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BELUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AXSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ZENUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SKLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "GRTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "1INCHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CHZUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SANDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ANKRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "RVNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SFPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "COTIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "CHRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MANAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ALICEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "HBARUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ONEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "CELRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "HOTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "MTLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "OGNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "1000SHIBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "GTCUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "IOTXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "C98USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MASKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "DYDXUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "1000XECUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "GALAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "CELOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ARUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "ARPAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "CTSIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LPTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "ENSUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "PEOPLEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ROSEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "DUSKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FLOWUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "IMXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "API3USDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "GMTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "APEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "WOOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "JASMYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "OPUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "INJUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SPELLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "1000LUNCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LUNA2USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LDOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ICPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "APTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "QNTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "FETUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "MAGICUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "MINAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ASTRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "GMXUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "CFXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "STXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ACHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SSVUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "CKBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "LQTYUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "USDCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "IDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ARBUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "JOEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TLMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "XVSUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "BLURUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "EDUUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SUIUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "1000PEPEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "1000FLOKIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "UMAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "NMRUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "MAVUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "XVGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "WLDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "PENDLEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ARKMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "AGLDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "YGGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DODOXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BNTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SEIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CYBERUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ARKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BICOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BIGTIMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "WAXPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BSVUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "RIFUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "POLYXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GASUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "POWRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CAKEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "MEMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "TWTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ORDIUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "STEEMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ILVUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "KASUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BEAMXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "1000BONKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PYTHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SUPERUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "USTCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ONGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ETHWUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "JTOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "1000SATSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-08
+    },
+    "AUCTIONUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "1000RATSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ACEUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MOVRUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "XAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "WIFUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "MANTAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ONDOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "LSKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ALTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "JUPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ZETAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "RONINUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DYMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PIXELUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "STRKUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GLMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PORTALUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AXLUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "METISUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "AEVOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BOMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "ETHFIUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ENAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "WUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TNSRUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SAGAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TAOUSDT": {
+      "stepSize": 0.001,
+      "minQty": 0.001,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "REZUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "NOTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "TURBOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "IOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ZKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "MEWUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "LISTAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZROUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "RENDERUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "BANANAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "RAREUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SYNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BRETTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "POPCATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SUNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "DOGSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-08
+    },
+    "FLUXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "RPLUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "POLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "1MBABYDOGEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "NEIROUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-08
+    },
+    "FIDAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CATIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HMSTRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "EIGENUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "DIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "1000CATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SCRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GOATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MOODENGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SAFEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SANTOSUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "COWUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CETUSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "1000000MOGUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GRASSUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "DRIFTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ACTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PNUTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BANUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AKTUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "1000CHEEMSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "THEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MORPHOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CHILLGUYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "KAIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AEROUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ORCAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "MOVEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "RAYSOLUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "KOMAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "VIRTUALUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SPXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "MEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AVAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "MOCAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "VANAUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "PENGUUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "LUMIAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "USUALUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "AIXBTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FARTCOINUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "KMNOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CGPTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HIVEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DEXEUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "PHAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GRIFFAINUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ZEREBROUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BIOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "COOKIEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ALCHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SWARMSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SONICUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PROMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SOLVUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ARCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AVAAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TRUMPUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "MELANIAUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "VTHOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "ANIMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PIPPINUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "VVVUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "BERAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "TSTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LAYERUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HEIUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GPSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SHELLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "KAITOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "REDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BMTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MUBARAKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FORMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "TUTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BROCCOLI714USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BROCCOLIF3BUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SIRENUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BANANAS31USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "PLUMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "NILUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PARTIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "JELLYJELLYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MAVIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "WALUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GUNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ATHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BABYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "STOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FHEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "KERNELUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "WCTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "INITUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BANKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DEEPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HYPERUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "JSTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SIGNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PUNDIXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CTKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AIOTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DOLOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HAEDALUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SXTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ASRUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ALPINEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "B2USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SYRUPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "DOODUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "OGUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SKYAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "NXPCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CVCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AGTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AWEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SOONUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "HUMAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "AUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SOPHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "MERLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HYPEUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "LAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HOMEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "RESOLVUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TAIKOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SQDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SPKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MYXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "NEWTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SAHARAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ICNTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BULLAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "IDOLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "MUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "PUMPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "CROSSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AINUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "VELVETUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TACUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ERAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CVXUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "SLPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "ZORAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TAGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "ESPORTSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TREEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PLAYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "NAORISUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TOWNSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PROVEUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "INUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CARVUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AIOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "XNYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "USELESSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SAPIENUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "XPLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "WLFIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SOMIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BASUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BTRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HEMIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "LINEAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "QUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ARIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TAKEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "OPENUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "FLOCKUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SKYUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AVNTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "HOLOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "XPINUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "UBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZKCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "TOSHIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-07
+    },
+    "STBLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "0GUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BARDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ASTERUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "TRADOORUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BLESSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "FLUIDUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "COAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "HANAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MIRAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AKEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ORDERUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LIGHTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "XANUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "FFUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "EDENUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "NOMUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TRUTHUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "2ZUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "EVAAUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "LYNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "KGENUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "4USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "GIGGLEUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "MONUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "YBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "METUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "EULUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ENSOUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CLOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "RECALLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZBTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LABUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "RIVERUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "币安人生USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BLUAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TURTLEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "APRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ONUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "KITEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CCUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MMTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "TRUSTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "UAIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FOLKSUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "STABLEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "JCTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ALLOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CLANKERUSDT": {
+      "stepSize": 0.01,
+      "minQty": 0.01,
+      "minNotional": 5.0,
+      "tickSize": 0.01
+    },
+    "BEATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PIEVERSEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SENTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "IRYSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "POWERUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "WETUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "NIGHTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "USUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "CYSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "RAVEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ZKPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GUAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "LITUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BREVUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "COLLECTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MAGMAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZAMAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "FOGOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "FRAXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "SPORTFUNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ACUUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "我踏马来了USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ELSAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "SKRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SPACEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "FIGHTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "BIRBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GWEIUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MEGAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "INXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "TRIAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "ESPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "AZTECUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "OPNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ROBOUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "KATUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "MANTRAUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "龙虾USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CFGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "EDGEUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "BSBUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BASEDUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PRLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GENIUSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CHIPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "OPGUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "AIGENSYNUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BILLUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "PHAROSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "STARUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CTRUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-06
+    },
+    "SLXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "ZESTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "BTWUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "REUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "ARXUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "OUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "CAPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "GRAMUSDT": {
+      "stepSize": 0.1,
+      "minQty": 0.1,
+      "minNotional": 5.0,
+      "tickSize": 0.001
+    },
+    "DATAIPUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "GRVTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "DOSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "牛来USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "MARSCOINUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "PONSUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 0.0001
+    },
+    "哈基米USDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    },
+    "CTUSDT": {
+      "stepSize": 1.0,
+      "minQty": 1.0,
+      "minNotional": 5.0,
+      "tickSize": 1e-05
+    }
+  },
+  "run_id": "20261122T100852_B2",
+  "created_at": "2026-11-22T10:08:53+08:00",
+  "updated_at": "2026-11-22T10:09:02+08:00",
+  "inconsistency": null,
+  "accounting_migration_version": "",
+  "accounting_migration_meta": null,
+  "ledger_write_failed": false,
+  "ledger_write_fail_reason": null,
+  "ledger_recovery_journal": [],
+  "research_event_seq": 0,
+  "new_exposure_blocked_until_reconcile": false
+}

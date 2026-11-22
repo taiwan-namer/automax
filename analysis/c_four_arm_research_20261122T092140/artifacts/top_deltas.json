@@ -1,0 +1,170 @@
+{
+  "B1_minus_B0": {
+    "best5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:BTWUSDT:ea0207bcce",
+        "delta": 2.5360770085200066,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:dd66d6f5ed",
+        "delta": 2.1172843885199564,
+        "path": "P1_exited_P0_P2_stop"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:cd6c50ff72",
+        "delta": 2.094852599802044,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:BRUSDT:91fd37ee8e",
+        "delta": 2.0540074486399633,
+        "path": "P1_exited_P0_P2_stop"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:d37b0b6d51",
+        "delta": 1.936727023556987,
+        "path": "three_layer_direct_PSTOP"
+      }
+    ],
+    "worst5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bab163bc06",
+        "delta": -2.8432327040280025,
+        "path": "P2_then_R2_then_P0_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:4678f35775",
+        "delta": -2.7886091886432443,
+        "path": "P2_R2_mix"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ADAUSDT:777f3c4e49",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:APTUSDT:53d5b8dd8e",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ASTERUSDT:49d9fc7aa8",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      }
+    ]
+  },
+  "B2_minus_B0": {
+    "best5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:BTWUSDT:ea0207bcce",
+        "delta": 6.974960816340021,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:cd6c50ff72",
+        "delta": 5.657764433511728,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:d37b0b6d51",
+        "delta": 5.23510995083696,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:dd66d6f5ed",
+        "delta": 3.9529173943439133,
+        "path": "P1_exited_P0_P2_stop"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:BRUSDT:91fd37ee8e",
+        "delta": 3.8247034942099263,
+        "path": "P1_exited_P0_P2_stop"
+      }
+    ],
+    "worst5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bab163bc06",
+        "delta": -12.14000931516561,
+        "path": "P2_then_R2_then_P0_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:4678f35775",
+        "delta": -4.299439708486776,
+        "path": "P2_R2_mix"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ADAUSDT:777f3c4e49",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:APTUSDT:53d5b8dd8e",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ASTERUSDT:49d9fc7aa8",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      }
+    ]
+  },
+  "B3_minus_B0": {
+    "best5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:BTWUSDT:ea0207bcce",
+        "delta": 6.557294147300024,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:cd6c50ff72",
+        "delta": 5.677098159354684,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:d37b0b6d51",
+        "delta": 5.390708773835975,
+        "path": "three_layer_direct_PSTOP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:dd66d6f5ed",
+        "delta": 0.8646181390319079,
+        "path": "P1_exited_P0_P2_stop"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bc8f12feca",
+        "delta": 0.24620576118726145,
+        "path": "P1_exited_P0_P2_stop"
+      }
+    ],
+    "worst5": [
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bab163bc06",
+        "delta": -4.133573689553899,
+        "path": "P2_then_R2_then_P0_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:4678f35775",
+        "delta": -4.050926772667282,
+        "path": "P2_R2_mix"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ADAUSDT:777f3c4e49",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:APTUSDT:53d5b8dd8e",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      },
+      {
+        "trade_id": "20261121T201533_9a0f7b4f:ASTERUSDT:49d9fc7aa8",
+        "delta": 0.0,
+        "path": "no_add_then_TP"
+      }
+    ]
+  }
+}

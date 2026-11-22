@@ -1,0 +1,29 @@
+{
+  "run_id": "",
+  "strategy_id": "breakout_follow_v1",
+  "strategy_version": "breakout_follow_v1",
+  "config_hash": "6fa62524aa0196d5",
+  "config_hash_algo": "stable_v1",
+  "effective_from": "2026-11-22T10:08:53+08:00",
+  "timezone": "Asia/Taipei",
+  "account_path": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b1\\output\\research_c_arm_b1_20261122\\account_state.json",
+  "initial_capital_usdt": 5000.0,
+  "capital": {
+    "margin_per_trade": 30.0,
+    "leverage": 10.0,
+    "notional": 300.0,
+    "max_positions": 10,
+    "max_loss_per_trade": 100.0,
+    "daily_loss_lock": 300.0
+  },
+  "simulation_assumptions": {
+    "fee_rate_one_side": 0.0005,
+    "slippage_adverse": 0.0002,
+    "note": "SIMULATION_ASSUMPTION — not exchange actual fee/fill"
+  },
+  "notes": [
+    "Independent paper strategy; does not touch legacy FADE/MOMO ledger",
+    "SIMULATION_ASSUMPTION fees/slippage — not optimized, not guaranteed profitable",
+    "Funding rate settlement may be marked funding_data_gap=true"
+  ]
+}

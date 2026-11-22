@@ -1,0 +1,92 @@
+{
+  "research_id": "c_four_arm_research_20261122T092140",
+  "comparison_type": "paired_path_management_only",
+  "not_full_strategy_backtest": true,
+  "baseline": {
+    "profile": "testnet_c_inv_v1",
+    "run_id": "20261121T201533_9a0f7b4f",
+    "exit_plan_id": "c_pyramid300_r2_p0tp1pct_20261120",
+    "git_HEAD": "81813a261a94dbdbcecfaef9d62df5617098bfe6",
+    "config_hash": "2cad8ee26c1d00bd",
+    "fee_stage1_one_side": 0.0005,
+    "notional_per_layer_u": 300.0,
+    "margin_per_layer_u": 30.0,
+    "leverage_assumed": 10,
+    "add_pct_recursive": 0.005,
+    "p0_tp_pct": 0.01,
+    "p0_anchor_definition": "P0 fill price at OPEN; rebound_exit_price=p0_entry; stop_frozen=True; P1/P2/avg must not overwrite P0",
+    "layer_formula": "recursive: P1=P0*(1±add), P2=P1*(1±add), Pstop=P2*(1±add); NOT linear 1.5%",
+    "r2_rule": "add layers exit at P0; after R2 that layer not re-armed"
+  },
+  "shared_inherited": [
+    "signal_filters",
+    "symbol_selection",
+    "P0_entry_rules",
+    "notional_300_per_layer",
+    "leverage_10_assumption",
+    "P0_fixed_anchor",
+    "P0_TP_1pct",
+    "recursive_level_formula",
+    "R2_no_rearm"
+  ],
+  "arms": {
+    "B0": {
+      "label": "baseline_full_pyramid",
+      "layers": ["P0", "P1", "P2"],
+      "r2": "P1_and_P2",
+      "final_stop": "original_Pstop_from_P0",
+      "paper_profile_id_isolated": "research_c_arm_b0_20261122",
+      "initial_sim_capital_u": 5000.0,
+      "exchange_orders": "DISABLED"
+    },
+    "B1": {
+      "label": "no_P2_add",
+      "layers": ["P0", "P1"],
+      "forbid": ["P2_add"],
+      "r2": "P1_only",
+      "final_stop": "original_Pstop_from_P0_unchanged",
+      "paper_profile_id_isolated": "research_c_arm_b1_20261122",
+      "initial_sim_capital_u": 5000.0,
+      "exchange_orders": "DISABLED"
+    },
+    "B2": {
+      "label": "protect_at_original_P2_trigger",
+      "layers": ["P0", "P1"],
+      "forbid": ["P2_add"],
+      "on_original_P2_trigger": "protective_exit_all_remaining_and_cancel_pending_adds",
+      "r2": "P1_only",
+      "paper_profile_id_isolated": "research_c_arm_b2_20261122",
+      "initial_sim_capital_u": 5000.0,
+      "exchange_orders": "DISABLED",
+      "jump_over_note": "same-quote priority: PSTOP > protect-at-P2 > add > R2 > P0_TP; paired uses fill timeline; missing ticks => UNKNOWN"
+    },
+    "B3": {
+      "label": "P0_only",
+      "layers": ["P0"],
+      "forbid": ["P1_add", "P2_add"],
+      "p0_tp": "unchanged_1pct",
+      "final_stop": "original_Pstop_from_P0_unchanged",
+      "paper_profile_id_isolated": "research_c_arm_b3_20261122",
+      "initial_sim_capital_u": 5000.0,
+      "exchange_orders": "DISABLED"
+    }
+  },
+  "fee_models": {
+    "stage1_uniform": {"one_side": 0.0005, "purpose": "compare_management_only"},
+    "fee_sensitivity_not_maker_validation": {
+      "intended_maker_one_side": 0.0002,
+      "protective_taker_one_side": 0.0005,
+      "note": "sensitivity only; not claim of real maker fills"
+    }
+  },
+  "paper_launch": {
+    "status": "NOT_STARTED",
+    "gate": "blocked_until_acceptance",
+    "observation_window_h": 72,
+    "safety_check_h": 24,
+    "shared_quotes_signals": true,
+    "independent_accounts_fills": true
+  },
+  "no_param_search": true,
+  "sample_is_dev_window_not_oos": true
+}

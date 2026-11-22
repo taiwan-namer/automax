@@ -1,0 +1,66 @@
+{
+  "stage": 2,
+  "evaluated_at": "2026-11-22T09:55:00+08:00",
+  "paper_launch": "NOT_STARTED",
+  "essential_gates": {
+    "G7_event_schema": {
+      "status": "PASS",
+      "evidence": "research_event_schema.py + enrich on paper ADD/CLOSE; test_enrich_has_required_fields PASS; tick check without 0.2% slack"
+    },
+    "G8_ledger_write_fail": {
+      "status": "PASS",
+      "evidence": "save_account raises+flags; entry/add blocked; protect path still callable; restart loads flag; tests PASS"
+    },
+    "G9_behavior_suite": {
+      "status": "PASS_WITH_NOTES",
+      "executed": true,
+      "passed": [
+        "same_quote_stop_blocks_add",
+        "jump_over_thresholds_stop_first",
+        "b2_protect_at_p2_no_p2_add",
+        "p1_r2_no_rearm_and_p2_still_pending",
+        "add_does_not_overwrite_p0",
+        "late_cancel_requested_persisted",
+        "restart_ledger_flag",
+        "old_cycle_isolation",
+        "duplicate_signal_gate",
+        "exchange_hard_disabled"
+      ],
+      "notes": [
+        "late-fill APPLY during protect exit is persistence-tested, not full digest apply of invented late_fill_qty field",
+        "exit/late-fill interleaving covered by existing cancel_lifecycle digest in production path; dedicated cross-event unit still thin"
+      ]
+    },
+    "accounting_consistency_baseline": {
+      "status": "PASS",
+      "evidence": "prior review PASS; B0 paired closed -26.462858 reproduces"
+    },
+    "exchange_orders_hard_disabled": {
+      "status": "PASS",
+      "evidence": "EXCHANGE_ORDERS_HARD_DISABLED + testnet_hooks.enabled() False; test PASS"
+    },
+    "four_arm_account_fill_isolation": {
+      "status": "READY_PROFILES_ONLY",
+      "evidence": "profiles/research_c_arms_isolated.json exists; RESEARCH_ARM hooks in manage; coordinator not launched"
+    },
+    "realtime_valuation_exposure_logging": {
+      "status": "PARTIAL",
+      "evidence": "engine equity snapshots+floating exist; per-event exposure-time-integral field not yet proven on research four-arm runner"
+    },
+    "shared_signal_and_quote_bus": {
+      "status": "FAIL_MISSING",
+      "evidence": "required: one raw signal+quote stream, independent admission per arm; four independent paper_main would re-scan separately — not acceptable substitute"
+    }
+  },
+  "non_blocking_for_stage1_paper": {
+    "G5_full_ED_history": "KEEP_INCOMPLETE",
+    "G10_maker_model": "DISABLED_uniform_0.0005",
+    "historical_funding": "UNKNOWN_not_zero"
+  },
+  "decision": "DO_NOT_LAUNCH_PAPER",
+  "blockers": [
+    "shared_signal_and_quote_bus",
+    "realtime_valuation_exposure_logging_PARTIAL",
+    "G9_late_fill_apply_during_exit_thin"
+  ]
+}

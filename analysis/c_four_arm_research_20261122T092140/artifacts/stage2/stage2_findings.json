@@ -1,0 +1,50 @@
+{
+  "counterfactual_model_verdict": "PARTIAL_VALID_FOR_DIRECTIONAL_COMPARE",
+  "critical_limits": [
+    "B0 is accounting reproduce from fills, not engine path reproduce",
+    "B1/B2/B3 exits mostly remap baseline observed exit marks; not independent quote-driven simulation",
+    "B2 protect uses observed P2 ADD fill price as trigger+fill proxy — not theory-only threshold as fill, not future close backfill",
+    "No invention of fills after archive stop; open cycles stay OPEN",
+    "1m OHLC not used as intrabar fill oracle in this paired model",
+    "Cannot claim maker fills; fee stage-1 uniform 0.0005"
+  ],
+  "verify": {
+    "B2_common14_net_u": -13.918352185150718,
+    "B2_common14_expected_approx": -13.92,
+    "B2_common14_ok": true,
+    "B2_extra2_net_u": -7.011944651499937,
+    "B2_extra2_expected_approx": -7.01,
+    "B2_extra2_ok": true,
+    "B2_all_closed16_net_u": -20.930296836650655,
+    "note": "Do not compare B2's 16-closed total to B0's 14-closed total without口径 split"
+  },
+  "per_arm_delta_counts_common14": {
+    "B1_vs_B0": {
+      "arm": "B1_vs_B0",
+      "n": 14,
+      "delta_sum_u": 6.918826701894176,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "unchanged_n": 6,
+      "note": "counts are per-arm; do not copy across arms even if coincident"
+    },
+    "B2_vs_B0": {
+      "arm": "B2_vs_B0",
+      "n": 14,
+      "delta_sum_u": 12.544505793914093,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "unchanged_n": 6,
+      "note": "counts are per-arm; do not copy across arms even if coincident"
+    },
+    "B3_vs_B0": {
+      "arm": "B3_vs_B0",
+      "n": 14,
+      "delta_sum_u": 10.598692424488604,
+      "improve_n": 6,
+      "worsen_n": 2,
+      "unchanged_n": 6,
+      "note": "counts are per-arm; do not copy across arms even if coincident"
+    }
+  }
+}

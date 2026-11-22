@@ -1,0 +1,13 @@
+id,item,status,impact
+G1,per_arm_equity_curve,MISSING,drawdown/exposure integrals UNKNOWN in paired mode
+G2,tick_quote_full_coverage_for_counterfactual_exits,PARTIAL,paired uses actual exit marks from baseline fills; cannot invent marks after archive stop
+G3,intrabar_order_1m,UNKNOWN,OHLC cannot order add/R2/TP/STOP inside same bar; paired follows recorded fill timestamps
+G4,funding_history,UNKNOWN,funding_data_gap=True on baseline
+G5,full_event_driven_independent_arms,NOT_RUN,requires complete signal+quote stream isolation; deferred — paired path only delivered
+G6,P0_partial_fill_anchor_definition,NO_PARTIAL_P0_IN_BASELINE,"if future partial P0 appears, treat as blocker until definition confirmed"
+G7,event_schema_quote_receive_times_threshold_raw_round,PARTIAL,cycle_id/p0_anchor/avg/layers added on new paper fills; baseline fills lack quote receive time & raw/tick threshold audit fields
+G8,ledger_write_fail_blocks_new_exposure,NOT_IMPLEMENTED,atomic_write/jsonl retry exist; no explicit gate blocking new entries while still allowing protective exits
+G9,cancel_confirm_nonblocking_protect_exit_behavioral_test,PARTIAL,source-order guard present; full late-fill/cancel-race behavioral suite incomplete
+G10,maker_execution_model_validation,PENDING_ACCEPTANCE,"post-only reject, through-quote, partial fill, cancel race, queue position NOT validated; do not claim maker fills"
+G11,baseline_paper_fill_labels_historical,LEGACY,historical fills lack fill_source; new code sets paper_simulation / is_confirmed_exchange_price=False
+G12,hold_time_max_exposure_per_arm,UNKNOWN,paired metrics mark UNKNOWN without continuous per-arm mark series

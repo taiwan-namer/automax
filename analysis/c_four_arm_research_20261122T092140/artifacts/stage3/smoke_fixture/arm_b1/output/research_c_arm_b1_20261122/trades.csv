@@ -1,0 +1,2 @@
+timestamp,event,trade_id,symbol,side,qty,price,fee_u,realized_net_u,exit_reason,linked_prev_trade_id,run_id
+2026-11-22T10:08:11+08:00,CLOSE,fixture_20261122T100810_B1:FIXUSDT:open1,FIXUSDT,LONG,3.0,98.43046396920002,0.14764569595380006,-4.856253788353742,PYRAMID_PSTOP,,fixture_20261122T100810_B1

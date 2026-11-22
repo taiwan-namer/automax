@@ -1,0 +1,43 @@
+{
+  "launched": true,
+  "pid": 23840,
+  "data_root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852",
+  "log": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\coordinator_stdout.log",
+  "shared_start_unix": 1795313332.3598356,
+  "shared_cutoff_unix": 1795572532.3598356,
+  "hours": 72,
+  "fee_one_side": 0.0005,
+  "maker_test": false,
+  "exchange_orders": "HARD_DISABLED",
+  "git_commit": "81813a261a94dbdbcecfaef9d62df5617098bfe6",
+  "gate": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\acceptance_gate_v3.json",
+  "arms": {
+    "B0": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b0",
+      "run_id": "20261122T100852_B0",
+      "profile": "research_c_arm_b0_20261122"
+    },
+    "B1": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b1",
+      "run_id": "20261122T100852_B1",
+      "profile": "research_c_arm_b1_20261122"
+    },
+    "B2": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b2",
+      "run_id": "20261122T100852_B2",
+      "profile": "research_c_arm_b2_20261122"
+    },
+    "B3": {
+      "root": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\arm_b3",
+      "run_id": "20261122T100852_B3",
+      "profile": "research_c_arm_b3_20261122"
+    }
+  },
+  "monitor": {
+    "pid_file": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\coordinator.pid",
+    "meta": "C:\\Users\\Admin\\MyProjects\\automax\\analysis\\c_four_arm_research_20261122T092140\\artifacts\\stage3\\observe_72h_20261122T100852\\shared_launch_meta.json",
+    "per_arm_snapshots": "arm_*/output/research_c_arm_*/research_snapshots.jsonl",
+    "per_arm_consume": "arm_*/output/research_c_arm_*/research_bus_consume.jsonl",
+    "24h_check": "data quality + safety only; no param change"
+  }
+}

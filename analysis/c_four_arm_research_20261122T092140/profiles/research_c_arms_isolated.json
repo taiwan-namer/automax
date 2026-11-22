@@ -1,0 +1,43 @@
+{
+  "_note": "Isolated research Paper profiles only. NOT registered into production profiles.py. NOT launched this round.",
+  "exchange_orders_disabled": true,
+  "MAKER_EXECUTION_ENABLED": false,
+  "fill_source": "paper_simulation",
+  "execution_model_version": "paper_touch_v1",
+  "is_confirmed_exchange_price": false,
+  "arms": {
+    "B0": {
+      "PROFILE_ID": "research_c_arm_b0_20261122",
+      "DATA_ROOT_SUFFIX": "research_c_b0_20261122",
+      "INITIAL_CAPITAL_USDT": 5000.0,
+      "PYRAMID_MAX_LAYERS": 3,
+      "RESEARCH_ARM": "B0"
+    },
+    "B1": {
+      "PROFILE_ID": "research_c_arm_b1_20261122",
+      "DATA_ROOT_SUFFIX": "research_c_b1_20261122",
+      "INITIAL_CAPITAL_USDT": 5000.0,
+      "PYRAMID_MAX_LAYERS": 2,
+      "FORBID_P2": true,
+      "RESEARCH_ARM": "B1"
+    },
+    "B2": {
+      "PROFILE_ID": "research_c_arm_b2_20261122",
+      "DATA_ROOT_SUFFIX": "research_c_b2_20261122",
+      "INITIAL_CAPITAL_USDT": 5000.0,
+      "PYRAMID_MAX_LAYERS": 2,
+      "FORBID_P2": true,
+      "PROTECT_AT_P2_TRIGGER": true,
+      "RESEARCH_ARM": "B2"
+    },
+    "B3": {
+      "PROFILE_ID": "research_c_arm_b3_20261122",
+      "DATA_ROOT_SUFFIX": "research_c_b3_20261122",
+      "INITIAL_CAPITAL_USDT": 5000.0,
+      "PYRAMID_MAX_LAYERS": 1,
+      "FORBID_P1": true,
+      "FORBID_P2": true,
+      "RESEARCH_ARM": "B3"
+    }
+  }
+}

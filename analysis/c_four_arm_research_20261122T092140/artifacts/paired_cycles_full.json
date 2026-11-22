@@ -1,0 +1,2595 @@
+[
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:dd66d6f5ed",
+    "symbol": "AEROUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.389,
+    "p0_qty": 771.2,
+    "p0_time": "2026-11-21T20:35:24+08:00",
+    "pstop": 0.3949,
+    "p0_tp": 0.3851,
+    "levels_theory": {
+      "P1": 0.390945,
+      "P2": 0.3928997249999999,
+      "Pstop": 0.3948642236249999,
+      "P0_TP": 0.38511
+    },
+    "baseline_path_tag": "P1_exited_P0_P2_stop",
+    "arms": {
+      "B0": {
+        "gross_u": -5.106925711999875,
+        "fees_u": 0.902506072856,
+        "net_u": -6.009431784855876,
+        "fees_sens_u": 0.5429928519488001,
+        "net_sens_u": -5.649918563948676,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.389,
+            "qty": 771.2,
+            "closed": true,
+            "exit_px": 0.39527903999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T21:36:25+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3909,
+            "qty": 767.4,
+            "closed": true,
+            "exit_px": 0.38887775999999996,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T20:37:50+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.3929,
+            "qty": 763.5,
+            "closed": true,
+            "exit_px": 0.39527903999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T21:36:25+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -3.290528671999919,
+        "fees_u": 0.601618724336,
+        "net_u": -3.892147396335919,
+        "fees_sens_u": 0.3320992484288,
+        "net_sens_u": -3.622627920428719,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.389,
+            "qty": 771.2,
+            "closed": true,
+            "exit_px": 0.39527903999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T21:36:25+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3909,
+            "qty": 767.4,
+            "closed": true,
+            "exit_px": 0.38887775999999996,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T20:37:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 2.1172843885199564,
+        "delta_net_sens_vs_B0": 2.0272906435199567
+      },
+      "B2": {
+        "gross_u": -1.4558130239999623,
+        "fees_u": 0.600701366512,
+        "net_u": -2.0565143905119623,
+        "fees_sens_u": 0.3311818906048,
+        "net_sens_u": -1.7869949146047623,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.389,
+            "qty": 771.2,
+            "closed": true,
+            "exit_px": 0.3929,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-21T21:35:15+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3909,
+            "qty": 767.4,
+            "closed": true,
+            "exit_px": 0.38887775999999996,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T20:37:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 3.9529173943439133,
+        "delta_net_sens_vs_B0": 3.862923649343913
+      },
+      "B3": {
+        "gross_u": -4.842395647999968,
+        "fees_u": 0.30241799782400003,
+        "net_u": -5.144813645823968,
+        "fees_sens_u": 0.212418957824,
+        "net_sens_u": -5.054814605823968,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.389,
+            "qty": 771.2,
+            "closed": true,
+            "exit_px": 0.39527903999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T21:36:25+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.8646181390319079,
+        "delta_net_sens_vs_B0": 0.5951039581247075
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:BTWUSDT:ea0207bcce",
+    "symbol": "BTWUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.7644,
+    "p0_qty": 392.0,
+    "p0_time": "2026-11-21T20:36:42+08:00",
+    "pstop": 0.753,
+    "p0_tp": 0.772,
+    "levels_theory": {
+      "P1": 0.760578,
+      "P2": 0.75677511,
+      "Pstop": 0.7529912344499999,
+      "P0_TP": 0.772044
+    },
+    "baseline_path_tag": "three_layer_direct_PSTOP",
+    "arms": {
+      "B0": {
+        "gross_u": -11.155007320000008,
+        "fees_u": 0.89343649634,
+        "net_u": -12.048443816340008,
+        "fees_sens_u": 0.62373229634,
+        "net_sens_u": -11.778739616340008,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.7644,
+            "qty": 392.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.7606,
+            "qty": 394.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.7568,
+            "qty": 396.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -8.91750436,
+        "fees_u": 0.59486244782,
+        "net_u": -9.512366807820001,
+        "fees_sens_u": 0.41506608782000004,
+        "net_sens_u": -9.33257044782,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.7644,
+            "qty": 392.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.7606,
+            "qty": 394.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 2.5360770085200066,
+        "delta_net_sens_vs_B0": 2.446169168520008
+      },
+      "B2": {
+        "gross_u": -4.476399999999987,
+        "fees_u": 0.597083,
+        "net_u": -5.073482999999987,
+        "fees_sens_u": 0.41728664000000004,
+        "net_sens_u": -4.893686639999987,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.7644,
+            "qty": 392.0,
+            "closed": true,
+            "exit_px": 0.7568,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-21T20:40:43+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.7606,
+            "qty": 394.0,
+            "closed": true,
+            "exit_px": 0.7568,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-21T20:40:43+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 6.974960816340021,
+        "delta_net_sens_vs_B0": 6.885052976340021
+      },
+      "B3": {
+        "gross_u": -5.194101919999984,
+        "fees_u": 0.29704774904,
+        "net_u": -5.4911496690399835,
+        "fees_sens_u": 0.20715430904,
+        "net_sens_u": -5.4012562290399835,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.7644,
+            "qty": 392.0,
+            "closed": true,
+            "exit_px": 0.75114974,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T20:42:19+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 6.557294147300024,
+        "delta_net_sens_vs_B0": 6.377483387300025
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:ADAUSDT:777f3c4e49",
+    "symbol": "ADAUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.1434,
+    "p0_qty": 2092.0,
+    "p0_time": "2026-11-21T21:41:53+08:00",
+    "pstop": 0.1413,
+    "p0_tp": 0.1448,
+    "levels_theory": {
+      "P1": 0.142683,
+      "P2": 0.141969585,
+      "Pstop": 0.141259737075,
+      "P0_TP": 0.144834
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 3.0773738400000363,
+        "fees_u": 0.30153148692000004,
+        "net_u": 2.7758423530800362,
+        "fees_sens_u": 0.12061259476800001,
+        "net_sens_u": 2.956761245232036,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.1434,
+            "qty": 2092.0,
+            "closed": true,
+            "exit_px": 0.14487102000000002,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:04:59+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 3.0773738400000363,
+        "fees_u": 0.30153148692000004,
+        "net_u": 2.7758423530800362,
+        "fees_sens_u": 0.12061259476800001,
+        "net_sens_u": 2.956761245232036,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.1434,
+            "qty": 2092.0,
+            "closed": true,
+            "exit_px": 0.14487102000000002,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:04:59+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 3.0773738400000363,
+        "fees_u": 0.30153148692000004,
+        "net_u": 2.7758423530800362,
+        "fees_sens_u": 0.12061259476800001,
+        "net_sens_u": 2.956761245232036,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.1434,
+            "qty": 2092.0,
+            "closed": true,
+            "exit_px": 0.14487102000000002,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:04:59+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 3.0773738400000363,
+        "fees_u": 0.30153148692000004,
+        "net_u": 2.7758423530800362,
+        "fees_sens_u": 0.12061259476800001,
+        "net_sens_u": 2.956761245232036,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.1434,
+            "qty": 2092.0,
+            "closed": true,
+            "exit_px": 0.14487102000000002,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:04:59+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:APTUSDT:53d5b8dd8e",
+    "symbol": "APTUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.3747,
+    "p0_qty": 800.6,
+    "p0_time": "2026-11-21T22:07:53+08:00",
+    "pstop": 0.3691,
+    "p0_tp": 0.3784,
+    "levels_theory": {
+      "P1": 0.37282649999999995,
+      "P2": 0.37096236749999995,
+      "Pstop": 0.3691075556624999,
+      "P0_TP": 0.378447
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 2.981674580000011,
+        "fees_u": 0.30147565729000003,
+        "net_u": 2.680198922710011,
+        "fees_sens_u": 0.12059026291600002,
+        "net_sens_u": 2.861084317084011,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3747,
+            "qty": 800.6,
+            "closed": true,
+            "exit_px": 0.3784243,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T22:35:09+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 2.981674580000011,
+        "fees_u": 0.30147565729000003,
+        "net_u": 2.680198922710011,
+        "fees_sens_u": 0.12059026291600002,
+        "net_sens_u": 2.861084317084011,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3747,
+            "qty": 800.6,
+            "closed": true,
+            "exit_px": 0.3784243,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T22:35:09+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 2.981674580000011,
+        "fees_u": 0.30147565729000003,
+        "net_u": 2.680198922710011,
+        "fees_sens_u": 0.12059026291600002,
+        "net_sens_u": 2.861084317084011,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3747,
+            "qty": 800.6,
+            "closed": true,
+            "exit_px": 0.3784243,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T22:35:09+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 2.981674580000011,
+        "fees_u": 0.30147565729000003,
+        "net_u": 2.680198922710011,
+        "fees_sens_u": 0.12059026291600002,
+        "net_sens_u": 2.861084317084011,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3747,
+            "qty": 800.6,
+            "closed": true,
+            "exit_px": 0.3784243,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T22:35:09+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:1000BONKUSDT:498c83158e",
+    "symbol": "1000BONKUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.002044,
+    "p0_qty": 146771.0,
+    "p0_time": "2026-11-21T22:13:39+08:00",
+    "pstop": 0.002013,
+    "p0_tp": 0.002064,
+    "levels_theory": {
+      "P1": 0.00203378,
+      "P2": 0.0020236111,
+      "Pstop": 0.0020134930445,
+      "P0_TP": 0.00206444
+    },
+    "baseline_path_tag": "open_at_cutoff",
+    "arms": {
+      "B0": {
+        "gross_u": 4.6141063830000375,
+        "fees_u": 0.7523050471915,
+        "net_u": 3.8618013358085372,
+        "fees_sens_u": 0.3009220188766,
+        "net_sens_u": 4.313184364123438,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.002044,
+            "qty": 146771.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 0.002034,
+            "qty": 147492.0,
+            "closed": true,
+            "exit_px": 0.002044591,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:19:54+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.002024,
+            "qty": 148221.0,
+            "closed": true,
+            "exit_px": 0.002044591,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:19:54+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": 1.562087772000049,
+        "fees_u": 0.450779733886,
+        "net_u": 1.111308038114049,
+        "fees_sens_u": 0.1803118935544,
+        "net_sens_u": 1.381775878445649,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.002044,
+            "qty": 146771.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 0.002034,
+            "qty": 147492.0,
+            "closed": true,
+            "exit_px": 0.002044591,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:19:54+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B2": {
+        "gross_u": -4.410339999999884,
+        "fees_u": 0.597793482,
+        "net_u": -5.008133481999884,
+        "fees_sens_u": 0.41779388640000004,
+        "net_sens_u": -4.828133886399884,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.002044,
+            "qty": 146771.0,
+            "closed": true,
+            "exit_px": 0.002024,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T00:04:25+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.002034,
+            "qty": 147492.0,
+            "closed": true,
+            "exit_px": 0.002024,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T00:04:25+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B3": {
+        "gross_u": 0.0,
+        "fees_u": 0.149999962,
+        "net_u": -0.149999962,
+        "fees_sens_u": 0.059999984799999996,
+        "net_sens_u": -0.059999984799999996,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.002044,
+            "qty": 146771.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:BRUSDT:91fd37ee8e",
+    "symbol": "BRUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.4036,
+    "p0_qty": 743.0,
+    "p0_time": "2026-11-21T22:24:24+08:00",
+    "pstop": 0.4097,
+    "p0_tp": 0.3996,
+    "levels_theory": {
+      "P1": 0.405618,
+      "P2": 0.40764608999999996,
+      "Pstop": 0.4096843204499999,
+      "P0_TP": 0.39956400000000003
+    },
+    "baseline_path_tag": "P1_exited_P0_P2_stop",
+    "arms": {
+      "B0": {
+        "gross_u": -4.189623139999898,
+        "fees_u": 0.9017016115700001,
+        "net_u": -5.091324751569898,
+        "fees_sens_u": 0.542589649154,
+        "net_sens_u": -4.732212789153898,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4036,
+            "qty": 743.0,
+            "closed": true,
+            "exit_px": 0.40998197999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T22:30:03+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.4056,
+            "qty": 739.0,
+            "closed": true,
+            "exit_px": 0.40248048,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T22:25:03+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.4076,
+            "qty": 736.0,
+            "closed": true,
+            "exit_px": 0.40998197999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T22:30:03+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -2.4364858599999346,
+        "fees_u": 0.60083144293,
+        "net_u": -3.0373173029299347,
+        "fees_sens_u": 0.331717560514,
+        "net_sens_u": -2.7682034205139345,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4036,
+            "qty": 743.0,
+            "closed": true,
+            "exit_px": 0.40998197999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T22:30:03+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.4056,
+            "qty": 739.0,
+            "closed": true,
+            "exit_px": 0.40248048,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T22:25:03+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 2.0540074486399633,
+        "delta_net_sens_vs_B0": 1.9640093686399638
+      },
+      "B2": {
+        "gross_u": -0.6666747199999716,
+        "fees_u": 0.59994653736,
+        "net_u": -1.2666212573599718,
+        "fees_sens_u": 0.330832654944,
+        "net_sens_u": -0.9975073749439716,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4036,
+            "qty": 743.0,
+            "closed": true,
+            "exit_px": 0.4076,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-21T22:29:19+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.4056,
+            "qty": 739.0,
+            "closed": true,
+            "exit_px": 0.40248048,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-21T22:25:03+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 3.8247034942099263,
+        "delta_net_sens_vs_B0": 3.7347054142099267
+      },
+      "B3": {
+        "gross_u": -4.741811139999966,
+        "fees_u": 0.30224570556999997,
+        "net_u": -5.0440568455699655,
+        "fees_sens_u": 0.21228326557,
+        "net_sens_u": -4.954094405569966,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4036,
+            "qty": 743.0,
+            "closed": true,
+            "exit_px": 0.40998197999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-21T22:30:03+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.04726790599993258,
+        "delta_net_sens_vs_B0": -0.2218816164160673
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AVAXUSDT:38769a15a6",
+    "symbol": "AVAXUSDT",
+    "side": "LONG",
+    "p0_anchor": 6.626,
+    "p0_qty": 45.0,
+    "p0_time": "2026-11-21T23:16:18+08:00",
+    "pstop": 6.527,
+    "p0_tp": 6.692,
+    "levels_theory": {
+      "P1": 6.5928700000000005,
+      "P2": 6.55990565,
+      "Pstop": 6.52710612175,
+      "P0_TP": 6.69226
+    },
+    "baseline_path_tag": "open_at_cutoff",
+    "arms": {
+      "B0": {
+        "gross_u": 1.5603389999999795,
+        "fees_u": 0.5941501695,
+        "net_u": 0.9661888304999795,
+        "fees_sens_u": 0.2376600678,
+        "net_sens_u": 1.3226789321999795,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 6.626,
+            "qty": 45.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 6.593,
+            "qty": 45.0,
+            "closed": true,
+            "exit_px": 6.6276741999999995,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:01:35+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 6.56,
+            "qty": 45.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": 1.5603389999999795,
+        "fees_u": 0.44655016950000004,
+        "net_u": 1.1137888304999795,
+        "fees_sens_u": 0.1786200678,
+        "net_sens_u": 1.3817189321999794,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 6.626,
+            "qty": 45.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 6.593,
+            "qty": 45.0,
+            "closed": true,
+            "exit_px": 6.6276741999999995,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:01:35+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B2": {
+        "gross_u": -1.4096610000000531,
+        "fees_u": 0.5941501695,
+        "net_u": -2.003811169500053,
+        "fees_sens_u": 0.3262200678,
+        "net_sens_u": -1.7358810678000531,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 6.626,
+            "qty": 45.0,
+            "closed": true,
+            "exit_px": 6.56,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T06:13:55+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 6.593,
+            "qty": 45.0,
+            "closed": true,
+            "exit_px": 6.6276741999999995,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T01:01:35+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B3": {
+        "gross_u": 0.0,
+        "fees_u": 0.14908500000000002,
+        "net_u": -0.14908500000000002,
+        "fees_sens_u": 0.059634000000000006,
+        "net_sens_u": -0.059634000000000006,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 6.626,
+            "qty": 45.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:ASTERUSDT:49d9fc7aa8",
+    "symbol": "ASTERUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.4874,
+    "p0_qty": 615.0,
+    "p0_time": "2026-11-21T23:16:43+08:00",
+    "pstop": 0.4801,
+    "p0_tp": 0.4923,
+    "levels_theory": {
+      "P1": 0.484963,
+      "P2": 0.48253818499999995,
+      "Pstop": 0.48012549407499994,
+      "P0_TP": 0.492274
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 3.075922499999995,
+        "fees_u": 0.30128896125000004,
+        "net_u": 2.774633538749995,
+        "fees_sens_u": 0.1205155845,
+        "net_sens_u": 2.955406915499995,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4874,
+            "qty": 615.0,
+            "closed": true,
+            "exit_px": 0.4924015,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:33:31+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 3.075922499999995,
+        "fees_u": 0.30128896125000004,
+        "net_u": 2.774633538749995,
+        "fees_sens_u": 0.1205155845,
+        "net_sens_u": 2.955406915499995,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4874,
+            "qty": 615.0,
+            "closed": true,
+            "exit_px": 0.4924015,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:33:31+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 3.075922499999995,
+        "fees_u": 0.30128896125000004,
+        "net_u": 2.774633538749995,
+        "fees_sens_u": 0.1205155845,
+        "net_sens_u": 2.955406915499995,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4874,
+            "qty": 615.0,
+            "closed": true,
+            "exit_px": 0.4924015,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:33:31+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 3.075922499999995,
+        "fees_u": 0.30128896125000004,
+        "net_u": 2.774633538749995,
+        "fees_sens_u": 0.1205155845,
+        "net_sens_u": 2.955406915499995,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.4874,
+            "qty": 615.0,
+            "closed": true,
+            "exit_px": 0.4924015,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-21T23:33:31+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:1000SHIBUSDT:2538c54538",
+    "symbol": "1000SHIBUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.003613,
+    "p0_qty": 83033.0,
+    "p0_time": "2026-11-21T23:17:39+08:00",
+    "pstop": 0.003559,
+    "p0_tp": 0.003649,
+    "levels_theory": {
+      "P1": 0.003594935,
+      "P2": 0.003576960325,
+      "Pstop": 0.003559075523375,
+      "P0_TP": 0.00364913
+    },
+    "baseline_path_tag": "open_at_cutoff",
+    "arms": {
+      "B0": {
+        "gross_u": 0.0,
+        "fees_u": 0.1499991145,
+        "net_u": -0.1499991145,
+        "fees_sens_u": 0.0599996458,
+        "net_sens_u": -0.0599996458,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.003613,
+            "qty": 83033.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 0.0,
+        "fees_u": 0.1499991145,
+        "net_u": -0.1499991145,
+        "fees_sens_u": 0.0599996458,
+        "net_sens_u": -0.0599996458,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.003613,
+            "qty": 83033.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B2": {
+        "gross_u": 0.0,
+        "fees_u": 0.1499991145,
+        "net_u": -0.1499991145,
+        "fees_sens_u": 0.0599996458,
+        "net_sens_u": -0.0599996458,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.003613,
+            "qty": 83033.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B3": {
+        "gross_u": 0.0,
+        "fees_u": 0.1499991145,
+        "net_u": -0.1499991145,
+        "fees_sens_u": 0.0599996458,
+        "net_sens_u": -0.0599996458,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.003613,
+            "qty": 83033.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:1000PEPEUSDT:dff599c5df",
+    "symbol": "1000PEPEUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.0034065,
+    "p0_qty": 88066.0,
+    "p0_time": "2026-11-21T23:20:14+08:00",
+    "pstop": 0.0034579,
+    "p0_tp": 0.0033724,
+    "levels_theory": {
+      "P1": 0.0034235324999999993,
+      "P2": 0.003440650162499999,
+      "Pstop": 0.0034578534133124987,
+      "P0_TP": 0.0033724349999999996
+    },
+    "baseline_path_tag": "open_at_cutoff",
+    "arms": {
+      "B0": {
+        "gross_u": 1.6666369819600206,
+        "fees_u": 0.44916297750902,
+        "net_u": 1.2174740044510006,
+        "fees_sens_u": 0.179665191003608,
+        "net_sens_u": 1.4869717909564126,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.0034065,
+            "qty": 88066.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 0.0034235,
+            "qty": 87629.0,
+            "closed": true,
+            "exit_px": 0.0034044807599999997,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T06:03:19+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 2
+      },
+      "B1": {
+        "gross_u": 1.6666369819600206,
+        "fees_u": 0.44916297750902,
+        "net_u": 1.2174740044510006,
+        "fees_sens_u": 0.179665191003608,
+        "net_sens_u": 1.4869717909564126,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.0034065,
+            "qty": 88066.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 0.0034235,
+            "qty": 87629.0,
+            "closed": true,
+            "exit_px": 0.0034044807599999997,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T06:03:19+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B2": {
+        "gross_u": 1.6666369819600206,
+        "fees_u": 0.44916297750902,
+        "net_u": 1.2174740044510006,
+        "fees_sens_u": 0.179665191003608,
+        "net_sens_u": 1.4869717909564126,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.0034065,
+            "qty": 88066.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          },
+          {
+            "name": "P1",
+            "entry": 0.0034235,
+            "qty": 87629.0,
+            "closed": true,
+            "exit_px": 0.0034044807599999997,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T06:03:19+08:00"
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 2,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      },
+      "B3": {
+        "gross_u": 0.0,
+        "fees_u": 0.1499984145,
+        "net_u": -0.1499984145,
+        "fees_sens_u": 0.0599993658,
+        "net_sens_u": -0.0599993658,
+        "closed": false,
+        "open_at_cutoff": true,
+        "path_tag": "open_at_cutoff",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.0034065,
+            "qty": 88066.0,
+            "closed": false,
+            "exit_px": null,
+            "exit_reason": null,
+            "exit_t": null
+          }
+        ],
+        "notes": [
+          "OPEN_AT_CUTOFF_NOT_FLATTED"
+        ],
+        "n_layers": 1,
+        "delta_net_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE",
+        "delta_net_sens_vs_B0": "UNKNOWN_OPEN_OR_INCOMPLETE"
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:BREVUSDT:104ccb7f27",
+    "symbol": "BREVUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.06685,
+    "p0_qty": 4487.0,
+    "p0_time": "2026-11-21T23:59:08+08:00",
+    "pstop": 0.06786,
+    "p0_tp": 0.06618,
+    "levels_theory": {
+      "P1": 0.06718425,
+      "P2": 0.06752017125,
+      "Pstop": 0.06785777210624999,
+      "P0_TP": 0.0661815
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 3.1264159639999924,
+        "fees_u": 0.29839274201800003,
+        "net_u": 2.8280232219819923,
+        "fees_sens_u": 0.11935709680720002,
+        "net_sens_u": 3.0070588671927925,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.06685,
+            "qty": 4487.0,
+            "closed": true,
+            "exit_px": 0.06615322800000001,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T00:36:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 3.1264159639999924,
+        "fees_u": 0.29839274201800003,
+        "net_u": 2.8280232219819923,
+        "fees_sens_u": 0.11935709680720002,
+        "net_sens_u": 3.0070588671927925,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.06685,
+            "qty": 4487.0,
+            "closed": true,
+            "exit_px": 0.06615322800000001,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T00:36:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 3.1264159639999924,
+        "fees_u": 0.29839274201800003,
+        "net_u": 2.8280232219819923,
+        "fees_sens_u": 0.11935709680720002,
+        "net_sens_u": 3.0070588671927925,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.06685,
+            "qty": 4487.0,
+            "closed": true,
+            "exit_px": 0.06615322800000001,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T00:36:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 3.1264159639999924,
+        "fees_u": 0.29839274201800003,
+        "net_u": 2.8280232219819923,
+        "fees_sens_u": 0.11935709680720002,
+        "net_sens_u": 3.0070588671927925,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.06685,
+            "qty": 4487.0,
+            "closed": true,
+            "exit_px": 0.06615322800000001,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T00:36:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AEROUSDT:d37b0b6d51",
+    "symbol": "AEROUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.3958,
+    "p0_qty": 757.9,
+    "p0_time": "2026-11-22T00:37:35+08:00",
+    "pstop": 0.4018,
+    "p0_tp": 0.3918,
+    "levels_theory": {
+      "P1": 0.39777899999999994,
+      "P2": 0.3997678949999999,
+      "Pstop": 0.40176673447499983,
+      "P0_TP": 0.39184199999999997
+    },
+    "baseline_path_tag": "three_layer_direct_PSTOP",
+    "arms": {
+      "B0": {
+        "gross_u": -9.472473673999964,
+        "fees_u": 0.9046639768369998,
+        "net_u": -10.377137650836964,
+        "fees_sens_u": 0.6346856548369999,
+        "net_sens_u": -10.107159328836964,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3958,
+            "qty": 757.9,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3978,
+            "qty": 754.1,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.3998,
+            "qty": 750.3,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -7.836534559999977,
+        "fees_u": 0.6038760672799999,
+        "net_u": -8.440410627279977,
+        "fees_sens_u": 0.42388872728,
+        "net_sens_u": -8.260423287279977,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3958,
+            "qty": 757.9,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3978,
+            "qty": 754.1,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 1.936727023556987,
+        "delta_net_sens_vs_B0": 1.8467360415569871
+      },
+      "B2": {
+        "gross_u": -4.539800000000004,
+        "fees_u": 0.6022276999999999,
+        "net_u": -5.142027700000004,
+        "fees_sens_u": 0.42224036,
+        "net_sens_u": -4.962040360000004,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3958,
+            "qty": 757.9,
+            "closed": true,
+            "exit_px": 0.3998,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T01:09:08+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.3978,
+            "qty": 754.1,
+            "closed": true,
+            "exit_px": 0.3998,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T01:09:08+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 5.23510995083696,
+        "delta_net_sens_vs_B0": 5.14511896883696
+      },
+      "B3": {
+        "gross_u": -4.684110001999989,
+        "fees_u": 0.30231887500099996,
+        "net_u": -4.986428877000989,
+        "fees_sens_u": 0.212325829001,
+        "net_sens_u": -4.896435831000989,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3958,
+            "qty": 757.9,
+            "closed": true,
+            "exit_px": 0.40198037999999997,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T02:33:50+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 5.390708773835975,
+        "delta_net_sens_vs_B0": 5.210723497835975
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AAVEUSDT:9a4d00d1e2",
+    "symbol": "AAVEUSDT",
+    "side": "SHORT",
+    "p0_anchor": 100.0,
+    "p0_qty": 3.0,
+    "p0_time": "2026-11-22T01:01:35+08:00",
+    "pstop": 101.51,
+    "p0_tp": 99.0,
+    "levels_theory": {
+      "P1": 100.49999999999999,
+      "P2": 101.00249999999997,
+      "Pstop": 101.50751249999996,
+      "P0_TP": 99.0
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 3.0006119999999896,
+        "fees_u": 0.298499694,
+        "net_u": 2.7021123059999894,
+        "fees_sens_u": 0.11939987760000001,
+        "net_sens_u": 2.88121212239999,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 100.0,
+            "qty": 3.0,
+            "closed": true,
+            "exit_px": 98.999796,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T01:45:37+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 3.0006119999999896,
+        "fees_u": 0.298499694,
+        "net_u": 2.7021123059999894,
+        "fees_sens_u": 0.11939987760000001,
+        "net_sens_u": 2.88121212239999,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 100.0,
+            "qty": 3.0,
+            "closed": true,
+            "exit_px": 98.999796,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T01:45:37+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 3.0006119999999896,
+        "fees_u": 0.298499694,
+        "net_u": 2.7021123059999894,
+        "fees_sens_u": 0.11939987760000001,
+        "net_sens_u": 2.88121212239999,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 100.0,
+            "qty": 3.0,
+            "closed": true,
+            "exit_px": 98.999796,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T01:45:37+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 3.0006119999999896,
+        "fees_u": 0.298499694,
+        "net_u": 2.7021123059999894,
+        "fees_sens_u": 0.11939987760000001,
+        "net_sens_u": 2.88121212239999,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 100.0,
+            "qty": 3.0,
+            "closed": true,
+            "exit_px": 98.999796,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T01:45:37+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:cd6c50ff72",
+    "symbol": "AKEUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.005236,
+    "p0_qty": 57295.0,
+    "p0_time": "2026-11-22T01:38:39+08:00",
+    "pstop": 0.005158,
+    "p0_tp": 0.005288,
+    "levels_theory": {
+      "P1": 0.00520982,
+      "P2": 0.005183770900000001,
+      "Pstop": 0.0051578520455000006,
+      "P0_TP": 0.005288360000000001
+    },
+    "baseline_path_tag": "three_layer_direct_PSTOP",
+    "arms": {
+      "B0": {
+        "gross_u": -9.836892576800125,
+        "fees_u": 0.8950732637116,
+        "net_u": -10.731965840511725,
+        "fees_sens_u": 0.6250757507115999,
+        "net_sens_u": -10.461968327511725,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005236,
+            "qty": 57295.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.00521,
+            "qty": 57581.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.005184,
+            "qty": 57870.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -8.041140180800081,
+        "fees_u": 0.5959730599096,
+        "net_u": -8.637113240709681,
+        "fees_sens_u": 0.41597497090959995,
+        "net_sens_u": -8.457115151709681,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005236,
+            "qty": 57295.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.00521,
+            "qty": 57581.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 2.094852599802044,
+        "delta_net_sens_vs_B0": 2.004853175802044
+      },
+      "B2": {
+        "gross_u": -4.476445999999997,
+        "fees_u": 0.5977554070000001,
+        "net_u": -5.074201406999997,
+        "fees_sens_u": 0.41775731800000004,
+        "net_sens_u": -4.894203317999997,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005236,
+            "qty": 57295.0,
+            "closed": true,
+            "exit_px": 0.005184,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T01:50:03+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.00521,
+            "qty": 57581.0,
+            "closed": true,
+            "exit_px": 0.005184,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T01:50:03+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 5.657764433511728,
+        "delta_net_sens_vs_B0": 5.567765009511728
+      },
+      "B3": {
+        "gross_u": -4.757249686000041,
+        "fees_u": 0.297617995157,
+        "net_u": -5.054867681157041,
+        "fees_sens_u": 0.207619009157,
+        "net_sens_u": -4.96486869515704,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "three_layer_direct_PSTOP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005236,
+            "qty": 57295.0,
+            "closed": true,
+            "exit_px": 0.0051529691999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T01:50:29+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 5.677098159354684,
+        "delta_net_sens_vs_B0": 5.497099632354685
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:APTUSDT:0d5a2b6481",
+    "symbol": "APTUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.3759,
+    "p0_qty": 798.0,
+    "p0_time": "2026-11-22T02:31:48+08:00",
+    "pstop": 0.3816,
+    "p0_tp": 0.3721,
+    "levels_theory": {
+      "P1": 0.3777795,
+      "P2": 0.3796683975,
+      "Pstop": 0.3815667394874999,
+      "P0_TP": 0.372141
+    },
+    "baseline_path_tag": "no_add_then_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 3.2124607199999975,
+        "fees_u": 0.29836196964,
+        "net_u": 2.9140987503599973,
+        "fees_sens_u": 0.119344787856,
+        "net_sens_u": 3.0931159321439976,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3759,
+            "qty": 798.0,
+            "closed": true,
+            "exit_px": 0.37187436,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T03:39:20+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1
+      },
+      "B1": {
+        "gross_u": 3.2124607199999975,
+        "fees_u": 0.29836196964,
+        "net_u": 2.9140987503599973,
+        "fees_sens_u": 0.119344787856,
+        "net_sens_u": 3.0931159321439976,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3759,
+            "qty": 798.0,
+            "closed": true,
+            "exit_px": 0.37187436,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T03:39:20+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B2": {
+        "gross_u": 3.2124607199999975,
+        "fees_u": 0.29836196964,
+        "net_u": 2.9140987503599973,
+        "fees_sens_u": 0.119344787856,
+        "net_sens_u": 3.0931159321439976,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3759,
+            "qty": 798.0,
+            "closed": true,
+            "exit_px": 0.37187436,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T03:39:20+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      },
+      "B3": {
+        "gross_u": 3.2124607199999975,
+        "fees_u": 0.29836196964,
+        "net_u": 2.9140987503599973,
+        "fees_sens_u": 0.119344787856,
+        "net_sens_u": 3.0931159321439976,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "no_add_then_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.3759,
+            "qty": 798.0,
+            "closed": true,
+            "exit_px": 0.37187436,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T03:39:20+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.0,
+        "delta_net_sens_vs_B0": 0.0
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bc8f12feca",
+    "symbol": "AKEUSDT",
+    "side": "SHORT",
+    "p0_anchor": 0.005119,
+    "p0_qty": 58605.0,
+    "p0_time": "2026-11-22T02:57:49+08:00",
+    "pstop": 0.005196,
+    "p0_tp": 0.005068,
+    "levels_theory": {
+      "P1": 0.005144595,
+      "P2": 0.005170317975,
+      "Pstop": 0.005196169564874999,
+      "P0_TP": 0.00506781
+    },
+    "baseline_path_tag": "P1_exited_P0_P2_stop",
+    "arms": {
+      "B0": {
+        "gross_u": -4.1612537695999166,
+        "fees_u": 0.9020790168848001,
+        "net_u": -5.063332786484716,
+        "fees_sens_u": 0.54263893294832,
+        "net_sens_u": -4.703892702548236,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005119,
+            "qty": 58605.0,
+            "closed": true,
+            "exit_px": 0.0051960389999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:16:14+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005145,
+            "qty": 58309.0,
+            "closed": true,
+            "exit_px": 0.0051130224,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:04:14+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.00517,
+            "qty": 58027.0,
+            "closed": true,
+            "exit_px": 0.0051960389999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:16:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -2.6502887165999507,
+        "fees_u": 0.6013239443583,
+        "net_u": -3.2516126609582505,
+        "fees_sens_u": 0.33188373742182004,
+        "net_sens_u": -2.9821724540217707,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005119,
+            "qty": 58605.0,
+            "closed": true,
+            "exit_px": 0.0051960389999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:16:14+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005145,
+            "qty": 58309.0,
+            "closed": true,
+            "exit_px": 0.0051130224,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:04:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 1.8117201255264659,
+        "delta_net_sens_vs_B0": 1.7217202485264655
+      },
+      "B2": {
+        "gross_u": -1.1242731215999857,
+        "fees_u": 0.6005609365608,
+        "net_u": -1.7248340581607857,
+        "fees_sens_u": 0.33112072962432004,
+        "net_sens_u": -1.4553938512243056,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005119,
+            "qty": 58605.0,
+            "closed": true,
+            "exit_px": 0.00517,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T03:10:25+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005145,
+            "qty": 58309.0,
+            "closed": true,
+            "exit_px": 0.0051130224,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:04:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": 3.3384987283239305,
+        "delta_net_sens_vs_B0": 3.2484988513239306
+      },
+      "B3": {
+        "gross_u": -4.514870594999955,
+        "fees_u": 0.30225643029750004,
+        "net_u": -4.817127025297455,
+        "fees_sens_u": 0.21225673179750001,
+        "net_sens_u": -4.727127326797455,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P1_exited_P0_P2_stop",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005119,
+            "qty": 58605.0,
+            "closed": true,
+            "exit_px": 0.0051960389999999995,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:16:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": 0.24620576118726145,
+        "delta_net_sens_vs_B0": -0.02323462424921896
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:4678f35775",
+    "symbol": "AKEUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.005386,
+    "p0_qty": 55699.0,
+    "p0_time": "2026-11-22T03:39:20+08:00",
+    "pstop": 0.005306,
+    "p0_tp": 0.00544,
+    "levels_theory": {
+      "P1": 0.0053590700000000005,
+      "P2": 0.005332274650000001,
+      "Pstop": 0.00530561327675,
+      "P0_TP": 0.00543986
+    },
+    "baseline_path_tag": "P2_R2_mix",
+    "arms": {
+      "B0": {
+        "gross_u": 0.08253422660005683,
+        "fees_u": 0.9000325491133001,
+        "net_u": -0.8174983225132433,
+        "fees_sens_u": 0.44864024915362,
+        "net_sens_u": -0.36610602255356317,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_R2_mix",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005386,
+            "qty": 55699.0,
+            "closed": true,
+            "exit_px": 0.005303939,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:53:55+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005359,
+            "qty": 55980.0,
+            "closed": true,
+            "exit_px": 0.005386922400000001,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:41:14+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.005332,
+            "qty": 56264.0,
+            "closed": true,
+            "exit_px": 0.005386922400000001,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:41:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": -3.0076196869999876,
+        "fees_u": 0.5984878241565001,
+        "net_u": -3.6061075111564875,
+        "fees_sens_u": 0.3280223591709,
+        "net_sens_u": -3.3356420461708876,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_R2_mix",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005386,
+            "qty": 55699.0,
+            "closed": true,
+            "exit_px": 0.005303939,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:53:55+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005359,
+            "qty": 55980.0,
+            "closed": true,
+            "exit_px": 0.005386922400000001,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T03:41:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": -2.7886091886432443,
+        "delta_net_sens_vs_B0": -2.9695360236173243
+      },
+      "B2": {
+        "gross_u": -4.519206000000019,
+        "fees_u": 0.597732031,
+        "net_u": -5.11693803100002,
+        "fees_sens_u": 0.41773454080000005,
+        "net_sens_u": -4.936940540800019,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005386,
+            "qty": 55699.0,
+            "closed": true,
+            "exit_px": 0.005332,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T03:40:40+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005359,
+            "qty": 55980.0,
+            "closed": true,
+            "exit_px": 0.005332,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T03:40:40+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": -4.299439708486776,
+        "delta_net_sens_vs_B0": -4.570834518246456
+      },
+      "B3": {
+        "gross_u": -4.570715639000025,
+        "fees_u": 0.29770945618050004,
+        "net_u": -4.868425095180525,
+        "fees_sens_u": 0.20771101198050002,
+        "net_sens_u": -4.778426650980525,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_R2_mix",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005386,
+            "qty": 55699.0,
+            "closed": true,
+            "exit_px": 0.005303939,
+            "exit_reason": "PYRAMID_PSTOP",
+            "exit_t": "2026-11-22T03:53:55+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": -4.050926772667282,
+        "delta_net_sens_vs_B0": -4.412320628426962
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  },
+  {
+    "trade_id": "20261121T201533_9a0f7b4f:AKEUSDT:bab163bc06",
+    "symbol": "AKEUSDT",
+    "side": "LONG",
+    "p0_anchor": 0.005294,
+    "p0_qty": 56667.0,
+    "p0_time": "2026-11-22T06:39:25+08:00",
+    "pstop": 0.005215,
+    "p0_tp": 0.005347,
+    "levels_theory": {
+      "P1": 0.00526753,
+      "P2": 0.00524119235,
+      "Pstop": 0.0052149863882499994,
+      "P0_TP": 0.0053469400000000005
+    },
+    "baseline_path_tag": "P2_then_R2_then_P0_TP",
+    "arms": {
+      "B0": {
+        "gross_u": 7.905307268799998,
+        "fees_u": 0.9039393876344001,
+        "net_u": 7.0013678811655975,
+        "fees_sens_u": 0.36157575505376005,
+        "net_sens_u": 7.543731513746238,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_then_R2_then_P0_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005294,
+            "qty": 56667.0,
+            "closed": true,
+            "exit_px": 0.0053499298,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T07:16:31+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005268,
+            "qty": 56947.0,
+            "closed": true,
+            "exit_px": 0.0052959406,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T07:13:14+08:00"
+          },
+          {
+            "name": "P2",
+            "entry": 0.005241,
+            "qty": 57240.0,
+            "closed": true,
+            "exit_px": 0.0052959406,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T07:13:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 3
+      },
+      "B1": {
+        "gross_u": 4.760507324799995,
+        "fees_u": 0.6023721476624,
+        "net_u": 4.158135177137595,
+        "fees_sens_u": 0.24094885906496002,
+        "net_sens_u": 4.519558465735035,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_then_R2_then_P0_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005294,
+            "qty": 56667.0,
+            "closed": true,
+            "exit_px": 0.0053499298,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T07:16:31+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005268,
+            "qty": 56947.0,
+            "closed": true,
+            "exit_px": 0.0052959406,
+            "exit_reason": "PYRAMID_R2_REBOUND",
+            "exit_t": "2026-11-22T07:13:14+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": -2.8432327040280025,
+        "delta_net_sens_vs_B0": -3.0241730480112023
+      },
+      "B2": {
+        "gross_u": -4.540920000000011,
+        "fees_u": 0.597721434,
+        "net_u": -5.138641434000012,
+        "fees_sens_u": 0.4177238658,
+        "net_sens_u": -4.958643865800012,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "B2_protect_at_P2",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005294,
+            "qty": 56667.0,
+            "closed": true,
+            "exit_px": 0.005241,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T06:47:24+08:00"
+          },
+          {
+            "name": "P1",
+            "entry": 0.005268,
+            "qty": 56947.0,
+            "closed": true,
+            "exit_px": 0.005241,
+            "exit_reason": "B2_PROTECT_AT_P2_TRIGGER",
+            "exit_t": "2026-11-22T06:47:24+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 2,
+        "delta_net_vs_B0": -12.14000931516561,
+        "delta_net_sens_vs_B0": -12.50237537954625
+      },
+      "B3": {
+        "gross_u": 3.1693739765999984,
+        "fees_u": 0.3015797849883,
+        "net_u": 2.8677941916116985,
+        "fees_sens_u": 0.12063191399532,
+        "net_sens_u": 3.0487420626046786,
+        "closed": true,
+        "open_at_cutoff": false,
+        "path_tag": "P2_then_R2_then_P0_TP",
+        "layers": [
+          {
+            "name": "P0",
+            "entry": 0.005294,
+            "qty": 56667.0,
+            "closed": true,
+            "exit_px": 0.0053499298,
+            "exit_reason": "PYRAMID_P0_TP1PCT",
+            "exit_t": "2026-11-22T07:16:31+08:00"
+          }
+        ],
+        "notes": [],
+        "n_layers": 1,
+        "delta_net_vs_B0": -4.133573689553899,
+        "delta_net_sens_vs_B0": -4.494989451141559
+      }
+    },
+    "comparison_type": "paired_path_management_only",
+    "not_full_strategy_backtest": true,
+    "fee_stage": "uniform_0.0005",
+    "funding": "UNKNOWN"
+  }
+]

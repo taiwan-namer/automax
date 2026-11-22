@@ -1,0 +1,22 @@
+{
+  "B0": {
+    "grade": "ACCOUNTING_REPRODUCE",
+    "note": "historical fills reuse; not engine-path reproduce"
+  },
+  "B1": {
+    "grade": "COUNTERFACTUAL_REMAP_OBSERVED_EXITS",
+    "note": "management remap on baseline exit marks"
+  },
+  "B2": {
+    "grade": "COUNTERFACTUAL_ADD_PRICE_PROXY_PLUS_OPTIONAL_BIDASK",
+    "note": "protect exit originally used opposite-side ADD limit as price proxy; v2 keeps proxy labeled; bid/ask+slip scenario separate; proxy trigger time ≠ proven independent first touch; FORBIDDEN to claim B2 winner from these historical numbers",
+    "proxy_extra2_net_u": -7.011944651499937,
+    "bidask_extra2_net_u": -7.618975793895042
+  },
+  "B3": {
+    "grade": "COUNTERFACTUAL_REMAP_OBSERVED_EXITS",
+    "note": "P0-only remap on baseline P0 exits/stops"
+  },
+  "overall_single_verdict_forbidden": true,
+  "forward_paper_not_blocked_by_historical_gap": true
+}
