@@ -612,3 +612,405 @@ async def run_paper_loop(*, hours: float = 0.0, once: bool = False, allow_fills:
                 await asyncio.sleep(5)
             else:
                 await asyncio.sleep(config.MANAGE_DUE_SEC)
+
+
+# ---------------------------------------------------------------------------
+# Observation-only loop (no OPEN/CLOSE, no exchange orders, shadow touches only)
+# ---------------------------------------------------------------------------
+
+
+def _scan_bucket_iso() -> str:
+    # wall-clock minute bucket for scan time (separate from 15m bar refs)
+    return time.strftime("%Y-%m-%dT%H:%M:00%z")
+
+
+async def observe_manage_shadows(
+    gs: GuardedSession,
+    shadows: dict[str, dict[str, Any]],
+    bars_cache: Optional[dict[str, Any]] = None,
+) -> None:
+    from .observe import record_quote_vol_sample, recheck_shadow
+    from .market import fetch_last_closed_1m_stats
+
+    try:
+        books = await fetch_book_tickers(gs, manage=True)
+    except Exception as exc:
+        append_jsonl(
+            config.paths()["observation_events"],
+            {
+                "event": "OBSERVE_QUOTE_FAIL",
+                "error": str(exc),
+                "at": now_iso(),
+                "data_valid": False,
+                "note": "gap — not 'no signal'",
+            },
+        )
+        print(f"[觀測] 報價失敗，標記資料無效（非無訊號）：{exc}", flush=True)
+        return
+
+    btc = books.get("BTCUSDT")
+    eth = books.get("ETHUSDT")
+    btc_snap = (
+        {"mid": btc.get("mid"), "fetched_at": btc.get("fetched_at"), "status": "OK"}
+        if btc
+        else {"status": "MISSING"}
+    )
+    eth_snap = (
+        {"mid": eth.get("mid"), "fetched_at": eth.get("fetched_at"), "status": "OK"}
+        if eth
+        else {"status": "MISSING"}
+    )
+    bucket = _scan_bucket_iso()
+
+    for sym, shadow in list(shadows.items()):
+        if shadow.get("status") == "SHADOW_CANCELED":
+            continue
+        book = books.get(sym)
+        if not book:
+            append_jsonl(
+                config.paths()["observation_events"],
+                {
+                    "event": "OBSERVE_SYMBOL_QUOTE_MISSING",
+                    "symbol": sym,
+                    "shadow_id": shadow.get("shadow_id"),
+                    "at": now_iso(),
+                    "data_valid": False,
+                    "note": "gap — not 'no signal'",
+                },
+            )
+            continue
+
+        elig = None
+        if float(book.get("spread") or 999) > config.MAX_SPREAD:
+            elig = "SPREAD_FAIL"
+        elif config.depth_ready():
+            depth = await fetch_depth_analysis(gs, sym)
+            if depth is None or not depth.get("entry_depth_ok"):
+                elig = "DEPTH_FAIL_DUAL_NEAR_TOUCH"
+        if bars_cache and sym in bars_cache and elig is None:
+            ok, reason = quiet_still_valid(bars_cache[sym])
+            if not ok:
+                elig = f"QUIET_FAIL:{reason}"
+
+        one_m = await fetch_last_closed_1m_stats(gs, sym)
+        age = now_ts() - float(book.get("fetched_at") or 0)
+        valid = age <= config.QUOTE_MAX_AGE_SEC and float(book.get("mid") or 0) > 0
+        record_quote_vol_sample(
+            symbol=sym,
+            book=book,
+            roll_hi=shadow.get("roll_hi"),
+            roll_lo=shadow.get("roll_lo"),
+            roll_n=len(shadow.get("roll_samples") or []),
+            T=shadow.get("T"),
+            data_valid=valid,
+            invalid_reason=None if valid else "stale_or_bad_book",
+        )
+        recheck_shadow(
+            shadow,
+            book,
+            eligibility_fail=elig,
+            one_m=one_m,
+            btc_book=btc_snap,
+            eth_book=eth_snap,
+            scan_bucket_iso=bucket,
+            exec_order="revalidate_then_touch",
+        )
+        if shadow.get("status") == "SHADOW_CANCELED":
+            # keep record but stop active management
+            pass
+
+    # always sample BTC/ETH into quote_vol when present
+    for sym, snap_book in (("BTCUSDT", btc), ("ETHUSDT", eth)):
+        if snap_book:
+            record_quote_vol_sample(symbol=sym, book=snap_book, data_valid=True)
+
+
+async def observe_scan_once(
+    gs: GuardedSession,
+    universe: dict[str, Any],
+    obs: dict[str, Any],
+    shadows: dict[str, dict[str, Any]],
+    *,
+    cursor: int = 0,
+    run_id: str,
+) -> int:
+    from .observe import make_shadow_limit
+
+    eligible = universe.get("eligible") or []
+    filters = universe.get("filters") or {}
+    ranked = sorted(eligible, key=lambda r: str(r.get("symbol") or ""))
+    if not ranked:
+        print(f"【觀測掃描】{now_iso()}｜宇宙空", flush=True)
+        return 0
+    n = len(ranked)
+    start_i = int(cursor) % n
+    max_syms = 10
+    deadline = time.time() + float(config.SCAN_SLICE_WALL_SEC)
+    try:
+        books = await fetch_book_tickers(gs, manage=False)
+    except Exception as exc:
+        print(f"[觀測掃描] book 失敗：{exc}", flush=True)
+        append_jsonl(
+            config.paths()["observation_events"],
+            {"event": "OBSERVE_SCAN_QUOTE_FAIL", "error": str(exc), "at": now_iso(), "data_valid": False},
+        )
+        books = {}
+
+    signal_candidates: list[dict[str, Any]] = []
+    scanned = 0
+    i = start_i
+    bars_cache: dict[str, Any] = {}
+    bucket = _scan_bucket_iso()
+
+    while scanned < max_syms and time.time() < deadline:
+        await observe_manage_shadows(gs, shadows, bars_cache=bars_cache)
+        if time.time() >= deadline:
+            break
+        row = ranked[i]
+        sym = row["symbol"]
+        i = (i + 1) % n
+        scanned += 1
+        book = books.get(sym)
+        if not book:
+            continue
+        if float(book.get("spread") or 999) > config.MAX_SPREAD:
+            continue
+        age = now_ts() - float(book.get("fetched_at") or 0)
+        if age > config.QUOTE_MAX_AGE_SEC:
+            append_jsonl(
+                config.paths()["observation_events"],
+                {
+                    "event": "OBSERVE_STALE_QUOTE_SKIP_SCAN",
+                    "symbol": sym,
+                    "quote_age_sec": age,
+                    "at": now_iso(),
+                    "data_valid": False,
+                    "note": "gap — not 'no signal'",
+                },
+            )
+            continue
+        try:
+            bars = await asyncio.wait_for(
+                fetch_completed_15m_bars(gs, sym),
+                timeout=float(config.SCAN_KLINE_WAIT_SEC),
+            )
+        except Exception as exc:
+            append_jsonl(
+                config.paths()["observation_events"],
+                {
+                    "event": "OBSERVE_KLINE_FAIL",
+                    "symbol": sym,
+                    "error": str(exc),
+                    "at": now_iso(),
+                    "data_valid": False,
+                    "note": "gap — not 'no signal'",
+                },
+            )
+            continue
+        bars_cache[sym] = bars
+        sst = _get_sym(obs, sym)
+        if sym in shadows and shadows[sym].get("status") != "SHADOW_CANCELED":
+            continue
+        sst, signal = try_emit_signal(
+            sst,
+            bars,
+            P=float(book["mid"]),
+            price_source=str(book.get("source") or "bookTicker"),
+            price_ts=float(book.get("fetched_at") or now_ts()),
+            spread=float(book.get("spread") or 999),
+        )
+        obs.setdefault("symbols", {})[sym] = sst.to_dict()
+        if not signal:
+            continue
+        signal["scan_time_bucket"] = bucket
+        signal["settings_tag"] = "NEW_OBSERVATION_SETTINGS"
+        if bars:
+            signal["ref_15m_open_time"] = int(bars[-1].open_time)
+            signal["ref_15m_close_time"] = int(bars[-1].close_time)
+        if config.depth_ready():
+            depth = await fetch_depth_analysis(gs, sym)
+            signal["depth"] = depth
+            if depth is None or not depth.get("entry_depth_ok"):
+                append_jsonl(
+                    config.paths()["scan_log"],
+                    {
+                        "event": "SIGNAL_BLOCKED_DEPTH",
+                        "signal_id": signal["signal_id"],
+                        "depth": depth,
+                        "at": now_iso(),
+                        "mode": "OBSERVATION_ONLY",
+                    },
+                )
+                continue
+        append_jsonl(
+            config.paths()["signals"],
+            {"event": "SIGNAL", "mode": "OBSERVATION_ONLY", **signal},
+        )
+        signal_candidates.append(signal)
+
+    shadowed = 0
+    for signal in sort_signals(signal_candidates):
+        sym = signal["symbol"]
+        if sym in shadows and shadows[sym].get("status") != "SHADOW_CANCELED":
+            continue
+        if len([s for s in shadows.values() if s.get("status") != "SHADOW_CANCELED"]) >= config.MAX_CONCURRENT_SLOTS:
+            append_jsonl(
+                config.paths()["scan_log"],
+                {
+                    "event": "SHADOW_BLOCKED_SLOT_CAP",
+                    "signal_id": signal["signal_id"],
+                    "at": now_iso(),
+                    "mode": "OBSERVATION_ONLY",
+                },
+            )
+            continue
+        filt = filters.get(sym) or {
+            "stepSize": 0.001,
+            "minQty": 0.001,
+            "minNotional": 5.0,
+            "tickSize": 0.0001,
+        }
+        shadow = make_shadow_limit(signal, filt, run_id=run_id)
+        shadows[sym] = shadow
+        shadowed += 1
+        sst = _get_sym(obs, sym)
+        sst.phase = "ARMED_SIGNAL"
+        obs.setdefault("symbols", {})[sym] = sst.to_dict()
+
+    _save_observer(obs)
+    print(
+        f"【觀測掃描】{now_iso()}｜OBSERVATION_ONLY｜切片 {scanned}/{n}｜"
+        f"訊號 {len(signal_candidates)}｜影子掛價 {shadowed}｜活躍影子 {sum(1 for s in shadows.values() if s.get('status')!='SHADOW_CANCELED')}",
+        flush=True,
+    )
+    return i
+
+
+async def run_observe_loop(
+    *,
+    hours: float = 0.0,
+    once: bool = False,
+    run_id: str,
+    max_events: int = 0,
+    disk_limit_mb: float = 512.0,
+) -> None:
+    """Isolated observation: signals + shadow lifecycle + quote/VOL. Never OPEN/CLOSE."""
+    from .observe import assert_isolated_runtime_root
+
+    assert_isolated_runtime_root(config.RUNTIME_ROOT)
+    paths = config.paths()
+    ensure_dirs(paths["root"])
+    # Refuse to reuse a tree that already has trading fills
+    if paths["fills"].exists() and paths["fills"].stat().st_size > 0:
+        raise SystemExit(f"ERROR: observe-only refuses non-empty fills.jsonl at {paths['fills']}")
+
+    obs = _load_observer()
+    shadows: dict[str, dict[str, Any]] = {}
+    timeout = aiohttp.ClientTimeout(total=float(config.HTTP_OP_BUDGET_SEC) + 5.0)
+    connector = aiohttp.TCPConnector(limit=config.KLINES_API_CONCURRENCY + 4)
+    start = time.time()
+    universe: dict[str, Any] = {"eligible": [], "filters": {}}
+    last_uni = 0.0
+    scan_cursor = 0
+    last_hb = 0.0
+
+    async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
+        gs = GuardedSession(session)
+        print("=" * 64, flush=True)
+        print("啟動 D OBSERVATION_ONLY（真實公開行情；禁止成交／禁止交易所下單）", flush=True)
+        print(f"版本：{config.STRATEGY_VERSION}｜run_id={run_id}", flush=True)
+        print(
+            f"設定標籤：NEW_OBSERVATION_SETTINGS｜RANGE={config.RANGE_AMP_MAX}｜BAR={config.BAR_AMP_MAX}",
+            flush=True,
+        )
+        print("影子觸價=observational_touch；非成交、不計盈利", flush=True)
+        print("=" * 64, flush=True)
+
+        universe = await refresh_universe(gs)
+        last_uni = now_ts()
+        print(f"[宇宙] 合格 {universe.get('eligible_count')}", flush=True)
+
+        if once:
+            await observe_manage_shadows(gs, shadows)
+            await observe_scan_once(gs, universe, obs, shadows, cursor=0, run_id=run_id)
+            return
+
+        while True:
+            if hours > 0 and (time.time() - start) >= hours * 3600:
+                print("[結束] 達到觀測時數上限（工程覆蓋，非策略驗證門檻）", flush=True)
+                break
+            # disk / event caps
+            try:
+                qv = paths["quote_vol"]
+                oe = paths["observation_events"]
+                total = 0
+                for p in (qv, oe, paths["shadow_lifecycle"], paths["signals"]):
+                    if p.exists():
+                        total += p.stat().st_size
+                if total > disk_limit_mb * 1024 * 1024:
+                    print(f"[結束] 磁碟觀測資料超過 {disk_limit_mb}MB", flush=True)
+                    break
+                if max_events > 0 and oe.exists():
+                    nlines = sum(1 for _ in oe.open(encoding="utf-8") if _.strip())
+                    if nlines >= max_events:
+                        print(f"[結束] observation_events 達 {max_events} 筆上限", flush=True)
+                        break
+            except Exception as exc:
+                append_jsonl(
+                    paths["observation_events"],
+                    {"event": "OBSERVE_DISK_CHECK_FAIL", "error": str(exc), "at": now_iso()},
+                )
+
+            try:
+                await observe_manage_shadows(gs, shadows)
+            except PersistError as exc:
+                append_jsonl(
+                    paths["observation_events"],
+                    {
+                        "event": "OBSERVE_PERSIST_FAIL",
+                        "error": str(exc),
+                        "at": now_iso(),
+                        "data_valid": False,
+                        "note": "persist fail — mark invalid; do not treat as no-signal",
+                    },
+                )
+                print(f"[觀測] 持久化失敗告警：{exc}", flush=True)
+                await asyncio.sleep(config.MANAGE_DUE_SEC)
+                continue
+
+            now = now_ts()
+            if now - last_hb >= 60.0:
+                active = sum(1 for s in shadows.values() if s.get("status") != "SHADOW_CANCELED")
+                print(f"[觀測心跳] {now_iso()}｜活躍影子 {active}", flush=True)
+                atomic_write_json(
+                    paths["observation_health"],
+                    {
+                        "at": now_iso(),
+                        "run_id": run_id,
+                        "active_shadows": active,
+                        "mode": "OBSERVATION_ONLY",
+                        "uptime_sec": now - start,
+                    },
+                )
+                last_hb = now
+            if now_ts() - last_uni >= config.UNIVERSE_REFRESH_MINUTES * 60:
+                try:
+                    universe = await refresh_universe(gs)
+                    last_uni = now_ts()
+                except Exception as exc:
+                    print(f"[宇宙] 刷新失敗：{exc}", flush=True)
+                    append_jsonl(
+                        paths["observation_events"],
+                        {"event": "OBSERVE_UNIVERSE_FAIL", "error": str(exc), "at": now_iso(), "data_valid": False},
+                    )
+            sec = int(time.time()) % 60
+            if sec >= config.SCAN_SECOND and sec < config.SCAN_SECOND + 20:
+                try:
+                    scan_cursor = await observe_scan_once(
+                        gs, universe, obs, shadows, cursor=scan_cursor, run_id=run_id
+                    )
+                except PersistError as exc:
+                    print(f"[觀測] scan 持久化失敗：{exc}", flush=True)
+                await asyncio.sleep(5)
+            else:
+                await asyncio.sleep(config.MANAGE_DUE_SEC)

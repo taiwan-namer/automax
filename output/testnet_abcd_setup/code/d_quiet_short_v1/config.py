@@ -278,6 +278,10 @@ def paths() -> dict[str, Path]:
         "quote_vol": root / "native_quote_vol.jsonl",
         "settings_snapshot": root / "SETTINGS_SNAPSHOT.json",
         "persist_halt": root / "PERSIST_HALT.json",
+        "observation_events": root / "observation_events.jsonl",
+        "shadow_lifecycle": root / "shadow_lifecycle.jsonl",
+        "observation_health": root / "observation_health.json",
+        "observation_meta": root / "OBSERVATION_META.json",
     }
 
 
@@ -329,9 +333,11 @@ def settings_snapshot_dict() -> dict[str, Any]:
             "RANGE_AMP_MAX": RANGE_AMP_MAX,
             "BAR_AMP_MAX": BAR_AMP_MAX,
             "VOL_EXIT_FLOOR": VOL_EXIT_FLOOR,
+            "settings_tag": "NEW_OBSERVATION_SETTINGS",
             "note_historical": (
-                "BAR_AMP_MAX here is current config; historical effective BAR may differ. "
-                "Do not claim BAR=0.01 proven from this snapshot alone."
+                "BAR_AMP_MAX/RANGE_AMP_MAX here are CURRENT config (0.0075 / 0.015) for new observation. "
+                "Historical evidence only supports main-session BAR upper bound >=~0.00952 compatible with 0.01; "
+                "do NOT backfill this snapshot as historical proven BAR=0.01. RANGE historical effective=UNKNOWN."
             ),
         },
         "loop": {

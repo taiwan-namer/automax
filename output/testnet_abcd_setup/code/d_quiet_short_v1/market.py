@@ -381,3 +381,39 @@ async def fetch_completed_15m_bars(
             )
         )
     return bars
+
+
+async def fetch_last_closed_1m_stats(gs: GuardedSession, symbol: str) -> dict[str, Any]:
+    """Last fully closed 1m bar stats for observation logging (decision-time known)."""
+    try:
+        raw = await gs.get_json(
+            "/fapi/v1/klines",
+            params={"symbol": symbol, "interval": "1m", "limit": 3},
+            purpose="observe_1m",
+            op_budget_sec=6.0,
+            max_attempts=2,
+            request_timeout_sec=4.0,
+        )
+    except Exception as exc:
+        return {"status": "MISSING", "error": str(exc)}
+    now_ms = int(time.time() * 1000)
+    closed = []
+    for x in raw or []:
+        ot = int(x[0])
+        ct = int(x[6])
+        if ct >= now_ms:
+            continue
+        o, h, l, c = float(x[1]), float(x[2]), float(x[3]), float(x[4])
+        closed.append({"open_time": ot, "close_time": ct, "o": o, "h": h, "l": l, "c": c})
+    if not closed:
+        return {"status": "MISSING", "error": "no_closed_1m"}
+    b = closed[-1]
+    if b["o"] <= 0:
+        return {"status": "MISSING", "error": "bad_open"}
+    return {
+        "status": "OK",
+        "open_time": b["open_time"],
+        "close_time": b["close_time"],
+        "ret_pct": (b["c"] - b["o"]) / b["o"] * 100.0,
+        "amp_pct": (b["h"] - b["l"]) / b["o"] * 100.0,
+    }
