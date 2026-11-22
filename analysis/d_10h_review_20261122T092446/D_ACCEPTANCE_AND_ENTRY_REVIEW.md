@@ -187,5 +187,6 @@ python analysis/d_10h_review_20261122T092446/_entry_diagnosis.py
 
 ### Commit
 **已建立 D 專用 commit**（未納入 A／B／C 或其他工作樹雜項）：  
-`84bcaed` — *Add D persist-halt acceptance, entry diagnosis, and review pack.*  
-範圍：`output/testnet_abcd_setup/code/d_quiet_short_v1/*` + `analysis/d_10h_review_20261122T092446/*`。
+- 主交付：`97f8823` — *Add D persist-halt acceptance, entry diagnosis, and review pack.*  
+- 範圍：`output/testnet_abcd_setup/code/d_quiet_short_v1/*` + `analysis/d_10h_review_20261122T092446/*`。  
+（若本段隨後有 follow-up 小修 commit，以 `git log --oneline -3` 為準。）
