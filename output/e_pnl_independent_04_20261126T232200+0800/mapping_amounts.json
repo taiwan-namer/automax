@@ -1,0 +1,131 @@
+{
+  "multi_n": 20,
+  "multi_unmapped_no_ex_key": 0,
+  "multi_unique_rp": "-263.74620791",
+  "multi_unique_cm": "8.57934297",
+  "multi_if_each_event_rp": "-263.74620791",
+  "multi_double_count_delta_rp": "0E-8",
+  "multi_double_count_delta_cm": "0E-8",
+  "open_n": 48,
+  "open_with_order_id": 48,
+  "open_in_pos": 10,
+  "open_reconcile": 40,
+  "rows_multi_head": [
+    {
+      "tid": ":GUAUSDT:415c374219",
+      "sym": "GUAUSDT",
+      "n_close": 5,
+      "n_unique_ex_keys": 5,
+      "uniq_rp": "-17.29784",
+      "uniq_cm": "0.49133495",
+      "sum_if_count_each_event_rp": "-17.29784",
+      "delta_rp_if_double_count": "0.00000"
+    },
+    {
+      "tid": ":SKYUSDT:661c4f1af9",
+      "sym": "SKYUSDT",
+      "n_close": 4,
+      "n_unique_ex_keys": 4,
+      "uniq_rp": "-11.58185",
+      "uniq_cm": "0.49406592",
+      "sum_if_count_each_event_rp": "-11.58185",
+      "delta_rp_if_double_count": "0.00000"
+    },
+    {
+      "tid": ":BLURUSDT:499205d676",
+      "sym": "BLURUSDT",
+      "n_close": 2,
+      "n_unique_ex_keys": 2,
+      "uniq_rp": "-11.60819",
+      "uniq_cm": "0.39510057",
+      "sum_if_count_each_event_rp": "-11.60819",
+      "delta_rp_if_double_count": "0.00000"
+    },
+    {
+      "tid": ":BULLAUSDT:b0cc3006fe",
+      "sym": "BULLAUSDT",
+      "n_close": 2,
+      "n_unique_ex_keys": 2,
+      "uniq_rp": "-11.40143",
+      "uniq_cm": "0.49336920",
+      "sum_if_count_each_event_rp": "-11.40143",
+      "delta_rp_if_double_count": "0.00000"
+    },
+    {
+      "tid": ":BULLAUSDT:875b512632",
+      "sym": "BULLAUSDT",
+      "n_close": 10,
+      "n_unique_ex_keys": 10,
+      "uniq_rp": "-8.65974",
+      "uniq_cm": "0.49566498",
+      "sum_if_count_each_event_rp": "-8.65974",
+      "delta_rp_if_double_count": "0.00000"
+    }
+  ],
+  "open_not_in_pos_sample": [
+    {
+      "tid": ":SSVUSDT:8b45f53668",
+      "sym": "SSVUSDT",
+      "open_order_id": "203945826",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 13.69
+    },
+    {
+      "tid": ":LAYERUSDT:e0927a6790",
+      "sym": "LAYERUSDT",
+      "open_order_id": "281889573",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 11556.5
+    },
+    {
+      "tid": ":LAYERUSDT:282ca8a9cb",
+      "sym": "LAYERUSDT",
+      "open_order_id": "281895253",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 21128.2
+    },
+    {
+      "tid": ":LAYERUSDT:d6c6e1360c",
+      "sym": "LAYERUSDT",
+      "open_order_id": "281905799",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 21968.2
+    },
+    {
+      "tid": ":SSVUSDT:eecc8c3f2f",
+      "sym": "SSVUSDT",
+      "open_order_id": "203959666",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 24.3
+    },
+    {
+      "tid": ":SSVUSDT:99e80d722a",
+      "sym": "SSVUSDT",
+      "open_order_id": "203962427",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 19.13
+    },
+    {
+      "tid": ":SONICUSDT:a533222dac",
+      "sym": "SONICUSDT",
+      "open_order_id": "264996011",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 1959.2
+    },
+    {
+      "tid": ":VELVETUSDT:d7a646123e",
+      "sym": "VELVETUSDT",
+      "open_order_id": "340207157",
+      "has_reconcile": true,
+      "in_local_pos": false,
+      "qty": 12313.0
+    }
+  ]
+}

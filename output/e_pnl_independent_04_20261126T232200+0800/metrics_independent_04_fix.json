@@ -1,0 +1,1061 @@
+{
+  "generated_at": "2026-11-26T23:26:13+08:00",
+  "wallet_now_live": "5349.25889826",
+  "upnl_now_live": "26.13816706",
+  "origins": {
+    "sources": [
+      "strat_e_trend_v2_testnet.log",
+      "fills.jsonl"
+    ],
+    "log": {
+      "path": "C:\\Users\\Admin\\MyProjects\\automax\\output\\testnet_e_trend_v2_local\\logs\\strat_e_trend_v2_testnet.log",
+      "mtime": "2026-11-26T23:04:52+08:00",
+      "first_timestamp_in_head": "2026-11-23T00:07:54.830024+08:00",
+      "head_sample": [
+        "",
+        "===== launch 2026-11-23 00:07:54 E TREND V2 TESTNET =====",
+        "CMD: C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe -m e_top10_1m_down_v1.paper_main --paper --testnet --runtime-root C:\\Users\\Admin\\M",
+        "[2026-11-23T00:07:54.830024+08:00] E 趨勢再進場 v2（LONG；TP1 +1.5% 出 70%，剩餘移動停損 1.0%；再進場 EMA7 連續 2 根收上，贏後距線≤0.5%）",
+        "版本：e_long_trend_reentry_ema7_n2_trail1_dist05_20261123+e_env_tp15_slots20",
+        "資料根：C:\\Users\\Admin\\MyProjects\\automax\\output\\testnet_e_trend_v2_local\\data_e",
+        "費用：掛單 Maker 0.0002｜停損 Taker 0.0005｜停利預掛=True｜停利[tp15=1.50%]｜停損=3.500%",
+        "說明：Binance Futures Testnet 下單已啟用（ENABLE_BINANCE_TESTNET_ORDER=1；非主網）。"
+      ]
+    },
+    "fills": {
+      "path": "C:\\Users\\Admin\\MyProjects\\automax\\output\\testnet_e_trend_v2_local\\data_e\\output\\testnet_e_trend_v2_tp05_trail\\fills.jsonl",
+      "rows": 9595,
+      "earliest_event": {
+        "ts": "2026-11-25T20:10:08.178902+08:00",
+        "event": "LIMIT_QUEUED",
+        "symbol": "BIGTIMEUSDT",
+        "trade_id": null
+      },
+      "earliest_OPEN": {
+        "ts": "2026-11-25T20:10:23.662902+08:00",
+        "symbol": "BIGTIMEUSDT",
+        "trade_id": ":BIGTIMEUSDT:1ae92b83bb",
+        "binance_order_id": "228796177"
+      }
+    },
+    "files": {
+      "account_state.json": {
+        "mtime": "2026-11-26T23:26:24+08:00",
+        "size": 12675096
+      }
+    }
+  },
+  "bridge_214208": {
+    "cutoff": "2026-11-26T21:42:08+08:00",
+    "cutoff_utc": "2026-11-26T13:42:08+00:00",
+    "wallet": "5485.53735768",
+    "wallet_source": "e_pnl_trace_03 內嵌快照 5485.53735768（21:42:08 當時）",
+    "principal_ts": "2026-11-25T19:01:55+08:00",
+    "principal_ts_utc": "2026-11-25T11:01:55+00:00",
+    "same_second_events": [
+      {
+        "time": "2026-11-25T19:01:54+08:00",
+        "type": "TRANSFER",
+        "income": "0.01000000",
+        "info": "TRANSFER"
+      },
+      {
+        "time": "2026-11-25T19:01:55+08:00",
+        "type": "TRANSFER",
+        "income": "5000.00000000",
+        "info": "TRANSFER"
+      }
+    ],
+    "at_exact_principal": [
+      {
+        "time": "2026-11-25T19:01:55+08:00",
+        "type": "TRANSFER",
+        "income": "5000.00000000"
+      }
+    ],
+    "after_counts": {
+      "COMMISSION": 12518,
+      "REALIZED_PNL": 2661,
+      "FUNDING_FEE": 108,
+      "TRANSFER": 1
+    },
+    "after_sums": {
+      "COMMISSION": "-337.79136062",
+      "FUNDING_FEE": "96.12347947",
+      "REALIZED_PNL": "452.49745911",
+      "TRANSFER": "274.60999709"
+    },
+    "trading_net": "210.82957796",
+    "transfer_after": "274.60999709",
+    "other_after": "0",
+    "income_after_total": "485.43957505",
+    "implied_wallet": "5485.43957505",
+    "residual": "0.09778263",
+    "before_transfer_sums": {
+      "COMMISSION": "-683.55091132",
+      "FUNDING_FEE": "28.70385545",
+      "REALIZED_PNL": "-1411.75127566",
+      "TRANSFER": "431.88516022"
+    },
+    "conditional": {
+      "note": "本金轉入前錢包餘額無官方歷史 balance API 證據；條件式：W0 + 5000 + Σincome_after = wallet",
+      "implied_W0_if_wallet_known": "0.09778263"
+    },
+    "sampling": {
+      "income_end_inclusive": true,
+      "wallet_vs_income_lag_note": "錢包為時點快照；income 篩至 cutoff 秒；兩者非同一次 API 原子讀取"
+    }
+  },
+  "bridge_220557": {
+    "cutoff": "2026-11-26T22:05:57+08:00",
+    "cutoff_utc": "2026-11-26T14:05:57+00:00",
+    "wallet": "5461.24284234",
+    "wallet_source": "metrics_pnl_trace.json exchange_now.wallet @ 原 22:05 產物",
+    "principal_ts": "2026-11-25T19:01:55+08:00",
+    "principal_ts_utc": "2026-11-25T11:01:55+00:00",
+    "same_second_events": [
+      {
+        "time": "2026-11-25T19:01:54+08:00",
+        "type": "TRANSFER",
+        "income": "0.01000000",
+        "info": "TRANSFER"
+      },
+      {
+        "time": "2026-11-25T19:01:55+08:00",
+        "type": "TRANSFER",
+        "income": "5000.00000000",
+        "info": "TRANSFER"
+      }
+    ],
+    "at_exact_principal": [
+      {
+        "time": "2026-11-25T19:01:55+08:00",
+        "type": "TRANSFER",
+        "income": "5000.00000000"
+      }
+    ],
+    "after_counts": {
+      "COMMISSION": 13278,
+      "REALIZED_PNL": 2685,
+      "FUNDING_FEE": 108,
+      "TRANSFER": 1
+    },
+    "after_sums": {
+      "COMMISSION": "-342.36199596",
+      "FUNDING_FEE": "96.12347947",
+      "REALIZED_PNL": "432.77357911",
+      "TRANSFER": "274.60999709"
+    },
+    "trading_net": "186.53506262",
+    "transfer_after": "274.60999709",
+    "other_after": "0",
+    "income_after_total": "461.14505971",
+    "implied_wallet": "5461.14505971",
+    "residual": "0.09778263",
+    "before_transfer_sums": {
+      "COMMISSION": "-683.55091132",
+      "FUNDING_FEE": "28.70385545",
+      "REALIZED_PNL": "-1411.75127566",
+      "TRANSFER": "431.88516022"
+    },
+    "conditional": {
+      "note": "本金轉入前錢包餘額無官方歷史 balance API 證據；條件式：W0 + 5000 + Σincome_after = wallet",
+      "implied_W0_if_wallet_known": "0.09778263"
+    },
+    "sampling": {
+      "income_end_inclusive": true,
+      "wallet_vs_income_lag_note": "錢包為時點快照；income 篩至 cutoff 秒；兩者非同一次 API 原子讀取"
+    }
+  },
+  "daily_214208": [
+    {
+      "day": "2026-11-22",
+      "REALIZED_PNL": "-219.85510200",
+      "COMMISSION": "-34.76223053",
+      "FUNDING_FEE": "1.77661921",
+      "trading_net": "-252.84071332",
+      "TRANSFER": "0"
+    },
+    {
+      "day": "2026-11-23",
+      "REALIZED_PNL": "332.91385046",
+      "COMMISSION": "-223.56201955",
+      "FUNDING_FEE": "-2.84754632",
+      "trading_net": "106.50428459",
+      "TRANSFER": "137.46165310"
+    },
+    {
+      "day": "2026-11-24",
+      "REALIZED_PNL": "-1334.09346960",
+      "COMMISSION": "-314.46446313",
+      "FUNDING_FEE": "13.39075325",
+      "trading_net": "-1635.16717948",
+      "TRANSFER": "294.41350712"
+    },
+    {
+      "day": "2026-11-25",
+      "REALIZED_PNL": "-423.10193651",
+      "COMMISSION": "-243.70530814",
+      "FUNDING_FEE": "17.47048445",
+      "trading_net": "-649.33676020",
+      "TRANSFER": "5274.61999709"
+    },
+    {
+      "day": "2026-11-26",
+      "REALIZED_PNL": "684.88284110",
+      "COMMISSION": "-204.84825059",
+      "FUNDING_FEE": "95.03702433",
+      "trading_net": "575.07161484",
+      "TRANSFER": "0"
+    }
+  ],
+  "daily_220557": [
+    {
+      "day": "2026-11-22",
+      "REALIZED_PNL": "-219.85510200",
+      "COMMISSION": "-34.76223053",
+      "FUNDING_FEE": "1.77661921",
+      "trading_net": "-252.84071332",
+      "TRANSFER": "0"
+    },
+    {
+      "day": "2026-11-23",
+      "REALIZED_PNL": "332.91385046",
+      "COMMISSION": "-223.56201955",
+      "FUNDING_FEE": "-2.84754632",
+      "trading_net": "106.50428459",
+      "TRANSFER": "137.46165310"
+    },
+    {
+      "day": "2026-11-24",
+      "REALIZED_PNL": "-1334.09346960",
+      "COMMISSION": "-314.46446313",
+      "FUNDING_FEE": "13.39075325",
+      "trading_net": "-1635.16717948",
+      "TRANSFER": "294.41350712"
+    },
+    {
+      "day": "2026-11-25",
+      "REALIZED_PNL": "-423.10193651",
+      "COMMISSION": "-243.70530814",
+      "FUNDING_FEE": "17.47048445",
+      "trading_net": "-649.33676020",
+      "TRANSFER": "5274.61999709"
+    },
+    {
+      "day": "2026-11-26",
+      "REALIZED_PNL": "665.15896110",
+      "COMMISSION": "-209.41888593",
+      "FUNDING_FEE": "95.03702433",
+      "trading_net": "550.77709950",
+      "TRANSFER": "0"
+    }
+  ],
+  "mapping": {
+    "multi_close": {
+      "n_groups": 20,
+      "n_mapped_groups": 0,
+      "n_unmapped_groups": 20,
+      "exchange_realized_sum": "0",
+      "exchange_commission_sum": "0",
+      "rows": [
+        {
+          "local_trade_id": ":GUAUSDT:415c374219",
+          "symbol": "GUAUSDT",
+          "n_local_close_events": 5,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":SKYUSDT:661c4f1af9",
+          "symbol": "SKYUSDT",
+          "n_local_close_events": 4,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":BLURUSDT:499205d676",
+          "symbol": "BLURUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":BULLAUSDT:b0cc3006fe",
+          "symbol": "BULLAUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":BULLAUSDT:875b512632",
+          "symbol": "BULLAUSDT",
+          "n_local_close_events": 10,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":WLFIUSDT:837ec88f40",
+          "symbol": "WLFIUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":BIGTIMEUSDT:82d9ac5d48",
+          "symbol": "BIGTIMEUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":ANIMEUSDT:a36d24a966",
+          "symbol": "ANIMEUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":ZETAUSDT:3dd4f40b77",
+          "symbol": "ZETAUSDT",
+          "n_local_close_events": 11,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":ANIMEUSDT:a66052eb56",
+          "symbol": "ANIMEUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":MEUSDT:cd2668f51a",
+          "symbol": "MEUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":INXUSDT:0508cf7e46",
+          "symbol": "INXUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":LAUSDT:61169b8b3c",
+          "symbol": "LAUSDT",
+          "n_local_close_events": 24,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":INXUSDT:ca7cb6ca52",
+          "symbol": "INXUSDT",
+          "n_local_close_events": 3,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":ZETAUSDT:04adc6952a",
+          "symbol": "ZETAUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":牛来USDT:0235791185",
+          "symbol": "牛来USDT",
+          "n_local_close_events": 9,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":MOVEUSDT:4e10c8bfb1",
+          "symbol": "MOVEUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":CHRUSDT:fd36a8edca",
+          "symbol": "CHRUSDT",
+          "n_local_close_events": 3,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":SSVUSDT:8afdeb92d9",
+          "symbol": "SSVUSDT",
+          "n_local_close_events": 24,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        },
+        {
+          "local_trade_id": ":INITUSDT:7bbbafd629",
+          "symbol": "INITUSDT",
+          "n_local_close_events": 2,
+          "binance_order_ids": [],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false
+        }
+      ]
+    },
+    "open_no_close": {
+      "n_groups": 48,
+      "n_mapped_groups": 43,
+      "n_unmapped_groups": 5,
+      "exchange_realized_sum": "0",
+      "exchange_commission_sum": "13.27215530",
+      "rows": [
+        {
+          "local_trade_id": ":SSVUSDT:8b45f53668",
+          "symbol": "SSVUSDT",
+          "binance_order_ids": [
+            "203945826"
+          ],
+          "n_exchange_trades": 194,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999598",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:e0927a6790",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "281889573"
+          ],
+          "n_exchange_trades": 15,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19995594",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:282ca8a9cb",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "281895253"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49651270",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:d6c6e1360c",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "281905799"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49977882",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SSVUSDT:eecc8c3f2f",
+          "symbol": "SSVUSDT",
+          "binance_order_ids": [
+            "203959666"
+          ],
+          "n_exchange_trades": 59,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999635",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SSVUSDT:99e80d722a",
+          "symbol": "SSVUSDT",
+          "binance_order_ids": [
+            "203962427"
+          ],
+          "n_exchange_trades": 196,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999709",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SONICUSDT:a533222dac",
+          "symbol": "SONICUSDT",
+          "binance_order_ids": [
+            "264996011"
+          ],
+          "n_exchange_trades": 47,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19922071",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":VELVETUSDT:d7a646123e",
+          "symbol": "VELVETUSDT",
+          "binance_order_ids": [
+            "340207157"
+          ],
+          "n_exchange_trades": 5,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19998772",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":XPINUSDT:77bf3140e6",
+          "symbol": "XPINUSDT",
+          "binance_order_ids": [
+            "489610585"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":TUSDT:674120b5be",
+          "symbol": "TUSDT",
+          "binance_order_ids": [
+            "276542349"
+          ],
+          "n_exchange_trades": 181,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19962132",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":JELLYJELLYUSDT:4365b21b2e",
+          "symbol": "JELLYJELLYUSDT",
+          "binance_order_ids": [
+            "353773697"
+          ],
+          "n_exchange_trades": 3,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49694441",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BIGTIMEUSDT:8ba6259d72",
+          "symbol": "BIGTIMEUSDT",
+          "binance_order_ids": [
+            "228857443"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49450540",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BABYUSDT:27b125af4f",
+          "symbol": "BABYUSDT",
+          "binance_order_ids": [
+            "304059719"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49948366",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":WAXPUSDT:9ced991f4e",
+          "symbol": "WAXPUSDT",
+          "binance_order_ids": [
+            "246395190"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39965214",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:fe7ff11382",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "281937552"
+          ],
+          "n_exchange_trades": 35,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19995441",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":CHILLGUYUSDT:89e4615ed6",
+          "symbol": "CHILLGUYUSDT",
+          "binance_order_ids": [
+            "346044488"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49942737",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SONICUSDT:1c34879a25",
+          "symbol": "SONICUSDT",
+          "binance_order_ids": [
+            "265019637"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19954633",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":ERAUSDT:83e3bd0869",
+          "symbol": "ERAUSDT",
+          "binance_order_ids": [
+            "198240278"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19996668",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SPACEUSDT:62bd63c668",
+          "symbol": "SPACEUSDT",
+          "binance_order_ids": [
+            "309914941"
+          ],
+          "n_exchange_trades": 199,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999873",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:3453c1fdd6",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "281984885"
+          ],
+          "n_exchange_trades": 199,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19968210",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BANDUSDT:abc620a639",
+          "symbol": "BANDUSDT",
+          "binance_order_ids": [
+            "311961906"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39946304",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SIRENUSDT:06a873bad5",
+          "symbol": "SIRENUSDT",
+          "binance_order_ids": [
+            "1922309411"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49960395",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":SSVUSDT:05293051b5",
+          "symbol": "SSVUSDT",
+          "binance_order_ids": [
+            "204018027"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39636408",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":WLFIUSDT:ccd740ae61",
+          "symbol": "WLFIUSDT",
+          "binance_order_ids": [
+            "411401905"
+          ],
+          "n_exchange_trades": 31,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":MOVEUSDT:926bf2372e",
+          "symbol": "MOVEUSDT",
+          "binance_order_ids": [
+            "269423043"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49599596",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":MINAUSDT:8d5bcf8d0b",
+          "symbol": "MINAUSDT",
+          "binance_order_ids": [
+            "229554611"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39943200",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BABYUSDT:c70aa91069",
+          "symbol": "BABYUSDT",
+          "binance_order_ids": [
+            "304186053"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49970718",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":AIOTUSDT:869bef87e4",
+          "symbol": "AIOTUSDT",
+          "binance_order_ids": [
+            "535008639"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19980500",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":MINAUSDT:2a6b58a853",
+          "symbol": "MINAUSDT",
+          "binance_order_ids": [
+            "229603487"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39999484",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":RUNEUSDT:ad729e3462",
+          "symbol": "RUNEUSDT",
+          "binance_order_ids": [
+            "334294509"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39967308",
+          "mapped": true,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":LAYERUSDT:23ba24607b",
+          "symbol": "LAYERUSDT",
+          "binance_order_ids": [
+            "282144925"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49999904",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":牛来USDT:31b14b22eb",
+          "symbol": "牛来USDT",
+          "binance_order_ids": [
+            "36402919"
+          ],
+          "n_exchange_trades": 26,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999336",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":MOVEUSDT:2cd8d4b1ca",
+          "symbol": "MOVEUSDT",
+          "binance_order_ids": [
+            "269640370"
+          ],
+          "n_exchange_trades": 2,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19990325",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BANDUSDT:558da710f3",
+          "symbol": "BANDUSDT",
+          "binance_order_ids": [
+            "312114844"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.39973963",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":LAUSDT:abc4ae775b",
+          "symbol": "LAUSDT",
+          "binance_order_ids": [
+            "294991116"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":WIFUSDT:bc9560c3aa",
+          "symbol": "WIFUSDT",
+          "binance_order_ids": [
+            "352026312"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49962016",
+          "mapped": true,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":FORMUSDT:e60425747c",
+          "symbol": "FORMUSDT",
+          "binance_order_ids": [
+            "266837572"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49969380",
+          "mapped": true,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":SEIUSDT:793b4d6b93",
+          "symbol": "SEIUSDT",
+          "binance_order_ids": [
+            "330972203"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19977984",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":METISUSDT:c079d73ab1",
+          "symbol": "METISUSDT",
+          "binance_order_ids": [
+            "193715649"
+          ],
+          "n_exchange_trades": 172,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999515",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":AIOTUSDT:723a45a5aa",
+          "symbol": "AIOTUSDT",
+          "binance_order_ids": [
+            "535269041"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19983220",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":CATIUSDT:b6dc98c20a",
+          "symbol": "CATIUSDT",
+          "binance_order_ids": [
+            "244414185"
+          ],
+          "n_exchange_trades": 1,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.49970381",
+          "mapped": true,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":POPCATUSDT:75d5dbc95c",
+          "symbol": "POPCATUSDT",
+          "binance_order_ids": [
+            "232635391"
+          ],
+          "n_exchange_trades": 195,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19963058",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":BATUSDT:ac3ae73d6b",
+          "symbol": "BATUSDT",
+          "binance_order_ids": [
+            "381388988"
+          ],
+          "n_exchange_trades": 199,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0.19999749",
+          "mapped": true,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":AVNTUSDT:0fda963960",
+          "symbol": "AVNTUSDT",
+          "binance_order_ids": [
+            "300654965"
+          ],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":SEIUSDT:914ed49c97",
+          "symbol": "SEIUSDT",
+          "binance_order_ids": [
+            "331016904"
+          ],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false,
+          "has_reconcile": true
+        },
+        {
+          "local_trade_id": ":ARIAUSDT:4ee83efbc0",
+          "symbol": "ARIAUSDT",
+          "binance_order_ids": [
+            "387404918"
+          ],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":AIOTUSDT:610957dd5a",
+          "symbol": "AIOTUSDT",
+          "binance_order_ids": [
+            "535339519"
+          ],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false,
+          "has_reconcile": false
+        },
+        {
+          "local_trade_id": ":SAGAUSDT:972ac1e5aa",
+          "symbol": "SAGAUSDT",
+          "binance_order_ids": [
+            "382800028"
+          ],
+          "n_exchange_trades": 0,
+          "exchange_realizedPnl": "0",
+          "exchange_commission": "0",
+          "mapped": false,
+          "has_reconcile": false
+        }
+      ]
+    },
+    "user_trades_n": 15021
+  },
+  "boundary": {
+    "income_pages_to_cut_b": 54,
+    "income_unique_to_cut_b": 53550,
+    "income_unique_to_cut_a": 52766,
+    "idempotent_rerun": true,
+    "user_trades_pages": 16,
+    "user_trades_unique": 15021
+  },
+  "multi_n": 20,
+  "open_n": 48
+}
