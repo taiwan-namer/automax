@@ -1,0 +1,3 @@
+{"event":"FILL","client_order_id":"STRAT_E_f9ba63ff","exchange_order_id":"366618857","exchange_trade_id":"111","observation_kind":"exchange_trade"}
+{"event":"FILL","client_order_id":"OTHER","exchange_order_id":"999","exchange_trade_id":"222","observation_kind":"exchange_trade"}
+{"event":"FILL","client_order_id":"STRAT_E_f9ba63ff","exchange_order_id":"366618857","exchange_trade_id":"111","observation_kind":"exchange_trade"}
